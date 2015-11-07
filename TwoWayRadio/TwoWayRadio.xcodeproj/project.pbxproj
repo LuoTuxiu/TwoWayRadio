@@ -1,0 +1,1093 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B0FF08B1BAEF9D1005D9275 /* TWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF08A1BAEF9D1005D9275 /* TWNavigationController.m */; };
+		3B0FF0931BAF01EC005D9275 /* TWRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF0921BAF01EC005D9275 /* TWRecorder.m */; };
+		3B21D80A1BDA115300D821C8 /* Bug.md in Sources */ = {isa = PBXBuildFile; fileRef = 3B21D8091BDA115300D821C8 /* Bug.md */; };
+		3B2224E31BC6D33600629FCA /* TWAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2224E21BC6D33600629FCA /* TWAudioSession.m */; };
+		3B2224E51BC6D41700629FCA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2224E41BC6D41700629FCA /* AVFoundation.framework */; };
+		3B2262F71BAEE68000880A0A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2262E11BAEE68000880A0A /* HomeViewController.m */; };
+		3B2262F81BAEE68000880A0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2262E61BAEE68000880A0A /* AppDelegate.m */; };
+		3B2262F91BAEE68000880A0A /* TWtabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2262E91BAEE68000880A0A /* TWtabBarController.m */; };
+		3B2262FA1BAEE68000880A0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2262EA1BAEE68000880A0A /* main.m */; };
+		3B28F3631BBD582B00E0981E /* TWSettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B28F3621BBD582B00E0981E /* TWSettingArrowItem.m */; };
+		3B28F3691BBD586800E0981E /* TWSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B28F3681BBD586800E0981E /* TWSettingItem.m */; };
+		3B28F36D1BBD5DA000E0981E /* TWAboutHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B28F36C1BBD5DA000E0981E /* TWAboutHeaderView.m */; };
+		3B28F36F1BBD5DB200E0981E /* TWAboutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B28F36E1BBD5DB200E0981E /* TWAboutHeaderView.xib */; };
+		3B32C87A1BB107F40094F81F /* TWAdpcm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B32C8791BB107F40094F81F /* TWAdpcm.m */; };
+		3B4E3AEF1BCB9BB6002D75C0 /* TWNetworkEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E3AEE1BCB9BB6002D75C0 /* TWNetworkEnvironment.m */; };
+		3B4E3AF21BCB9DC5002D75C0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4E3AF01BCB9BF6002D75C0 /* SystemConfiguration.framework */; };
+		3B4E3AF51BCB9FE9002D75C0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E3AF41BCB9FE9002D75C0 /* Reachability.m */; };
+		3B4E3AF71BCBD2A2002D75C0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4E3AF61BCBD2A2002D75C0 /* MediaPlayer.framework */; };
+		3B5BA2D01BCA019E00B2151A /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5BA2CF1BCA019E00B2151A /* GCDAsyncUdpSocket.m */; };
+		3B61B08C1BC2222300671E12 /* TWRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B61B08B1BC2222300671E12 /* TWRadioButton.m */; };
+		3B63B6011BC3C37D00F2664E /* MSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B6001BC3C37D00F2664E /* MSWeakTimer.m */; };
+		3B6DC22C1BC2926F008B919A /* TWStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC22B1BC2926F008B919A /* TWStatusView.m */; };
+		3B6DC22F1BC2A357008B919A /* TWStatusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC22E1BC2A357008B919A /* TWStatusButton.m */; };
+		3B6DC2331BC2C200008B919A /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC2321BC2C200008B919A /* UIButton+Bootstrap.m */; };
+		3B6DC2361BC2C267008B919A /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC2351BC2C267008B919A /* NSString+FontAwesome.m */; };
+		3B74D2B31BAF8FCF00F48A12 /* UdpNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B74D2B21BAF8FCF00F48A12 /* UdpNetwork.m */; };
+		3BB499911BC1854200D8CAD2 /* TWRadioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB499901BC1854200D8CAD2 /* TWRadioView.m */; };
+		3BCAE71D1BBE33BE009172D6 /* TWSaveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAE71C1BBE33BE009172D6 /* TWSaveInfo.m */; };
+		3BD08A181BC7AC0B0096735A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD08A171BC7AC0B0096735A /* OpenAL.framework */; };
+		3BDD3BAA1BABC44100E67F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDD3BA81BABC44100E67F7A /* LaunchScreen.storyboard */; };
+		3BDD3BB51BABC44100E67F7A /* TwoWayRadioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3BB41BABC44100E67F7A /* TwoWayRadioTests.m */; };
+		3BDD3BC01BABC44100E67F7A /* TwoWayRadioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3BBF1BABC44100E67F7A /* TwoWayRadioUITests.m */; };
+		3BE251681BBD21FD0050474C /* TWBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE251671BBD21FD0050474C /* TWBaseSettingViewController.m */; };
+		3BE2516B1BBD23B00050474C /* TWSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2516A1BBD23B00050474C /* TWSettingTableViewCell.m */; };
+		3BE251711BBD250C0050474C /* TWSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE251701BBD250C0050474C /* TWSettingViewController.m */; };
+		3BE251741BBD326C0050474C /* TWSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE251731BBD326C0050474C /* TWSettingGroup.m */; };
+		3BE2517C1BBD45DC0050474C /* TWAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2517B1BBD45DC0050474C /* TWAboutViewController.m */; };
+		3BE925F31BB9531800C5328D /* HYOpenALHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE925F21BB9531800C5328D /* HYOpenALHelper.m */; };
+		3BF371C11BEBA67300436A1F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF371C01BEBA67300436A1F /* UIView+Extension.m */; };
+		3BF373081BBD6B0500117A61 /* TWSettingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF373071BBD6B0500117A61 /* TWSettingHeaderView.m */; };
+		3BF3730A1BBD6B1200117A61 /* TWSettingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF373091BBD6B1200117A61 /* TWSettingHeaderView.xib */; };
+		3BF3730C1BBD735400117A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF3730B1BBD735400117A61 /* Assets.xcassets */; };
+		3BF373161BBD8B1D00117A61 /* TWSettingTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF373151BBD8B1D00117A61 /* TWSettingTextItem.m */; };
+		3BF744F01BC0D4140031BA7E /* TWLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF744EF1BC0D4140031BA7E /* TWLogView.m */; };
+		3BF744F21BC0D41D0031BA7E /* TWLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF744F11BC0D41D0031BA7E /* TWLogView.xib */; };
+		3BF7483C1BCD248500D5292F /* TWbaseLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF748371BCD248500D5292F /* TWbaseLoginViewController.m */; };
+		3BF7483D1BCD248500D5292F /* TWFirstViewLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF748391BCD248500D5292F /* TWFirstViewLoginViewController.m */; };
+		3BF748441BCD2A3500D5292F /* TWChangeLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF748431BCD2A3500D5292F /* TWChangeLoginViewController.m */; };
+		74874CABC3926E0088155548 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D147AC432CB9139A4F62467 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BDD3BB11BABC44100E67F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BDD3B8F1BABC44100E67F7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BDD3B961BABC44100E67F7A;
+			remoteInfo = TwoWayRadio;
+		};
+		3BDD3BBC1BABC44100E67F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BDD3B8F1BABC44100E67F7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BDD3B961BABC44100E67F7A;
+			remoteInfo = TwoWayRadio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D147AC432CB9139A4F62467 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0FF0891BAEF9D1005D9275 /* TWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNavigationController.h; sourceTree = "<group>"; };
+		3B0FF08A1BAEF9D1005D9275 /* TWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNavigationController.m; sourceTree = "<group>"; };
+		3B0FF0911BAF01EC005D9275 /* TWRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRecorder.h; sourceTree = "<group>"; };
+		3B0FF0921BAF01EC005D9275 /* TWRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRecorder.m; sourceTree = "<group>"; };
+		3B21D8091BDA115300D821C8 /* Bug.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Bug.md; sourceTree = "<group>"; };
+		3B2224E11BC6D33600629FCA /* TWAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAudioSession.h; sourceTree = "<group>"; };
+		3B2224E21BC6D33600629FCA /* TWAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAudioSession.m; sourceTree = "<group>"; };
+		3B2224E41BC6D41700629FCA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3B2262E01BAEE68000880A0A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		3B2262E11BAEE68000880A0A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3B2262E51BAEE68000880A0A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3B2262E61BAEE68000880A0A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B2262E81BAEE68000880A0A /* TWtabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWtabBarController.h; sourceTree = "<group>"; };
+		3B2262E91BAEE68000880A0A /* TWtabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWtabBarController.m; sourceTree = "<group>"; };
+		3B2262EA1BAEE68000880A0A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B28F3611BBD582B00E0981E /* TWSettingArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingArrowItem.h; sourceTree = "<group>"; };
+		3B28F3621BBD582B00E0981E /* TWSettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingArrowItem.m; sourceTree = "<group>"; };
+		3B28F3671BBD586800E0981E /* TWSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingItem.h; sourceTree = "<group>"; };
+		3B28F3681BBD586800E0981E /* TWSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingItem.m; sourceTree = "<group>"; };
+		3B28F36B1BBD5DA000E0981E /* TWAboutHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAboutHeaderView.h; sourceTree = "<group>"; };
+		3B28F36C1BBD5DA000E0981E /* TWAboutHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAboutHeaderView.m; sourceTree = "<group>"; };
+		3B28F36E1BBD5DB200E0981E /* TWAboutHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWAboutHeaderView.xib; sourceTree = "<group>"; };
+		3B32C8781BB107F40094F81F /* TWAdpcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAdpcm.h; sourceTree = "<group>"; };
+		3B32C8791BB107F40094F81F /* TWAdpcm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAdpcm.m; sourceTree = "<group>"; };
+		3B4E3AED1BCB9BB6002D75C0 /* TWNetworkEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNetworkEnvironment.h; sourceTree = "<group>"; };
+		3B4E3AEE1BCB9BB6002D75C0 /* TWNetworkEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNetworkEnvironment.m; sourceTree = "<group>"; };
+		3B4E3AF01BCB9BF6002D75C0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3B4E3AF31BCB9FE9002D75C0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3B4E3AF41BCB9FE9002D75C0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3B4E3AF61BCBD2A2002D75C0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3B5BA2CE1BCA019E00B2151A /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		3B5BA2CF1BCA019E00B2151A /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		3B61B08A1BC2222300671E12 /* TWRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRadioButton.h; sourceTree = "<group>"; };
+		3B61B08B1BC2222300671E12 /* TWRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRadioButton.m; sourceTree = "<group>"; };
+		3B63B5FF1BC3C37D00F2664E /* MSWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWeakTimer.h; sourceTree = "<group>"; };
+		3B63B6001BC3C37D00F2664E /* MSWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWeakTimer.m; sourceTree = "<group>"; };
+		3B6DC22A1BC2926F008B919A /* TWStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWStatusView.h; sourceTree = "<group>"; };
+		3B6DC22B1BC2926F008B919A /* TWStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWStatusView.m; sourceTree = "<group>"; };
+		3B6DC22D1BC2A357008B919A /* TWStatusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWStatusButton.h; sourceTree = "<group>"; };
+		3B6DC22E1BC2A357008B919A /* TWStatusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWStatusButton.m; sourceTree = "<group>"; };
+		3B6DC2311BC2C200008B919A /* UIButton+Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Bootstrap.h"; sourceTree = "<group>"; };
+		3B6DC2321BC2C200008B919A /* UIButton+Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Bootstrap.m"; sourceTree = "<group>"; };
+		3B6DC2341BC2C267008B919A /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		3B6DC2351BC2C267008B919A /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		3B74D2B11BAF8FCF00F48A12 /* UdpNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpNetwork.h; sourceTree = "<group>"; };
+		3B74D2B21BAF8FCF00F48A12 /* UdpNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UdpNetwork.m; sourceTree = "<group>"; };
+		3B74D2B41BAF920200F48A12 /* TwoWayRadio.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoWayRadio.pch; sourceTree = "<group>"; };
+		3BB4998F1BC1854200D8CAD2 /* TWRadioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRadioView.h; sourceTree = "<group>"; };
+		3BB499901BC1854200D8CAD2 /* TWRadioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRadioView.m; sourceTree = "<group>"; };
+		3BCAE71B1BBE33BE009172D6 /* TWSaveInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSaveInfo.h; sourceTree = "<group>"; };
+		3BCAE71C1BBE33BE009172D6 /* TWSaveInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSaveInfo.m; sourceTree = "<group>"; };
+		3BD08A171BC7AC0B0096735A /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		3BDD3B971BABC44100E67F7A /* TwoWayRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoWayRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BDD3BA91BABC44100E67F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BDD3BAB1BABC44100E67F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BDD3BB01BABC44100E67F7A /* TwoWayRadioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoWayRadioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BDD3BB41BABC44100E67F7A /* TwoWayRadioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoWayRadioTests.m; sourceTree = "<group>"; };
+		3BDD3BB61BABC44100E67F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BDD3BBB1BABC44100E67F7A /* TwoWayRadioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoWayRadioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BDD3BBF1BABC44100E67F7A /* TwoWayRadioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoWayRadioUITests.m; sourceTree = "<group>"; };
+		3BDD3BC11BABC44200E67F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BE251661BBD21FD0050474C /* TWBaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBaseSettingViewController.h; sourceTree = "<group>"; };
+		3BE251671BBD21FD0050474C /* TWBaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWBaseSettingViewController.m; sourceTree = "<group>"; };
+		3BE251691BBD23B00050474C /* TWSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingTableViewCell.h; sourceTree = "<group>"; };
+		3BE2516A1BBD23B00050474C /* TWSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingTableViewCell.m; sourceTree = "<group>"; };
+		3BE2516F1BBD250C0050474C /* TWSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingViewController.h; sourceTree = "<group>"; };
+		3BE251701BBD250C0050474C /* TWSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingViewController.m; sourceTree = "<group>"; };
+		3BE251721BBD326C0050474C /* TWSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingGroup.h; sourceTree = "<group>"; };
+		3BE251731BBD326C0050474C /* TWSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingGroup.m; sourceTree = "<group>"; };
+		3BE2517A1BBD45DC0050474C /* TWAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAboutViewController.h; sourceTree = "<group>"; };
+		3BE2517B1BBD45DC0050474C /* TWAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAboutViewController.m; sourceTree = "<group>"; };
+		3BE925F11BB9531800C5328D /* HYOpenALHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYOpenALHelper.h; sourceTree = "<group>"; };
+		3BE925F21BB9531800C5328D /* HYOpenALHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYOpenALHelper.m; sourceTree = "<group>"; };
+		3BF371BF1BEBA67300436A1F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		3BF371C01BEBA67300436A1F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		3BF373061BBD6B0500117A61 /* TWSettingHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingHeaderView.h; sourceTree = "<group>"; };
+		3BF373071BBD6B0500117A61 /* TWSettingHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingHeaderView.m; sourceTree = "<group>"; };
+		3BF373091BBD6B1200117A61 /* TWSettingHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWSettingHeaderView.xib; sourceTree = "<group>"; };
+		3BF3730B1BBD735400117A61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BF373141BBD8B1D00117A61 /* TWSettingTextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingTextItem.h; sourceTree = "<group>"; };
+		3BF373151BBD8B1D00117A61 /* TWSettingTextItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingTextItem.m; sourceTree = "<group>"; };
+		3BF744EE1BC0D4140031BA7E /* TWLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLogView.h; sourceTree = "<group>"; };
+		3BF744EF1BC0D4140031BA7E /* TWLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLogView.m; sourceTree = "<group>"; };
+		3BF744F11BC0D41D0031BA7E /* TWLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWLogView.xib; sourceTree = "<group>"; };
+		3BF748361BCD248500D5292F /* TWbaseLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWbaseLoginViewController.h; sourceTree = "<group>"; };
+		3BF748371BCD248500D5292F /* TWbaseLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWbaseLoginViewController.m; sourceTree = "<group>"; };
+		3BF748381BCD248500D5292F /* TWFirstViewLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFirstViewLoginViewController.h; sourceTree = "<group>"; };
+		3BF748391BCD248500D5292F /* TWFirstViewLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFirstViewLoginViewController.m; sourceTree = "<group>"; };
+		3BF748421BCD2A3500D5292F /* TWChangeLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWChangeLoginViewController.h; sourceTree = "<group>"; };
+		3BF748431BCD2A3500D5292F /* TWChangeLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWChangeLoginViewController.m; sourceTree = "<group>"; };
+		482E1D16887301DF6002DE63 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EF859131E9E4795AF42B4948 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BDD3B941BABC44100E67F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4E3AF71BCBD2A2002D75C0 /* MediaPlayer.framework in Frameworks */,
+				3B4E3AF21BCB9DC5002D75C0 /* SystemConfiguration.framework in Frameworks */,
+				3BD08A181BC7AC0B0096735A /* OpenAL.framework in Frameworks */,
+				3B2224E51BC6D41700629FCA /* AVFoundation.framework in Frameworks */,
+				74874CABC3926E0088155548 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BDD3BAD1BABC44100E67F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BDD3BB81BABC44100E67F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B0FF0901BAF01BD005D9275 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				3B63B5FF1BC3C37D00F2664E /* MSWeakTimer.h */,
+				3B63B6001BC3C37D00F2664E /* MSWeakTimer.m */,
+				3B6DC2301BC2C1C2008B919A /* ButtonLib */,
+				3BE925F11BB9531800C5328D /* HYOpenALHelper.h */,
+				3BE925F21BB9531800C5328D /* HYOpenALHelper.m */,
+				3B0FF0911BAF01EC005D9275 /* TWRecorder.h */,
+				3B0FF0921BAF01EC005D9275 /* TWRecorder.m */,
+				3B74D2B11BAF8FCF00F48A12 /* UdpNetwork.h */,
+				3B74D2B21BAF8FCF00F48A12 /* UdpNetwork.m */,
+				3B32C8781BB107F40094F81F /* TWAdpcm.h */,
+				3B32C8791BB107F40094F81F /* TWAdpcm.m */,
+				3B2224E11BC6D33600629FCA /* TWAudioSession.h */,
+				3B2224E21BC6D33600629FCA /* TWAudioSession.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		3B2262DD1BAEE68000880A0A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3BF748341BCD248500D5292F /* Log */,
+				3B2262DE1BAEE68000880A0A /* Home */,
+				3B2262E41BAEE68000880A0A /* Main */,
+				3B2262ED1BAEE68000880A0A /* Others */,
+				3B2262F11BAEE68000880A0A /* Setting */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3B2262DE1BAEE68000880A0A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3B5BA2CD1BCA019E00B2151A /* Lib */,
+				3B0FF0901BAF01BD005D9275 /* Others */,
+				3B2262DF1BAEE68000880A0A /* Controller */,
+				3B2262E21BAEE68000880A0A /* Model */,
+				3B2262E31BAEE68000880A0A /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3B2262DF1BAEE68000880A0A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B2262E01BAEE68000880A0A /* HomeViewController.h */,
+				3B2262E11BAEE68000880A0A /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B2262E21BAEE68000880A0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B2262E31BAEE68000880A0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B61B08A1BC2222300671E12 /* TWRadioButton.h */,
+				3B61B08B1BC2222300671E12 /* TWRadioButton.m */,
+				3BB4998F1BC1854200D8CAD2 /* TWRadioView.h */,
+				3BB499901BC1854200D8CAD2 /* TWRadioView.m */,
+				3B6DC22A1BC2926F008B919A /* TWStatusView.h */,
+				3B6DC22B1BC2926F008B919A /* TWStatusView.m */,
+				3B6DC22D1BC2A357008B919A /* TWStatusButton.h */,
+				3B6DC22E1BC2A357008B919A /* TWStatusButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B2262E41BAEE68000880A0A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3BF371BE1BEBA66A00436A1F /* Category */,
+				3B4E3AF31BCB9FE9002D75C0 /* Reachability.h */,
+				3B4E3AF41BCB9FE9002D75C0 /* Reachability.m */,
+				3B2262E51BAEE68000880A0A /* AppDelegate.h */,
+				3B2262E61BAEE68000880A0A /* AppDelegate.m */,
+				3B2262E71BAEE68000880A0A /* Controller */,
+				3B2262EA1BAEE68000880A0A /* main.m */,
+				3B2262EB1BAEE68000880A0A /* Model */,
+				3B2262EC1BAEE68000880A0A /* View */,
+				3B4E3AED1BCB9BB6002D75C0 /* TWNetworkEnvironment.h */,
+				3B4E3AEE1BCB9BB6002D75C0 /* TWNetworkEnvironment.m */,
+				3B21D8091BDA115300D821C8 /* Bug.md */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3B2262E71BAEE68000880A0A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B2262E81BAEE68000880A0A /* TWtabBarController.h */,
+				3B2262E91BAEE68000880A0A /* TWtabBarController.m */,
+				3B0FF0891BAEF9D1005D9275 /* TWNavigationController.h */,
+				3B0FF08A1BAEF9D1005D9275 /* TWNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B2262EB1BAEE68000880A0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B2262EC1BAEE68000880A0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B2262ED1BAEE68000880A0A /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				3BF3731E1BBE238600117A61 /* Lib */,
+				3BF3731B1BBE236000117A61 /* Controller */,
+				3BF3731C1BBE236000117A61 /* Model */,
+				3BF3731D1BBE236000117A61 /* View */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		3B2262F11BAEE68000880A0A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				3B2262F21BAEE68000880A0A /* Controller */,
+				3B2262F51BAEE68000880A0A /* Model */,
+				3B2262F61BAEE68000880A0A /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		3B2262F21BAEE68000880A0A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3BF7483E1BCD29BE00D5292F /* ChangeLogin */,
+				3BE251791BBD45B10050474C /* About */,
+				3BE251661BBD21FD0050474C /* TWBaseSettingViewController.h */,
+				3BE251671BBD21FD0050474C /* TWBaseSettingViewController.m */,
+				3BE2516F1BBD250C0050474C /* TWSettingViewController.h */,
+				3BE251701BBD250C0050474C /* TWSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B2262F51BAEE68000880A0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B28F35D1BBD558000E0981E /* Item */,
+				3BE251721BBD326C0050474C /* TWSettingGroup.h */,
+				3BE251731BBD326C0050474C /* TWSettingGroup.m */,
+				3BCAE71B1BBE33BE009172D6 /* TWSaveInfo.h */,
+				3BCAE71C1BBE33BE009172D6 /* TWSaveInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B2262F61BAEE68000880A0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BF744ED1BC0D3E10031BA7E /* LogView */,
+				3BF373051BBD6AEC00117A61 /* SettingheaderView */,
+				3B28F36A1BBD5C2700E0981E /* AboutView */,
+				3BE251691BBD23B00050474C /* TWSettingTableViewCell.h */,
+				3BE2516A1BBD23B00050474C /* TWSettingTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B28F35D1BBD558000E0981E /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				3B28F3671BBD586800E0981E /* TWSettingItem.h */,
+				3B28F3681BBD586800E0981E /* TWSettingItem.m */,
+				3B28F3611BBD582B00E0981E /* TWSettingArrowItem.h */,
+				3B28F3621BBD582B00E0981E /* TWSettingArrowItem.m */,
+				3BF373141BBD8B1D00117A61 /* TWSettingTextItem.h */,
+				3BF373151BBD8B1D00117A61 /* TWSettingTextItem.m */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		3B28F36A1BBD5C2700E0981E /* AboutView */ = {
+			isa = PBXGroup;
+			children = (
+				3B28F36B1BBD5DA000E0981E /* TWAboutHeaderView.h */,
+				3B28F36C1BBD5DA000E0981E /* TWAboutHeaderView.m */,
+				3B28F36E1BBD5DB200E0981E /* TWAboutHeaderView.xib */,
+			);
+			path = AboutView;
+			sourceTree = "<group>";
+		};
+		3B5BA2CD1BCA019E00B2151A /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				3B5BA2CE1BCA019E00B2151A /* GCDAsyncUdpSocket.h */,
+				3B5BA2CF1BCA019E00B2151A /* GCDAsyncUdpSocket.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		3B6DC2301BC2C1C2008B919A /* ButtonLib */ = {
+			isa = PBXGroup;
+			children = (
+				3B6DC2341BC2C267008B919A /* NSString+FontAwesome.h */,
+				3B6DC2351BC2C267008B919A /* NSString+FontAwesome.m */,
+				3B6DC2311BC2C200008B919A /* UIButton+Bootstrap.h */,
+				3B6DC2321BC2C200008B919A /* UIButton+Bootstrap.m */,
+			);
+			path = ButtonLib;
+			sourceTree = "<group>";
+		};
+		3BDD3B8E1BABC44100E67F7A = {
+			isa = PBXGroup;
+			children = (
+				3B4E3AF61BCBD2A2002D75C0 /* MediaPlayer.framework */,
+				3B4E3AF01BCB9BF6002D75C0 /* SystemConfiguration.framework */,
+				3BD08A171BC7AC0B0096735A /* OpenAL.framework */,
+				3B2224E41BC6D41700629FCA /* AVFoundation.framework */,
+				3BDD3B991BABC44100E67F7A /* TwoWayRadio */,
+				3BDD3BB31BABC44100E67F7A /* TwoWayRadioTests */,
+				3BDD3BBE1BABC44100E67F7A /* TwoWayRadioUITests */,
+				3BDD3B981BABC44100E67F7A /* Products */,
+				3F03A13BDCDF4F198D9DEFA9 /* Pods */,
+				411411EC5A4DE9CAD34F03B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3BDD3B981BABC44100E67F7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BDD3B971BABC44100E67F7A /* TwoWayRadio.app */,
+				3BDD3BB01BABC44100E67F7A /* TwoWayRadioTests.xctest */,
+				3BDD3BBB1BABC44100E67F7A /* TwoWayRadioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BDD3B991BABC44100E67F7A /* TwoWayRadio */ = {
+			isa = PBXGroup;
+			children = (
+				3B2262DD1BAEE68000880A0A /* Classes */,
+				3BDD3BA81BABC44100E67F7A /* LaunchScreen.storyboard */,
+				3BDD3BAB1BABC44100E67F7A /* Info.plist */,
+				3BDD3B9A1BABC44100E67F7A /* Supporting Files */,
+			);
+			path = TwoWayRadio;
+			sourceTree = "<group>";
+		};
+		3BDD3B9A1BABC44100E67F7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BF3730B1BBD735400117A61 /* Assets.xcassets */,
+				3B74D2B41BAF920200F48A12 /* TwoWayRadio.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BDD3BB31BABC44100E67F7A /* TwoWayRadioTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BDD3BB41BABC44100E67F7A /* TwoWayRadioTests.m */,
+				3BDD3BB61BABC44100E67F7A /* Info.plist */,
+			);
+			path = TwoWayRadioTests;
+			sourceTree = "<group>";
+		};
+		3BDD3BBE1BABC44100E67F7A /* TwoWayRadioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3BDD3BBF1BABC44100E67F7A /* TwoWayRadioUITests.m */,
+				3BDD3BC11BABC44200E67F7A /* Info.plist */,
+			);
+			path = TwoWayRadioUITests;
+			sourceTree = "<group>";
+		};
+		3BE251791BBD45B10050474C /* About */ = {
+			isa = PBXGroup;
+			children = (
+				3BE2517A1BBD45DC0050474C /* TWAboutViewController.h */,
+				3BE2517B1BBD45DC0050474C /* TWAboutViewController.m */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		3BF371BE1BEBA66A00436A1F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3BF371BF1BEBA67300436A1F /* UIView+Extension.h */,
+				3BF371C01BEBA67300436A1F /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3BF373051BBD6AEC00117A61 /* SettingheaderView */ = {
+			isa = PBXGroup;
+			children = (
+				3BF373061BBD6B0500117A61 /* TWSettingHeaderView.h */,
+				3BF373071BBD6B0500117A61 /* TWSettingHeaderView.m */,
+				3BF373091BBD6B1200117A61 /* TWSettingHeaderView.xib */,
+			);
+			path = SettingheaderView;
+			sourceTree = "<group>";
+		};
+		3BF3731B1BBE236000117A61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3BF3731C1BBE236000117A61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BF3731D1BBE236000117A61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BF3731E1BBE238600117A61 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		3BF744ED1BC0D3E10031BA7E /* LogView */ = {
+			isa = PBXGroup;
+			children = (
+				3BF744EE1BC0D4140031BA7E /* TWLogView.h */,
+				3BF744EF1BC0D4140031BA7E /* TWLogView.m */,
+				3BF744F11BC0D41D0031BA7E /* TWLogView.xib */,
+			);
+			path = LogView;
+			sourceTree = "<group>";
+		};
+		3BF748341BCD248500D5292F /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				3BF748351BCD248500D5292F /* Controller */,
+				3BF7483A1BCD248500D5292F /* Model */,
+				3BF7483B1BCD248500D5292F /* View */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		3BF748351BCD248500D5292F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3BF748361BCD248500D5292F /* TWbaseLoginViewController.h */,
+				3BF748371BCD248500D5292F /* TWbaseLoginViewController.m */,
+				3BF748381BCD248500D5292F /* TWFirstViewLoginViewController.h */,
+				3BF748391BCD248500D5292F /* TWFirstViewLoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3BF7483A1BCD248500D5292F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BF7483B1BCD248500D5292F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BF7483E1BCD29BE00D5292F /* ChangeLogin */ = {
+			isa = PBXGroup;
+			children = (
+				3BF748421BCD2A3500D5292F /* TWChangeLoginViewController.h */,
+				3BF748431BCD2A3500D5292F /* TWChangeLoginViewController.m */,
+			);
+			path = ChangeLogin;
+			sourceTree = "<group>";
+		};
+		3F03A13BDCDF4F198D9DEFA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				482E1D16887301DF6002DE63 /* Pods.debug.xcconfig */,
+				EF859131E9E4795AF42B4948 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		411411EC5A4DE9CAD34F03B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D147AC432CB9139A4F62467 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BDD3B961BABC44100E67F7A /* TwoWayRadio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BDD3BC41BABC44200E67F7A /* Build configuration list for PBXNativeTarget "TwoWayRadio" */;
+			buildPhases = (
+				025DAF8BA16BE6586529F70B /* Check Pods Manifest.lock */,
+				3BDD3B931BABC44100E67F7A /* Sources */,
+				3BDD3B941BABC44100E67F7A /* Frameworks */,
+				3BDD3B951BABC44100E67F7A /* Resources */,
+				22F6B75A3F1BD289C85AA824 /* Embed Pods Frameworks */,
+				52EC67FEDA5B8FC2416F0F09 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwoWayRadio;
+			productName = TwoWayRadio;
+			productReference = 3BDD3B971BABC44100E67F7A /* TwoWayRadio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BDD3BAF1BABC44100E67F7A /* TwoWayRadioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BDD3BC71BABC44200E67F7A /* Build configuration list for PBXNativeTarget "TwoWayRadioTests" */;
+			buildPhases = (
+				3BDD3BAC1BABC44100E67F7A /* Sources */,
+				3BDD3BAD1BABC44100E67F7A /* Frameworks */,
+				3BDD3BAE1BABC44100E67F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BDD3BB21BABC44100E67F7A /* PBXTargetDependency */,
+			);
+			name = TwoWayRadioTests;
+			productName = TwoWayRadioTests;
+			productReference = 3BDD3BB01BABC44100E67F7A /* TwoWayRadioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3BDD3BBA1BABC44100E67F7A /* TwoWayRadioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BDD3BCA1BABC44200E67F7A /* Build configuration list for PBXNativeTarget "TwoWayRadioUITests" */;
+			buildPhases = (
+				3BDD3BB71BABC44100E67F7A /* Sources */,
+				3BDD3BB81BABC44100E67F7A /* Frameworks */,
+				3BDD3BB91BABC44100E67F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BDD3BBD1BABC44100E67F7A /* PBXTargetDependency */,
+			);
+			name = TwoWayRadioUITests;
+			productName = TwoWayRadioUITests;
+			productReference = 3BDD3BBB1BABC44100E67F7A /* TwoWayRadioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BDD3B8F1BABC44100E67F7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Trbocare;
+				TargetAttributes = {
+					3BDD3B961BABC44100E67F7A = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = T6GHWG4MR5;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					3BDD3BAF1BABC44100E67F7A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3BDD3B961BABC44100E67F7A;
+					};
+					3BDD3BBA1BABC44100E67F7A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3BDD3B961BABC44100E67F7A;
+					};
+				};
+			};
+			buildConfigurationList = 3BDD3B921BABC44100E67F7A /* Build configuration list for PBXProject "TwoWayRadio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BDD3B8E1BABC44100E67F7A;
+			productRefGroup = 3BDD3B981BABC44100E67F7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BDD3B961BABC44100E67F7A /* TwoWayRadio */,
+				3BDD3BAF1BABC44100E67F7A /* TwoWayRadioTests */,
+				3BDD3BBA1BABC44100E67F7A /* TwoWayRadioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BDD3B951BABC44100E67F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B28F36F1BBD5DB200E0981E /* TWAboutHeaderView.xib in Resources */,
+				3BF3730A1BBD6B1200117A61 /* TWSettingHeaderView.xib in Resources */,
+				3BF744F21BC0D41D0031BA7E /* TWLogView.xib in Resources */,
+				3BF3730C1BBD735400117A61 /* Assets.xcassets in Resources */,
+				3BDD3BAA1BABC44100E67F7A /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BDD3BAE1BABC44100E67F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BDD3BB91BABC44100E67F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		025DAF8BA16BE6586529F70B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		22F6B75A3F1BD289C85AA824 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52EC67FEDA5B8FC2416F0F09 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BDD3B931BABC44100E67F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B28F3691BBD586800E0981E /* TWSettingItem.m in Sources */,
+				3BF373161BBD8B1D00117A61 /* TWSettingTextItem.m in Sources */,
+				3B32C87A1BB107F40094F81F /* TWAdpcm.m in Sources */,
+				3B28F36D1BBD5DA000E0981E /* TWAboutHeaderView.m in Sources */,
+				3BE251741BBD326C0050474C /* TWSettingGroup.m in Sources */,
+				3B21D80A1BDA115300D821C8 /* Bug.md in Sources */,
+				3BF373081BBD6B0500117A61 /* TWSettingHeaderView.m in Sources */,
+				3B0FF0931BAF01EC005D9275 /* TWRecorder.m in Sources */,
+				3B0FF08B1BAEF9D1005D9275 /* TWNavigationController.m in Sources */,
+				3B2262F81BAEE68000880A0A /* AppDelegate.m in Sources */,
+				3B6DC22F1BC2A357008B919A /* TWStatusButton.m in Sources */,
+				3B5BA2D01BCA019E00B2151A /* GCDAsyncUdpSocket.m in Sources */,
+				3BF7483C1BCD248500D5292F /* TWbaseLoginViewController.m in Sources */,
+				3B2262F91BAEE68000880A0A /* TWtabBarController.m in Sources */,
+				3BF371C11BEBA67300436A1F /* UIView+Extension.m in Sources */,
+				3B28F3631BBD582B00E0981E /* TWSettingArrowItem.m in Sources */,
+				3BE2517C1BBD45DC0050474C /* TWAboutViewController.m in Sources */,
+				3B61B08C1BC2222300671E12 /* TWRadioButton.m in Sources */,
+				3BF7483D1BCD248500D5292F /* TWFirstViewLoginViewController.m in Sources */,
+				3BE251681BBD21FD0050474C /* TWBaseSettingViewController.m in Sources */,
+				3B6DC22C1BC2926F008B919A /* TWStatusView.m in Sources */,
+				3BF748441BCD2A3500D5292F /* TWChangeLoginViewController.m in Sources */,
+				3BE2516B1BBD23B00050474C /* TWSettingTableViewCell.m in Sources */,
+				3BCAE71D1BBE33BE009172D6 /* TWSaveInfo.m in Sources */,
+				3BE925F31BB9531800C5328D /* HYOpenALHelper.m in Sources */,
+				3B6DC2331BC2C200008B919A /* UIButton+Bootstrap.m in Sources */,
+				3BE251711BBD250C0050474C /* TWSettingViewController.m in Sources */,
+				3B74D2B31BAF8FCF00F48A12 /* UdpNetwork.m in Sources */,
+				3BB499911BC1854200D8CAD2 /* TWRadioView.m in Sources */,
+				3B63B6011BC3C37D00F2664E /* MSWeakTimer.m in Sources */,
+				3B4E3AEF1BCB9BB6002D75C0 /* TWNetworkEnvironment.m in Sources */,
+				3B6DC2361BC2C267008B919A /* NSString+FontAwesome.m in Sources */,
+				3B2224E31BC6D33600629FCA /* TWAudioSession.m in Sources */,
+				3BF744F01BC0D4140031BA7E /* TWLogView.m in Sources */,
+				3B2262FA1BAEE68000880A0A /* main.m in Sources */,
+				3B4E3AF51BCB9FE9002D75C0 /* Reachability.m in Sources */,
+				3B2262F71BAEE68000880A0A /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BDD3BAC1BABC44100E67F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BDD3BB51BABC44100E67F7A /* TwoWayRadioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BDD3BB71BABC44100E67F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BDD3BC01BABC44100E67F7A /* TwoWayRadioUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BDD3BB21BABC44100E67F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BDD3B961BABC44100E67F7A /* TwoWayRadio */;
+			targetProxy = 3BDD3BB11BABC44100E67F7A /* PBXContainerItemProxy */;
+		};
+		3BDD3BBD1BABC44100E67F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BDD3B961BABC44100E67F7A /* TwoWayRadio */;
+			targetProxy = 3BDD3BBC1BABC44100E67F7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BDD3BA81BABC44100E67F7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BDD3BA91BABC44100E67F7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BDD3BC21BABC44200E67F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3BDD3BC31BABC44200E67F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BDD3BC51BABC44200E67F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482E1D16887301DF6002DE63 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = TwoWayRadio/TwoWayRadio.pch;
+				INFOPLIST_FILE = TwoWayRadio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.Trbocare.TwoWayRadio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.0;
+			};
+			name = Debug;
+		};
+		3BDD3BC61BABC44200E67F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF859131E9E4795AF42B4948 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = TwoWayRadio/TwoWayRadio.pch;
+				INFOPLIST_FILE = TwoWayRadio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.Trbocare.TwoWayRadio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.0;
+			};
+			name = Release;
+		};
+		3BDD3BC81BABC44200E67F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TwoWayRadioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.TwoWayRadioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwoWayRadio.app/TwoWayRadio";
+			};
+			name = Debug;
+		};
+		3BDD3BC91BABC44200E67F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TwoWayRadioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.TwoWayRadioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwoWayRadio.app/TwoWayRadio";
+			};
+			name = Release;
+		};
+		3BDD3BCB1BABC44200E67F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TwoWayRadioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.TwoWayRadioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TwoWayRadio;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3BDD3BCC1BABC44200E67F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TwoWayRadioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.TwoWayRadioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TwoWayRadio;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BDD3B921BABC44100E67F7A /* Build configuration list for PBXProject "TwoWayRadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BDD3BC21BABC44200E67F7A /* Debug */,
+				3BDD3BC31BABC44200E67F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BDD3BC41BABC44200E67F7A /* Build configuration list for PBXNativeTarget "TwoWayRadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BDD3BC51BABC44200E67F7A /* Debug */,
+				3BDD3BC61BABC44200E67F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BDD3BC71BABC44200E67F7A /* Build configuration list for PBXNativeTarget "TwoWayRadioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BDD3BC81BABC44200E67F7A /* Debug */,
+				3BDD3BC91BABC44200E67F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BDD3BCA1BABC44200E67F7A /* Build configuration list for PBXNativeTarget "TwoWayRadioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BDD3BCB1BABC44200E67F7A /* Debug */,
+				3BDD3BCC1BABC44200E67F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BDD3B8F1BABC44100E67F7A /* Project object */;
+}

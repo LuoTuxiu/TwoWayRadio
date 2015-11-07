@@ -1,0 +1,40 @@
+//
+//  TwoWayRadio.pch
+//  TwoWayRadio
+//
+//  Created by 徐磊 on 15/9/21.
+//  Copyright © 2015年 Trbocare. All rights reserved.
+//
+
+#ifndef TwoWayRadio_pch
+#define TwoWayRadio_pch
+
+
+
+#import "MBProgressHUD.h"
+#import "TWNetworkEnvironment.h"
+#import "UIView+Extension.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define get_defualt_queue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define TWmainScreenFrame [UIScreen mainScreen].bounds
+
+#define rectStatus [[UIApplication sharedApplication] statusBarFrame]
+#define rectNav self.navigationController.navigationBar.frame
+
+
+//定义网络状态
+#define CONNECT_SUCCESS 1
+#define CONNECT_FAIL    -1
+#define CONNECT_ING     2
+
+#define isIphone4 TWmainScreenFrame.size.height==480?YES:NO
+
+#if DEBUG   //定义debug打印信息，release不打印nslog
+#warning NSLogs will be shown
+#else
+#define NSLog(...) {}
+#endif
+
+
+#endif /* TwoWayRadio_pch */

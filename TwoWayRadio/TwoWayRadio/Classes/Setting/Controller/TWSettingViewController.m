@@ -15,6 +15,7 @@
 #import "TWSettingTextItem.h" 
 #import "TWtabBarController.h"
 #import "TWChangeLoginViewController.h"
+#import "UMFeedback.h"
 @interface TWSettingViewController ()
 @property (nonatomic,weak) TWSettingHeaderView *headerView;
 @end
@@ -28,6 +29,8 @@
     [self add0Sectionitems];
     
     [self add1Sectionitems];
+    
+    [self add2Sectionitems];
     
     [self addHeaderView];
 
@@ -131,24 +134,17 @@
 }
 
 
-//-(void)add2Sectionitems
-//{
-//    //1.评分支持
-//    TWSettingArrowItem *support = [TWSettingArrowItem itemWithtitle:@"评分支持"];
-//    //跳去AppStore的评分支持界面
-//    support.operation =^{
-//        NSString *appStore =  [NSString stringWithFormat:@"itms-apps://itunes.apple.com/cn/app/id%@?mt=8", @"954270"];
-//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appStore]];
-//        
-//    };
-//    
-//    //2.客服电话
-//    TWSettingArrowItem *phone = [TWSettingArrowItem itemWithtitle:@"客服电话"];
-//    phone.subtitle = @"暂未开通";
-//    
-//    TWSettingGroup *group = [TWSettingGroup groupWithItems:@[support,phone]];
-//    [_allGroups addObject:group];
-//}
+-(void)add2Sectionitems
+{
+    TWSettingArrowItem *about =  [TWSettingArrowItem itemWithIcon:@"feedback" title:@"意见反馈"];
+    about.showVcClass = [[UMFeedback feedbackViewController] class];
+    
+
+    
+    //    TWSettingGroup *group =  [TWSettingGroup groupWithItems:nil];
+    
+    TWSettingGroup *group =  [TWSettingGroup groupWithItems:@[about]];
+    [_allGroups addObject:group];}
 /*
 #pragma mark - Navigation
 

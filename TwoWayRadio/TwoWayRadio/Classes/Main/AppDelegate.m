@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TWtabBarController.h"
 #import "TWFirstViewLoginViewController.h"
+#import "UMFeedBack.h"
 //#import <MediaPlayer/MPNowPlayingInfoCenter.h> //2015.10.12 add
 @interface AppDelegate ()
 
@@ -35,6 +36,10 @@
     [self.window makeKeyAndVisible];
 //    [tabbarVc presentModalViewController:loginVc animated:YES];
     [tabbarVc presentViewController:loginVc animated:YES completion:nil];
+    
+    
+    //设置APP Key
+    [UMFeedback setAppkey:@"563edf19e0f55ae9e0001f06"];
     return YES;
 }
 

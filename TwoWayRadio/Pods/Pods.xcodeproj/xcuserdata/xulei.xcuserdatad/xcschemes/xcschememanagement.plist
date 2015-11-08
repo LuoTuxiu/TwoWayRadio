@@ -14,10 +14,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UMengFeedback.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>CA6B6247C232863826EA479E552E6B28</key>
+		<key>115B978D0E00193E20DBBDBFF7053F0C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C70AC414A70CC22CDD3664212D69BB83</key>
 		<dict>
 			<key>primary</key>
 			<true/>

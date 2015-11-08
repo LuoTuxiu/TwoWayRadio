@@ -13,6 +13,7 @@
 #import "TWStatusView.h"
 #import "TWAudioSession.h"
 #import "TWtabBarController.h"
+#import "MSWeakTimer.h"
 @interface HomeViewController()
 
 @property (nonatomic,strong) UdpNetwork *netWork;
@@ -24,8 +25,9 @@
 @property (nonatomic,copy) NSString * account;
 @property (nonatomic,copy) NSString * passwd;
 @property (nonatomic,strong) TWAudioSession *session;
+@property (nonatomic,weak) MBProgressHUD *hud;
 
-@property (nonatomic,copy) NSString * saveConnectStatus;
+
 @end
 @implementation HomeViewController
 
@@ -118,13 +120,29 @@
 //    [self.radioBtn.layer addSublayer:self.radioView.layer];
 
 
-    //先更新一次视图
+    [self addNotification];
 
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(touchLog) name:@"Notification_log" object:nil];
 
+//
+    self.session  = [[TWAudioSession alloc]init];
+    
+
+
+}
+
+/**
+ *  添加监听到本控制器
+ */
+-(void)addNotification
+{
+    //添加登陆页面的登陆按钮的监听
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(touchLogBtn) name:@"Notification_log" object:nil];
+    
+    //添加网络连接状态改变的监听
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkConnectStatus:) name:@"sendConnectStatus" object:nil];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(touchConnect) name:@"Notification_touchConnect" object:nil];
+    //添加本页面的连接按钮的监听
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(touchSelfConnectBtn) name:@"Notification_touchConnect" object:nil];
     
     //添加连接超时的监听
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(timeOut) name:@"Notification_timeOut" object:nil];
@@ -132,25 +150,18 @@
     //添加接收语音结束的监听
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRecvAllAudio:) name:@"Notification_didRecvAllAudio" object:nil];
     
-//
-    self.session  = [[TWAudioSession alloc]init];
-
-}
-
--(void)viewWillAppear:(BOOL)animated
-{
-//    [self checkConnectStatus];
-    NSLog(@"%s",__func__);
+    //添加接收连接成功的监听
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(connectSuccessfully) name:@"connectSuccessfully" object:nil];
 }
 
 
--(void)viewDidAppear:(BOOL)animated
-{
-    NSLog(@"%s",__func__);
-}
 
 
-//接收语音结束的回调
+/**
+ *  接收语音结束的回调
+ *
+ *  @param notification :notification description
+ */
 -(void)didRecvAllAudio:(NSNotification *)notification
 {
     NSString *recv = [notification object];
@@ -177,57 +188,54 @@
 
 }
 
-//点击了“连接”按钮就会调用这个函数
--(void)touchConnect
+/**
+ *  连接成功的回调
+ */
+-(void)connectSuccessfully
+{
+    NSLog(@"%s", __func__);
+//    sleep(1);
+ 
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [_hud removeFromSuperview];
+
+//    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(TWWait) object:nil];
+    
+    BOOL isConnected = ((TWtabBarController *)self.parentViewController.parentViewController).isConnected;
+    NSLog(@"%d",isConnected);
+    if (isConnected == YES) {
+        [MBProgressHUD showSuccess:@"连接成功"];
+    } else {
+        [MBProgressHUD showError:@"连接失败"];
+    }
+    });
+}
+
+/**
+ *  添加本页面的连接按钮的监听
+ */
+-(void)touchSelfConnectBtn
 {
     NSLog(@"%s",__func__);
-        NSString *btnTitle = self.statusView.connectBtn.titleLabel.text;
     //判断是WiFi状态才进入重新连接登陆状态
     if (YES ==  [[TWNetworkEnvironment sharedInstance] isEnableWIFI]) {
         NSLog(@"now the NetworkEnvironment is wifi");
         
         
-        //    NSLog(@"self.statusView.connectBtn.titleLabel.text :%@",self.statusView.connectBtn.titleLabel.text);
+        MBProgressHUD *hud =  [[MBProgressHUD alloc]initWithView:self.navigationController.view];
+        _hud = hud;
+        [self.view.window addSubview:_hud];
+//        hud.labelText = @"点击了登录";
+        _hud.dimBackground = YES;
+//            NSLog(@"%s", __func__);
+//            hud.labelText = @"点击了登录";
 
-        //    NSLog(@"in the touchConnect : %@",self.statusView.connectBtn.titleLabel);
-        if ([btnTitle isEqualToString:@"退出连接"]) { //点击了退出按钮
-            NSLog(@"in the 退出连接");
-            //更新模型
-            [_netWork sendExitMassage];
-            [_netWork disconect];
             
-            self.netWork = nil;
-            //更新连接按钮的文字
-            [self.statusView setStatusBtnWithConnectStatus:CONNECT_FAIL];
-            ((TWtabBarController *)self.parentViewController.parentViewController).connectStatus = @"false";
-            
-        }else if ([btnTitle isEqualToString:@"点击连接"]){
-            NSLog(@"in the 点击连接");
-            [self.statusView setStatusBtnWithConnectStatus:CONNECT_ING];
-            
-
-            [self.netWork socketBeginRuning];
-                
-
-            NSLog(@"in the touchConnect %@",_netWork);
-            //更新按钮的文字
-            //        [self checkConnectStatus];
-            
-        }
-        else if([btnTitle isEqualToString:@"正在连接"]){
-            if (self.netWork.connectSuccessful) {
-                [self.statusView setStatusBtnWithConnectStatus:CONNECT_SUCCESS];
-                
-            }
-        }
-        else{
-            NSLog(@"error in the touchConect");
-        }
+        [_hud showWhileExecuting:@selector(touchSelfConnectBtnAction) onTarget:self withObject:nil animated:YES];
         
-
     }
     //如果在连接成功状态下断掉wifi，此时状态还是正在连接，此时应该更新成连接失败的状态
-    else if (NO ==  [[TWNetworkEnvironment sharedInstance] isEnableWIFI] && [btnTitle isEqualToString:@"退出连接"])
+    else
     {
         //更新模型
         [_netWork sendExitMassage];
@@ -236,36 +244,111 @@
         self.netWork = nil;
         //更新连接按钮的文字
         [self.statusView setStatusBtnWithConnectStatus:CONNECT_FAIL];
-    }
-    else
-    {
-//        [MBProgressHUD showError:@"您没有连接指定wifi"];
+        [MBProgressHUD showError:@"您没有连接指定wifi"];
     }
 }
 
 
--(void)touchLog
+-(void)touchSelfConnectBtnAction
+{
+    NSString *btnTitle = self.statusView.connectBtn.titleLabel.text;
+    if ([btnTitle isEqualToString:@"退出连接"]) { //点击了退出按钮
+        //                NSLog(@"in the 退出连接");
+        _hud.labelText = @"退出连接";
+        //更新模型
+        [_netWork sendExitMassage];
+        [_netWork disconect];
+        
+        self.netWork = nil;
+        //更新连接按钮的文字
+        [self.statusView setStatusBtnWithConnectStatus:CONNECT_FAIL];
+        ((TWtabBarController *)self.parentViewController.parentViewController).isConnected  = NO;
+        
+    }else if ([btnTitle isEqualToString:@"点击连接"]){
+        //                NSLog(@"in the 点击连接");
+        _hud.labelText = @"正在连接";
+//        [self.statusView setStatusBtnWithConnectStatus:CONNECT_ING];
+        
+        
+        [self.netWork socketBeginRuning];
+        
+        NSLog(@"%@",[NSThread currentThread]);
+        //设定延时时间为5秒
+        sleep(TWTimeOut);
+//        [self performSelector:@selector(TWWait) withObject:nil afterDelay:TWTimeOut];
+//        self.showHudTimer  = [MSWeakTimer scheduledTimerWithTimeInterval:0 target:self selector:@selector(TWWait) userInfo:nil repeats:NO dispatchQueue:dispatch_get_current_queue()];
+        
+    }
+    else{
+        NSLog(@"error in the touchConect");
+    }
+//    [self performSelector:@selector(TWhideHub) withObject:nil afterDelay:3];
+
+}
+
+/**
+ *  空函数
+ */
+-(void)TWWait
+{
+    NSLog(@"%s", __func__);
+    NSLog(@"%@",[NSThread currentThread]);
+    sleep(TWTimeOut);
+    NSLog(@"%s", __func__);
+}
+
+/**
+ *  点击了登陆页面的按钮就会回调这个函数
+ */
+-(void)touchLogBtn
 {
     NSLog(@"%s",__func__);
-    //登录
-    //懒加载了，所以这里不用写初始化
-    [self.netWork socketBeginRuning];
+    
+//    _hud = nil;
+    MBProgressHUD *hud =  [[MBProgressHUD alloc]initWithView:self.navigationController.view];
+    _hud = hud;
+    UIWindow *window =  [[UIApplication sharedApplication].delegate window];
+    [window addSubview:_hud];
+    //        hud.labelText = @"点击了登录";
+    _hud.dimBackground = YES;
+    //            NSLog(@"%s", __func__);
+    //            hud.labelText = @"点击了登录";
+    _hud.labelText = @"正在连接";
+    NSLog(@"%@",[NSThread currentThread]);
+    NSLog(@"%@",_hud);
+    [_hud showWhileExecuting:@selector(firstLog) onTarget:self withObject:nil animated:YES];
 
 }
 
 
+-(void)firstLog
+{
+    //登录
+    //懒加载了，所以这里不用写初始化
+        [self.netWork socketBeginRuning];
+    //设定延时时间为5秒
+            sleep(TWTimeOut);
+//    [self performSelector:@selector(TWWait) withObject:nil afterDelay:TWTimeOut];
+
+
+}
+
+/**
+ *  网络连接状态改变时的回调函数
+ *
+ *  @param notification notification description
+ */
 -(void)checkConnectStatus:(NSNotification *)notification
 {
     NSLog(@"%s",__func__);
     NSString *recv = [notification object];
-    _saveConnectStatus = recv;
         if ([recv isEqualToString:@"true"]) {
             //更新TWtabBarController中的公共变量，以供TWSettingViewController使用
-            ((TWtabBarController *)self.parentViewController.parentViewController).connectStatus = @"true";
+            ((TWtabBarController *)self.parentViewController.parentViewController).isConnected  = YES;
             [self.statusView setStatusBtnWithConnectStatus:CONNECT_SUCCESS];
         }
-        else if ([recv isEqualToString:@"false"]){
-            ((TWtabBarController *)self.parentViewController.parentViewController).connectStatus = @"false";
+        else{
+            ((TWtabBarController *)self.parentViewController.parentViewController).isConnected  = NO;
             //更新模型
             [_netWork sendExitMassage];
             [_netWork disconect];
@@ -273,31 +356,9 @@
             self.netWork = nil;
             [self.statusView setStatusBtnWithConnectStatus:CONNECT_FAIL];
         }
-        else{
-            NSLog(@"error in the -(void)checkConnectStatus:(NSNotification *)notification");
-        }
-
     
 }
 
--(void)checkConnectStatus
-{
-    NSLog(@"%s",__func__);
-    NSString *recv = _saveConnectStatus;
-    NSLog(@"checkConnectStatus:%@",recv);
-    if ([recv isEqualToString:@"true"]) {
-
-        [self.statusView setStatusBtnWithConnectStatus:CONNECT_SUCCESS];
-    }
-    else if ([recv isEqualToString:@"false"]){
-        [self.statusView setStatusBtnWithConnectStatus:CONNECT_FAIL];
-    }
-    else{
-        NSLog(@"error in the -(void)checkConnectStatus:(NSNotification *)notification");
-    }
-    
-    
-}
 
 
 -(void)timeOut
@@ -308,6 +369,18 @@
     [self.statusView setStatusBtnWithConnectStatus:CONNECT_FAIL];
     [_netWork disconect];
 //    [_netWork sendExitMassage];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [_hud removeFromSuperview];
+        
+//        BOOL isConnected = ((TWtabBarController *)self.parentViewController.parentViewController).isConnected;
+//        NSLog(@"%d",isConnected);
+//        if (isConnected == YES) {
+//            [MBProgressHUD showSuccess:@"连接成功"];
+//        } else {
+            [MBProgressHUD showError:@"连接失败"];
+//        }
+        
+    });
     self.netWork = nil;
 
 }
@@ -352,7 +425,7 @@
     }
     else
     {
-//        [MBProgressHUD showError:@"您未连接网络"];
+        [MBProgressHUD showError:@"您未连接网络"];
     }
 
 }
@@ -420,7 +493,7 @@
     self.radioView.isSelected = NO;
     [self.radioView setNeedsDisplay];
 #warning 记得这里要移除动画
-    NSLog(@"%s",__func__);
+//    NSLog(@"%s",__func__);
     [self.radioView.layer removeAllAnimations];
 }
 

@@ -153,7 +153,7 @@ typedef struct
     //设置5s为超时时间
     [_socket sendData:_sendData toHost:_address port:_port withTimeout:2.0 tag:0];
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self performSelector:@selector(requestTimeOut) withObject:@"timeOut" afterDelay:5.0];
+        [self performSelector:@selector(requestTimeOut) withObject:@"timeOut" afterDelay:TWTimeOut];
     });
 
 }
@@ -285,7 +285,7 @@ withFilterContext:(id)filterContext
                     if(!memcmp(bufpoint + 16, errorLog, 8))
                     {
                         dispatch_async(dispatch_get_main_queue(), ^{
-//                            [MBProgressHUD showError:@"账号或者密码错误，请重新登录"];
+                            [MBProgressHUD showError:@"账号或者密码错误，请重新登录"];
                         });
 //                        NSLog(@"error in the 账号或者密码");
                         _connectSuccessful = NO;
@@ -402,6 +402,8 @@ withFilterContext:(id)filterContext
                 //如果能够进入这里，说明已经连接成功
                 NSString *connectStatus = @"true";
                 [[NSNotificationCenter defaultCenter] postNotificationName:@"sendConnectStatus" object:connectStatus];
+                //发送连接成功的消息
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"connectSuccessfully" object:nil];
                 _isChangeConectState = false;
                 //NSLog(@"after the (*(bufpoint+12)==0x04) current thread is %@\n",[NSThread currentThread]);
 #warning 这里应该有循环引用的问题
@@ -626,8 +628,6 @@ withFilterContext:(id)filterContext
     [_recorder stopRecord];
     _recorder = nil;
     _isWorking = NO;
-    
-
     
 }
 

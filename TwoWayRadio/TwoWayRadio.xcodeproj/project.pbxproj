@@ -34,6 +34,7 @@
 		3B6DC2361BC2C267008B919A /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC2351BC2C267008B919A /* NSString+FontAwesome.m */; };
 		3B74D2B31BAF8FCF00F48A12 /* UdpNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B74D2B21BAF8FCF00F48A12 /* UdpNetwork.m */; };
 		3BB499911BC1854200D8CAD2 /* TWRadioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB499901BC1854200D8CAD2 /* TWRadioView.m */; };
+		3BB7EE931BEE2790000327C9 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7EE921BEE2790000327C9 /* MBProgressHUD+NJ.m */; };
 		3BCAE71D1BBE33BE009172D6 /* TWSaveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAE71C1BBE33BE009172D6 /* TWSaveInfo.m */; };
 		3BD08A181BC7AC0B0096735A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD08A171BC7AC0B0096735A /* OpenAL.framework */; };
 		3BDD3BAA1BABC44100E67F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDD3BA81BABC44100E67F7A /* LaunchScreen.storyboard */; };
@@ -126,6 +127,8 @@
 		3B74D2B41BAF920200F48A12 /* TwoWayRadio.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoWayRadio.pch; sourceTree = "<group>"; };
 		3BB4998F1BC1854200D8CAD2 /* TWRadioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRadioView.h; sourceTree = "<group>"; };
 		3BB499901BC1854200D8CAD2 /* TWRadioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRadioView.m; sourceTree = "<group>"; };
+		3BB7EE911BEE2790000327C9 /* MBProgressHUD+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NJ.h"; sourceTree = "<group>"; };
+		3BB7EE921BEE2790000327C9 /* MBProgressHUD+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NJ.m"; sourceTree = "<group>"; };
 		3BCAE71B1BBE33BE009172D6 /* TWSaveInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSaveInfo.h; sourceTree = "<group>"; };
 		3BCAE71C1BBE33BE009172D6 /* TWSaveInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSaveInfo.m; sourceTree = "<group>"; };
 		3BD08A171BC7AC0B0096735A /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -282,6 +285,8 @@
 				3BF371BE1BEBA66A00436A1F /* Category */,
 				3B4E3AF31BCB9FE9002D75C0 /* Reachability.h */,
 				3B4E3AF41BCB9FE9002D75C0 /* Reachability.m */,
+				3BB7EE911BEE2790000327C9 /* MBProgressHUD+NJ.h */,
+				3BB7EE921BEE2790000327C9 /* MBProgressHUD+NJ.m */,
 				3B2262E51BAEE68000880A0A /* AppDelegate.h */,
 				3B2262E61BAEE68000880A0A /* AppDelegate.m */,
 				3B2262E71BAEE68000880A0A /* Controller */,
@@ -826,6 +831,7 @@
 				3BE2516B1BBD23B00050474C /* TWSettingTableViewCell.m in Sources */,
 				3BCAE71D1BBE33BE009172D6 /* TWSaveInfo.m in Sources */,
 				3BE925F31BB9531800C5328D /* HYOpenALHelper.m in Sources */,
+				3BB7EE931BEE2790000327C9 /* MBProgressHUD+NJ.m in Sources */,
 				3B6DC2331BC2C200008B919A /* UIButton+Bootstrap.m in Sources */,
 				3BE251711BBD250C0050474C /* TWSettingViewController.m in Sources */,
 				3B74D2B31BAF8FCF00F48A12 /* UdpNetwork.m in Sources */,
@@ -974,7 +980,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = TwoWayRadio/TwoWayRadio.pch;
 				INFOPLIST_FILE = TwoWayRadio/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.Trbocare.TwoWayRadio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -992,7 +998,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = TwoWayRadio/TwoWayRadio.pch;
 				INFOPLIST_FILE = TwoWayRadio/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.Trbocare.TwoWayRadio;
 				PRODUCT_NAME = "$(TARGET_NAME)";

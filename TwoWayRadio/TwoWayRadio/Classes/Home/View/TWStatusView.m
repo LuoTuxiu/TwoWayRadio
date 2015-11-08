@@ -192,11 +192,11 @@
             
             [self.statusBtn setTitle:@"无法连接网络，请重新连接" forState:UIControlStateNormal];
         }
-        else if(connectStatus == CONNECT_ING){
-            [self.statusBtn setImage:[UIImage imageNamed:@"status_error"] forState:UIControlStateNormal];
-            [self.statusBtn setTitle:@"正在连接网络中" forState:UIControlStateNormal];
-            [self.connectBtn setTitle:@"正在连接" forState:UIControlStateNormal];
-        }
+//        else if(connectStatus == CONNECT_ING){
+//            [self.statusBtn setImage:[UIImage imageNamed:@"status_error"] forState:UIControlStateNormal];
+//            [self.statusBtn setTitle:@"正在连接网络中" forState:UIControlStateNormal];
+//            [self.connectBtn setTitle:@"正在连接" forState:UIControlStateNormal];
+//        }
         else{
             
         }

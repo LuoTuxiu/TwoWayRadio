@@ -10,7 +10,7 @@
 #define TwoWayRadio_pch
 
 
-
+#import "MBProgressHUD+NJ.h"
 #import "MBProgressHUD.h"
 #import "TWNetworkEnvironment.h"
 #import "UIView+Extension.h"
@@ -36,5 +36,6 @@
 #define NSLog(...) {}
 #endif
 
+#define TWTimeOut 5
 
 #endif /* TwoWayRadio_pch */

@@ -16,7 +16,7 @@
     [super viewDidLoad];
     NSLog(@"%s",__func__);
     //默认是没连接成功
-    self.connectStatus = @"false";
+    self.isConnected = NO;
     
     HomeViewController *home = [[HomeViewController alloc]init];
     [self addChildVc:home title:@"首页" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];

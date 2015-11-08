@@ -10,7 +10,7 @@
 
 @interface TWtabBarController : UITabBarController
 //添加公共属性，保存登录状态
-@property (nonatomic,copy) NSString *connectStatus;
+@property (nonatomic,assign) BOOL isConnected;
 //是否是第一个登陆界面的标志
 @property (nonatomic,copy) NSString *isFirstLoginView;
 @end

@@ -41,7 +41,7 @@
         if (self.isSwitchOn) {
             if (!(self.accountTextField.text.length && self.passwdTextField.text.length && self.serverIpTextField.text.length && self.serverPortTextField.text.length)) {
                 
-//                [MBProgressHUD showError:@"请输入账号、密码、服务器地址"];
+                [MBProgressHUD showError:@"请输入账号、密码、服务器地址"];
                 return;
                 
             } else {
@@ -69,7 +69,7 @@
         {
             if (!(self.accountTextField.text.length && self.passwdTextField.text.length)) {
                 
-//                [MBProgressHUD showError:@"您必须输入账号和密码才能登陆"];
+                [MBProgressHUD showError:@"您必须输入账号和密码才能登陆"];
                 return;
                 
             } else {
@@ -94,7 +94,7 @@
     }
     else
     {
-//        [MBProgressHUD showError:@"您没有连接指定wifi"];
+        [MBProgressHUD showError:@"您没有连接指定wifi"];
     }
     
 }

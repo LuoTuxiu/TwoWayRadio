@@ -7,6 +7,7 @@
 //
 
 #import "TWbaseLoginViewController.h"
+#import "TPKeyboardAvoidingScrollView.h"
 #define labelWidth 60
 @interface TWbaseLoginViewController ()
 
@@ -24,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    TPKeyboardAvoidingScrollView *scrollView  =  [[TPKeyboardAvoidingScrollView alloc]init];
+    self.view = scrollView;
     self.view.backgroundColor  = [UIColor colorWithRed:255.0/255.0f green:255.0/255.0f blue:255.0/255.0f alpha:1.0];
     [self addHideKeyBoardButton];
   

@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"%@",self.view);
     // Do any additional setup after loading the view.
-    [self.imageView setFrame:CGRectMake(self.imageView.frame.origin.x, self.imageView.frame.origin.y + 64, self.imageView.frame.size.width, self.imageView.frame.size.height)];
     [self addAccountView];
     [self addBtnView];
     [self.logBtn addTarget:self action:@selector(changeLogin) forControlEvents:UIControlEventTouchUpInside];

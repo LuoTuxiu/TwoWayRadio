@@ -21,6 +21,8 @@
 		3B28F36D1BBD5DA000E0981E /* TWAboutHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B28F36C1BBD5DA000E0981E /* TWAboutHeaderView.m */; };
 		3B28F36F1BBD5DB200E0981E /* TWAboutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B28F36E1BBD5DB200E0981E /* TWAboutHeaderView.xib */; };
 		3B32C87A1BB107F40094F81F /* TWAdpcm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B32C8791BB107F40094F81F /* TWAdpcm.m */; };
+		3B49036F1BEF10FA00E5528D /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B49036E1BEF10F900E5528D /* TPKeyboardAvoidingScrollView.m */; };
+		3B4903721BEF119100E5528D /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4903711BEF119100E5528D /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		3B4E3AEF1BCB9BB6002D75C0 /* TWNetworkEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E3AEE1BCB9BB6002D75C0 /* TWNetworkEnvironment.m */; };
 		3B4E3AF21BCB9DC5002D75C0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4E3AF01BCB9BF6002D75C0 /* SystemConfiguration.framework */; };
 		3B4E3AF51BCB9FE9002D75C0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E3AF41BCB9FE9002D75C0 /* Reachability.m */; };
@@ -102,6 +104,10 @@
 		3B28F36E1BBD5DB200E0981E /* TWAboutHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWAboutHeaderView.xib; sourceTree = "<group>"; };
 		3B32C8781BB107F40094F81F /* TWAdpcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAdpcm.h; sourceTree = "<group>"; };
 		3B32C8791BB107F40094F81F /* TWAdpcm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAdpcm.m; sourceTree = "<group>"; };
+		3B49036D1BEF10F900E5528D /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		3B49036E1BEF10F900E5528D /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		3B4903701BEF119100E5528D /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		3B4903711BEF119100E5528D /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		3B4E3AED1BCB9BB6002D75C0 /* TWNetworkEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNetworkEnvironment.h; sourceTree = "<group>"; };
 		3B4E3AEE1BCB9BB6002D75C0 /* TWNetworkEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNetworkEnvironment.m; sourceTree = "<group>"; };
 		3B4E3AF01BCB9BF6002D75C0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -587,6 +593,10 @@
 		3BF7483B1BCD248500D5292F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3B4903701BEF119100E5528D /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				3B4903711BEF119100E5528D /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				3B49036D1BEF10F900E5528D /* TPKeyboardAvoidingScrollView.h */,
+				3B49036E1BEF10F900E5528D /* TPKeyboardAvoidingScrollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -806,6 +816,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B49036F1BEF10FA00E5528D /* TPKeyboardAvoidingScrollView.m in Sources */,
 				3B28F3691BBD586800E0981E /* TWSettingItem.m in Sources */,
 				3BF373161BBD8B1D00117A61 /* TWSettingTextItem.m in Sources */,
 				3B32C87A1BB107F40094F81F /* TWAdpcm.m in Sources */,
@@ -834,6 +845,7 @@
 				3BB7EE931BEE2790000327C9 /* MBProgressHUD+NJ.m in Sources */,
 				3B6DC2331BC2C200008B919A /* UIButton+Bootstrap.m in Sources */,
 				3BE251711BBD250C0050474C /* TWSettingViewController.m in Sources */,
+				3B4903721BEF119100E5528D /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				3B74D2B31BAF8FCF00F48A12 /* UdpNetwork.m in Sources */,
 				3BB499911BC1854200D8CAD2 /* TWRadioView.m in Sources */,
 				3B63B6011BC3C37D00F2664E /* MSWeakTimer.m in Sources */,

@@ -114,7 +114,7 @@
     self.connectBtn.frame = CGRectMake(connectBtnFrameX, connectBtnFrameY, connectBtnFrameW, connectBtnFrameH);
     [self.connectBtn primaryStyle];
     //添加连接button
-    [self.connectBtn setTitle:@"正在连接" forState:UIControlStateNormal];
+    [self.connectBtn setTitle:@"点击连接" forState:UIControlStateNormal];
     self.connectBtn.titleLabel.font =  [UIFont systemFontOfSize:12.0];
     [self.connectBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.connectBtn setBackgroundColor:[UIColor blueColor]];

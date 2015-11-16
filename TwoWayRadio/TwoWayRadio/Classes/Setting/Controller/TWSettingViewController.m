@@ -13,9 +13,9 @@
 #import "TWSettingArrowItem.h"
 #import "TWSettingHeaderView.h"
 #import "TWSettingTextItem.h" 
-#import "TWtabBarController.h"
 #import "TWChangeLoginViewController.h"
 #import "UMFeedback.h"
+
 @interface TWSettingViewController ()
 @property (nonatomic,weak) TWSettingHeaderView *headerView;
 @end
@@ -26,6 +26,7 @@
     [super viewDidLoad];
 //    NSLog(@"%s",__func__);
     // Do any additional setup after loading the view.
+
     [self add0Sectionitems];
     
     [self add1Sectionitems];
@@ -33,9 +34,9 @@
     [self add2Sectionitems];
     
     [self addHeaderView];
-
+//    self.tableView.backgroundColor = [UIColor redColor];
     self.tableView.sectionFooterHeight = 1.0;
-    
+//    NSLog(@"hahhah%@",self.tableHeaderView);
     
 }
 
@@ -58,7 +59,10 @@
 -(void)addHeaderView
 {
     //添加headerView
-    TWSettingHeaderView *headerView = [TWSettingHeaderView settingHeaderview];
+    TWSettingHeaderView *headerView = [TWSettingHeaderView loadHeaderview];
+//    headerView.width = self.tableView.width;
+
+    headerView.width  = leftViewWidth;
     headerView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"settingHeader"]];
     
     //设置button
@@ -114,7 +118,17 @@
 //    address.showVcClass = [TWServerViewController class];
     
     TWSettingArrowItem *about =  [TWSettingArrowItem itemWithIcon:@"MoreAbout" title:@"关于我们"];
-    about.showVcClass = [TWAboutViewController class];
+//    about.showVcClass = [TWAboutViewController class];
+    about.operation = ^{
+        UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+        UIViewController *vc =  [[TWAboutViewController alloc]init];
+        
+        MMDrawerController *originDrawVc = (MMDrawerController *)window.rootViewController;
+        TWtabBarController *originTabVc = (TWtabBarController *)originDrawVc.centerViewController;
+        TWNavigationController *originVc =(TWNavigationController *) originTabVc.selectedViewController;
+//        [originDrawVc closeDrawerAnimated:YES completion:nil];
+        [originVc pushViewController:vc animated:YES];
+    };
     
     
     //1.评分支持
@@ -137,10 +151,19 @@
 -(void)add2Sectionitems
 {
     TWSettingArrowItem *about =  [TWSettingArrowItem itemWithIcon:@"feedback" title:@"意见反馈"];
-    about.showVcClass = [[UMFeedback feedbackViewController] class];
-    
 
     
+    about.operation = ^{
+        
+        UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+        UIViewController *vc =  [UMFeedback feedbackViewController];
+        
+        MMDrawerController *originDrawVc = (MMDrawerController *)window.rootViewController;
+        TWtabBarController *originTabVc = (TWtabBarController *)originDrawVc.centerViewController;
+        TWNavigationController *originVc =(TWNavigationController *) originTabVc.selectedViewController;
+        [originDrawVc closeDrawerAnimated:YES completion:nil];
+        [originVc pushViewController:vc animated:YES];
+    };
     //    TWSettingGroup *group =  [TWSettingGroup groupWithItems:nil];
     
     TWSettingGroup *group =  [TWSettingGroup groupWithItems:@[about]];

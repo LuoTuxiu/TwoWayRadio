@@ -54,8 +54,8 @@
     
 }
 
-+(instancetype)settingHeaderview
++(instancetype)loadHeaderview
 {
-    return [[NSBundle mainBundle] loadNibNamed:@"TWSettingHeaderView" owner:nil options:nil][0];
+    return [[[NSBundle mainBundle] loadNibNamed:@"TWSettingHeaderView" owner:nil options:nil]lastObject];
 }
 @end

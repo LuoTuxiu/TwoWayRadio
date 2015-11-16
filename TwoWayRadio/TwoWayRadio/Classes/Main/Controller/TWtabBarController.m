@@ -18,11 +18,11 @@
     //默认是没连接成功
     self.isConnected = NO;
     
-    HomeViewController *home = [[HomeViewController alloc]init];
-    [self addChildVc:home title:@"首页" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
-    
-    TWSettingViewController *setting = [[TWSettingViewController alloc]init];
-    [self addChildVc:setting title:@"设置" imageName:@"tabbar_profile" selectedImageName:@"tabbar_profile_selected"];
+//    HomeViewController *home = [[HomeViewController alloc]init];
+//    [self addChildVc:home title:@"首页" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+//    
+//    TWSettingViewController *setting = [[TWSettingViewController alloc]init];
+//    [self addChildVc:setting title:@"设置" imageName:@"tabbar_profile" selectedImageName:@"tabbar_profile_selected"];
 
     
 }

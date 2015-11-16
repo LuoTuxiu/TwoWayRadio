@@ -120,8 +120,9 @@
     if ([item isKindOfClass:[TWSettingArrowItem class]]) {
         TWSettingArrowItem *arrowitem = (TWSettingArrowItem *)item;
         if (arrowitem.showVcClass) {
+            UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
             UIViewController *vc =  [[arrowitem.showVcClass alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+            [window.rootViewController.navigationController pushViewController:vc animated:YES];
         }
     }
     

@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface TWtabBarController : UITabBarController
+#import "CYLTabBarController.h"
+@interface TWtabBarController : CYLTabBarController
 //添加公共属性，保存登录状态
 @property (nonatomic,assign) BOOL isConnected;
 //是否是第一个登陆界面的标志

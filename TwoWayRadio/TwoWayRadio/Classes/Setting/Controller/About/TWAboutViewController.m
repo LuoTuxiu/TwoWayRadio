@@ -20,9 +20,6 @@
 //    self.view.backgroundColor =  [UIColor redColor];
     self.title = @"关于";
     
-
-    
-    
     //2.设置头部的部件
     TWAboutHeaderView *aboutView = [TWAboutHeaderView headerView];
     self.tableView.tableHeaderView = aboutView;
@@ -33,6 +30,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+    UIViewController *vc =  [[TWAboutViewController alloc]init];
+    
+    MMDrawerController *originDrawVc = (MMDrawerController *)window.rootViewController;
+    TWtabBarController *originTabVc = (TWtabBarController *)originDrawVc.centerViewController;
+    TWNavigationController *originVc =(TWNavigationController *) originTabVc.selectedViewController;
+    originDrawVc.closeDrawerGestureModeMask = MMCloseDrawerGestureModeNone;
+    //        [originDrawVc closeDrawerAnimated:YES completion:nil];
+    [originVc pushViewController:vc animated:YES];
+}
 /*
 #pragma mark - Navigation
 

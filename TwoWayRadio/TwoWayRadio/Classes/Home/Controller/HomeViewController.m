@@ -102,7 +102,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
 //    self.view.backgroundColor  = [UIColor colorWithRed:235.0/255.0f green:235.0/255.0f blue:235.0/255.0f alpha:1.0];
     
-    
+    self.navigationItem.title = @"首页";
 
     
     //添加一个自定义视图：旋转按钮

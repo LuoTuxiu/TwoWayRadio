@@ -14,7 +14,6 @@
 		3B2224E51BC6D41700629FCA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2224E41BC6D41700629FCA /* AVFoundation.framework */; };
 		3B2262F71BAEE68000880A0A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2262E11BAEE68000880A0A /* HomeViewController.m */; };
 		3B2262F81BAEE68000880A0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2262E61BAEE68000880A0A /* AppDelegate.m */; };
-		3B2262F91BAEE68000880A0A /* TWtabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2262E91BAEE68000880A0A /* TWtabBarController.m */; };
 		3B2262FA1BAEE68000880A0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2262EA1BAEE68000880A0A /* main.m */; };
 		3B28F3631BBD582B00E0981E /* TWSettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B28F3621BBD582B00E0981E /* TWSettingArrowItem.m */; };
 		3B28F3691BBD586800E0981E /* TWSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B28F3681BBD586800E0981E /* TWSettingItem.m */; };
@@ -29,6 +28,7 @@
 		3B4E3AF71BCBD2A2002D75C0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4E3AF61BCBD2A2002D75C0 /* MediaPlayer.framework */; };
 		3B5BA2D01BCA019E00B2151A /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5BA2CF1BCA019E00B2151A /* GCDAsyncUdpSocket.m */; };
 		3B61B08C1BC2222300671E12 /* TWRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B61B08B1BC2222300671E12 /* TWRadioButton.m */; };
+		3B61B3271BFA1FAF0096A89B /* TWtabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B61B3261BFA1FAF0096A89B /* TWtabBarController.m */; };
 		3B63B6011BC3C37D00F2664E /* MSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B63B6001BC3C37D00F2664E /* MSWeakTimer.m */; };
 		3B6DC22C1BC2926F008B919A /* TWStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC22B1BC2926F008B919A /* TWStatusView.m */; };
 		3B6DC22F1BC2A357008B919A /* TWStatusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC22E1BC2A357008B919A /* TWStatusButton.m */; };
@@ -39,6 +39,7 @@
 		3BB7EE931BEE2790000327C9 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7EE921BEE2790000327C9 /* MBProgressHUD+NJ.m */; };
 		3BCAE71D1BBE33BE009172D6 /* TWSaveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAE71C1BBE33BE009172D6 /* TWSaveInfo.m */; };
 		3BD08A181BC7AC0B0096735A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD08A171BC7AC0B0096735A /* OpenAL.framework */; };
+		3BD9DCE31BF816C500BD48E3 /* TWTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9DCE21BF816C500BD48E3 /* TWTabBarControllerConfig.m */; };
 		3BDD3BAA1BABC44100E67F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDD3BA81BABC44100E67F7A /* LaunchScreen.storyboard */; };
 		3BDD3BB51BABC44100E67F7A /* TwoWayRadioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3BB41BABC44100E67F7A /* TwoWayRadioTests.m */; };
 		3BDD3BC01BABC44100E67F7A /* TwoWayRadioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3BBF1BABC44100E67F7A /* TwoWayRadioUITests.m */; };
@@ -92,8 +93,6 @@
 		3B2262E11BAEE68000880A0A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		3B2262E51BAEE68000880A0A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B2262E61BAEE68000880A0A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3B2262E81BAEE68000880A0A /* TWtabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWtabBarController.h; sourceTree = "<group>"; };
-		3B2262E91BAEE68000880A0A /* TWtabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWtabBarController.m; sourceTree = "<group>"; };
 		3B2262EA1BAEE68000880A0A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3B28F3611BBD582B00E0981E /* TWSettingArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingArrowItem.h; sourceTree = "<group>"; };
 		3B28F3621BBD582B00E0981E /* TWSettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingArrowItem.m; sourceTree = "<group>"; };
@@ -118,6 +117,8 @@
 		3B5BA2CF1BCA019E00B2151A /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		3B61B08A1BC2222300671E12 /* TWRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRadioButton.h; sourceTree = "<group>"; };
 		3B61B08B1BC2222300671E12 /* TWRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRadioButton.m; sourceTree = "<group>"; };
+		3B61B3251BFA1FAF0096A89B /* TWtabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWtabBarController.h; sourceTree = "<group>"; };
+		3B61B3261BFA1FAF0096A89B /* TWtabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWtabBarController.m; sourceTree = "<group>"; };
 		3B63B5FF1BC3C37D00F2664E /* MSWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWeakTimer.h; sourceTree = "<group>"; };
 		3B63B6001BC3C37D00F2664E /* MSWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWeakTimer.m; sourceTree = "<group>"; };
 		3B6DC22A1BC2926F008B919A /* TWStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWStatusView.h; sourceTree = "<group>"; };
@@ -138,6 +139,8 @@
 		3BCAE71B1BBE33BE009172D6 /* TWSaveInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSaveInfo.h; sourceTree = "<group>"; };
 		3BCAE71C1BBE33BE009172D6 /* TWSaveInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSaveInfo.m; sourceTree = "<group>"; };
 		3BD08A171BC7AC0B0096735A /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		3BD9DCE11BF816C500BD48E3 /* TWTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTabBarControllerConfig.h; sourceTree = "<group>"; };
+		3BD9DCE21BF816C500BD48E3 /* TWTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTabBarControllerConfig.m; sourceTree = "<group>"; };
 		3BDD3B971BABC44100E67F7A /* TwoWayRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoWayRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BDD3BA91BABC44100E67F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BDD3BAB1BABC44100E67F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -309,10 +312,12 @@
 		3B2262E71BAEE68000880A0A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3B2262E81BAEE68000880A0A /* TWtabBarController.h */,
-				3B2262E91BAEE68000880A0A /* TWtabBarController.m */,
+				3B61B3251BFA1FAF0096A89B /* TWtabBarController.h */,
+				3B61B3261BFA1FAF0096A89B /* TWtabBarController.m */,
 				3B0FF0891BAEF9D1005D9275 /* TWNavigationController.h */,
 				3B0FF08A1BAEF9D1005D9275 /* TWNavigationController.m */,
+				3BD9DCE11BF816C500BD48E3 /* TWTabBarControllerConfig.h */,
+				3BD9DCE21BF816C500BD48E3 /* TWTabBarControllerConfig.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -830,11 +835,12 @@
 				3B6DC22F1BC2A357008B919A /* TWStatusButton.m in Sources */,
 				3B5BA2D01BCA019E00B2151A /* GCDAsyncUdpSocket.m in Sources */,
 				3BF7483C1BCD248500D5292F /* TWbaseLoginViewController.m in Sources */,
-				3B2262F91BAEE68000880A0A /* TWtabBarController.m in Sources */,
 				3BF371C11BEBA67300436A1F /* UIView+Extension.m in Sources */,
+				3B61B3271BFA1FAF0096A89B /* TWtabBarController.m in Sources */,
 				3B28F3631BBD582B00E0981E /* TWSettingArrowItem.m in Sources */,
 				3BE2517C1BBD45DC0050474C /* TWAboutViewController.m in Sources */,
 				3B61B08C1BC2222300671E12 /* TWRadioButton.m in Sources */,
+				3BD9DCE31BF816C500BD48E3 /* TWTabBarControllerConfig.m in Sources */,
 				3BF7483D1BCD248500D5292F /* TWFirstViewLoginViewController.m in Sources */,
 				3BE251681BBD21FD0050474C /* TWBaseSettingViewController.m in Sources */,
 				3B6DC22C1BC2926F008B919A /* TWStatusView.m in Sources */,

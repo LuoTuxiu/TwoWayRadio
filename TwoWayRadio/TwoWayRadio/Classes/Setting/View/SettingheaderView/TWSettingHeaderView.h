@@ -12,6 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *logButton;
 @property (weak, nonatomic) IBOutlet UILabel *detailLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *iconOfPeople;
-+(instancetype)settingHeaderview;
++(instancetype)loadHeaderview;
 
 @end

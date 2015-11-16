@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,25 +11,37 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JK-eQ-qqx">
-                    <rect key="frame" x="131" y="25" width="181" height="50"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JK-eQ-qqx">
+                    <rect key="frame" x="266" y="25" width="46" height="30"/>
                     <animations/>
                     <state key="normal" title="Button"/>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4c-wv-suI">
-                    <rect key="frame" x="131" y="63" width="181" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4c-wv-suI">
+                    <rect key="frame" x="270" y="63" width="42" height="21"/>
                     <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OSV-bs-GRI">
-                    <rect key="frame" x="17" y="12" width="95" height="95"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OSV-bs-GRI">
+                    <rect key="frame" x="17" y="20" width="95" height="95"/>
                     <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="7z0-4U-q27"/>
+                        <constraint firstAttribute="height" constant="95" id="dtA-ni-UXt"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7JK-eQ-qqx" firstAttribute="top" secondItem="zMI-j7-R1D" secondAttribute="top" constant="25" id="0eN-gl-5YD"/>
+                <constraint firstAttribute="trailing" secondItem="Z4c-wv-suI" secondAttribute="trailing" constant="8" id="6To-Fx-fxR"/>
+                <constraint firstItem="OSV-bs-GRI" firstAttribute="leading" secondItem="zMI-j7-R1D" secondAttribute="leading" constant="17" id="Gr6-ry-nSE"/>
+                <constraint firstAttribute="bottom" secondItem="Z4c-wv-suI" secondAttribute="bottom" constant="36" id="T8U-pP-ydk"/>
+                <constraint firstAttribute="trailing" secondItem="7JK-eQ-qqx" secondAttribute="trailing" constant="8" id="dhF-b3-Kt9"/>
+                <constraint firstItem="OSV-bs-GRI" firstAttribute="top" secondItem="zMI-j7-R1D" secondAttribute="top" constant="20" id="wva-72-wtO"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="detailLabel" destination="Z4c-wv-suI" id="FWP-O6-Ydm"/>

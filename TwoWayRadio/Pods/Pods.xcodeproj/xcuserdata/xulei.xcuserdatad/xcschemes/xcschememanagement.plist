@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CYLTabBarController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MMDrawerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,12 +32,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>115B978D0E00193E20DBBDBFF7053F0C</key>
+		<key>0EEEDCAF1415B438E69D8F59B6C9E502</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C70AC414A70CC22CDD3664212D69BB83</key>
+		<key>16ACF35FDB8EAF2E5A8191EA1BCBEA01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>550F7EEAEEA17E3F92C873912E23B01C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AFAD1A4F3B63C6AA9DB67284FCE3D6E7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

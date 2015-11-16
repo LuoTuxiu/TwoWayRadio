@@ -7,12 +7,16 @@
 //
 
 #import "AppDelegate.h"
-#import "TWtabBarController.h"
 #import "TWFirstViewLoginViewController.h"
 #import "UMFeedBack.h"
+#import "CYLTabBarController.h"
+#import "MMDrawerController.h"
+#import "TWTabBarControllerConfig.h"
+#import "TWSettingViewController.h"
+#import "TWNavigationController.h"
 //#import <MediaPlayer/MPNowPlayingInfoCenter.h> //2015.10.12 add
 @interface AppDelegate ()
-
+@property (nonatomic,strong) MMDrawerController *drawerController;
 @end
 
 @implementation AppDelegate
@@ -25,17 +29,34 @@
     self.window.frame  = [UIScreen mainScreen].bounds;
     
     //2.设置根控制器
-    TWtabBarController *tabbarVc = [[TWtabBarController alloc]init];
     TWFirstViewLoginViewController *loginVc = [[TWFirstViewLoginViewController alloc]init];
+    
+    
+    
+    UIViewController * leftSideDrawerViewController = [[TWSettingViewController alloc]  init];
+    
+    TWTabBarControllerConfig *tabBarViewControllerConfig = [[TWTabBarControllerConfig alloc]init];
+    
+    UIViewController * centerViewController = tabBarViewControllerConfig.tabBarController;
 
-    self.window.rootViewController = tabbarVc;
+    self.drawerController = [[MMDrawerController alloc]
+                                initWithCenterViewController:centerViewController leftDrawerViewController:leftSideDrawerViewController];
+    [self.drawerController setShowsShadow:NO];
+    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
+//    [self.drawerController setMaximumLeftDrawerWidth:((TWLeftViewController *)leftSideDrawerViewController).tableView.width];
+    [self.drawerController setMaximumLeftDrawerWidth:leftViewWidth];
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    self.window.rootViewController = self.drawerController;
+
    //    TWFirstViewLoginViewController *loginVc = [[TWFirstViewLoginViewController alloc]init];
 //    self.window.rootViewController = loginVc;
 
     //3.显示窗口
     [self.window makeKeyAndVisible];
 //    [tabbarVc presentModalViewController:loginVc animated:YES];
-    [tabbarVc presentViewController:loginVc animated:YES completion:nil];
+    [self.drawerController presentViewController:loginVc animated:YES completion:nil];
     
     
     //设置APP Key

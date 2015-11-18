@@ -35,6 +35,7 @@
 		3B6DC2331BC2C200008B919A /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC2321BC2C200008B919A /* UIButton+Bootstrap.m */; };
 		3B6DC2361BC2C267008B919A /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC2351BC2C267008B919A /* NSString+FontAwesome.m */; };
 		3B74D2B31BAF8FCF00F48A12 /* UdpNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B74D2B21BAF8FCF00F48A12 /* UdpNetwork.m */; };
+		3B76E50D1BFCD2FD00538D1E /* UIViewController+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B76E50C1BFCD2FD00538D1E /* UIViewController+extension.m */; };
 		3BB499911BC1854200D8CAD2 /* TWRadioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB499901BC1854200D8CAD2 /* TWRadioView.m */; };
 		3BB7EE931BEE2790000327C9 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7EE921BEE2790000327C9 /* MBProgressHUD+NJ.m */; };
 		3BCAE71D1BBE33BE009172D6 /* TWSaveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAE71C1BBE33BE009172D6 /* TWSaveInfo.m */; };
@@ -132,6 +133,8 @@
 		3B74D2B11BAF8FCF00F48A12 /* UdpNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpNetwork.h; sourceTree = "<group>"; };
 		3B74D2B21BAF8FCF00F48A12 /* UdpNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UdpNetwork.m; sourceTree = "<group>"; };
 		3B74D2B41BAF920200F48A12 /* TwoWayRadio.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoWayRadio.pch; sourceTree = "<group>"; };
+		3B76E50B1BFCD2FD00538D1E /* UIViewController+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+extension.h"; sourceTree = "<group>"; };
+		3B76E50C1BFCD2FD00538D1E /* UIViewController+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+extension.m"; sourceTree = "<group>"; };
 		3BB4998F1BC1854200D8CAD2 /* TWRadioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRadioView.h; sourceTree = "<group>"; };
 		3BB499901BC1854200D8CAD2 /* TWRadioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRadioView.m; sourceTree = "<group>"; };
 		3BB7EE911BEE2790000327C9 /* MBProgressHUD+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NJ.h"; sourceTree = "<group>"; };
@@ -515,6 +518,8 @@
 			children = (
 				3BF371BF1BEBA67300436A1F /* UIView+Extension.h */,
 				3BF371C01BEBA67300436A1F /* UIView+Extension.m */,
+				3B76E50B1BFCD2FD00538D1E /* UIViewController+extension.h */,
+				3B76E50C1BFCD2FD00538D1E /* UIViewController+extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -827,6 +832,7 @@
 				3B32C87A1BB107F40094F81F /* TWAdpcm.m in Sources */,
 				3B28F36D1BBD5DA000E0981E /* TWAboutHeaderView.m in Sources */,
 				3BE251741BBD326C0050474C /* TWSettingGroup.m in Sources */,
+				3B76E50D1BFCD2FD00538D1E /* UIViewController+extension.m in Sources */,
 				3B21D80A1BDA115300D821C8 /* Bug.md in Sources */,
 				3BF373081BBD6B0500117A61 /* TWSettingHeaderView.m in Sources */,
 				3B0FF0931BAF01EC005D9275 /* TWRecorder.m in Sources */,

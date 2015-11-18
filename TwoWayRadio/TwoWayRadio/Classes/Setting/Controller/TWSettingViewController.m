@@ -16,6 +16,7 @@
 #import "TWChangeLoginViewController.h"
 #import "UMFeedback.h"
 
+
 @interface TWSettingViewController ()
 @property (nonatomic,weak) TWSettingHeaderView *headerView;
 @end
@@ -120,14 +121,10 @@
     TWSettingArrowItem *about =  [TWSettingArrowItem itemWithIcon:@"MoreAbout" title:@"关于我们"];
 //    about.showVcClass = [TWAboutViewController class];
     about.operation = ^{
-        UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+
         UIViewController *vc =  [[TWAboutViewController alloc]init];
         
-        MMDrawerController *originDrawVc = (MMDrawerController *)window.rootViewController;
-        TWtabBarController *originTabVc = (TWtabBarController *)originDrawVc.centerViewController;
-        TWNavigationController *originVc =(TWNavigationController *) originTabVc.selectedViewController;
-//        [originDrawVc closeDrawerAnimated:YES completion:nil];
-        [originVc pushViewController:vc animated:YES];
+        [self showControllerWithVc:vc];
     };
     
     
@@ -155,14 +152,10 @@
     
     about.operation = ^{
         
-        UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+
         UIViewController *vc =  [UMFeedback feedbackViewController];
         
-        MMDrawerController *originDrawVc = (MMDrawerController *)window.rootViewController;
-        TWtabBarController *originTabVc = (TWtabBarController *)originDrawVc.centerViewController;
-        TWNavigationController *originVc =(TWNavigationController *) originTabVc.selectedViewController;
-        [originDrawVc closeDrawerAnimated:YES completion:nil];
-        [originVc pushViewController:vc animated:YES];
+        [self showControllerWithVc:vc];
     };
     //    TWSettingGroup *group =  [TWSettingGroup groupWithItems:nil];
     

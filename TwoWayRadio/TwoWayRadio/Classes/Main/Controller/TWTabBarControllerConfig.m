@@ -45,13 +45,20 @@
 - (void)customizeTabBarForController:(CYLTabBarController *)tabBarController {
     NSDictionary *dict1 = @{
                             CYLTabBarItemTitle : @"首页",
-                            //                            CYLTabBarItemImage : @"home_normal",
-                            //                            CYLTabBarItemSelectedImage : @"home_highlight",
+                            CYLTabBarItemImage : @"tabbar_home",
+                            CYLTabBarItemSelectedImage : @"tabbar_home_selected",
                             };
   
     
     NSArray *tabBarItemsAttributes = @[ dict1];
     tabBarController.tabBarItemsAttributes = tabBarItemsAttributes;
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:RGB(252, 109, 8),UITextAttributeTextColor,nil] forState:UIControlStateNormal];
 }
 
+
+-(void)dealloc
+{
+    DebugMethod();
+}
 @end

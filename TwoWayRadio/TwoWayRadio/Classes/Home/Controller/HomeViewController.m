@@ -82,7 +82,7 @@
     
     if (_statusView == nil) {
         
-        CGFloat statusViewY = rectNav.size.height + rectStatus.size.height;
+        CGFloat statusViewY = rectNav.size.height + statusBarFrame.size.height;
         CGRect statusViewFrame =  CGRectMake(0, statusViewY, TWmainScreenFrame.size.width, 80);
         _statusView = [[TWStatusView alloc] initWithFrame:statusViewFrame];
         
@@ -129,6 +129,20 @@
     
 
 
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    DebugMethod();
+    [super viewWillAppear:animated];
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    DebugMethod();
+    [super viewDidAppear:animated];
+    [self.statusView.connectBtn setRippleStatusfillWithbutton:self.statusView.connectBtn];
 }
 
 /**

@@ -70,12 +70,16 @@
                     [userDefaults setObject:self.serverPortTextField.text forKey:@"serverPort"];
                     //立即保存
                     [userDefaults synchronize];
-
+                    
+                    //显示主窗口
+//                    [self shwoHomeControllerView];
+                        AppDelegate *TWdelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+                    [TWdelegate switchToHomeViewController];
                     
                     //发送消息通知
                     [[NSNotificationCenter defaultCenter] postNotificationName:@"Notification_log" object:@"TWFirstViewLoginViewController" userInfo:nil];
-                    //跳转到tabbarcontroller页面
-                    [self dismissViewControllerAnimated:YES completion:nil];
+//                    //跳转到tabbarcontroller页面
+//                    [self dismissViewControllerAnimated:YES completion:nil];
                 }
                 
 
@@ -109,10 +113,13 @@
                     //立即保存
                     [userDefaults synchronize];
                     
+                    AppDelegate *TWdelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+                    [TWdelegate switchToHomeViewController];
+                    
                     //发送消息通知
                     [[NSNotificationCenter defaultCenter] postNotificationName:@"Notification_log" object:@"TWFirstViewLoginViewController" userInfo:nil];
                     //跳转到tabbarcontroller页面
-                    [self dismissViewControllerAnimated:YES completion:nil];
+//                    [self dismissViewControllerAnimated:YES completion:nil];
                 }
 
                 

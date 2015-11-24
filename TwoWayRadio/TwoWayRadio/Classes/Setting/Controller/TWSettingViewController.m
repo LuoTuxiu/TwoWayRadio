@@ -122,9 +122,9 @@
 //    about.showVcClass = [TWAboutViewController class];
     about.operation = ^{
 
-        UIViewController *vc =  [[TWAboutViewController alloc]init];
-        
-        [self showControllerWithVc:vc];
+//        UIViewController *vc =  [[TWAboutViewController alloc]init];
+//        [self showControllerWithVc:vc];
+
     };
     
     
@@ -170,5 +170,24 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+-(void)showControllerWithVc:(UIViewController *)vc
+{
+    UIWindow *window  = [UIApplication sharedApplication].keyWindow;
+    MMDrawerController *originDrawVc = (MMDrawerController *)window.rootViewController;
+    TWNavigationController *home = [((CYLTabBarController *)originDrawVc.centerViewController).viewControllers firstObject];
+    
+    [home pushViewController:vc animated:NO];
+    [originDrawVc closeDrawerAnimated:YES completion:nil];
+    
+    
+    //    UIWindow *window  = [UIApplication sharedApplication].keyWindow;
+    //    MMDrawerController *drawerController = (MMDrawerController *)window.rootViewController;
+    //    DZNavigationViewController *home = [((CYLTabBarController *)drawerController.centerViewController).viewControllers firstObject];
+    //    //注意下面两行代码先后顺序
+    //    [home pushViewController:lc animated:NO];
+    //    [drawerController closeDrawerAnimated:YES completion:nil];
+}
 
 @end

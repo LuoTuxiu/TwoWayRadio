@@ -42,7 +42,7 @@
     } else {
         
         // Drawing code
-//        NSLog(@"%s",__func__);
+//        DebugMethod();
         //1.获取上下文
         CGContextRef ctx =  UIGraphicsGetCurrentContext();
         

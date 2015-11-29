@@ -234,7 +234,7 @@ void inputBufferHandler(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 
 -(void)dealloc
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
 }
 
 @end

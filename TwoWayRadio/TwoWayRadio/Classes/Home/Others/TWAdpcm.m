@@ -288,7 +288,7 @@ int stepsizeTable[89] =
 
 -(void)dealloc
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
 }
 
 @end

@@ -314,7 +314,7 @@
 
 -(void)switchIsChange:(UISwitch *)paramSender
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
     if ([paramSender isOn]) {
         NSLog(@"the switch is turn on");
         _isSwitchOn = YES;
@@ -335,7 +335,7 @@
 
 -(void)saveSwitchIsChange:(UISwitch *)paramSender
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
     if ([paramSender isOn]) {
         NSLog(@"the switch is turn on");
         BOOL isSavePwd = YES;

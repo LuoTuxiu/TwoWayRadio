@@ -7,177 +7,210 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		110EDF410E59E7747F53FB431CA48804 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33BFBE6EA0D93BE670E1055427A1A54 /* Foundation.framework */; };
-		11894AFAA3B674EEF0B1C0E73017E9A8 /* UMRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = D6045EBD894A27A3EA04881ADD8DAB21 /* UMRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19BD91B5A5ED8A4C820CB6BD33633C7C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F2C2346087DD726880DA7322D0A2E8 /* MMDrawerVisualState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1A378C41991F5219E9959E3A250E9A03 /* MMDrawerVisualState.h in Headers */ = {isa = PBXBuildFile; fileRef = 26E20149A487BF9FFB1027B55B76841C /* MMDrawerVisualState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C75AED04FEBFB77D894837892549C3E /* UMengFeedback-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B01D5F40867A4DDA68ABD32D0F264E /* UMengFeedback-dummy.m */; };
-		2125524BCB13EF99C948282458BD9A0A /* CYLPlusButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 081D63C8F833F173051F982D09339977 /* CYLPlusButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27DFA0B19A89FE50A38388E48A17FF84 /* UMOpus.h in Headers */ = {isa = PBXBuildFile; fileRef = F1FD986F124AF4951D91CD087BAEBBC7 /* UMOpus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		293971D62CAA1DBC4D35F291C8A0081B /* UMRadialView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE27BD2D8277E19C4D757BDED7C9E3BA /* UMRadialView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1165CE50C17386E47EE5422BA5B299BB /* JCRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32036A40977BB0096EBC32029A5C9D41 /* JCRBlurView.m */; };
+		12A46C6702F73F3676072B937E1303C3 /* UMPostTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AA3534C9053270E21ADE8ABAE5926EB /* UMPostTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19BD91B5A5ED8A4C820CB6BD33633C7C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = DC15DA4BB2BFFDBAFE9432C4A640E204 /* MMDrawerVisualState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1A378C41991F5219E9959E3A250E9A03 /* MMDrawerVisualState.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D80634A493B79991B12649C17C099D2 /* MMDrawerVisualState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20EBDEF85FDE0DDE955CB6107C0AB980 /* UMChatToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDAFFBC060596B82415975DD72BAF30 /* UMChatToolBar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2125524BCB13EF99C948282458BD9A0A /* CYLPlusButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6AC377F6E1869A88E58394251E0754 /* CYLPlusButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2469B7625C014EAB71755DFC9A7144F1 /* UMRadialView.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BCCEDB92E98F16AD47E3438A8E1657 /* UMRadialView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33BFBE6EA0D93BE670E1055427A1A54 /* Foundation.framework */; };
-		2D8C79E70B7EEA9C8EB372CD5775A5C1 /* MMDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E496BBF36B05EB8AFD073CE9F13BCF /* MMDrawerController-dummy.m */; };
-		363CBEA1C3C89E57816CC366CBE2DD8D /* UMChatTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E063EA745E56E0244AD8E06B255D5A22 /* UMChatTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B308328F6548826384F979F785B6BDA /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B33C1CDE6866738F21AE3B85F7988856 /* CYLTabBar.m */; };
-		41E99095EAE14F24A7E2891E54C9B87E /* UMFeedbackViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BEFE11E9686677068C28BB72F26B004 /* UMFeedbackViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57222C1F818C54AE9A698CB1992EEB29 /* UMPostTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = ED003745A42D464B3874C8E0145C8B4C /* UMPostTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		579A1B0E910EF7BB4A3D44D2880570E9 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EC96F88D98295A0E1778C59FDA73FF /* UIViewController+MMDrawerController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2D8C79E70B7EEA9C8EB372CD5775A5C1 /* MMDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95264F1F3423528D8CD6ABDE5693E1EB /* MMDrawerController-dummy.m */; };
+		2F5AC6E2DC96FFEDC6D86DD684881943 /* UMRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7938DD192EA9156A5C567AE6E36DB503 /* UMRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FDC46E2CB625B75E71DAF83BC2FB793 /* UMOpus.h in Headers */ = {isa = PBXBuildFile; fileRef = F812FBA59B5747DC0FFA493A0AAD9A01 /* UMOpus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FE1EA9C1D8F7A1B14C0996CBCD56F36 /* iOS-blur-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8DEDD6F0182A87CB55F6BE6213C62 /* iOS-blur-dummy.m */; };
+		302CF99A63C8F059770844E556F82526 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACB32CFB8323CCF14877A54723A7F05 /* AVFoundation.framework */; };
+		3B308328F6548826384F979F785B6BDA /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F77850F317F3EF99691358661BC404C /* CYLTabBar.m */; };
+		3D575FE34F92AD76AC6EA613BA815F04 /* UMOpenMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A737149A1067D9B6F3C423AA3F3AFDAF /* UMOpenMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		451DB57068D46B2E076B672C28E1CFB9 /* UMFullScreenPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 965A4F3976D2F7D1E02300C5683D0303 /* UMFullScreenPhotoView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		48C6A88C2121C34093765A394A8D9E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33BFBE6EA0D93BE670E1055427A1A54 /* Foundation.framework */; };
+		4FE53569FB46B37CDCC22B5A975EBA3B /* UMFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D93253E761F20FF62898CF1BEBCE05 /* UMFeedbackViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		56AF519D811E797AEF69FC39D9A99A96 /* UMTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7086E48BC9C3ABA71B79F808764458E3 /* UMTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		579A1B0E910EF7BB4A3D44D2880570E9 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C9D2C57548FD78F1E9BD743C353E7D /* UIViewController+MMDrawerController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5CD819353C30C805E53265229D515F63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33BFBE6EA0D93BE670E1055427A1A54 /* Foundation.framework */; };
-		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B6F7C61448DEC7BFB56D803EEE989E /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0C4F6CA14B3FEB6F3F8CEBAF44EAEF /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62445D56D62979170E9966104FDFBFBE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EDA0848C3BA14BC39D247F6C7E7ECC /* QuartzCore.framework */; };
-		63CA440410DE5F0E320F70F23B97A09E /* UMPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A72210C641F123ADE6678D5B3DAAE7D6 /* UMPostTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		66549CC91863363861D818B68B136EB6 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDD278D73C5B6E2229266CBB8F40E7B /* MMDrawerController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6D41D73041398E2A6DB53457DC4EF930 /* UMChatToolBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D6C4B78741FF2D929D9DA289BD9D4A /* UMChatToolBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66549CC91863363861D818B68B136EB6 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 719CB766DC335C04482F7C34EFECC30D /* MMDrawerController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		690BD8E48D9A0E4D5BC784DA720D83A9 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		6B9EBD762500D3567AD5AA7CCFC2C86B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33BFBE6EA0D93BE670E1055427A1A54 /* Foundation.framework */; };
 		70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB788ED3C875FF1F47802CDED698CFD4 /* CoreGraphics.framework */; };
-		7106EE5A7BA7066FC6550F62BE86F971 /* UMFullScreenPhotoView.h in Headers */ = {isa = PBXBuildFile; fileRef = AD0832AF8CD8624C35643079F9D99436 /* UMFullScreenPhotoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		748A342765CA82A9CEA33D7E7A46397B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33BFBE6EA0D93BE670E1055427A1A54 /* Foundation.framework */; };
-		76D495DBB9B5D81BE4391E10299F938B /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 121B892CC394E0D5C3597F27FE2DB77F /* MMDrawerBarButtonItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		800DDE7A2FFDC2247683A14CBD041150 /* UMRadialView.h in Headers */ = {isa = PBXBuildFile; fileRef = A880A86CAA030E0F4DA58F83539A210F /* UMRadialView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0944CE4A9B3024A16954AFCD0D85042B /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		947575549E0193C1A5A2379EA9D95D46 /* MMDrawerController+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 2024C0D187F106EDEF0B045E5A0003BA /* MMDrawerController+Subclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9575B7E541B217D27D3A1829569E1BD2 /* UMChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E76ECBA7C9C25E78BE635539E6449E /* UMChatTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		961C00F4BD8ABFA0597E1992292AC4CF /* CYLTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6C74F34451C7904142A0D02684089 /* CYLTabBarController-dummy.m */; };
-		984DD4BA68A399F50B9D7849E72385F8 /* UIViewController+MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF5E68996C6CE6B14EEE5C1FDAF8483 /* UIViewController+MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A430907F3049EFB392B35687FA2555E /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBDDBEDBE8E0EF40AE4304412CDB481 /* CYLTabBarController.m */; };
-		9A7F170BE65EFFD69B5986DB55C1920A /* MMDrawerBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 40B333BFD1453241E86CD02867363ACF /* MMDrawerBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C544D9C74B199F8369A61E5DB2D4B30 /* UMFullScreenPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 692FBF34B61785AB28BA5855F5049B73 /* UMFullScreenPhotoView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A18E9AA2CF0DA186F5D9BF901AC94ADE /* CYLTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 34A4CF467E5ACB69ADEB6451DC959335 /* CYLTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9B69EBB5A6D12B071B251EBC5AA885F /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
-		AEE7772C35C73C975E7DAD20656E30FB /* UMFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48295B158410BCEE420CCE91FF4A34E5 /* UMFeedbackViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B8D551DBFF3D240E2184C02096887E12 /* UMOpenMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D027E639229591B4EDCA7EF22CF2E5 /* UMOpenMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE460964C4E3BA8827BAC158E96DF874 /* UMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8323F3EC5DEF1B06EF3CFAC7D4D321A0 /* UMTextView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D2356C0C095A701A26B2320ECAD22F59 /* UMChatToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6DED086D807F3C8F0C9A76D5D4A0AC /* UMChatToolBar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DB340E3644D3CC3DFB20099BD3B021C7 /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9484F61065CF87731D3F6787BC040D /* CYLPlusButton.m */; };
-		E355A3B4E8CF49688948EA3D55107DA6 /* UMFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = D23ABEBB091A752FAF0C33085659624A /* UMFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9068E3C80CDCAA24AE6DE732F0E179C /* UMTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 65BD4DC1DAAFF7EAB2675F9ACEA3AA3A /* UMTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72F1F9CB68E59CDB768AC038D9513118 /* UMRadialView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD404BC9DB1C35C4AE3A92C397994D87 /* UMRadialView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		76D495DBB9B5D81BE4391E10299F938B /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9529B99AC8AA1A5FF863C003DE242939 /* MMDrawerBarButtonItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		802DF35AE914BA01A519846040325143 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33BFBE6EA0D93BE670E1055427A1A54 /* Foundation.framework */; };
+		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E391899F582B99B1A83E6698AA471EFF /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9147AEC07A2EE62E10D4CB3F1E185256 /* UMChatTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E68FAEF98EEE2A1D119811E8F6074576 /* UMChatTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		947575549E0193C1A5A2379EA9D95D46 /* MMDrawerController+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = A46C57B9FC3FE65FAF98B8C4453CF3CC /* MMDrawerController+Subclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		961C00F4BD8ABFA0597E1992292AC4CF /* CYLTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25969A2ECFEBA2CE30F9AE5334BDC820 /* CYLTabBarController-dummy.m */; };
+		97A0F9AE26188306113EF11C7AF096E0 /* UMFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = 17334BFE6BF9E534D8E0A33DC2F5FDE5 /* UMFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		984DD4BA68A399F50B9D7849E72385F8 /* UIViewController+MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 475D7C729464CCCFD32108062EAECD35 /* UIViewController+MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A430907F3049EFB392B35687FA2555E /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F0801E151E72162D1730D8511F903E /* CYLTabBarController.m */; };
+		9A7F170BE65EFFD69B5986DB55C1920A /* MMDrawerBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD31D0D3A8B3CF3B6C5B7BA24997C63 /* MMDrawerBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C226DEEC940319EE5FDB48513546046 /* JCRBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C526A95D3C4990B7D88F444F9EBF815 /* JCRBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E248C8A9335F340BEC6FE224B37C3D0 /* UMengFeedback-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC0D645238227293716C3CC99420BD4 /* UMengFeedback-dummy.m */; };
+		A18E9AA2CF0DA186F5D9BF901AC94ADE /* CYLTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = B866174C8E0A3ECF9680187F8EF46D59 /* CYLTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0EF1F38D5862F1A947055EF4D71A093 /* UMPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD417A3280B8D9ADD91C940E27DAACD3 /* UMPostTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C1A1AB9643CDAC720668D1C35F9E155B /* UMChatToolBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F58FD9BD64D7C8266337CDD811AE3B6F /* UMChatToolBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5FC0ABB267545C483F2B072B375FCC9 /* UMFullScreenPhotoView.h in Headers */ = {isa = PBXBuildFile; fileRef = A2733E51C4BC8968E251284DB8A1ACEA /* UMFullScreenPhotoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB340E3644D3CC3DFB20099BD3B021C7 /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC086672AA6961C3899E16175F94021 /* CYLPlusButton.m */; };
+		DCC1519088FA361C41D03AA070B3161B /* UMChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F2BEDF84DC1DDA7E096D98E7BC3710 /* UMChatTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EE1251D68DAF91FF860F22908F527411 /* UMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4115076DCF028CAD05CDCD0034FBC /* UMTextView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F2E43DF9E8E79093ACB3CD244CB90C61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33BFBE6EA0D93BE670E1055427A1A54 /* Foundation.framework */; };
-		F733730F57E794BCFB4B18DC00E2FF9B /* MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 04315650DAC20A34CC8C774797EB6ECB /* MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F73A1966B6D6E220DC8C8FFF6776A687 /* CYLTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FA9AD260B9A6D7ACE4A7562111D642 /* CYLTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC57EBACE36E26968F8AF607A5858E /* MBProgressHUD-dummy.m */; };
-		FFC0F62E123AFA1928A406CD4DFCCFEC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACB32CFB8323CCF14877A54723A7F05 /* AVFoundation.framework */; };
+		F733730F57E794BCFB4B18DC00E2FF9B /* MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = B363DB1CC4CAE23CD3F75BCD43BCF128 /* MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F73A1966B6D6E220DC8C8FFF6776A687 /* CYLTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F08A84D78567CAF5AE8570BC663C0026 /* CYLTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAB00C51FE3435BF8A2FCE81C4B5283A /* UMFeedbackViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B70F7F258DFB79521EEE13B77A9285FE /* UMFeedbackViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8190D0AD806C1F3B5FCE2A2950021D /* MBProgressHUD-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		00ED5045B1934951444FFA04E26F03F7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AFAD1A4F3B63C6AA9DB67284FCE3D6E7;
-			remoteInfo = UMengFeedback;
-		};
-		A889E73006D43496BBEA19AA298DBA23 /* PBXContainerItemProxy */ = {
+		21206D6CC61AE26BA298F25B2A7C139D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
 			remoteInfo = MBProgressHUD;
 		};
-		FE0248AFAD2EFBB47822F4AC0BFAB7BA /* PBXContainerItemProxy */ = {
+		3B18AE2CB8593C0498884C321E290343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FEFCED0DFD9044B714F80F336070127;
+			remoteInfo = "iOS-blur";
+		};
+		464C55260D74BE2E976B2D447DCF432A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 550F7EEAEEA17E3F92C873912E23B01C;
 			remoteInfo = MMDrawerController;
 		};
-		FF355889991B376D5CAC6BEF8FAEFE37 /* PBXContainerItemProxy */ = {
+		7F03AF887E03C5BC3157ECBBD5478982 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 16ACF35FDB8EAF2E5A8191EA1BCBEA01;
 			remoteInfo = CYLTabBarController;
 		};
+		95D31A7EC1573D771B0FB3954051F6B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44ADEDEDE8C5CD8779C36DA204B321C2;
+			remoteInfo = UMengFeedback;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03162933B2ED8B4540B29901689DF351 /* UMFeedbackLocalizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = UMFeedbackLocalizable.strings; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/zh-Hans.lproj/UMFeedbackLocalizable.strings"; sourceTree = "<group>"; };
-		03D6C4B78741FF2D929D9DA289BD9D4A /* UMChatToolBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMChatToolBar.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatToolBar.h; sourceTree = "<group>"; };
-		04315650DAC20A34CC8C774797EB6ECB /* MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = MMDrawerController/MMDrawerController.h; sourceTree = "<group>"; };
-		081D63C8F833F173051F982D09339977 /* CYLPlusButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLPlusButton.h; path = CYLTabBarController/CYLPlusButton.h; sourceTree = "<group>"; };
-		08F413D3997B7BA471F59E583E735817 /* umeng_fb_audio_dialog_cancel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_dialog_cancel@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_dialog_cancel@2x.png"; sourceTree = "<group>"; };
-		0944CE4A9B3024A16954AFCD0D85042B /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		0B0EE88C29FB7BADCE240A8AA3896712 /* libCYLTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCYLTabBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		121B892CC394E0D5C3597F27FE2DB77F /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = MMDrawerController/MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		14EDA0848C3BA14BC39D247F6C7E7ECC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		197541B51F538C12F3DC2C1B79D29053 /* UMengFeedback.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMengFeedback.xcconfig; sourceTree = "<group>"; };
-		1E97BFFA17034927B1AE87F1E774347E /* cancel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cancel@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/cancel@2x.png"; sourceTree = "<group>"; };
-		1F406B4FFDB0C3C1496BB909FBD48419 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2024C0D187F106EDEF0B045E5A0003BA /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
-		26E20149A487BF9FFB1027B55B76841C /* MMDrawerVisualState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = MMDrawerController/MMDrawerVisualState.h; sourceTree = "<group>"; };
+		17334BFE6BF9E534D8E0A33DC2F5FDE5 /* UMFeedback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMFeedback.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMFeedback.h; sourceTree = "<group>"; };
+		1A55913C9736B773573C22ED8EF211A7 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		1BB64F9532A3AA2E8657703A13E9BBAE /* MMDrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController-prefix.pch"; sourceTree = "<group>"; };
+		1BC8DEDD6F0182A87CB55F6BE6213C62 /* iOS-blur-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOS-blur-dummy.m"; sourceTree = "<group>"; };
+		1C2FDC3F5EE91B8F0F460DFACA08E4E0 /* CYLTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CYLTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		22BCCEDB92E98F16AD47E3438A8E1657 /* UMRadialView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMRadialView.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMRadialView.h; sourceTree = "<group>"; };
+		22F4115076DCF028CAD05CDCD0034FBC /* UMTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMTextView.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMTextView.m; sourceTree = "<group>"; };
+		23D93253E761F20FF62898CF1BEBCE05 /* UMFeedbackViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMFeedbackViewController.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMFeedbackViewController.m; sourceTree = "<group>"; };
+		25969A2ECFEBA2CE30F9AE5334BDC820 /* CYLTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CYLTabBarController-dummy.m"; sourceTree = "<group>"; };
 		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		27644575CCB9459EA88CAA69D2060659 /* umeng_fb_audio_play_02@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_02@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_02@2x.png"; sourceTree = "<group>"; };
-		2FCF4804D09D9FBFB176109019C48563 /* ToolViewInputTextHL@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputTextHL@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputTextHL@2x.png"; sourceTree = "<group>"; };
-		314C65FC5BFCCC6AC1D72AAD5ED60AEA /* bubble_min@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bubble_min@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/bubble_min@2x.png"; sourceTree = "<group>"; };
-		32F73DB6D3439BB8637F01DF4D4765C4 /* UMengFeedback-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UMengFeedback-prefix.pch"; sourceTree = "<group>"; };
-		34A4CF467E5ACB69ADEB6451DC959335 /* CYLTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLTabBarController.h; path = CYLTabBarController/CYLTabBarController.h; sourceTree = "<group>"; };
+		32036A40977BB0096EBC32029A5C9D41 /* JCRBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JCRBlurView.m; path = blur/blur/JCRBlurView.m; sourceTree = "<group>"; };
 		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3E6DED086D807F3C8F0C9A76D5D4A0AC /* UMChatToolBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMChatToolBar.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatToolBar.m; sourceTree = "<group>"; };
-		40B333BFD1453241E86CD02867363ACF /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = MMDrawerController/MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
-		475BD9265880034B27896ADBF96505AF /* ToolViewInputText@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputText@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputText@2x.png"; sourceTree = "<group>"; };
-		48295B158410BCEE420CCE91FF4A34E5 /* UMFeedbackViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMFeedbackViewController.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMFeedbackViewController.m; sourceTree = "<group>"; };
-		4BA5EE33830BF905A43E08000E57DBE0 /* libCYLTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCYLTabBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BEFE11E9686677068C28BB72F26B004 /* UMFeedbackViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMFeedbackViewController.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMFeedbackViewController.h; sourceTree = "<group>"; };
-		4DFC57EBACE36E26968F8AF607A5858E /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		408C3CD51059EAEFA4292011B37960B2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		472F085A9A2D7D53A6325BD951806F60 /* microphone@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "microphone@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/microphone@2x.png"; sourceTree = "<group>"; };
+		475D7C729464CCCFD32108062EAECD35 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		4BD3C0DC9C54ADFC097F9E1144C661FF /* libiOS-blur.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiOS-blur.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C6A05F28BD16A7992B69D4C5ADA7A67 /* umeng_fb_audio_play_default@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_default@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_default@2x.png"; sourceTree = "<group>"; };
+		4CAA899CE55FF699AD668E98DA350292 /* UMengFeedback.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMengFeedback.xcconfig; sourceTree = "<group>"; };
 		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		57BDE85795638A56EE23DE29A1FF5AB7 /* umeng_fb_audio_play_03@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_03@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_03@2x.png"; sourceTree = "<group>"; };
-		61D027E639229591B4EDCA7EF22CF2E5 /* UMOpenMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMOpenMacros.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMOpenMacros.h; sourceTree = "<group>"; };
-		62226B245D69C686A0884273252991D3 /* libMMDrawerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMDrawerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		65BD4DC1DAAFF7EAB2675F9ACEA3AA3A /* UMTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMTextView.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMTextView.h; sourceTree = "<group>"; };
-		65E76ECBA7C9C25E78BE635539E6449E /* UMChatTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMChatTableViewCell.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatTableViewCell.m; sourceTree = "<group>"; };
-		66B6F7C61448DEC7BFB56D803EEE989E /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4F77850F317F3EF99691358661BC404C /* CYLTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLTabBar.m; path = CYLTabBarController/CYLTabBar.m; sourceTree = "<group>"; };
+		5B8190D0AD806C1F3B5FCE2A2950021D /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		5D80634A493B79991B12649C17C099D2 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = MMDrawerController/MMDrawerVisualState.h; sourceTree = "<group>"; };
+		5DDAFFBC060596B82415975DD72BAF30 /* UMChatToolBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMChatToolBar.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatToolBar.m; sourceTree = "<group>"; };
+		5F6AC377F6E1869A88E58394251E0754 /* CYLPlusButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLPlusButton.h; path = CYLTabBarController/CYLPlusButton.h; sourceTree = "<group>"; };
+		67F2BEDF84DC1DDA7E096D98E7BC3710 /* UMChatTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMChatTableViewCell.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatTableViewCell.m; sourceTree = "<group>"; };
 		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		692FBF34B61785AB28BA5855F5049B73 /* UMFullScreenPhotoView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMFullScreenPhotoView.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMFullScreenPhotoView.m; sourceTree = "<group>"; };
-		71B886F916D8D3B3EC2D0C5AE2CBF37D /* libUMengFeedback.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUMengFeedback.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		73116579FCC9E89A2F57A0EA3A51A0D2 /* save@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "save@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/save@2x.png"; sourceTree = "<group>"; };
-		82A6C74F34451C7904142A0D02684089 /* CYLTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CYLTabBarController-dummy.m"; sourceTree = "<group>"; };
-		8323F3EC5DEF1B06EF3CFAC7D4D321A0 /* UMTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMTextView.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMTextView.m; sourceTree = "<group>"; };
-		855EA4531965FE055EF936004A962206 /* ToolViewInputVoice@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputVoice@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputVoice@2x.png"; sourceTree = "<group>"; };
-		86EC96F88D98295A0E1778C59FDA73FF /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
-		8DF5E68996C6CE6B14EEE5C1FDAF8483 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
-		91FA9AD260B9A6D7ACE4A7562111D642 /* CYLTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLTabBar.h; path = CYLTabBarController/CYLTabBar.h; sourceTree = "<group>"; };
+		6BC086672AA6961C3899E16175F94021 /* CYLPlusButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLPlusButton.m; path = CYLTabBarController/CYLPlusButton.m; sourceTree = "<group>"; };
+		6C34B66EB8EA1E426CE6D8FD49FB87D9 /* umeng_add_photo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_add_photo@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_add_photo@2x.png"; sourceTree = "<group>"; };
+		7086E48BC9C3ABA71B79F808764458E3 /* UMTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMTextView.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMTextView.h; sourceTree = "<group>"; };
+		719CB766DC335C04482F7C34EFECC30D /* MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = MMDrawerController/MMDrawerController.m; sourceTree = "<group>"; };
+		777AE9D065CEB7C7B2FB0F40B4ACDF94 /* MMDrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMDrawerController.xcconfig; sourceTree = "<group>"; };
+		7938DD192EA9156A5C567AE6E36DB503 /* UMRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMRecorder.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMRecorder.h; sourceTree = "<group>"; };
+		7953253E0D009C0D5B056ABF322B0220 /* CYLTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CYLTabBarController.xcconfig; sourceTree = "<group>"; };
+		7AA3534C9053270E21ADE8ABAE5926EB /* UMPostTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMPostTableViewCell.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMPostTableViewCell.h; sourceTree = "<group>"; };
+		7B50DE9AFBB61AC01018CF69E486A0D3 /* ToolViewInputTextHL@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputTextHL@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputTextHL@2x.png"; sourceTree = "<group>"; };
+		7B6C1DD3EB682A2596DC3A419D5EF062 /* umeng_fb_audio_play_02@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_02@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_02@2x.png"; sourceTree = "<group>"; };
+		7BE7C66F96CE4210BE8B20F6B8A77587 /* bubble_min@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bubble_min@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/bubble_min@2x.png"; sourceTree = "<group>"; };
+		8FC3C5B465DC176A035619E6067D2606 /* libMMDrawerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMDrawerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		95264F1F3423528D8CD6ABDE5693E1EB /* MMDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMDrawerController-dummy.m"; sourceTree = "<group>"; };
+		9529B99AC8AA1A5FF863C003DE242939 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = MMDrawerController/MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		965A4F3976D2F7D1E02300C5683D0303 /* UMFullScreenPhotoView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMFullScreenPhotoView.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMFullScreenPhotoView.m; sourceTree = "<group>"; };
+		98756115A9B482841261BD65F62B6225 /* iOS-blur-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOS-blur-prefix.pch"; sourceTree = "<group>"; };
 		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		9C343A4347911C1B0C12BC2855C7F6A5 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		9C76F31A93552DBCE3380D27C2821FBD /* umeng_add_photo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_add_photo@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_add_photo@2x.png"; sourceTree = "<group>"; };
+		9AD31D0D3A8B3CF3B6C5B7BA24997C63 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = MMDrawerController/MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		9C04DF18FEB077B97A1101A6FB02DE48 /* umeng_fb_audio_dialog_cancel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_dialog_cancel@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_dialog_cancel@2x.png"; sourceTree = "<group>"; };
+		9C526A95D3C4990B7D88F444F9EBF815 /* JCRBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JCRBlurView.h; path = blur/blur/JCRBlurView.h; sourceTree = "<group>"; };
+		A14D76D9D0D3D5B861AB7E2A1DDA3813 /* umeng_fb_audio_dialog_content@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_dialog_content@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_dialog_content@2x.png"; sourceTree = "<group>"; };
 		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		A2733E51C4BC8968E251284DB8A1ACEA /* UMFullScreenPhotoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMFullScreenPhotoView.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMFullScreenPhotoView.h; sourceTree = "<group>"; };
 		A33BFBE6EA0D93BE670E1055427A1A54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A72210C641F123ADE6678D5B3DAAE7D6 /* UMPostTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMPostTableViewCell.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMPostTableViewCell.m; sourceTree = "<group>"; };
-		A880A86CAA030E0F4DA58F83539A210F /* UMRadialView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMRadialView.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMRadialView.h; sourceTree = "<group>"; };
-		AD0832AF8CD8624C35643079F9D99436 /* UMFullScreenPhotoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMFullScreenPhotoView.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMFullScreenPhotoView.h; sourceTree = "<group>"; };
-		AE27BD2D8277E19C4D757BDED7C9E3BA /* UMRadialView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMRadialView.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMRadialView.m; sourceTree = "<group>"; };
-		B2B5DACD5B7EF37D413C1C1D7A63BB5E /* CYLTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CYLTabBarController.xcconfig; sourceTree = "<group>"; };
-		B33C1CDE6866738F21AE3B85F7988856 /* CYLTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLTabBar.m; path = CYLTabBarController/CYLTabBar.m; sourceTree = "<group>"; };
-		B935DCF346441E1FB868B18ED07FFF89 /* CYLTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CYLTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		A46C57B9FC3FE65FAF98B8C4453CF3CC /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		A737149A1067D9B6F3C423AA3F3AFDAF /* UMOpenMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMOpenMacros.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMOpenMacros.h; sourceTree = "<group>"; };
+		A843423339650204F5DB153907D2B49A /* save@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "save@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/save@2x.png"; sourceTree = "<group>"; };
+		AA0C4F6CA14B3FEB6F3F8CEBAF44EAEF /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		AD404BC9DB1C35C4AE3A92C397994D87 /* UMRadialView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMRadialView.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMRadialView.m; sourceTree = "<group>"; };
+		B32E5286CEDEE658F13576AECE59EDDA /* UMengFeedback-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UMengFeedback-prefix.pch"; sourceTree = "<group>"; };
+		B363DB1CC4CAE23CD3F75BCD43BCF128 /* MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = MMDrawerController/MMDrawerController.h; sourceTree = "<group>"; };
+		B4FA97F246A8FEDFF40A14062FE5849F /* ToolViewInputVoice@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputVoice@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputVoice@2x.png"; sourceTree = "<group>"; };
+		B6266DD15540EEAA06A5237687705148 /* ToolViewInputVoiceHL@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputVoiceHL@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputVoiceHL@2x.png"; sourceTree = "<group>"; };
+		B70F7F258DFB79521EEE13B77A9285FE /* UMFeedbackViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMFeedbackViewController.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMFeedbackViewController.h; sourceTree = "<group>"; };
+		B866174C8E0A3ECF9680187F8EF46D59 /* CYLTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLTabBarController.h; path = CYLTabBarController/CYLTabBarController.h; sourceTree = "<group>"; };
+		B99E9B2C1A86C808D151AD79AF1E73C6 /* umeng_fb_audio_play_03@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_03@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_03@2x.png"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BDDD278D73C5B6E2229266CBB8F40E7B /* MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = MMDrawerController/MMDrawerController.m; sourceTree = "<group>"; };
-		C1E496BBF36B05EB8AFD073CE9F13BCF /* MMDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMDrawerController-dummy.m"; sourceTree = "<group>"; };
-		C58149ED47B8995902FCE0EBAE8FDAA8 /* ToolViewInputVoiceHL@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputVoiceHL@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputVoiceHL@2x.png"; sourceTree = "<group>"; };
-		C7B01D5F40867A4DDA68ABD32D0F264E /* UMengFeedback-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UMengFeedback-dummy.m"; sourceTree = "<group>"; };
+		BBB824FCDCD49443C284FC3237CBDBCA /* iOS-blur.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "iOS-blur.xcconfig"; sourceTree = "<group>"; };
+		BCD82B6EADC9150A7271CBFAE0AFD384 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		BDC0D645238227293716C3CC99420BD4 /* UMengFeedback-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UMengFeedback-dummy.m"; sourceTree = "<group>"; };
+		C4C9D2C57548FD78F1E9BD743C353E7D /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		C9F0801E151E72162D1730D8511F903E /* CYLTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLTabBarController.m; path = CYLTabBarController/CYLTabBarController.m; sourceTree = "<group>"; };
 		CACB32CFB8323CCF14877A54723A7F05 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		CB788ED3C875FF1F47802CDED698CFD4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		CE2C2322B7B660DCB199C7DAF9083B38 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		D0F2C2346087DD726880DA7322D0A2E8 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = MMDrawerController/MMDrawerVisualState.m; sourceTree = "<group>"; };
-		D23ABEBB091A752FAF0C33085659624A /* UMFeedback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMFeedback.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMFeedback.h; sourceTree = "<group>"; };
-		D6045EBD894A27A3EA04881ADD8DAB21 /* UMRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMRecorder.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMRecorder.h; sourceTree = "<group>"; };
-		E063EA745E56E0244AD8E06B255D5A22 /* UMChatTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMChatTableViewCell.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatTableViewCell.h; sourceTree = "<group>"; };
-		E2162338CA26E93C2A9651E8A780B365 /* MMDrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMDrawerController.xcconfig; sourceTree = "<group>"; };
-		E39CCBED160D644FEBDC8556CEFBF645 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E642907C71FEFE81027E3AF67B22CB58 /* umeng_fb_audio_play_01@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_01@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_01@2x.png"; sourceTree = "<group>"; };
-		E71F3DA036D6988F8B994A81C2D138FF /* MMDrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController-prefix.pch"; sourceTree = "<group>"; };
-		EC6F1AACF7DD0E85C2DE1BFA62AF5B2B /* umeng_fb_audio_dialog_content@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_dialog_content@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_dialog_content@2x.png"; sourceTree = "<group>"; };
-		ED003745A42D464B3874C8E0145C8B4C /* UMPostTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMPostTableViewCell.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMPostTableViewCell.h; sourceTree = "<group>"; };
-		F1FD986F124AF4951D91CD087BAEBBC7 /* UMOpus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMOpus.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMOpus/UMOpus.h; sourceTree = "<group>"; };
-		F5CCF773C0E0F7802C27FC632B61D8B7 /* microphone@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "microphone@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/microphone@2x.png"; sourceTree = "<group>"; };
-		FA5D705FCC26FF7CE1916E42CE32FEB7 /* umeng_fb_audio_play_default@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_default@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_default@2x.png"; sourceTree = "<group>"; };
-		FD9484F61065CF87731D3F6787BC040D /* CYLPlusButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLPlusButton.m; path = CYLTabBarController/CYLPlusButton.m; sourceTree = "<group>"; };
-		FFBDDBEDBE8E0EF40AE4304412CDB481 /* CYLTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLTabBarController.m; path = CYLTabBarController/CYLTabBarController.m; sourceTree = "<group>"; };
+		D398A697BE028B159B0EAA67925CDB57 /* UMFeedbackLocalizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = UMFeedbackLocalizable.strings; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/zh-Hans.lproj/UMFeedbackLocalizable.strings"; sourceTree = "<group>"; };
+		DC15DA4BB2BFFDBAFE9432C4A640E204 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = MMDrawerController/MMDrawerVisualState.m; sourceTree = "<group>"; };
+		DD417A3280B8D9ADD91C940E27DAACD3 /* UMPostTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMPostTableViewCell.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMPostTableViewCell.m; sourceTree = "<group>"; };
+		DEE831E20A95C1F8106D8F90CEDA28E3 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E391899F582B99B1A83E6698AA471EFF /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E68FAEF98EEE2A1D119811E8F6074576 /* UMChatTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMChatTableViewCell.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatTableViewCell.h; sourceTree = "<group>"; };
+		E8498EDA664C036366D8115B97EA873F /* umeng_fb_audio_play_01@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_01@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_01@2x.png"; sourceTree = "<group>"; };
+		F08A84D78567CAF5AE8570BC663C0026 /* CYLTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLTabBar.h; path = CYLTabBarController/CYLTabBar.h; sourceTree = "<group>"; };
+		F139CBF935BEE82E0B25ACDD9D2C8482 /* libUMengFeedback.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUMengFeedback.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F58FD9BD64D7C8266337CDD811AE3B6F /* UMChatToolBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMChatToolBar.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatToolBar.h; sourceTree = "<group>"; };
+		F812FBA59B5747DC0FFA493A0AAD9A01 /* UMOpus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMOpus.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMOpus/UMOpus.h; sourceTree = "<group>"; };
+		F81FCD49804DB097E04D4DAD9E3F1B93 /* cancel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cancel@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/cancel@2x.png"; sourceTree = "<group>"; };
+		FB22792FF4D97A074CB15C0A2A6635E5 /* ToolViewInputText@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputText@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputText@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		04A27EEAEA355810AD151BF816C1EF27 /* Frameworks */ = {
+		119E6319764FF7CEDE1D72E054C1948F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC0F62E123AFA1928A406CD4DFCCFEC /* AVFoundation.framework in Frameworks */,
-				110EDF410E59E7747F53FB431CA48804 /* Foundation.framework in Frameworks */,
+				48C6A88C2121C34093765A394A8D9E53 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7161E981F96A7412E8E2CFEB9DD94EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302CF99A63C8F059770844E556F82526 /* AVFoundation.framework in Frameworks */,
+				802DF35AE914BA01A519846040325143 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1D2EC63F8405B706EF4F3D5BC6C9BE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B9EBD762500D3567AD5AA7CCFC2C86B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,14 +231,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C95CE9529F42FF5BCAC4DC8640D8BC98 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				748A342765CA82A9CEA33D7E7A46397B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E81C08F5CCC0A5FBFF4559E2173164C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,44 +243,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0118291A14881C2D82ABB4DE04291B44 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				197541B51F538C12F3DC2C1B79D29053 /* UMengFeedback.xcconfig */,
-				C7B01D5F40867A4DDA68ABD32D0F264E /* UMengFeedback-dummy.m */,
-				32F73DB6D3439BB8637F01DF4D4765C4 /* UMengFeedback-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UMengFeedback";
-			sourceTree = "<group>";
-		};
-		0135432B904A8745938CA9EF5D13962A /* UMengFeedback */ = {
-			isa = PBXGroup;
-			children = (
-				E063EA745E56E0244AD8E06B255D5A22 /* UMChatTableViewCell.h */,
-				65E76ECBA7C9C25E78BE635539E6449E /* UMChatTableViewCell.m */,
-				03D6C4B78741FF2D929D9DA289BD9D4A /* UMChatToolBar.h */,
-				3E6DED086D807F3C8F0C9A76D5D4A0AC /* UMChatToolBar.m */,
-				D23ABEBB091A752FAF0C33085659624A /* UMFeedback.h */,
-				4BEFE11E9686677068C28BB72F26B004 /* UMFeedbackViewController.h */,
-				48295B158410BCEE420CCE91FF4A34E5 /* UMFeedbackViewController.m */,
-				AD0832AF8CD8624C35643079F9D99436 /* UMFullScreenPhotoView.h */,
-				692FBF34B61785AB28BA5855F5049B73 /* UMFullScreenPhotoView.m */,
-				61D027E639229591B4EDCA7EF22CF2E5 /* UMOpenMacros.h */,
-				F1FD986F124AF4951D91CD087BAEBBC7 /* UMOpus.h */,
-				ED003745A42D464B3874C8E0145C8B4C /* UMPostTableViewCell.h */,
-				A72210C641F123ADE6678D5B3DAAE7D6 /* UMPostTableViewCell.m */,
-				A880A86CAA030E0F4DA58F83539A210F /* UMRadialView.h */,
-				AE27BD2D8277E19C4D757BDED7C9E3BA /* UMRadialView.m */,
-				D6045EBD894A27A3EA04881ADD8DAB21 /* UMRecorder.h */,
-				65BD4DC1DAAFF7EAB2675F9ACEA3AA3A /* UMTextView.h */,
-				8323F3EC5DEF1B06EF3CFAC7D4D321A0 /* UMTextView.m */,
-				DA99E29B00D08E70D0BD281B01D14359 /* Resources */,
-				0118291A14881C2D82ABB4DE04291B44 /* Support Files */,
-			);
-			path = UMengFeedback;
-			sourceTree = "<group>";
-		};
 		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,14 +251,52 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		0791B65223A537C1C6F995FB6418DEB3 /* MMDrawerController */ = {
+		0B3E236EDC039F2DA7C969A84988A730 /* UMengFeedback */ = {
 			isa = PBXGroup;
 			children = (
-				334CCD96891657870B39AAAA22A1F924 /* Core */,
-				85D4FEEBD5996AA1F1990EE775B347B2 /* MMDrawerBarButtonItem */,
-				BB122ACC487705EEEC6BF273BA32FFFA /* MMDrawerVisualStates */,
-				FA86EE2BFD0A0F6B8F0D6ED1224BDB7D /* Subclass */,
-				B1A3351E83F12E8BBB756FEFC2AB9EA2 /* Support Files */,
+				E68FAEF98EEE2A1D119811E8F6074576 /* UMChatTableViewCell.h */,
+				67F2BEDF84DC1DDA7E096D98E7BC3710 /* UMChatTableViewCell.m */,
+				F58FD9BD64D7C8266337CDD811AE3B6F /* UMChatToolBar.h */,
+				5DDAFFBC060596B82415975DD72BAF30 /* UMChatToolBar.m */,
+				17334BFE6BF9E534D8E0A33DC2F5FDE5 /* UMFeedback.h */,
+				B70F7F258DFB79521EEE13B77A9285FE /* UMFeedbackViewController.h */,
+				23D93253E761F20FF62898CF1BEBCE05 /* UMFeedbackViewController.m */,
+				A2733E51C4BC8968E251284DB8A1ACEA /* UMFullScreenPhotoView.h */,
+				965A4F3976D2F7D1E02300C5683D0303 /* UMFullScreenPhotoView.m */,
+				A737149A1067D9B6F3C423AA3F3AFDAF /* UMOpenMacros.h */,
+				F812FBA59B5747DC0FFA493A0AAD9A01 /* UMOpus.h */,
+				7AA3534C9053270E21ADE8ABAE5926EB /* UMPostTableViewCell.h */,
+				DD417A3280B8D9ADD91C940E27DAACD3 /* UMPostTableViewCell.m */,
+				22BCCEDB92E98F16AD47E3438A8E1657 /* UMRadialView.h */,
+				AD404BC9DB1C35C4AE3A92C397994D87 /* UMRadialView.m */,
+				7938DD192EA9156A5C567AE6E36DB503 /* UMRecorder.h */,
+				7086E48BC9C3ABA71B79F808764458E3 /* UMTextView.h */,
+				22F4115076DCF028CAD05CDCD0034FBC /* UMTextView.m */,
+				3B2671BD0EACFB62989CCD9AE18B9C0C /* Resources */,
+				DA119EDA9A4CF7C471968E27E606B831 /* Support Files */,
+			);
+			path = UMengFeedback;
+			sourceTree = "<group>";
+		};
+		0EE49CF2E07D9DB8AF1F62667CD15091 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBB824FCDCD49443C284FC3237CBDBCA /* iOS-blur.xcconfig */,
+				1BC8DEDD6F0182A87CB55F6BE6213C62 /* iOS-blur-dummy.m */,
+				98756115A9B482841261BD65F62B6225 /* iOS-blur-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iOS-blur";
+			sourceTree = "<group>";
+		};
+		12DB4E2D2DB3B1D58177F573CF60256A /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				60E4F722C796F7C3B8DE0C964E341E95 /* Core */,
+				C0991666D8433A3C1A1BA48245170F78 /* MMDrawerBarButtonItem */,
+				559E866786675D0BBE8A87AFF0BA297C /* MMDrawerVisualStates */,
+				F5807609EF1141ED6D5EC0CDCD919A65 /* Subclass */,
+				500537794C4BA8DC7A698FA393B3C25D /* Support Files */,
 			);
 			path = MMDrawerController;
 			sourceTree = "<group>";
@@ -284,49 +309,108 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		334CCD96891657870B39AAAA22A1F924 /* Core */ = {
+		330B29A727C12081E9376621712B7D59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04315650DAC20A34CC8C774797EB6ECB /* MMDrawerController.h */,
-				BDDD278D73C5B6E2229266CBB8F40E7B /* MMDrawerController.m */,
-				2024C0D187F106EDEF0B045E5A0003BA /* MMDrawerController+Subclass.h */,
-				8DF5E68996C6CE6B14EEE5C1FDAF8483 /* UIViewController+MMDrawerController.h */,
-				86EC96F88D98295A0E1778C59FDA73FF /* UIViewController+MMDrawerController.m */,
+				0B0EE88C29FB7BADCE240A8AA3896712 /* libCYLTabBarController.a */,
+				4BD3C0DC9C54ADFC097F9E1144C661FF /* libiOS-blur.a */,
+				DEE831E20A95C1F8106D8F90CEDA28E3 /* libMBProgressHUD.a */,
+				8FC3C5B465DC176A035619E6067D2606 /* libMMDrawerController.a */,
+				408C3CD51059EAEFA4292011B37960B2 /* libPods.a */,
+				F139CBF935BEE82E0B25ACDD9D2C8482 /* libUMengFeedback.a */,
 			);
-			name = Core;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		589D640A8CFF295C17769FBB6C0A3D80 /* Support Files */ = {
+		3B2671BD0EACFB62989CCD9AE18B9C0C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9C343A4347911C1B0C12BC2855C7F6A5 /* MBProgressHUD.xcconfig */,
-				4DFC57EBACE36E26968F8AF607A5858E /* MBProgressHUD-dummy.m */,
-				CE2C2322B7B660DCB199C7DAF9083B38 /* MBProgressHUD-prefix.pch */,
+				7BE7C66F96CE4210BE8B20F6B8A77587 /* bubble_min@2x.png */,
+				F81FCD49804DB097E04D4DAD9E3F1B93 /* cancel@2x.png */,
+				472F085A9A2D7D53A6325BD951806F60 /* microphone@2x.png */,
+				A843423339650204F5DB153907D2B49A /* save@2x.png */,
+				FB22792FF4D97A074CB15C0A2A6635E5 /* ToolViewInputText@2x.png */,
+				7B50DE9AFBB61AC01018CF69E486A0D3 /* ToolViewInputTextHL@2x.png */,
+				B4FA97F246A8FEDFF40A14062FE5849F /* ToolViewInputVoice@2x.png */,
+				B6266DD15540EEAA06A5237687705148 /* ToolViewInputVoiceHL@2x.png */,
+				6C34B66EB8EA1E426CE6D8FD49FB87D9 /* umeng_add_photo@2x.png */,
+				9C04DF18FEB077B97A1101A6FB02DE48 /* umeng_fb_audio_dialog_cancel@2x.png */,
+				A14D76D9D0D3D5B861AB7E2A1DDA3813 /* umeng_fb_audio_dialog_content@2x.png */,
+				E8498EDA664C036366D8115B97EA873F /* umeng_fb_audio_play_01@2x.png */,
+				7B6C1DD3EB682A2596DC3A419D5EF062 /* umeng_fb_audio_play_02@2x.png */,
+				B99E9B2C1A86C808D151AD79AF1E73C6 /* umeng_fb_audio_play_03@2x.png */,
+				4C6A05F28BD16A7992B69D4C5ADA7A67 /* umeng_fb_audio_play_default@2x.png */,
+				D398A697BE028B159B0EAA67925CDB57 /* UMFeedbackLocalizable.strings */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MBProgressHUD";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		5AE3CF073ADD1EAB1B360C048C41AE18 /* Support Files */ = {
+		44D590585ABF31026D11D7248F3C112B /* CYLTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				B2B5DACD5B7EF37D413C1C1D7A63BB5E /* CYLTabBarController.xcconfig */,
-				82A6C74F34451C7904142A0D02684089 /* CYLTabBarController-dummy.m */,
-				B935DCF346441E1FB868B18ED07FFF89 /* CYLTabBarController-prefix.pch */,
+				5F6AC377F6E1869A88E58394251E0754 /* CYLPlusButton.h */,
+				6BC086672AA6961C3899E16175F94021 /* CYLPlusButton.m */,
+				F08A84D78567CAF5AE8570BC663C0026 /* CYLTabBar.h */,
+				4F77850F317F3EF99691358661BC404C /* CYLTabBar.m */,
+				B866174C8E0A3ECF9680187F8EF46D59 /* CYLTabBarController.h */,
+				C9F0801E151E72162D1730D8511F903E /* CYLTabBarController.m */,
+				4E39E375C049CFC581DFCFDA2F18752A /* Support Files */,
+			);
+			path = CYLTabBarController;
+			sourceTree = "<group>";
+		};
+		4E39E375C049CFC581DFCFDA2F18752A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7953253E0D009C0D5B056ABF322B0220 /* CYLTabBarController.xcconfig */,
+				25969A2ECFEBA2CE30F9AE5334BDC820 /* CYLTabBarController-dummy.m */,
+				1C2FDC3F5EE91B8F0F460DFACA08E4E0 /* CYLTabBarController-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CYLTabBarController";
 			sourceTree = "<group>";
 		};
-		6E849BEA3AFB102360D03C99F42B8B96 /* Pods */ = {
+		500537794C4BA8DC7A698FA393B3C25D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C98F76EA212D2479C6AD68D1742477A9 /* CYLTabBarController */,
-				D4E1AA00273D56561FE9F596DF35AE94 /* MBProgressHUD */,
-				0791B65223A537C1C6F995FB6418DEB3 /* MMDrawerController */,
-				0135432B904A8745938CA9EF5D13962A /* UMengFeedback */,
+				777AE9D065CEB7C7B2FB0F40B4ACDF94 /* MMDrawerController.xcconfig */,
+				95264F1F3423528D8CD6ABDE5693E1EB /* MMDrawerController-dummy.m */,
+				1BB64F9532A3AA2E8657703A13E9BBAE /* MMDrawerController-prefix.pch */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/MMDrawerController";
+			sourceTree = "<group>";
+		};
+		512F45448E1DDAE68C6BD075108E6F6F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCD82B6EADC9150A7271CBFAE0AFD384 /* MBProgressHUD.xcconfig */,
+				5B8190D0AD806C1F3B5FCE2A2950021D /* MBProgressHUD-dummy.m */,
+				1A55913C9736B773573C22ED8EF211A7 /* MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		559E866786675D0BBE8A87AFF0BA297C /* MMDrawerVisualStates */ = {
+			isa = PBXGroup;
+			children = (
+				5D80634A493B79991B12649C17C099D2 /* MMDrawerVisualState.h */,
+				DC15DA4BB2BFFDBAFE9432C4A640E204 /* MMDrawerVisualState.m */,
+			);
+			name = MMDrawerVisualStates;
+			sourceTree = "<group>";
+		};
+		60E4F722C796F7C3B8DE0C964E341E95 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B363DB1CC4CAE23CD3F75BCD43BCF128 /* MMDrawerController.h */,
+				719CB766DC335C04482F7C34EFECC30D /* MMDrawerController.m */,
+				A46C57B9FC3FE65FAF98B8C4453CF3CC /* MMDrawerController+Subclass.h */,
+				475D7C729464CCCFD32108062EAECD35 /* UIViewController+MMDrawerController.h */,
+				C4C9D2C57548FD78F1E9BD743C353E7D /* UIViewController+MMDrawerController.m */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -334,30 +418,20 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				6E849BEA3AFB102360D03C99F42B8B96 /* Pods */,
-				BCFF8CD8507F184AE4F39BFBC35FE3AD /* Products */,
+				B8BB151009C3DB60BEA2A6B178FB9B30 /* Pods */,
+				330B29A727C12081E9376621712B7D59 /* Products */,
 				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		85D4FEEBD5996AA1F1990EE775B347B2 /* MMDrawerBarButtonItem */ = {
+		826E616C9B29E7CDD92A53A79E0D631E /* iOS-blur */ = {
 			isa = PBXGroup;
 			children = (
-				40B333BFD1453241E86CD02867363ACF /* MMDrawerBarButtonItem.h */,
-				121B892CC394E0D5C3597F27FE2DB77F /* MMDrawerBarButtonItem.m */,
+				9C526A95D3C4990B7D88F444F9EBF815 /* JCRBlurView.h */,
+				32036A40977BB0096EBC32029A5C9D41 /* JCRBlurView.m */,
+				0EE49CF2E07D9DB8AF1F62667CD15091 /* Support Files */,
 			);
-			name = MMDrawerBarButtonItem;
-			sourceTree = "<group>";
-		};
-		B1A3351E83F12E8BBB756FEFC2AB9EA2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E2162338CA26E93C2A9651E8A780B365 /* MMDrawerController.xcconfig */,
-				C1E496BBF36B05EB8AFD073CE9F13BCF /* MMDrawerController-dummy.m */,
-				E71F3DA036D6988F8B994A81C2D138FF /* MMDrawerController-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MMDrawerController";
+			path = "iOS-blur";
 			sourceTree = "<group>";
 		};
 		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
@@ -375,72 +449,53 @@
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		BB122ACC487705EEEC6BF273BA32FFFA /* MMDrawerVisualStates */ = {
+		B7B9B7CD88449BCC683B6ADCC6602653 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				26E20149A487BF9FFB1027B55B76841C /* MMDrawerVisualState.h */,
-				D0F2C2346087DD726880DA7322D0A2E8 /* MMDrawerVisualState.m */,
-			);
-			name = MMDrawerVisualStates;
-			sourceTree = "<group>";
-		};
-		BCFF8CD8507F184AE4F39BFBC35FE3AD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4BA5EE33830BF905A43E08000E57DBE0 /* libCYLTabBarController.a */,
-				E39CCBED160D644FEBDC8556CEFBF645 /* libMBProgressHUD.a */,
-				62226B245D69C686A0884273252991D3 /* libMMDrawerController.a */,
-				1F406B4FFDB0C3C1496BB909FBD48419 /* libPods.a */,
-				71B886F916D8D3B3EC2D0C5AE2CBF37D /* libUMengFeedback.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C98F76EA212D2479C6AD68D1742477A9 /* CYLTabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				081D63C8F833F173051F982D09339977 /* CYLPlusButton.h */,
-				FD9484F61065CF87731D3F6787BC040D /* CYLPlusButton.m */,
-				91FA9AD260B9A6D7ACE4A7562111D642 /* CYLTabBar.h */,
-				B33C1CDE6866738F21AE3B85F7988856 /* CYLTabBar.m */,
-				34A4CF467E5ACB69ADEB6451DC959335 /* CYLTabBarController.h */,
-				FFBDDBEDBE8E0EF40AE4304412CDB481 /* CYLTabBarController.m */,
-				5AE3CF073ADD1EAB1B360C048C41AE18 /* Support Files */,
-			);
-			path = CYLTabBarController;
-			sourceTree = "<group>";
-		};
-		D4E1AA00273D56561FE9F596DF35AE94 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				66B6F7C61448DEC7BFB56D803EEE989E /* MBProgressHUD.h */,
-				0944CE4A9B3024A16954AFCD0D85042B /* MBProgressHUD.m */,
-				589D640A8CFF295C17769FBB6C0A3D80 /* Support Files */,
+				AA0C4F6CA14B3FEB6F3F8CEBAF44EAEF /* MBProgressHUD.h */,
+				E391899F582B99B1A83E6698AA471EFF /* MBProgressHUD.m */,
+				512F45448E1DDAE68C6BD075108E6F6F /* Support Files */,
 			);
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		DA99E29B00D08E70D0BD281B01D14359 /* Resources */ = {
+		B8BB151009C3DB60BEA2A6B178FB9B30 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				314C65FC5BFCCC6AC1D72AAD5ED60AEA /* bubble_min@2x.png */,
-				1E97BFFA17034927B1AE87F1E774347E /* cancel@2x.png */,
-				F5CCF773C0E0F7802C27FC632B61D8B7 /* microphone@2x.png */,
-				73116579FCC9E89A2F57A0EA3A51A0D2 /* save@2x.png */,
-				475BD9265880034B27896ADBF96505AF /* ToolViewInputText@2x.png */,
-				2FCF4804D09D9FBFB176109019C48563 /* ToolViewInputTextHL@2x.png */,
-				855EA4531965FE055EF936004A962206 /* ToolViewInputVoice@2x.png */,
-				C58149ED47B8995902FCE0EBAE8FDAA8 /* ToolViewInputVoiceHL@2x.png */,
-				9C76F31A93552DBCE3380D27C2821FBD /* umeng_add_photo@2x.png */,
-				08F413D3997B7BA471F59E583E735817 /* umeng_fb_audio_dialog_cancel@2x.png */,
-				EC6F1AACF7DD0E85C2DE1BFA62AF5B2B /* umeng_fb_audio_dialog_content@2x.png */,
-				E642907C71FEFE81027E3AF67B22CB58 /* umeng_fb_audio_play_01@2x.png */,
-				27644575CCB9459EA88CAA69D2060659 /* umeng_fb_audio_play_02@2x.png */,
-				57BDE85795638A56EE23DE29A1FF5AB7 /* umeng_fb_audio_play_03@2x.png */,
-				FA5D705FCC26FF7CE1916E42CE32FEB7 /* umeng_fb_audio_play_default@2x.png */,
-				03162933B2ED8B4540B29901689DF351 /* UMFeedbackLocalizable.strings */,
+				44D590585ABF31026D11D7248F3C112B /* CYLTabBarController */,
+				826E616C9B29E7CDD92A53A79E0D631E /* iOS-blur */,
+				B7B9B7CD88449BCC683B6ADCC6602653 /* MBProgressHUD */,
+				12DB4E2D2DB3B1D58177F573CF60256A /* MMDrawerController */,
+				0B3E236EDC039F2DA7C969A84988A730 /* UMengFeedback */,
 			);
-			name = Resources;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0991666D8433A3C1A1BA48245170F78 /* MMDrawerBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				9AD31D0D3A8B3CF3B6C5B7BA24997C63 /* MMDrawerBarButtonItem.h */,
+				9529B99AC8AA1A5FF863C003DE242939 /* MMDrawerBarButtonItem.m */,
+			);
+			name = MMDrawerBarButtonItem;
+			sourceTree = "<group>";
+		};
+		DA119EDA9A4CF7C471968E27E606B831 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CAA899CE55FF699AD668E98DA350292 /* UMengFeedback.xcconfig */,
+				BDC0D645238227293716C3CC99420BD4 /* UMengFeedback-dummy.m */,
+				B32E5286CEDEE658F13576AECE59EDDA /* UMengFeedback-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UMengFeedback";
+			sourceTree = "<group>";
+		};
+		F5807609EF1141ED6D5EC0CDCD919A65 /* Subclass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Subclass;
 			sourceTree = "<group>";
 		};
 		F7CF350773718CB7C7FD866C199C5D12 /* iOS */ = {
@@ -454,31 +509,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FA86EE2BFD0A0F6B8F0D6ED1224BDB7D /* Subclass */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Subclass;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		39F1A3FDEBB6A86047B53A33028B7E91 /* Headers */ = {
+		1065E8E2517E20271D16C2046D2C5097 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				363CBEA1C3C89E57816CC366CBE2DD8D /* UMChatTableViewCell.h in Headers */,
-				6D41D73041398E2A6DB53457DC4EF930 /* UMChatToolBar.h in Headers */,
-				E355A3B4E8CF49688948EA3D55107DA6 /* UMFeedback.h in Headers */,
-				41E99095EAE14F24A7E2891E54C9B87E /* UMFeedbackViewController.h in Headers */,
-				7106EE5A7BA7066FC6550F62BE86F971 /* UMFullScreenPhotoView.h in Headers */,
-				B8D551DBFF3D240E2184C02096887E12 /* UMOpenMacros.h in Headers */,
-				27DFA0B19A89FE50A38388E48A17FF84 /* UMOpus.h in Headers */,
-				57222C1F818C54AE9A698CB1992EEB29 /* UMPostTableViewCell.h in Headers */,
-				800DDE7A2FFDC2247683A14CBD041150 /* UMRadialView.h in Headers */,
-				11894AFAA3B674EEF0B1C0E73017E9A8 /* UMRecorder.h in Headers */,
-				E9068E3C80CDCAA24AE6DE732F0E179C /* UMTextView.h in Headers */,
+				9C226DEEC940319EE5FDB48513546046 /* JCRBlurView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +542,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED239D70F665055686F0C71C67493F3E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9147AEC07A2EE62E10D4CB3F1E185256 /* UMChatTableViewCell.h in Headers */,
+				C1A1AB9643CDAC720668D1C35F9E155B /* UMChatToolBar.h in Headers */,
+				97A0F9AE26188306113EF11C7AF096E0 /* UMFeedback.h in Headers */,
+				FAB00C51FE3435BF8A2FCE81C4B5283A /* UMFeedbackViewController.h in Headers */,
+				C5FC0ABB267545C483F2B072B375FCC9 /* UMFullScreenPhotoView.h in Headers */,
+				3D575FE34F92AD76AC6EA613BA815F04 /* UMOpenMacros.h in Headers */,
+				2FDC46E2CB625B75E71DAF83BC2FB793 /* UMOpus.h in Headers */,
+				12A46C6702F73F3676072B937E1303C3 /* UMPostTableViewCell.h in Headers */,
+				2469B7625C014EAB71755DFC9A7144F1 /* UMRadialView.h in Headers */,
+				2F5AC6E2DC96FFEDC6D86DD684881943 /* UMRecorder.h in Headers */,
+				56AF519D811E797AEF69FC39D9A99A96 /* UMTextView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF1C003613925663F17E023C73AF519C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -515,24 +571,21 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0EEEDCAF1415B438E69D8F59B6C9E502 /* Pods */ = {
+		0FEFCED0DFD9044B714F80F336070127 /* iOS-blur */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3543370A9EE984B063B1ABE2E723FC95 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = E0D2DD72168EB9DEE5F568748E9F6E69 /* Build configuration list for PBXNativeTarget "iOS-blur" */;
 			buildPhases = (
-				E1FD743D108908A64158CB0CCE94F488 /* Sources */,
-				C95CE9529F42FF5BCAC4DC8640D8BC98 /* Frameworks */,
+				DD4BC57DE6B8AFD4F96107AEDB965D41 /* Sources */,
+				119E6319764FF7CEDE1D72E054C1948F /* Frameworks */,
+				1065E8E2517E20271D16C2046D2C5097 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5D677C1FC14107A9A646FF06ECA760B1 /* PBXTargetDependency */,
-				82321112C0CA7E2E962674D29FE88C11 /* PBXTargetDependency */,
-				9B9F5CB3B6CED76B00D96CAC034EB645 /* PBXTargetDependency */,
-				9C5617DDC34A13025328409992E5A591 /* PBXTargetDependency */,
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = 1F406B4FFDB0C3C1496BB909FBD48419 /* libPods.a */;
+			name = "iOS-blur";
+			productName = "iOS-blur";
+			productReference = 4BD3C0DC9C54ADFC097F9E1144C661FF /* libiOS-blur.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		16ACF35FDB8EAF2E5A8191EA1BCBEA01 /* CYLTabBarController */ = {
@@ -549,7 +602,45 @@
 			);
 			name = CYLTabBarController;
 			productName = CYLTabBarController;
-			productReference = 4BA5EE33830BF905A43E08000E57DBE0 /* libCYLTabBarController.a */;
+			productReference = 0B0EE88C29FB7BADCE240A8AA3896712 /* libCYLTabBarController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		44ADEDEDE8C5CD8779C36DA204B321C2 /* UMengFeedback */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D49685076D950969F7ABCBC0046B4E91 /* Build configuration list for PBXNativeTarget "UMengFeedback" */;
+			buildPhases = (
+				B0DC39F92D11CAA41A9EEAFB53E7D603 /* Sources */,
+				7161E981F96A7412E8E2CFEB9DD94EFA /* Frameworks */,
+				ED239D70F665055686F0C71C67493F3E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UMengFeedback;
+			productName = UMengFeedback;
+			productReference = F139CBF935BEE82E0B25ACDD9D2C8482 /* libUMengFeedback.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5079BAF9AC61FBF0B5D0DEF01C5210F8 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85441DC704251DE8C6E31B1EAC6D89F2 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				0B289A3D022126AE8E56E0BE0C60EAB8 /* Sources */,
+				A1D2EC63F8405B706EF4F3D5BC6C9BE0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4303363C31D3B12B5782CF3986FA0222 /* PBXTargetDependency */,
+				96FF854CEE6CE9EF43B8E60EBD802102 /* PBXTargetDependency */,
+				E06BDC2B1C42CA2DB115DFA5710085FA /* PBXTargetDependency */,
+				8CAB136B3CDCF0456120993CB8F489EA /* PBXTargetDependency */,
+				0ED5FB0EC203225B011BBD007BC64ED1 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 408C3CD51059EAEFA4292011B37960B2 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		550F7EEAEEA17E3F92C873912E23B01C /* MMDrawerController */ = {
@@ -566,24 +657,7 @@
 			);
 			name = MMDrawerController;
 			productName = MMDrawerController;
-			productReference = 62226B245D69C686A0884273252991D3 /* libMMDrawerController.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		AFAD1A4F3B63C6AA9DB67284FCE3D6E7 /* UMengFeedback */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 39FCAC371F86FB86A0CDB431908E5422 /* Build configuration list for PBXNativeTarget "UMengFeedback" */;
-			buildPhases = (
-				A43DC05557AB07AD441D5ED3BFC19E1C /* Sources */,
-				04A27EEAEA355810AD151BF816C1EF27 /* Frameworks */,
-				39F1A3FDEBB6A86047B53A33028B7E91 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = UMengFeedback;
-			productName = UMengFeedback;
-			productReference = 71B886F916D8D3B3EC2D0C5AE2CBF37D /* libUMengFeedback.a */;
+			productReference = 8FC3C5B465DC176A035619E6067D2606 /* libMMDrawerController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */ = {
@@ -600,7 +674,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = E39CCBED160D644FEBDC8556CEFBF645 /* libMBProgressHUD.a */;
+			productReference = DEE831E20A95C1F8106D8F90CEDA28E3 /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -620,15 +694,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BCFF8CD8507F184AE4F39BFBC35FE3AD /* Products */;
+			productRefGroup = 330B29A727C12081E9376621712B7D59 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				16ACF35FDB8EAF2E5A8191EA1BCBEA01 /* CYLTabBarController */,
+				0FEFCED0DFD9044B714F80F336070127 /* iOS-blur */,
 				FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */,
 				550F7EEAEEA17E3F92C873912E23B01C /* MMDrawerController */,
-				0EEEDCAF1415B438E69D8F59B6C9E502 /* Pods */,
-				AFAD1A4F3B63C6AA9DB67284FCE3D6E7 /* UMengFeedback */,
+				5079BAF9AC61FBF0B5D0DEF01C5210F8 /* Pods */,
+				44ADEDEDE8C5CD8779C36DA204B321C2 /* UMengFeedback */,
 			);
 		};
 /* End PBXProject section */
@@ -643,6 +718,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B289A3D022126AE8E56E0BE0C60EAB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690BD8E48D9A0E4D5BC784DA720D83A9 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8197468E8CD363BCB44C44008D591FAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -654,18 +737,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A43DC05557AB07AD441D5ED3BFC19E1C /* Sources */ = {
+		B0DC39F92D11CAA41A9EEAFB53E7D603 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9575B7E541B217D27D3A1829569E1BD2 /* UMChatTableViewCell.m in Sources */,
-				D2356C0C095A701A26B2320ECAD22F59 /* UMChatToolBar.m in Sources */,
-				1C75AED04FEBFB77D894837892549C3E /* UMengFeedback-dummy.m in Sources */,
-				AEE7772C35C73C975E7DAD20656E30FB /* UMFeedbackViewController.m in Sources */,
-				9C544D9C74B199F8369A61E5DB2D4B30 /* UMFullScreenPhotoView.m in Sources */,
-				63CA440410DE5F0E320F70F23B97A09E /* UMPostTableViewCell.m in Sources */,
-				293971D62CAA1DBC4D35F291C8A0081B /* UMRadialView.m in Sources */,
-				CE460964C4E3BA8827BAC158E96DF874 /* UMTextView.m in Sources */,
+				DCC1519088FA361C41D03AA070B3161B /* UMChatTableViewCell.m in Sources */,
+				20EBDEF85FDE0DDE955CB6107C0AB980 /* UMChatToolBar.m in Sources */,
+				9E248C8A9335F340BEC6FE224B37C3D0 /* UMengFeedback-dummy.m in Sources */,
+				4FE53569FB46B37CDCC22B5A975EBA3B /* UMFeedbackViewController.m in Sources */,
+				451DB57068D46B2E076B672C28E1CFB9 /* UMFullScreenPhotoView.m in Sources */,
+				B0EF1F38D5862F1A947055EF4D71A093 /* UMPostTableViewCell.m in Sources */,
+				72F1F9CB68E59CDB768AC038D9513118 /* UMRadialView.m in Sources */,
+				EE1251D68DAF91FF860F22908F527411 /* UMTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,47 +764,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1FD743D108908A64158CB0CCE94F488 /* Sources */ = {
+		DD4BC57DE6B8AFD4F96107AEDB965D41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9B69EBB5A6D12B071B251EBC5AA885F /* Pods-dummy.m in Sources */,
+				2FE1EA9C1D8F7A1B14C0996CBCD56F36 /* iOS-blur-dummy.m in Sources */,
+				1165CE50C17386E47EE5422BA5B299BB /* JCRBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5D677C1FC14107A9A646FF06ECA760B1 /* PBXTargetDependency */ = {
+		0ED5FB0EC203225B011BBD007BC64ED1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "iOS-blur";
+			target = 0FEFCED0DFD9044B714F80F336070127 /* iOS-blur */;
+			targetProxy = 3B18AE2CB8593C0498884C321E290343 /* PBXContainerItemProxy */;
+		};
+		4303363C31D3B12B5782CF3986FA0222 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CYLTabBarController;
 			target = 16ACF35FDB8EAF2E5A8191EA1BCBEA01 /* CYLTabBarController */;
-			targetProxy = FF355889991B376D5CAC6BEF8FAEFE37 /* PBXContainerItemProxy */;
+			targetProxy = 7F03AF887E03C5BC3157ECBBD5478982 /* PBXContainerItemProxy */;
 		};
-		82321112C0CA7E2E962674D29FE88C11 /* PBXTargetDependency */ = {
+		8CAB136B3CDCF0456120993CB8F489EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UMengFeedback;
+			target = 44ADEDEDE8C5CD8779C36DA204B321C2 /* UMengFeedback */;
+			targetProxy = 95D31A7EC1573D771B0FB3954051F6B4 /* PBXContainerItemProxy */;
+		};
+		96FF854CEE6CE9EF43B8E60EBD802102 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
 			target = FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */;
-			targetProxy = A889E73006D43496BBEA19AA298DBA23 /* PBXContainerItemProxy */;
+			targetProxy = 21206D6CC61AE26BA298F25B2A7C139D /* PBXContainerItemProxy */;
 		};
-		9B9F5CB3B6CED76B00D96CAC034EB645 /* PBXTargetDependency */ = {
+		E06BDC2B1C42CA2DB115DFA5710085FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MMDrawerController;
 			target = 550F7EEAEEA17E3F92C873912E23B01C /* MMDrawerController */;
-			targetProxy = FE0248AFAD2EFBB47822F4AC0BFAB7BA /* PBXContainerItemProxy */;
-		};
-		9C5617DDC34A13025328409992E5A591 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UMengFeedback;
-			target = AFAD1A4F3B63C6AA9DB67284FCE3D6E7 /* UMengFeedback */;
-			targetProxy = 00ED5045B1934951444FFA04E26F03F7 /* PBXContainerItemProxy */;
+			targetProxy = 464C55260D74BE2E976B2D447DCF432A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		029B77D4805CC3E60554DB9BA9770D2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		036FCBB4D999D0B722D08A77FE12C752 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2B5DACD5B7EF37D413C1C1D7A63BB5E /* CYLTabBarController.xcconfig */;
+			baseConfigurationReference = 7953253E0D009C0D5B056ABF322B0220 /* CYLTabBarController.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/CYLTabBarController/CYLTabBarController-prefix.pch";
@@ -737,26 +844,9 @@
 			};
 			name = Debug;
 		};
-		1EFEB9498E16643816F071A846C87D6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		2EB7464BFC4B881299B5657C95CD0AF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C343A4347911C1B0C12BC2855C7F6A5 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = BCD82B6EADC9150A7271CBFAE0AFD384 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
@@ -774,7 +864,7 @@
 		};
 		3EC9BA4F331FB42C93D1240BD891FD99 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2B5DACD5B7EF37D413C1C1D7A63BB5E /* CYLTabBarController.xcconfig */;
+			baseConfigurationReference = 7953253E0D009C0D5B056ABF322B0220 /* CYLTabBarController.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/CYLTabBarController/CYLTabBarController-prefix.pch";
@@ -790,12 +880,12 @@
 			};
 			name = Release;
 		};
-		4ADCBE11B98702AF65F369B163852725 /* Release */ = {
+		489DF26AE590C512B105A2F5D4F2FB1E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 197541B51F538C12F3DC2C1B79D29053 /* UMengFeedback.xcconfig */;
+			baseConfigurationReference = BBB824FCDCD49443C284FC3237CBDBCA /* iOS-blur.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UMengFeedback/UMengFeedback-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/iOS-blur/iOS-blur-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -808,9 +898,27 @@
 			};
 			name = Release;
 		};
+		587BCA750A2ACA49C1FA11D4A28BD53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB824FCDCD49443C284FC3237CBDBCA /* iOS-blur.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/iOS-blur/iOS-blur-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		8AA5C85CDFCF106EEAC06E5D1E1E7337 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2162338CA26E93C2A9651E8A780B365 /* MMDrawerController.xcconfig */;
+			baseConfigurationReference = 777AE9D065CEB7C7B2FB0F40B4ACDF94 /* MMDrawerController.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MMDrawerController/MMDrawerController-prefix.pch";
@@ -828,7 +936,7 @@
 		};
 		919FAA2929EE9C5D42F4E864F99B6175 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C343A4347911C1B0C12BC2855C7F6A5 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = BCD82B6EADC9150A7271CBFAE0AFD384 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
@@ -844,14 +952,14 @@
 			};
 			name = Release;
 		};
-		9680E8E3A4EEE6A4C0AAC48B643CDB7B /* Debug */ = {
+		9807D486D746A511454F23D290373A69 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -859,7 +967,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -902,7 +1010,7 @@
 		};
 		AB84E4CCF23E46E8583BD4F1C7B4B698 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2162338CA26E93C2A9651E8A780B365 /* MMDrawerController.xcconfig */;
+			baseConfigurationReference = 777AE9D065CEB7C7B2FB0F40B4ACDF94 /* MMDrawerController.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MMDrawerController/MMDrawerController-prefix.pch";
@@ -918,9 +1026,9 @@
 			};
 			name = Debug;
 		};
-		AFF6AA86105F7D1D51493D751E15163C /* Debug */ = {
+		DD8F89D03E36CEB4A73614889A998B0D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 197541B51F538C12F3DC2C1B79D29053 /* UMengFeedback.xcconfig */;
+			baseConfigurationReference = 4CAA899CE55FF699AD668E98DA350292 /* UMengFeedback.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/UMengFeedback/UMengFeedback-prefix.pch";
@@ -935,6 +1043,24 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
+		};
+		F1F52E03A9AC931ADDB7CCE18694CF75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CAA899CE55FF699AD668E98DA350292 /* UMengFeedback.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UMengFeedback/UMengFeedback-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -982,24 +1108,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3543370A9EE984B063B1ABE2E723FC95 /* Build configuration list for PBXNativeTarget "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9680E8E3A4EEE6A4C0AAC48B643CDB7B /* Debug */,
-				1EFEB9498E16643816F071A846C87D6B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		39FCAC371F86FB86A0CDB431908E5422 /* Build configuration list for PBXNativeTarget "UMengFeedback" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AFF6AA86105F7D1D51493D751E15163C /* Debug */,
-				4ADCBE11B98702AF65F369B163852725 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6BCBDE524BD4EFDC051B5AD1A976D69B /* Build configuration list for PBXNativeTarget "MMDrawerController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1009,11 +1117,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		85441DC704251DE8C6E31B1EAC6D89F2 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				029B77D4805CC3E60554DB9BA9770D2D /* Debug */,
+				9807D486D746A511454F23D290373A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CC05F5036576710A81CBE80C37DE9479 /* Build configuration list for PBXNativeTarget "CYLTabBarController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				036FCBB4D999D0B722D08A77FE12C752 /* Debug */,
 				3EC9BA4F331FB42C93D1240BD891FD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D49685076D950969F7ABCBC0046B4E91 /* Build configuration list for PBXNativeTarget "UMengFeedback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD8F89D03E36CEB4A73614889A998B0D /* Debug */,
+				F1F52E03A9AC931ADDB7CCE18694CF75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0D2DD72168EB9DEE5F568748E9F6E69 /* Build configuration list for PBXNativeTarget "iOS-blur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				587BCA750A2ACA49C1FA11D4A28BD53E /* Debug */,
+				489DF26AE590C512B105A2F5D4F2FB1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

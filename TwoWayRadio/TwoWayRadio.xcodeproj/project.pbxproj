@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050AFAFB1C0ADE42007AC9D1 /* TWTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050AFAFA1C0ADE42007AC9D1 /* TWTestViewController.m */; };
 		053007D71BFF460E00CEC630 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 053007D41BFF460E00CEC630 /* UIView+Extension.m */; };
 		053007DB1BFF462A00CEC630 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 053007DA1BFF462A00CEC630 /* UIButton+Extension.m */; };
 		3B0FF08B1BAEF9D1005D9275 /* TWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF08A1BAEF9D1005D9275 /* TWNavigationController.m */; };
@@ -81,6 +82,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050AFAF91C0ADE41007AC9D1 /* TWTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTestViewController.h; sourceTree = "<group>"; };
+		050AFAFA1C0ADE42007AC9D1 /* TWTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTestViewController.m; sourceTree = "<group>"; };
 		053007D31BFF460E00CEC630 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		053007D41BFF460E00CEC630 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		053007D91BFF462A00CEC630 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
@@ -89,15 +92,15 @@
 		3B0FF0891BAEF9D1005D9275 /* TWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNavigationController.h; sourceTree = "<group>"; };
 		3B0FF08A1BAEF9D1005D9275 /* TWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNavigationController.m; sourceTree = "<group>"; };
 		3B0FF0911BAF01EC005D9275 /* TWRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRecorder.h; sourceTree = "<group>"; };
-		3B0FF0921BAF01EC005D9275 /* TWRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRecorder.m; sourceTree = "<group>"; };
+		3B0FF0921BAF01EC005D9275 /* TWRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWRecorder.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3B21D8091BDA115300D821C8 /* Bug.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Bug.md; sourceTree = "<group>"; };
 		3B2224E11BC6D33600629FCA /* TWAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAudioSession.h; sourceTree = "<group>"; };
 		3B2224E21BC6D33600629FCA /* TWAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAudioSession.m; sourceTree = "<group>"; };
 		3B2224E41BC6D41700629FCA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3B2262E01BAEE68000880A0A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		3B2262E11BAEE68000880A0A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3B2262E11BAEE68000880A0A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HomeViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3B2262E51BAEE68000880A0A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3B2262E61BAEE68000880A0A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B2262E61BAEE68000880A0A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3B2262EA1BAEE68000880A0A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3B28F3611BBD582B00E0981E /* TWSettingArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingArrowItem.h; sourceTree = "<group>"; };
 		3B28F3621BBD582B00E0981E /* TWSettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingArrowItem.m; sourceTree = "<group>"; };
@@ -107,7 +110,7 @@
 		3B28F36C1BBD5DA000E0981E /* TWAboutHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAboutHeaderView.m; sourceTree = "<group>"; };
 		3B28F36E1BBD5DB200E0981E /* TWAboutHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWAboutHeaderView.xib; sourceTree = "<group>"; };
 		3B32C8781BB107F40094F81F /* TWAdpcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAdpcm.h; sourceTree = "<group>"; };
-		3B32C8791BB107F40094F81F /* TWAdpcm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAdpcm.m; sourceTree = "<group>"; };
+		3B32C8791BB107F40094F81F /* TWAdpcm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWAdpcm.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3B49036D1BEF10F900E5528D /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		3B49036E1BEF10F900E5528D /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		3B4903701BEF119100E5528D /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
@@ -119,13 +122,13 @@
 		3B4E3AF41BCB9FE9002D75C0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		3B4E3AF61BCBD2A2002D75C0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		3B5BA2CE1BCA019E00B2151A /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		3B5BA2CF1BCA019E00B2151A /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		3B5BA2CF1BCA019E00B2151A /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3B61B08A1BC2222300671E12 /* TWRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRadioButton.h; sourceTree = "<group>"; };
 		3B61B08B1BC2222300671E12 /* TWRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRadioButton.m; sourceTree = "<group>"; };
-		3B61B3251BFA1FAF0096A89B /* TWtabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWtabBarController.h; sourceTree = "<group>"; };
-		3B61B3261BFA1FAF0096A89B /* TWtabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWtabBarController.m; sourceTree = "<group>"; };
+		3B61B3251BFA1FAF0096A89B /* TWtabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TWtabBarController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3B61B3261BFA1FAF0096A89B /* TWtabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWtabBarController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3B63B5FF1BC3C37D00F2664E /* MSWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWeakTimer.h; sourceTree = "<group>"; };
-		3B63B6001BC3C37D00F2664E /* MSWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWeakTimer.m; sourceTree = "<group>"; };
+		3B63B6001BC3C37D00F2664E /* MSWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSWeakTimer.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3B6DC22A1BC2926F008B919A /* TWStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWStatusView.h; sourceTree = "<group>"; };
 		3B6DC22B1BC2926F008B919A /* TWStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWStatusView.m; sourceTree = "<group>"; };
 		3B6DC22D1BC2A357008B919A /* TWStatusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWStatusButton.h; sourceTree = "<group>"; };
@@ -135,17 +138,17 @@
 		3B6DC2341BC2C267008B919A /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
 		3B6DC2351BC2C267008B919A /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
 		3B74D2B11BAF8FCF00F48A12 /* UdpNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpNetwork.h; sourceTree = "<group>"; };
-		3B74D2B21BAF8FCF00F48A12 /* UdpNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UdpNetwork.m; sourceTree = "<group>"; };
-		3B74D2B41BAF920200F48A12 /* TwoWayRadio.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoWayRadio.pch; sourceTree = "<group>"; };
+		3B74D2B21BAF8FCF00F48A12 /* UdpNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = UdpNetwork.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3B74D2B41BAF920200F48A12 /* TwoWayRadio.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TwoWayRadio.pch; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3BB4998F1BC1854200D8CAD2 /* TWRadioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRadioView.h; sourceTree = "<group>"; };
-		3BB499901BC1854200D8CAD2 /* TWRadioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRadioView.m; sourceTree = "<group>"; };
+		3BB499901BC1854200D8CAD2 /* TWRadioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWRadioView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3BB7EE911BEE2790000327C9 /* MBProgressHUD+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NJ.h"; sourceTree = "<group>"; };
 		3BB7EE921BEE2790000327C9 /* MBProgressHUD+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NJ.m"; sourceTree = "<group>"; };
 		3BCAE71B1BBE33BE009172D6 /* TWSaveInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSaveInfo.h; sourceTree = "<group>"; };
 		3BCAE71C1BBE33BE009172D6 /* TWSaveInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSaveInfo.m; sourceTree = "<group>"; };
 		3BD08A171BC7AC0B0096735A /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
-		3BD9DCE11BF816C500BD48E3 /* TWTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTabBarControllerConfig.h; sourceTree = "<group>"; };
-		3BD9DCE21BF816C500BD48E3 /* TWTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTabBarControllerConfig.m; sourceTree = "<group>"; };
+		3BD9DCE11BF816C500BD48E3 /* TWTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TWTabBarControllerConfig.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3BD9DCE21BF816C500BD48E3 /* TWTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWTabBarControllerConfig.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3BDD3B971BABC44100E67F7A /* TwoWayRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoWayRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BDD3BA91BABC44100E67F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BDD3BAB1BABC44100E67F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,13 +163,13 @@
 		3BE251691BBD23B00050474C /* TWSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingTableViewCell.h; sourceTree = "<group>"; };
 		3BE2516A1BBD23B00050474C /* TWSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingTableViewCell.m; sourceTree = "<group>"; };
 		3BE2516F1BBD250C0050474C /* TWSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingViewController.h; sourceTree = "<group>"; };
-		3BE251701BBD250C0050474C /* TWSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingViewController.m; sourceTree = "<group>"; };
+		3BE251701BBD250C0050474C /* TWSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWSettingViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3BE251721BBD326C0050474C /* TWSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingGroup.h; sourceTree = "<group>"; };
 		3BE251731BBD326C0050474C /* TWSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingGroup.m; sourceTree = "<group>"; };
 		3BE2517A1BBD45DC0050474C /* TWAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAboutViewController.h; sourceTree = "<group>"; };
-		3BE2517B1BBD45DC0050474C /* TWAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAboutViewController.m; sourceTree = "<group>"; };
+		3BE2517B1BBD45DC0050474C /* TWAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWAboutViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3BE925F11BB9531800C5328D /* HYOpenALHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYOpenALHelper.h; sourceTree = "<group>"; };
-		3BE925F21BB9531800C5328D /* HYOpenALHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYOpenALHelper.m; sourceTree = "<group>"; };
+		3BE925F21BB9531800C5328D /* HYOpenALHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HYOpenALHelper.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3BF373061BBD6B0500117A61 /* TWSettingHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingHeaderView.h; sourceTree = "<group>"; };
 		3BF373071BBD6B0500117A61 /* TWSettingHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingHeaderView.m; sourceTree = "<group>"; };
 		3BF373091BBD6B1200117A61 /* TWSettingHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWSettingHeaderView.xib; sourceTree = "<group>"; };
@@ -177,9 +180,9 @@
 		3BF744EF1BC0D4140031BA7E /* TWLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLogView.m; sourceTree = "<group>"; };
 		3BF744F11BC0D41D0031BA7E /* TWLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWLogView.xib; sourceTree = "<group>"; };
 		3BF748361BCD248500D5292F /* TWbaseLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWbaseLoginViewController.h; sourceTree = "<group>"; };
-		3BF748371BCD248500D5292F /* TWbaseLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWbaseLoginViewController.m; sourceTree = "<group>"; };
+		3BF748371BCD248500D5292F /* TWbaseLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWbaseLoginViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3BF748381BCD248500D5292F /* TWFirstViewLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFirstViewLoginViewController.h; sourceTree = "<group>"; };
-		3BF748391BCD248500D5292F /* TWFirstViewLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFirstViewLoginViewController.m; sourceTree = "<group>"; };
+		3BF748391BCD248500D5292F /* TWFirstViewLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWFirstViewLoginViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3BF748421BCD2A3500D5292F /* TWChangeLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWChangeLoginViewController.h; sourceTree = "<group>"; };
 		3BF748431BCD2A3500D5292F /* TWChangeLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWChangeLoginViewController.m; sourceTree = "<group>"; };
 		482E1D16887301DF6002DE63 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -388,6 +391,8 @@
 				3BE251671BBD21FD0050474C /* TWBaseSettingViewController.m */,
 				3BE2516F1BBD250C0050474C /* TWSettingViewController.h */,
 				3BE251701BBD250C0050474C /* TWSettingViewController.m */,
+				050AFAF91C0ADE41007AC9D1 /* TWTestViewController.h */,
+				050AFAFA1C0ADE42007AC9D1 /* TWTestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -866,6 +871,7 @@
 				3BE251711BBD250C0050474C /* TWSettingViewController.m in Sources */,
 				3B4903721BEF119100E5528D /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				3B74D2B31BAF8FCF00F48A12 /* UdpNetwork.m in Sources */,
+				050AFAFB1C0ADE42007AC9D1 /* TWTestViewController.m in Sources */,
 				3BB499911BC1854200D8CAD2 /* TWRadioView.m in Sources */,
 				3B63B6011BC3C37D00F2664E /* MSWeakTimer.m in Sources */,
 				3B4E3AEF1BCB9BB6002D75C0 /* TWNetworkEnvironment.m in Sources */,
@@ -1019,6 +1025,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos9.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1039,6 +1046,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos9.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

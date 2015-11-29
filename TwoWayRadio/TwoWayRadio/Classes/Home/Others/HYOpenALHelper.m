@@ -53,7 +53,7 @@
 
 - (void)insertPCMDataToQueue:(unsigned char *)data size:(UInt32)size
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
     @synchronized(self) {
         ALenum error;
         
@@ -156,7 +156,7 @@
 //清除已播放完成的缓存区
 - (void)cleanBuffers
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
     ALint processed;
     alGetSourcei(outSourceID, AL_BUFFERS_PROCESSED, &processed);
     

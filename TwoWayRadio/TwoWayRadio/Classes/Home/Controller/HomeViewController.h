@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeViewController : UIViewController
-
+@property (strong, nonatomic) JCRBlurView *blurView;
 @end

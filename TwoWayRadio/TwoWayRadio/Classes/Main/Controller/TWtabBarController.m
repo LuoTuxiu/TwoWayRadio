@@ -1,20 +1,20 @@
 //
-//  TWtabBarController.m
+//  TWTabBarController.m
 //  TwoWayRadio
 //
 //  Created by 徐磊 on 15/9/20.
 //  Copyright © 2015年 Trbocare. All rights reserved.
 //
 
-#import "TWtabBarController.h"
+#import "TWTabBarController.h"
 #import "HomeViewController.h"
 #import "TWSettingViewController.h"
 #import "TWNavigationController.h"
-@implementation TWtabBarController
+@implementation TWTabBarController
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"%s",__func__);
+    DebugMethod();
     //默认是没连接成功
     self.isConnected = NO;
     
@@ -52,12 +52,12 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-//    NSLog(@"%s",__func__);
+    DebugMethod();
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
-//    NSLog(@"%s",__func__);
+    DebugMethod();
 }
 
 

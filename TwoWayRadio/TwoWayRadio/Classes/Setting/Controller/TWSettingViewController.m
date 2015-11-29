@@ -15,7 +15,7 @@
 #import "TWSettingTextItem.h" 
 #import "TWChangeLoginViewController.h"
 #import "UMFeedback.h"
-
+#import "TWTestViewController.h"
 
 @interface TWSettingViewController ()
 @property (nonatomic,weak) TWSettingHeaderView *headerView;
@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    NSLog(@"%s",__func__);
+//    DebugMethod();
     // Do any additional setup after loading the view.
 
     [self add0Sectionitems];
@@ -89,12 +89,13 @@
     
     self.tableView.tableHeaderView =  headerView;
 }
+
+
 -(void)touchLog
 {
-//    TWLoginViewController *vc =  [[TWLoginViewController alloc]init];
-//    [self.navigationController pushViewController:vc animated:YES];
+
     TWChangeLoginViewController *vc = [[TWChangeLoginViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+    [self showControllerWithVc:vc];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -121,11 +122,14 @@
     TWSettingArrowItem *about =  [TWSettingArrowItem itemWithIcon:@"MoreAbout" title:@"关于我们"];
 //    about.showVcClass = [TWAboutViewController class];
     about.operation = ^{
-
-//        UIViewController *vc =  [[TWAboutViewController alloc]init];
-//        [self showControllerWithVc:vc];
+//
+        UIViewController *vc =  [[TWAboutViewController alloc]init];
+        [self showControllerWithVc:vc];
+    
 
     };
+    
+    
     
     
     //1.评分支持
@@ -174,8 +178,7 @@
 
 -(void)showControllerWithVc:(UIViewController *)vc
 {
-    UIWindow *window  = [UIApplication sharedApplication].keyWindow;
-    MMDrawerController *originDrawVc = (MMDrawerController *)window.rootViewController;
+    MMDrawerController *originDrawVc = self.mm_drawerController;
     TWNavigationController *home = [((CYLTabBarController *)originDrawVc.centerViewController).viewControllers firstObject];
     
     [home pushViewController:vc animated:NO];

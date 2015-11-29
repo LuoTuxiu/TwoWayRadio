@@ -15,7 +15,7 @@
 #import "TWNavigationController.h"
 //#import <MediaPlayer/MPNowPlayingInfoCenter.h> //2015.10.12 add
 @interface AppDelegate ()
-
+@property (nonatomic,assign) CGFloat oldpercentVisible;
 @end
 
 @implementation AppDelegate
@@ -69,7 +69,7 @@
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-    NSLog(@"%s",__func__);
+    DebugMethod();
     UIBackgroundTaskIdentifier myTask;
     myTask =  [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
         NSLog(@"in the beginBackgroundTaskWithExpirationHandler%s",__func__);
@@ -80,7 +80,7 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    NSLog(@"%s",__func__);
+    DebugMethod();
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -113,10 +113,35 @@
     [drawerController setMaximumLeftDrawerWidth:leftViewWidth];
     [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
     [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
-    //    UIWindow *window = TWKeyWindow;
-    UIWindow *window = [[UIApplication sharedApplication].windows firstObject];
-    AppDelegate *TWdelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    drawerController.view.backgroundColor = [UIColor whiteColor];
+
     self.drawerController = drawerController;
-    window.rootViewController = self.drawerController;
+    
+    
+    [self.drawerController
+     setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+         UIViewController * sideDrawerViewController;
+         if(drawerSide == MMDrawerSideLeft){
+             sideDrawerViewController = drawerController.centerViewController;
+         }
+         else if (drawerSide == MMDrawerSideRight){
+             ;
+         }
+         //         [sideDrawerViewController.view setAlpha:(1-percentVisible) ];
+         //         [sideDrawerViewController.view setAlpha:0.3];
+         if (_oldpercentVisible == 0 && percentVisible == 0 && ((TWTabBarController *)centerViewController).blurView != nil) {
+             //             [self.tabBarController.view insertSubview:_blurView aboveSubview:self.view];
+             [((TWTabBarController *)centerViewController).blurView removeFromSuperview];
+             
+         }
+         else
+         {
+             [((TWTabBarController *)sideDrawerViewController).blurView setAlpha:percentVisible/1.1];
+         }
+         _oldpercentVisible = percentVisible;
+         //         DebugLog(@"%f",percentVisible);
+     }];
+
+    _window.rootViewController = self.drawerController;
 }
 @end

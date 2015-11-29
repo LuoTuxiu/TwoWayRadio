@@ -12,9 +12,9 @@
 #import "TWRadioButton.h"
 #import "TWStatusView.h"
 #import "TWAudioSession.h"
-#import "TWtabBarController.h"
+#import "TWTabBarController.h"
 #import "MSWeakTimer.h"
-
+#import "JCRBlurView.h"
 @interface HomeViewController()
 
 @property (nonatomic,strong) UdpNetwork *netWork;
@@ -94,7 +94,7 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"%s",__func__);
+    DebugMethod();
     //打印当前版本
     
 //    NSLog(@"%f",[[[UIDevice currentDevice] systemVersion] floatValue]);
@@ -123,11 +123,19 @@
 
     [self addNotification];
 
-
+    [self setupNavigationItem];
 //
     self.session  = [[TWAudioSession alloc]init];
     
 
+    
+    JCRBlurView *blurView = [JCRBlurView new];
+    [blurView setFrame:self.view.frame];
+    
+    
+    
+    [blurView setBlurTintColor:UIColorFromRGB(0xB0B0B0)];
+    _blurView =  blurView;
 
 }
 
@@ -170,6 +178,32 @@
 }
 
 
+-(void)setupNavigationItem
+{
+    //设置左导航栏条
+    //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"我的" style:UIBarButtonItemStylePlain target:self action:@selector(leftDrawerButtonPress:)];
+    
+    UIImage  *image =[[UIImage imageNamed:@"people_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(leftDrawerButtonPress:)];
+    
+    //    // 初始化一个按钮
+    //    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    //    // 为返回按钮设置图片样式
+    ////    [button setImage:[UIImage imageNamed:@"people_icon" ] forState:UIControlStateNormal];
+    ////    [button setBackgroundImage:[UIImage imageNamed:@"people_icon"] forState:UIControlStateNormal];
+    //    [button setTitle:@"123" forState:UIControlStateNormal];
+    //    [button setBackgroundColor:[UIColor redColor]];
+    //    // 设置返回按钮触发的事件
+    //    [button addTarget:self action:@selector(leftDrawerButtonPress:) forControlEvents:UIControlEventTouchUpInside];
+    //
+    //    // 初始化一个BarButtonItem，并将其设置为返回的按钮的样式
+    //    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:button];
+    //    // 将BarButtonItem添加到LeftBarButtonItem上
+    //    self.navigationItem.leftBarButtonItem = backButton;
+    
+    
+    
+}
 
 
 /**
@@ -203,6 +237,13 @@
 
 }
 
+
+#pragma mark - Button Handlers
+-(void)leftDrawerButtonPress:(id)sender{
+    ((TWTabBarController *)self.tabBarController).blurView = _blurView;
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+    [self.tabBarController.view insertSubview:_blurView aboveSubview:self.view];
+}
 /**
  *  连接成功的回调
  */
@@ -216,7 +257,7 @@
 
 //    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(TWWait) object:nil];
     
-    BOOL isConnected = ((TWtabBarController *)self.parentViewController.parentViewController).isConnected;
+    BOOL isConnected = ((TWTabBarController *)self.parentViewController.parentViewController).isConnected;
     NSLog(@"%d",isConnected);
     if (isConnected == YES) {
         [MBProgressHUD showSuccess:@"连接成功"];
@@ -231,7 +272,7 @@
  */
 -(void)touchSelfConnectBtn
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
     //判断是WiFi状态才进入重新连接登陆状态
     if (YES ==  [[TWNetworkEnvironment sharedInstance] isEnableWIFI]) {
         NSLog(@"now the NetworkEnvironment is wifi");
@@ -277,7 +318,7 @@
         self.netWork = nil;
         //更新连接按钮的文字
         [self.statusView setStatusBtnWithConnectStatus:CONNECT_FAIL];
-        ((TWtabBarController *)self.parentViewController.parentViewController).isConnected  = NO;
+        ((TWTabBarController *)self.parentViewController.parentViewController).isConnected  = NO;
         
     }else if ([btnTitle isEqualToString:@"点击连接"]){
         //                NSLog(@"in the 点击连接");
@@ -317,7 +358,7 @@
  */
 -(void)touchLogBtn
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
     
 //    _hud = nil;
     MBProgressHUD *hud =  [[MBProgressHUD alloc]initWithView:self.navigationController.view];
@@ -355,15 +396,15 @@
  */
 -(void)checkConnectStatus:(NSNotification *)notification
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
     NSString *recv = [notification object];
         if ([recv isEqualToString:@"true"]) {
-            //更新TWtabBarController中的公共变量，以供TWSettingViewController使用
-            ((TWtabBarController *)self.parentViewController.parentViewController).isConnected  = YES;
+            //更新TWTabBarController中的公共变量，以供TWSettingViewController使用
+            ((TWTabBarController *)self.parentViewController.parentViewController).isConnected  = YES;
             [self.statusView setStatusBtnWithConnectStatus:CONNECT_SUCCESS];
         }
         else{
-            ((TWtabBarController *)self.parentViewController.parentViewController).isConnected  = NO;
+            ((TWTabBarController *)self.parentViewController.parentViewController).isConnected  = NO;
             //更新模型
             [_netWork sendExitMassage];
             [_netWork disconect];
@@ -378,7 +419,7 @@
 
 -(void)timeOut
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
 //    [MBProgressHUD showError:@"连接超时"];
     [self.statusView.connectBtn setTitle:@"点击连接" forState:UIControlStateNormal];
     [self.statusView setStatusBtnWithConnectStatus:CONNECT_FAIL];
@@ -387,7 +428,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [_hud removeFromSuperview];
         
-//        BOOL isConnected = ((TWtabBarController *)self.parentViewController.parentViewController).isConnected;
+//        BOOL isConnected = ((TWTabBarController *)self.parentViewController.parentViewController).isConnected;
 //        NSLog(@"%d",isConnected);
 //        if (isConnected == YES) {
 //            [MBProgressHUD showSuccess:@"连接成功"];
@@ -459,7 +500,7 @@
 
 -(void)animationBeginWithIsClockwise:(BOOL)isClockwise
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
     self.radioView.isSelected = YES;
     //调用以下函数，则会自动调用drawRect
     [self.radioView setNeedsDisplay];
@@ -508,14 +549,14 @@
     self.radioView.isSelected = NO;
     [self.radioView setNeedsDisplay];
 #warning 记得这里要移除动画
-//    NSLog(@"%s",__func__);
+//    DebugMethod();
     [self.radioView.layer removeAllAnimations];
 }
 
 
 -(void)dealloc
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
 }
 @end
 

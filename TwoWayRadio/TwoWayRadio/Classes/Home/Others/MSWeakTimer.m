@@ -110,7 +110,7 @@
 - (void)dealloc
 {
     [self invalidate];
-    NSLog(@"%s",__func__);
+    DebugMethod();
     ms_release_gcd_object(_privateSerialQueue);
 }
 

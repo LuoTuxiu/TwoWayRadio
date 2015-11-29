@@ -442,7 +442,7 @@ enum GCDAsyncUdpSocketConfig
 
 - (void)dealloc
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
 	LogInfo(@"%@ - %@ (start)", THIS_METHOD, self);
 	
 #if TARGET_OS_IPHONE

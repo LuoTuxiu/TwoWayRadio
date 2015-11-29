@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TWtabBarController.h"
+#import "TWTabBarController.h"
 @interface TWTabBarControllerConfig : NSObject
-@property (nonatomic,strong) TWtabBarController *tabBarController;
+@property (nonatomic,strong) TWTabBarController *tabBarController;
 @end

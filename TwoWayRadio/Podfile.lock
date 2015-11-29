@@ -1,5 +1,6 @@
 PODS:
   - CYLTabBarController (1.0.5)
+  - iOS-blur (0.0.5)
   - MBProgressHUD (0.9.1)
   - MMDrawerController (0.5.7):
     - MMDrawerController/Core (= 0.5.7)
@@ -17,12 +18,14 @@ PODS:
 
 DEPENDENCIES:
   - CYLTabBarController
+  - iOS-blur
   - MBProgressHUD (~> 0.9.1)
   - MMDrawerController (~> 0.5.7)
   - UMengFeedback (~> 2.3.4)
 
 SPEC CHECKSUMS:
   CYLTabBarController: c758aba2b1aac34be1c217047079ab11b4a18f4a
+  iOS-blur: 8e4a4a2202b881e940869eca0c957808cbdf0a19
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
   UMengFeedback: 5283cc0e324dffca4dd54c4abb3cbded56487817

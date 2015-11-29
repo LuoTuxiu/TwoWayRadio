@@ -1,28 +1,24 @@
 //
-//  TWAboutViewController.m
+//  TWTestViewController.m
 //  TwoWayRadio
 //
-//  Created by xulei on 15/10/1.
+//  Created by kingdee on 15/11/29.
 //  Copyright © 2015年 Trbocare. All rights reserved.
 //
 
-#import "TWAboutViewController.h"
-#import "TWAboutHeaderView.h"
-@interface TWAboutViewController ()
+#import "TWTestViewController.h"
+
+@interface TWTestViewController ()
 
 @end
 
-@implementation TWAboutViewController
+@implementation TWTestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    self.view.backgroundColor =  [UIColor redColor];
-    self.title = @"关于";
     
-    //2.设置头部的部件
-    TWAboutHeaderView *aboutView = [TWAboutHeaderView headerView];
-    self.tableView.tableHeaderView = aboutView;
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,12 +26,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-
-}
 /*
 #pragma mark - Navigation
 

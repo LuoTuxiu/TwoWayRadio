@@ -44,7 +44,7 @@
 
 -(void)touchLog
 {
-//    NSLog(@"%s",__func__);
+//    DebugMethod();
 
     NSUserDefaults *userDefaults =  [NSUserDefaults standardUserDefaults];
     BOOL isSavePwd = [userDefaults boolForKey:@"isSavePwd"];
@@ -133,6 +133,12 @@
         [MBProgressHUD showError:@"您没有连接指定wifi"];
     }
 
+}
+
+
+- (void)dealloc
+{
+    DebugMethod();
 }
 
 @end

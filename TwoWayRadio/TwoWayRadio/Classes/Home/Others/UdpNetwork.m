@@ -161,7 +161,7 @@ typedef struct
 
 -(void)requestTimeOut
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
 
     [[NSNotificationCenter defaultCenter] postNotificationName:@"Notification_timeOut" object:nil userInfo:nil];
     
@@ -529,7 +529,7 @@ withFilterContext:(id)filterContext
 -(void)handlerReceiveAudio   //收到音频，进行处理
 {
 //    NSLog(@"%@",[NSThread currentThread]);
-    NSLog(@"%s",__func__);
+    DebugMethod();
     memset(audio, 0, sizeof(audio));//先清零
     memcpy(audio, bufpoint+AUDIO_DATA_HEAD_LENGTH, 512);//将收到的音频数据解析到audio数组
     if(_receiveAdpcm != nil)
@@ -646,7 +646,7 @@ withFilterContext:(id)filterContext
 //客户端发送三次退出对讲系统信号
 -(void)sendExitMassage
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
 #warning 停止音频传输,但目前我直接用下面的21连接直接关闭了
 //        uint8_t data9[] =
 //        {
@@ -742,7 +742,7 @@ withFilterContext:(id)filterContext
 
 -(void)dealloc
 {
-    NSLog(@"%s",__func__);
+    DebugMethod();
 
     [_socket close];
     _socket= nil;

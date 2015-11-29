@@ -11,7 +11,7 @@
 #import "TWNavigationController.h"
 #import "CYLTabBarController.h"
 @implementation TWTabBarControllerConfig
--(TWtabBarController *)tabBarController
+-(TWTabBarController *)tabBarController
 {
     if (!_tabBarController) {
         [self setupViewControllers];
@@ -27,7 +27,7 @@
     
         TWNavigationController *firstNavigationController = [[TWNavigationController alloc]
                                                              initWithRootViewController:home];
-        TWtabBarController *tabBarController = [[TWtabBarController alloc] init];
+        TWTabBarController *tabBarController = [[TWTabBarController alloc] init];
         [self customizeTabBarForController:tabBarController];
         
         [tabBarController setViewControllers:@[

@@ -100,7 +100,6 @@
 //    NSLog(@"%f",[[[UIDevice currentDevice] systemVersion] floatValue]);
     //设置主页背景颜色
     self.view.backgroundColor = [UIColor whiteColor];
-//    self.view.backgroundColor  = [UIColor colorWithRed:235.0/255.0f green:235.0/255.0f blue:235.0/255.0f alpha:1.0];
     
     self.navigationItem.title = @"首页";
 
@@ -109,7 +108,6 @@
     self.radioView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.radioView];
     
-
 
     //添加状态视图到主视图
     [self.view addSubview:self.statusView];
@@ -132,10 +130,21 @@
     JCRBlurView *blurView = [JCRBlurView new];
     [blurView setFrame:self.view.frame];
     
-    
-    
     [blurView setBlurTintColor:UIColorFromRGB(0xB0B0B0)];
     _blurView =  blurView;
+    
+    
+    //开始连接服务器
+    [self.netWork socketBeginRuning];
+    
+    MBProgressHUD *hud =  [[MBProgressHUD alloc]initWithView:self.view];
+    _hud = hud;
+    [self.view.window addSubview:_hud];
+    hud.labelText = @"正在连接";
+    _hud.dimBackground = YES;
+    //            NSLog(@"%s", __func__);
+    //            hud.labelText = @"点击了登录";
+    [_hud show:YES];
 
 }
 
@@ -183,7 +192,7 @@
     //设置左导航栏条
     //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"我的" style:UIBarButtonItemStylePlain target:self action:@selector(leftDrawerButtonPress:)];
     
-    UIImage  *image =[[UIImage imageNamed:@"people_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage  *image =[[UIImage imageNamed:@"home_setting"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(leftDrawerButtonPress:)];
     
     //    // 初始化一个按钮
@@ -416,7 +425,9 @@
 }
 
 
-
+/**
+ *  连接超时的回调函数
+ */
 -(void)timeOut
 {
     DebugMethod();

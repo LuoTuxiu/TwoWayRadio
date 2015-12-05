@@ -27,6 +27,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[UINavigationBar appearance] setBackgroundColor:RGB(54, 153, 217)];
+//    [[UINavigationBar appearance] setBackgroundColor:[UIColor redColor]];
+    
+//    self.navigationBar.backgroundColor = RGB(54, 153, 217);
 }
 
 - (void)didReceiveMemoryWarning {

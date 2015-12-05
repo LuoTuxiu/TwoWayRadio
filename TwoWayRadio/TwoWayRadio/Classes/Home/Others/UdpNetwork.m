@@ -99,7 +99,7 @@ typedef struct
 {
     if( self = [super init])
     {
-        NSLog(@"We are in initWithAddress\n");
+        DebugMethod();
         
         _connectSuccessful = NO;
         _isWorking = NO;

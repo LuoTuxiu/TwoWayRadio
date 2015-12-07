@@ -136,7 +136,7 @@
          }
          else
          {
-             [((TWTabBarController *)sideDrawerViewController).blurView setAlpha:percentVisible/1.1];
+             [((TWTabBarController *)sideDrawerViewController).blurView setAlpha:percentVisible];
          }
          _oldpercentVisible = percentVisible;
          //         DebugLog(@"%f",percentVisible);

@@ -14,7 +14,6 @@
 		3B0FF0931BAF01EC005D9275 /* TWRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF0921BAF01EC005D9275 /* TWRecorder.m */; };
 		3B21D80A1BDA115300D821C8 /* Bug.md in Sources */ = {isa = PBXBuildFile; fileRef = 3B21D8091BDA115300D821C8 /* Bug.md */; };
 		3B2224E31BC6D33600629FCA /* TWAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2224E21BC6D33600629FCA /* TWAudioSession.m */; };
-		3B2224E51BC6D41700629FCA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2224E41BC6D41700629FCA /* AVFoundation.framework */; };
 		3B2262F71BAEE68000880A0A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2262E11BAEE68000880A0A /* HomeViewController.m */; };
 		3B2262F81BAEE68000880A0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2262E61BAEE68000880A0A /* AppDelegate.m */; };
 		3B2262FA1BAEE68000880A0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2262EA1BAEE68000880A0A /* main.m */; };
@@ -26,9 +25,7 @@
 		3B49036F1BEF10FA00E5528D /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B49036E1BEF10F900E5528D /* TPKeyboardAvoidingScrollView.m */; };
 		3B4903721BEF119100E5528D /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4903711BEF119100E5528D /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		3B4E3AEF1BCB9BB6002D75C0 /* TWNetworkEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E3AEE1BCB9BB6002D75C0 /* TWNetworkEnvironment.m */; };
-		3B4E3AF21BCB9DC5002D75C0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4E3AF01BCB9BF6002D75C0 /* SystemConfiguration.framework */; };
 		3B4E3AF51BCB9FE9002D75C0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E3AF41BCB9FE9002D75C0 /* Reachability.m */; };
-		3B4E3AF71BCBD2A2002D75C0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4E3AF61BCBD2A2002D75C0 /* MediaPlayer.framework */; };
 		3B5BA2D01BCA019E00B2151A /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5BA2CF1BCA019E00B2151A /* GCDAsyncUdpSocket.m */; };
 		3B61B08C1BC2222300671E12 /* TWRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B61B08B1BC2222300671E12 /* TWRadioButton.m */; };
 		3B61B3271BFA1FAF0096A89B /* TWtabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B61B3261BFA1FAF0096A89B /* TWtabBarController.m */; };
@@ -38,10 +35,13 @@
 		3B6DC2331BC2C200008B919A /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC2321BC2C200008B919A /* UIButton+Bootstrap.m */; };
 		3B6DC2361BC2C267008B919A /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DC2351BC2C267008B919A /* NSString+FontAwesome.m */; };
 		3B74D2B31BAF8FCF00F48A12 /* UdpNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B74D2B21BAF8FCF00F48A12 /* UdpNetwork.m */; };
+		3B893D431C15BC7E00BCACD9 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B893D421C15BC7E00BCACD9 /* OpenAL.framework */; };
+		3B893D451C15BC8D00BCACD9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B893D441C15BC8D00BCACD9 /* MediaPlayer.framework */; };
+		3B893D471C15BC9B00BCACD9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B893D461C15BC9B00BCACD9 /* SystemConfiguration.framework */; };
+		3B893D491C15BCAE00BCACD9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B893D481C15BCAE00BCACD9 /* AVFoundation.framework */; };
 		3BB499911BC1854200D8CAD2 /* TWRadioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB499901BC1854200D8CAD2 /* TWRadioView.m */; };
 		3BB7EE931BEE2790000327C9 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7EE921BEE2790000327C9 /* MBProgressHUD+NJ.m */; };
 		3BCAE71D1BBE33BE009172D6 /* TWSaveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAE71C1BBE33BE009172D6 /* TWSaveInfo.m */; };
-		3BD08A181BC7AC0B0096735A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD08A171BC7AC0B0096735A /* OpenAL.framework */; };
 		3BD9DCE31BF816C500BD48E3 /* TWTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9DCE21BF816C500BD48E3 /* TWTabBarControllerConfig.m */; };
 		3BDD3BAA1BABC44100E67F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDD3BA81BABC44100E67F7A /* LaunchScreen.storyboard */; };
 		3BDD3BB51BABC44100E67F7A /* TwoWayRadioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3BB41BABC44100E67F7A /* TwoWayRadioTests.m */; };
@@ -96,7 +96,6 @@
 		3B21D8091BDA115300D821C8 /* Bug.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Bug.md; sourceTree = "<group>"; };
 		3B2224E11BC6D33600629FCA /* TWAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAudioSession.h; sourceTree = "<group>"; };
 		3B2224E21BC6D33600629FCA /* TWAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAudioSession.m; sourceTree = "<group>"; };
-		3B2224E41BC6D41700629FCA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3B2262E01BAEE68000880A0A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		3B2262E11BAEE68000880A0A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HomeViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3B2262E51BAEE68000880A0A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,10 +116,8 @@
 		3B4903711BEF119100E5528D /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		3B4E3AED1BCB9BB6002D75C0 /* TWNetworkEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNetworkEnvironment.h; sourceTree = "<group>"; };
 		3B4E3AEE1BCB9BB6002D75C0 /* TWNetworkEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNetworkEnvironment.m; sourceTree = "<group>"; };
-		3B4E3AF01BCB9BF6002D75C0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3B4E3AF31BCB9FE9002D75C0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		3B4E3AF41BCB9FE9002D75C0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		3B4E3AF61BCBD2A2002D75C0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		3B5BA2CE1BCA019E00B2151A /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		3B5BA2CF1BCA019E00B2151A /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3B61B08A1BC2222300671E12 /* TWRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRadioButton.h; sourceTree = "<group>"; };
@@ -140,13 +137,16 @@
 		3B74D2B11BAF8FCF00F48A12 /* UdpNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpNetwork.h; sourceTree = "<group>"; };
 		3B74D2B21BAF8FCF00F48A12 /* UdpNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = UdpNetwork.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3B74D2B41BAF920200F48A12 /* TwoWayRadio.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TwoWayRadio.pch; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3B893D421C15BC7E00BCACD9 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		3B893D441C15BC8D00BCACD9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3B893D461C15BC9B00BCACD9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3B893D481C15BCAE00BCACD9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3BB4998F1BC1854200D8CAD2 /* TWRadioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRadioView.h; sourceTree = "<group>"; };
 		3BB499901BC1854200D8CAD2 /* TWRadioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWRadioView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3BB7EE911BEE2790000327C9 /* MBProgressHUD+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NJ.h"; sourceTree = "<group>"; };
 		3BB7EE921BEE2790000327C9 /* MBProgressHUD+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NJ.m"; sourceTree = "<group>"; };
 		3BCAE71B1BBE33BE009172D6 /* TWSaveInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSaveInfo.h; sourceTree = "<group>"; };
 		3BCAE71C1BBE33BE009172D6 /* TWSaveInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSaveInfo.m; sourceTree = "<group>"; };
-		3BD08A171BC7AC0B0096735A /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		3BD9DCE11BF816C500BD48E3 /* TWTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TWTabBarControllerConfig.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		3BD9DCE21BF816C500BD48E3 /* TWTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWTabBarControllerConfig.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3BDD3B971BABC44100E67F7A /* TwoWayRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoWayRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,10 +194,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B4E3AF71BCBD2A2002D75C0 /* MediaPlayer.framework in Frameworks */,
-				3B4E3AF21BCB9DC5002D75C0 /* SystemConfiguration.framework in Frameworks */,
-				3BD08A181BC7AC0B0096735A /* OpenAL.framework in Frameworks */,
-				3B2224E51BC6D41700629FCA /* AVFoundation.framework in Frameworks */,
+				3B893D491C15BCAE00BCACD9 /* AVFoundation.framework in Frameworks */,
+				3B893D471C15BC9B00BCACD9 /* SystemConfiguration.framework in Frameworks */,
+				3B893D451C15BC8D00BCACD9 /* MediaPlayer.framework in Frameworks */,
+				3B893D431C15BC7E00BCACD9 /* OpenAL.framework in Frameworks */,
 				74874CABC3926E0088155548 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,10 +467,6 @@
 		3BDD3B8E1BABC44100E67F7A = {
 			isa = PBXGroup;
 			children = (
-				3B4E3AF61BCBD2A2002D75C0 /* MediaPlayer.framework */,
-				3B4E3AF01BCB9BF6002D75C0 /* SystemConfiguration.framework */,
-				3BD08A171BC7AC0B0096735A /* OpenAL.framework */,
-				3B2224E41BC6D41700629FCA /* AVFoundation.framework */,
 				3BDD3B991BABC44100E67F7A /* TwoWayRadio */,
 				3BDD3BB31BABC44100E67F7A /* TwoWayRadioTests */,
 				3BDD3BBE1BABC44100E67F7A /* TwoWayRadioUITests */,
@@ -645,6 +641,10 @@
 		411411EC5A4DE9CAD34F03B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B893D481C15BCAE00BCACD9 /* AVFoundation.framework */,
+				3B893D461C15BC9B00BCACD9 /* SystemConfiguration.framework */,
+				3B893D441C15BC8D00BCACD9 /* MediaPlayer.framework */,
+				3B893D421C15BC7E00BCACD9 /* OpenAL.framework */,
 				0D147AC432CB9139A4F62467 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -720,7 +720,7 @@
 				TargetAttributes = {
 					3BDD3B961BABC44100E67F7A = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 8BFL9MCCE8;
+						DevelopmentTeam = T6GHWG4MR5;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;

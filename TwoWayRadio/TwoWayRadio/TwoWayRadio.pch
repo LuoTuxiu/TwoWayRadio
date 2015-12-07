@@ -60,6 +60,8 @@ alpha:1.0]
 #define TWKeyWindow [UIApplication sharedApplication].keyWindow
 
 
+#define TWDefaultCenter [NSNotificationCenter defaultCenter]
+
 #ifdef DEBUG
 #define DebugLog(...)    NSLog(__VA_ARGS__)
 #define DebugMethod()    NSLog(@"%s", __func__)

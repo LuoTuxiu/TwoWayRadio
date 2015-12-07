@@ -9,20 +9,25 @@
 #import "TWRadioView.h"
 
 @interface TWRadioView()
-{
-    
-}
 
-@property (nonatomic,assign) CGRect frameOfView;
+@property (nonatomic,assign) CGFloat radius;
+
 @end
 @implementation TWRadioView
+
 
 -(instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     
     if (self) {
-        
+        if (isIphone4) {
+            _radius =  100;
+        }
+        else
+        {
+            _radius =  128;
+        }
     }
 //    _frameOfView = frame;
     return self;
@@ -37,65 +42,30 @@
         //原因如下：
         //因为我是顺时针计算角度，而我clockwise设置方向设置错误了;
 //        [self addArcWithTimes:4];
-        [self addArcWithTimes:16];
+        [self addArcWithTimes:4];
 
     } else {
         
-        // Drawing code
-//        DebugMethod();
-        //1.获取上下文
-        CGContextRef ctx =  UIGraphicsGetCurrentContext();
-        
-        //2.拼接路径
-        //    CGPoint center =  CGPointMake(TWmainScreenFrame.size.width / 2.0, TWmainScreenFrame.size.height / 2.0);
-        CGPoint center = self.center;
-        CGFloat radius;
-        if (isIphone4) {
-            radius =  100;
-        }
-        else
-        {
-            radius =  128;
-        }
-
-        CGFloat startA = 0;//起始角
-        CGFloat endA = M_PI * 2;
-        UIBezierPath *path =  [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:startA endAngle:endA clockwise:YES];
-        
-        //3.将路径添加到上下文
-        CGContextAddPath(ctx, path.CGPath);
-        
-        //设置颜色
-        [[UIColor yellowColor] set];
-        
-        //设置线条的宽度
-        CGContextSetLineWidth(ctx, 10);
-        
-        //4.渲染上下文
-        CGContextStrokePath(ctx);
+        [self addArcWithTimes:1];
     }
     
 }
 
-
+/**
+ *  添加不同颜色的圆弧，做成一定的动画效果
+ *
+ *  @param times 将2pi角度变换成多少个圆弧
+ */
 -(void)addArcWithTimes:(int)times
 {
-    CGFloat centerX = self.center.x;
-    CGFloat centerY = self.center.y;
-    CGFloat radius;
-    if (isIphone4) {
-        radius =  100;
-    }
-    else
-    {
-        radius =  128;
-    }
+    CGFloat angle =  M_PI  * 2 / times;
+
     //1.获取上下文
     CGContextRef ctx =  UIGraphicsGetCurrentContext();
 
     for (int i =0; i<times; i++) {
         //2.画圆弧
-        CGContextAddArc(ctx, centerX, centerY, radius,  M_PI_4 /2 *i,M_PI_4  /2 *(i+1), 0);
+        CGContextAddArc(ctx, self.centerX, self.centerY, _radius,  angle  *i,angle   *(i+1), 0);
         
         //        CGContextClosePath(ctx);
         CGContextSetLineWidth(ctx, 10);

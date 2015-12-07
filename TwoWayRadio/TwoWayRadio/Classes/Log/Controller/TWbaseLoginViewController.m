@@ -479,4 +479,10 @@
 
 }
 
+-(void)dealloc
+{
+    DebugMethod();
+    [TWDefaultCenter removeObserver:self];
+}
+
 @end

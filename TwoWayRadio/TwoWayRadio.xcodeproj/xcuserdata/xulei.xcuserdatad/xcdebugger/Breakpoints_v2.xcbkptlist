@@ -1141,22 +1141,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TwoWayRadio/Classes/Home/View/TWRadioView.m"
-            timestampString = "466403623.143116"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "-drawRect:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TwoWayRadio/Classes/Home/View/TWStatusButton.m"
             timestampString = "465743300.606428"
             startingColumnNumber = "9223372036854775807"
@@ -1270,12 +1254,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
-            timestampString = "469379247.278419"
+            timestampString = "471190341.039552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "350"
-            endingLineNumber = "350"
-            landmarkName = "-checkConnectStatus:"
+            startingLineNumber = "372"
+            endingLineNumber = "372"
+            landmarkName = "-touchSelfConnectBtnAction"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1430,12 +1414,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
-            timestampString = "469379247.278419"
+            timestampString = "471190341.039552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "355"
-            endingLineNumber = "355"
-            landmarkName = "-checkConnectStatus:"
+            startingLineNumber = "377"
+            endingLineNumber = "377"
+            landmarkName = "@implementation HomeViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
+            timestampString = "471190341.039552"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "381"
+            endingLineNumber = "381"
+            landmarkName = "-TWWait"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1446,28 +1446,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
-            timestampString = "469379247.278419"
+            timestampString = "471190341.039552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "359"
-            endingLineNumber = "359"
-            landmarkName = "-checkConnectStatus:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
-            timestampString = "469379247.278419"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "351"
-            endingLineNumber = "351"
-            landmarkName = "-checkConnectStatus:"
+            startingLineNumber = "373"
+            endingLineNumber = "373"
+            landmarkName = "-touchSelfConnectBtnAction"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1590,11 +1574,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
-            timestampString = "469379247.278419"
+            timestampString = "471190341.039552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "429"
-            endingLineNumber = "429"
+            startingLineNumber = "451"
+            endingLineNumber = "451"
+            landmarkName = "@implementation HomeViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
+            timestampString = "471190341.039552"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "457"
+            endingLineNumber = "457"
+            landmarkName = "-timeOut"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
+            timestampString = "471190341.039552"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "479"
+            endingLineNumber = "479"
+            landmarkName = "-addRadiobtn"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
+            timestampString = "471193725.361429"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "518"
+            endingLineNumber = "518"
             landmarkName = "-beginTalking"
             landmarkType = "5">
          </BreakpointContent>
@@ -1606,12 +1638,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
-            timestampString = "469379247.278419"
+            timestampString = "471190341.039552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "435"
-            endingLineNumber = "435"
-            landmarkName = "-stopTalking"
+            startingLineNumber = "493"
+            endingLineNumber = "493"
+            landmarkName = "-addRadiobtn"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1622,12 +1654,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
-            timestampString = "469379247.278419"
+            timestampString = "471193725.361429"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "457"
-            endingLineNumber = "457"
-            landmarkName = "-animationBeginWithIsClockwise:"
+            startingLineNumber = "515"
+            endingLineNumber = "515"
+            landmarkName = "-beginTalking"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1638,60 +1670,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
-            timestampString = "469379247.278419"
+            timestampString = "471193725.361429"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "495"
-            endingLineNumber = "495"
-            landmarkName = "-animationStop"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
-            timestampString = "469379247.278419"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "471"
-            endingLineNumber = "471"
-            landmarkName = "-animationBeginWithIsClockwise:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
-            timestampString = "469379247.278419"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "492"
-            endingLineNumber = "492"
-            landmarkName = "-animationStop"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
-            timestampString = "469379247.278419"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "494"
-            endingLineNumber = "494"
-            landmarkName = "-animationStop"
+            startingLineNumber = "517"
+            endingLineNumber = "517"
+            landmarkName = "-beginTalking"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1854,13 +1838,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
-            timestampString = "469379247.278419"
+            timestampString = "471190341.039552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "401"
-            endingLineNumber = "401"
-            landmarkName = "-addRadiobtn"
-            landmarkType = "5">
+            startingLineNumber = "423"
+            endingLineNumber = "423"
+            landmarkName = "@implementation HomeViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1886,12 +1870,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TwoWayRadio/Classes/Home/Controller/HomeViewController.m"
-            timestampString = "469379247.278419"
+            timestampString = "471190585.954691"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "250"
-            endingLineNumber = "250"
-            landmarkName = "-touchSelfConnectBtn"
+            startingLineNumber = "271"
+            endingLineNumber = "271"
+            landmarkName = "-leftDrawerButtonPress:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

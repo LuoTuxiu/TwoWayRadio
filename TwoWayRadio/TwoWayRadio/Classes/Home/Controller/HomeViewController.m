@@ -45,11 +45,11 @@
         _account = [userDefaults stringForKey:@"account"];
         _passwd =  [userDefaults stringForKey:@"passwd"];
         if (_account ==  nil || _passwd == nil) {
-//            [MBProgressHUD showError:@"您未登陆账号和密码"];
+            [MBProgressHUD showError:@"您未登陆账号和密码"];
             return nil;
         }
         if (_serverPort ==  nil || _serverIp == nil) {
-//            [MBProgressHUD showError:@"您未设置服务器地址和端口"];
+            [MBProgressHUD showError:@"您未设置服务器地址和端口"];
             return nil;
         }
         
@@ -66,22 +66,22 @@
     
     if (_radioView == nil) {
 //        NSLog(@"I alloc the _radioView here");
-        CGFloat radioViewX = self.view.frame.origin.x;
-        CGFloat radioViewY = self.view.frame.origin.y;
-        CGFloat radioViewW = self.view.frame.size.width;
-        CGFloat radioViewH = self.view.frame.size.height;
-        CGRect radioViewOfFrame = CGRectMake(radioViewX, radioViewY, radioViewW, radioViewH);
-        _radioView = [[TWRadioView alloc] initWithFrame:radioViewOfFrame];
+//        CGFloat radioViewX = self.view.frame.origin.x;
+//        CGFloat radioViewY = self.view.frame.origin.y;
+//        CGFloat radioViewW = self.view.frame.size.width;
+//        CGFloat radioViewH = self.view.frame.size.height;
+//        CGRect radioViewOfFrame = CGRectMake(radioViewX, radioViewY, radioViewW, radioViewH);
+        _radioView = [[TWRadioView alloc] initWithFrame:self.view.frame];
         
     }
     return _radioView;
 }
 
+
 -(TWStatusView *)statusView
 {
     
     if (_statusView == nil) {
-        
         CGFloat statusViewY = rectNav.size.height + statusBarFrame.size.height;
         CGRect statusViewFrame =  CGRectMake(0, statusViewY, TWmainScreenFrame.size.width, 80);
         _statusView = [[TWStatusView alloc] initWithFrame:statusViewFrame];
@@ -94,35 +94,30 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    DebugMethod();
+//    DebugMethod();
     //打印当前版本
     
 //    NSLog(@"%f",[[[UIDevice currentDevice] systemVersion] floatValue]);
     //设置主页背景颜色
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.navigationItem.title = @"首页";
-
-    
     //添加一个自定义视图：旋转按钮
     self.radioView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.radioView];
     
-
     //添加状态视图到主视图
     [self.view addSubview:self.statusView];
 
-    
     //添加按钮到主视图
     [self addRadiobtn];
     
 //    [self.radioBtn.layer addSublayer:self.radioView.layer];
 
-
     [self addNotification];
 
     [self setupNavigationItem];
 //
+    
     self.session  = [[TWAudioSession alloc]init];
     
 
@@ -130,7 +125,7 @@
     JCRBlurView *blurView = [JCRBlurView new];
     [blurView setFrame:self.view.frame];
     
-    [blurView setBlurTintColor:UIColorFromRGB(0xB0B0B0)];
+    [blurView setBlurTintColor:nil];
     _blurView =  blurView;
     
     
@@ -145,6 +140,7 @@
     //            NSLog(@"%s", __func__);
     //            hud.labelText = @"点击了登录";
     [_hud show:YES];
+    
 
 }
 
@@ -155,6 +151,7 @@
     
 }
 
+//此方法并未调用
 -(void)viewDidAppear:(BOOL)animated
 {
     DebugMethod();
@@ -167,53 +164,77 @@
  */
 -(void)addNotification
 {
+    
     //添加登陆页面的登陆按钮的监听
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(touchLogBtn) name:@"Notification_log" object:nil];
+    [TWDefaultCenter addObserver:self selector:@selector(touchLogBtn) name:@"Notification_log" object:nil];
     
     //添加网络连接状态改变的监听
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkConnectStatus:) name:@"sendConnectStatus" object:nil];
+    [TWDefaultCenter addObserver:self selector:@selector(checkConnectStatus:) name:@"sendConnectStatus" object:nil];
     
     //添加本页面的连接按钮的监听
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(touchSelfConnectBtn) name:@"Notification_touchConnect" object:nil];
+    [TWDefaultCenter addObserver:self selector:@selector(touchSelfConnectBtn) name:@"Notification_touchConnect" object:nil];
     
     //添加连接超时的监听
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(timeOut) name:@"Notification_timeOut" object:nil];
+    [TWDefaultCenter addObserver:self selector:@selector(timeOut) name:@"Notification_timeOut" object:nil];
     
     //添加接收语音结束的监听
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRecvAllAudio:) name:@"Notification_didRecvAllAudio" object:nil];
+    [TWDefaultCenter addObserver:self selector:@selector(didRecvAllAudio:) name:@"Notification_didRecvAllAudio" object:nil];
     
     //添加接收连接成功的监听
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(connectSuccessfully) name:@"connectSuccessfully" object:nil];
+    [TWDefaultCenter addObserver:self selector:@selector(connectSuccessfully) name:@"connectSuccessfully" object:nil];
 }
 
 
 -(void)setupNavigationItem
 {
+
     //设置左导航栏条
     //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"我的" style:UIBarButtonItemStylePlain target:self action:@selector(leftDrawerButtonPress:)];
     
-    UIImage  *image =[[UIImage imageNamed:@"home_setting"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage  *image =[[UIImage imageNamed:@"setting_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(leftDrawerButtonPress:)];
     
-    //    // 初始化一个按钮
-    //    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    //    // 为返回按钮设置图片样式
-    ////    [button setImage:[UIImage imageNamed:@"people_icon" ] forState:UIControlStateNormal];
-    ////    [button setBackgroundImage:[UIImage imageNamed:@"people_icon"] forState:UIControlStateNormal];
-    //    [button setTitle:@"123" forState:UIControlStateNormal];
-    //    [button setBackgroundColor:[UIColor redColor]];
-    //    // 设置返回按钮触发的事件
-    //    [button addTarget:self action:@selector(leftDrawerButtonPress:) forControlEvents:UIControlEventTouchUpInside];
-    //
-    //    // 初始化一个BarButtonItem，并将其设置为返回的按钮的样式
-    //    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:button];
-    //    // 将BarButtonItem添加到LeftBarButtonItem上
-    //    self.navigationItem.leftBarButtonItem = backButton;
     
-    
-    
+//    //设置中间导航栏条
+    self.navigationItem.title = @"首页";
+//    //    _selectItem.backgroundColor = [UIColor whiteColor];
+//    //    _selectItem.tintColor
+//    UISegmentedControl *selectItem = [[UISegmentedControl alloc]initWithItems:@[@"未整理",@"已整理"]];
+//    //    selectItem.frame = CGRectMake(20.0, 20.0, 250.0, 50.0);
+//    
+//    selectItem.selectedSegmentIndex = 0;//设置默认选择项索引
+//    [selectItem addTarget:self action:@selector(selectItemValueChanged:) forControlEvents:UIControlEventValueChanged];
+//    //下面这句设置无效
+//    //    _selectItem.tintColor = [UIColor whiteColor];
+//    [[UISegmentedControl appearance] setTintColor:[UIColor whiteColor]];
+//    
+//    self.navigationItem.titleView = selectItem;
+//    
+//    
+//    UIButton *history = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
+//    [history setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    [history setTitle:@"历史" forState:UIControlStateNormal];
+//    //    history.rightX = DZScreenWidth;
+//    UIBarButtonItem *historyItem = [[UIBarButtonItem alloc]initWithCustomView:history];
+//    
+//    UIButton *send = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
+//    [send setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    [send setTitle:@"发送" forState:UIControlStateNormal];
+//    [send addTarget:self action:@selector(touchSend) forControlEvents:UIControlEventTouchUpInside];
+//    UIBarButtonItem *sendItem   =[[UIBarButtonItem alloc]initWithCustomView:send];
+//    
+//    
+//    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
+//                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+//                                       target:nil action:nil];
+//    /**
+//     *  width为负数时，相当于btn向右移动width数值个像素，由于按钮本身和边界间距为5pix，所以width设为-5时，间距正好调整
+//     *  为0；width为正数时，正好相反，相当于往左移动width数值个像素
+//     */
+//    negativeSpacer.width = -10;
+//    
+//    self.navigationItem.rightBarButtonItems =@[negativeSpacer,sendItem,historyItem];
 }
-
 
 /**
  *  接收语音结束的回调
@@ -253,6 +274,7 @@
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
     [self.tabBarController.view insertSubview:_blurView aboveSubview:self.view];
 }
+
 /**
  *  连接成功的回调
  */
@@ -467,7 +489,7 @@
     
 //    radioBtn.imageEdgeInsets =  UIEdgeInsetsMake(64, 64, 64, 64);
 //    radioBtn.backgroundColor =  [UIColor redColor];
-    //添加监听
+    //添加监听函数
     [radioBtn addTarget:self action:@selector(beginTalking) forControlEvents:UIControlEventTouchDown];
     [radioBtn addTarget:self action:@selector(stopTalking) forControlEvents:UIControlEventTouchUpInside];
     _radioBtn = radioBtn;
@@ -487,8 +509,9 @@
         self.radioView.isSelected = YES;
         
         [self.netWork beginSendRecord];
+        
         //发送语音顺时针转动
-        [self animationBeginWithIsClockwise:YES];
+//        [self animationBeginWithIsClockwise:YES];
     }
     else
     {
@@ -505,7 +528,7 @@
         [self.netWork stopSendRecord];
     }
 
-    [self animationStop];
+//    [self animationStop];
 }
 
 
@@ -515,7 +538,6 @@
     self.radioView.isSelected = YES;
     //调用以下函数，则会自动调用drawRect
     [self.radioView setNeedsDisplay];
-    
     
     //创建核心动画
     CABasicAnimation *anima =  [CABasicAnimation animation];
@@ -531,7 +553,7 @@
     anima.duration = 1.0;
     //设置动画重复次数
     //        anima.repeatDuration = 2;
-    anima.repeatCount =MAXFLOAT;
+    anima.repeatCount = MAXFLOAT;
     
     //        //动画结束后执行逆动画
     //        anima.autoreverses  = YES;
@@ -568,6 +590,7 @@
 -(void)dealloc
 {
     DebugMethod();
+    [TWDefaultCenter removeObserver:self];
 }
 @end
 

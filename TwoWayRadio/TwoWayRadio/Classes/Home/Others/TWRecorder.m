@@ -107,25 +107,28 @@
 void inputBufferHandler(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRef inBuffer, const AudioTimeStamp *inStartTime,UInt32 inNumPackets, const AudioStreamPacketDescription *inPacketDesc)
 {
     NSLog(@"we are in the 回调函数\n");
-    TWRecorder *recorder = (__bridge TWRecorder*)inUserData;
-    
-    //NSLog(@"we are in inputBufferHandler\n");
-    
-    if (inNumPackets > 0) {
-        //NSLog(@"maudioDataByteSize is %d\n",inBuffer->mAudioDataByteSize);
+    if (inUserData != nil) {
+        TWRecorder *recorder = (__bridge TWRecorder*)inUserData;
         
-        //本地pcm播放，调用下面insertPCMDataToQueue语句，但是要先初始化pcmPLay
-//        [pcmPlay insertPCMDataToQueue:(unsigned char *)inBuffer->mAudioData size:(UInt32)inBuffer->mAudioDataByteSize];
+        //NSLog(@"we are in inputBufferHandler\n");
         
-        //luo add
-        NSLog(@"in the callback the current thread is %@\n",[NSThread currentThread]);
-        [recorder processAudioBuffer:inBuffer withQueue:inAQ];
-        //AudioQueueEnqueueBuffer(recorder.aqc.queue, inBuffer, 0, NULL);
+        if (inNumPackets > 0) {
+            //NSLog(@"maudioDataByteSize is %d\n",inBuffer->mAudioDataByteSize);
+            
+            //本地pcm播放，调用下面insertPCMDataToQueue语句，但是要先初始化pcmPLay
+            //        [pcmPlay insertPCMDataToQueue:(unsigned char *)inBuffer->mAudioData size:(UInt32)inBuffer->mAudioDataByteSize];
+            
+            //luo add
+            NSLog(@"in the callback the current thread is %@\n",[NSThread currentThread]);
+            [recorder processAudioBuffer:inBuffer withQueue:inAQ];
+            //AudioQueueEnqueueBuffer(recorder.aqc.queue, inBuffer, 0, NULL);
+        }
+        
+        if (recorder.isRecording) {
+            AudioQueueEnqueueBuffer(inAQ, inBuffer, 0, NULL);
+        }
     }
-    
-    if (recorder.isRecording) {
-        AudioQueueEnqueueBuffer(inAQ, inBuffer, 0, NULL);
-    }
+
 }
 
 - (void) processAudioBuffer:(AudioQueueBufferRef)buffer withQueue:(AudioQueueRef) queue  //将缓冲区的代码复制到audioByte数组中

@@ -12,6 +12,7 @@
 #import "HYOpenALHelper.h"
 #import "TWAdpcm.h"
 #import "MSWeakTimer.h"
+
 #define NMCP_VERSION 1  //版本为1
 #define SubP_ID 2
 #define TWtransaction(transactionID) ((transactionID) & 0x000000ff),((transactionID) >> 8) & 0x000000ff,((transactionID) >> 16) & 0x000000ff,((transactionID) >> 24) & 0x000000ff
@@ -25,7 +26,7 @@ typedef struct
     uint8_t descrip;
     uint16_t length;
     uint32_t transactionID;
-}NMCP_HEAD;
+} NMCP_HEAD;
 
 
 @interface UdpNetwork()<GCDAsyncUdpSocketDelegate,TWRecorderDelegate>
@@ -46,8 +47,6 @@ typedef struct
 @property (nonatomic,strong) HYOpenALHelper *playPcmData;
 @property (nonatomic,strong) TWAdpcm *receiveAdpcm;
 
-@property (nonatomic,copy) NSString * account;
-@property (nonatomic,copy) NSString * passwd;
 @property (nonatomic,copy) NSString * serverIp;
 @property (nonatomic,assign) int * serverPort;
 @property (nonatomic,strong) MSWeakTimer *repeatTime;
@@ -99,7 +98,7 @@ typedef struct
 {
     if( self = [super init])
     {
-        DebugMethod();
+//        DebugMethod();
         
         _connectSuccessful = NO;
         _isWorking = NO;
@@ -119,15 +118,13 @@ typedef struct
             //return;
         }
         
-        NSError *receiveOnceError = nil;
 //        if(![_socket beginReceiving:&error])//异步接收
-        if(![_socket receiveOnce:&receiveOnceError])//仅接收一次数据
+        if(![_socket receiveOnce:&error])//仅接收一次数据
         {
             NSLog(@"error in receiveOnce\n");
         }
     
     }
-    
     
     return self;
 
@@ -215,6 +212,7 @@ withFilterContext:(id)filterContext
     if(![_socket receiveOnce:&error])
     {
         NSLog(@"error in beginReceiving\n");
+        return;
     }
     bufpoint=(uint8_t *)[data bytes];//将收到的数据缓存在bufpoint
 
@@ -245,13 +243,21 @@ withFilterContext:(id)filterContext
                 };
 
                 NSUserDefaults *userDefaults =  [NSUserDefaults standardUserDefaults];
-                _account = [userDefaults stringForKey:@"account"];
-                _passwd =  [userDefaults stringForKey:@"passwd"];
-                if (_account != nil) {
-                    NSData *accountData  =  [_account dataUsingEncoding:NSUTF8StringEncoding];
+                NSString * account = [userDefaults stringForKey:@"account"];
+                NSString * passwd =  [userDefaults stringForKey:@"passwd"];
+                if (account != nil && passwd!= nil) {
+                    NSData *accountData  =  [account dataUsingEncoding:NSUTF8StringEncoding];
                     Byte *accountByte = (Byte *)[accountData bytes];
 
                      memcpy(data1 + 20,accountByte,20);
+                }
+                else
+                {
+                    //遇到错误并返回
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [MBProgressHUD showError:@"账号或者密码错误，请重新输入账号和密码"];
+                    });
+                    return;
                 }
                
                 
@@ -277,7 +283,7 @@ withFilterContext:(id)filterContext
             if (*(bufpoint+2)==0x90)    //因为这里服务器发送过来两次，所以如果不加这个的话就会发送两次,但是发现邦仁文档里面的第二个参数也就是descrip会变化，但我想第三个参数length应该不会变，暂时用第三个
             {
                 //接下来是第五个步骤
-                if (_account != nil) {
+
                     Byte errorLog[] =  {0x00,0x00,0x00,0x00,0x01,0x00,0x04,0x00};
                     
 #warning //如果与上述错误标志位相同，则说明账户或者密码错误，则不必要继续下一步了！
@@ -296,10 +302,8 @@ withFilterContext:(id)filterContext
                     {
                         NSLog(@"账号和密码正确");
                     }
-                    
-                }
+                
 
-            
                 //NSLog(@"recieve the 5th\n");
                 uint8_t data2[] =
                 {
@@ -324,7 +328,6 @@ withFilterContext:(id)filterContext
                 [self sendWithData:data3 dataLength:sizeof(data3) address:address];
 
                 //NSLog(@"send the 7th\n");
-
                 
             }
             else if (*(bufpoint+1)==0x00 || *(bufpoint +1) ==  0x58)
@@ -387,10 +390,10 @@ withFilterContext:(id)filterContext
         case 0xb1:
 //            NSLog(@"we are recieve 0xb1\n");
             //NSError *error = nil;
-            if(![_socket beginReceiving:nil])
+            if(![_socket beginReceiving:&error])
                 //if(![udpSocket receiveOnce:nil])
             {
-                NSLog(@"error in beginReceiving\n");
+                NSLog(@"error in beginReceiving:%@",error);
             }
             //取消isFirst的判断,2015.10.04
             if (*(bufpoint+12)==0x04 )//表明已经进入到17阶段了，则已经成功了，这是如果是isFirst，则开始发送心跳包
@@ -508,7 +511,9 @@ withFilterContext:(id)filterContext
     
 }
 
-//超过两秒钟还未接收到语音时调用
+/**
+ *  超过两秒钟还未接收到语音时调用该函数，表示已经语音结束
+ */
 -(void)didRecvAllAudio
 {
     _isWorking = NO;
@@ -749,6 +754,7 @@ withFilterContext:(id)filterContext
 //    [_playPcmData clean];
 //    _playPcmData  = nil;
     _receiveAdpcm = nil;
+    
 }
 
 

@@ -9,6 +9,7 @@
 #import "TWbaseLoginViewController.h"
 #import "TPKeyboardAvoidingScrollView.h"
 #define labelWidth 60
+#define leftEdgesWithLog 20
 @interface TWbaseLoginViewController ()
 
 @property (nonatomic,weak)  UISwitch *isChangeServer;
@@ -36,9 +37,9 @@
 //    _allView = allView;
 //    [self.view addSubview:allView];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
-
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+//
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 //    [self addAccountView];
 //    [self addBtnView];
     
@@ -47,52 +48,17 @@
     
 }
 
--(void)keyboardWillShow:(NSNotification *)notification
-{
-//    NSLog(@"%s", __func__);
-//    NSDictionary *info = [notification userInfo];
-//    CGSize kbSize =  [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
-//    NSLog(@"%@",NSStringFromCGSize(kbSize));
-////    if (self.view.y < 0) {
-////        self.view.y  = 0 - kbSize.height;
-////    }
-//    
-//    if ([self.isChangeServer isOn]) {
-//        self.view.y  = 0 - 120;
-//    }
-//
-//
-//    NSLog(@"%f",self.view.y);
-}
-
-
-
--(void)keyboardWillHide:(NSNotification *)notification
-{
-//    NSLog(@"%s", __func__);
-//    NSDictionary *info = [notification userInfo];
-//    CGSize kbSize =  [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
-//    NSLog(@"%@",NSStringFromCGSize(kbSize));
-//       self.view.y  += 120;
-//        NSLog(@"%f",self.view.y);
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 -(void)addLogIcon
 {
     UIImage *image = [UIImage imageNamed:@"logImage"];
     UIImageView *imageView = [[UIImageView alloc]initWithImage:image];
 
-    CGFloat imageViewX = (TWmainScreenFrame.size.width - image.size.width) /2.0;
+    CGFloat imageViewX = (TWScreenWidth - image.size.width) /2.0;
     CGFloat imageViewY = 20 + 10;
     CGFloat imageViewW = image.size.width;
     CGFloat imageViewH = image.size.height;
     imageView.frame = CGRectMake(imageViewX, imageViewY, imageViewW, imageViewH);
-//    imageView.center = CGPointMake(TWmainScreenFrame.size.width / 2.0, 100);
+//    imageView.center = CGPointMake(TWScreenWidth / 2.0, 100);
     _imageView = imageView;
     [self.view addSubview:imageView];
 }
@@ -100,11 +66,11 @@
 
 -(void)addAccountView
 {
-    UIView *firstView = [[UIView alloc]initWithFrame:CGRectMake(0, _imageView.frame.origin.y + _imageView.frame.size.height, TWmainScreenFrame.size.width, 44 * 2  +1 * 2)];
+    UIView *firstView = [[UIView alloc]initWithFrame:CGRectMake(0, _imageView.y + _imageView.height, TWScreenWidth, 44 * 2  +1 * 2)];
 //    firstView.backgroundColor = [UIColor whiteColor];
     _firstView = firstView;
     //账号label
-    CGFloat accountX = 10;
+    CGFloat accountX = leftEdgesWithLog;
     CGFloat accountY = 0;
     CGFloat accountW = labelWidth;
     CGFloat accountH = 44;
@@ -117,9 +83,9 @@
     [firstView addSubview:accountLabel];
     
     //请输入账号textField
-    CGFloat accountTextX = accountLabel.frame.origin.x + accountLabel.frame.size.width;
+    CGFloat accountTextX = accountLabel.x + accountLabel.width;
     CGFloat accountTextY = 0;
-    CGFloat accountTextW = TWmainScreenFrame.size.width - accountLabel.frame.size.width - 20;
+    CGFloat accountTextW = TWScreenWidth - accountLabel.width - 20;
     CGFloat accountTextH = 44;
     CGRect accountTextFrame = CGRectMake(accountTextX, accountTextY, accountTextW, accountTextH);
     UITextField *accountTextField = [[UITextField alloc]initWithFrame:accountTextFrame];
@@ -132,9 +98,9 @@
     [firstView addSubview:accountTextField];
     
     //分割线1
-    CGFloat fengeViewX =  10;
-    CGFloat fengeViewY =  accountTextField.frame.origin.y + accountTextField.frame.size.height;
-    CGFloat fengeViewW =  TWmainScreenFrame.size.width - 2  * fengeViewX;
+    CGFloat fengeViewX =  leftEdgesWithLog;
+    CGFloat fengeViewY =  accountTextField.y + accountTextField.height;
+    CGFloat fengeViewW =  TWScreenWidth - 2  * fengeViewX;
     CGFloat fengeViewH =  1;
     CGRect fengeViewFrame = CGRectMake(fengeViewX, fengeViewY, fengeViewW, fengeViewH);
     UIView *fengeView =  [[UIView alloc]initWithFrame:fengeViewFrame];
@@ -142,8 +108,8 @@
     [firstView addSubview:fengeView];
     
     //密码label
-    CGFloat passwdX = 10;
-    CGFloat passwdY = fengeView.frame.origin.y+ fengeView.frame.size.height;
+    CGFloat passwdX = leftEdgesWithLog;
+    CGFloat passwdY = fengeView.y+ fengeView.height;
     CGFloat passwdW = labelWidth;
     CGFloat passwdH = 44;
     CGRect passwdFrame = CGRectMake(passwdX, passwdY, passwdW, passwdH);
@@ -155,9 +121,9 @@
     [firstView addSubview:passwdLabel];
     
     //请输入密码textField
-    CGFloat passwdTextX = passwdLabel.frame.origin.x + passwdLabel.frame.size.width;
-    CGFloat passwdTextY = fengeView.frame.origin.y+ fengeView.frame.size.height;
-    CGFloat passwdTextW = TWmainScreenFrame.size.width - passwdLabel.frame.size.width - 20;
+    CGFloat passwdTextX = passwdLabel.x + passwdLabel.width;
+    CGFloat passwdTextY = fengeView.y+ fengeView.height;
+    CGFloat passwdTextW = TWScreenWidth - passwdLabel.width - 20;
     CGFloat passwdTextH = 44;
     CGRect passwdTextFrame = CGRectMake(passwdTextX, passwdTextY, passwdTextW, passwdTextH);
     UITextField *passwdTextField = [[UITextField alloc]initWithFrame:passwdTextFrame];
@@ -173,9 +139,9 @@
     
     
     //分割线2
-    CGFloat fengeView1X =  10;
-    CGFloat fengeView1Y =  passwdTextField.frame.origin.y + passwdTextField.frame.size.height;
-    CGFloat fengeView1W =  TWmainScreenFrame.size.width - 2  * fengeViewX;
+    CGFloat fengeView1X =  leftEdgesWithLog;
+    CGFloat fengeView1Y =  passwdTextField.y + passwdTextField.height;
+    CGFloat fengeView1W =  TWScreenWidth - 2  * fengeViewX;
     CGFloat fengeView1H =  1;
     CGRect fengeView2Frame = CGRectMake(fengeView1X, fengeView1Y, fengeView1W, fengeView1H);
     UIView *fenge2View =  [[UIView alloc]initWithFrame:fengeView2Frame];
@@ -221,8 +187,8 @@
 -(void)addBtnView
 {
     CGFloat btnViewFrameX = 0;
-    CGFloat btnViewFrameY = self.firstView.frame.origin.y + self.firstView.frame.size.height;
-    CGFloat btnViewFrameW = TWmainScreenFrame.size.width;
+    CGFloat btnViewFrameY = self.firstView.y + self.firstView.height;
+    CGFloat btnViewFrameW = TWScreenWidth;
     CGFloat btnViewFrameH = 100;
     CGRect btnViewFrame = CGRectMake(btnViewFrameX, btnViewFrameY, btnViewFrameW, btnViewFrameH);
     UIView *btnView = [[UIView alloc]initWithFrame:btnViewFrame];
@@ -231,7 +197,7 @@
     
     //登录按钮
     CGFloat btnY =  0 ;
-    CGRect btnFrame  = CGRectMake(0, btnY, TWmainScreenFrame.size.width, 44);
+    CGRect btnFrame  = CGRectMake(0, btnY, TWScreenWidth, 44);
     UIButton *logBtn =  [[UIButton alloc]initWithFrame:btnFrame];
     logBtn.backgroundColor  = [UIColor blueColor];
     [logBtn setTitle:@"登陆" forState:UIControlStateNormal];
@@ -242,8 +208,8 @@
     
     UISwitch *test = [[UISwitch alloc]init];
     //添加是否更改服务器地址的开关
-    CGFloat switchX = TWmainScreenFrame.size.width - test.frame.size.width -20 ;
-    CGFloat switchY = logBtn.frame.origin.y + logBtn.frame.size.height + 20;
+    CGFloat switchX = TWScreenWidth - test.width -20 ;
+    CGFloat switchY = logBtn.y + logBtn.height + 20;
     CGFloat switchW = 0;
     CGFloat switchH = 0;
     CGRect switchFrame = CGRectMake(switchX, switchY, switchW, switchH);
@@ -257,9 +223,9 @@
     
     //添加是否更改服务器地址的开关label
     CGFloat switchLabelW = 100;
-    CGFloat switchLabelX = mySwitch.frame.origin.x - switchLabelW - 10;
+    CGFloat switchLabelX = mySwitch.x - switchLabelW - 10;
     CGFloat switchLabelY = switchY ;
-    CGFloat switchLabelH = mySwitch.frame.size.height;
+    CGFloat switchLabelH = mySwitch.height;
     CGRect switchLabelFrame = CGRectMake(switchLabelX, switchLabelY, switchLabelW, switchLabelH);
     UILabel *switchLabel =  [[UILabel alloc] initWithFrame:switchLabelFrame];
     _switchLabel = switchLabel;
@@ -276,7 +242,7 @@
     CGFloat saveSwitchLabelX = 20;
     CGFloat saveSwitchLabelY = switchY ;
     CGFloat saveSwitchLabelW = 75;
-    CGFloat saveSwitchLabelH = mySwitch.frame.size.height;
+    CGFloat saveSwitchLabelH = mySwitch.height;
     CGRect saveSwitchLabelFrame = CGRectMake(saveSwitchLabelX, saveSwitchLabelY, saveSwitchLabelW, saveSwitchLabelH);
     UILabel *saveSwitchLabel =  [[UILabel alloc] initWithFrame:saveSwitchLabelFrame];
     _saveSwitchLabel = saveSwitchLabel;
@@ -326,7 +292,7 @@
         NSLog(@"the switch is turn off");
         _isSwitchOn = NO;
         [self.secondView removeFromSuperview];
-        [self.btnView setFrame:CGRectMake(_btnView.frame.origin.x, self.firstView.frame.origin.y + self.firstView.frame.size.height, _btnView.frame.size.width, _btnView.frame.size.height)];
+        [self.btnView setFrame:CGRectMake(_btnView.x, self.firstView.y + self.firstView.height, _btnView.width, _btnView.height)];
 
     }
     
@@ -363,12 +329,12 @@
 }
 -(void)addServerView
 {
-    CGFloat secondViewY = _firstView.frame.origin.y + _firstView.frame.size.height + 1;
-    UIView *secondView = [[UIView alloc]initWithFrame:CGRectMake(0, secondViewY, TWmainScreenFrame.size.width, 44 * 2  +1 * 2)];
+    CGFloat secondViewY = _firstView.y + _firstView.height + 1;
+    UIView *secondView = [[UIView alloc]initWithFrame:CGRectMake(0, secondViewY, TWScreenWidth, 44 * 2  +1 * 2)];
 //    secondView.backgroundColor = [UIColor whiteColor];
     _secondView = secondView;
     //账号label
-    CGFloat accountX = 10;
+    CGFloat accountX = leftEdgesWithLog;
     CGFloat accountY = 0;
     CGFloat accountW = labelWidth;
     CGFloat accountH = 44;
@@ -382,9 +348,9 @@
     [secondView addSubview:accountLabel];
     
     //请输入账号textField
-    CGFloat accountTextX = accountLabel.frame.origin.x + accountLabel.frame.size.width;
+    CGFloat accountTextX = accountLabel.x + accountLabel.width;
     CGFloat accountTextY = 0;
-    CGFloat accountTextW = TWmainScreenFrame.size.width - accountLabel.frame.size.width - 20;
+    CGFloat accountTextW = TWScreenWidth - accountLabel.width - 20;
     CGFloat accountTextH = 44;
     CGRect accountTextFrame = CGRectMake(accountTextX, accountTextY, accountTextW, accountTextH);
     UITextField *accountTextField = [[UITextField alloc]initWithFrame:accountTextFrame];
@@ -397,9 +363,9 @@
     [secondView addSubview:accountTextField];
     
     //分割线
-    CGFloat fengeViewX =  10;
-    CGFloat fengeViewY =  accountTextField.frame.origin.y + accountTextField.frame.size.height;
-    CGFloat fengeViewW =  TWmainScreenFrame.size.width - 2  * fengeViewX;
+    CGFloat fengeViewX =  leftEdgesWithLog;
+    CGFloat fengeViewY =  accountTextField.y + accountTextField.height;
+    CGFloat fengeViewW =  TWScreenWidth - 2  * fengeViewX;
     CGFloat fengeViewH =  1;
     CGRect fengeViewFrame = CGRectMake(fengeViewX, fengeViewY, fengeViewW, fengeViewH);
     UIView *fengeView =  [[UIView alloc]initWithFrame:fengeViewFrame];
@@ -407,8 +373,8 @@
     [secondView addSubview:fengeView];
     
     //密码label
-    CGFloat passwdX = 10;
-    CGFloat passwdY = fengeView.frame.origin.y+ fengeView.frame.size.height;
+    CGFloat passwdX = leftEdgesWithLog;
+    CGFloat passwdY = fengeView.y+ fengeView.height;
     CGFloat passwdW = labelWidth;
     CGFloat passwdH = 44;
     CGRect passwdFrame = CGRectMake(passwdX, passwdY, passwdW, passwdH);
@@ -421,9 +387,9 @@
     [secondView addSubview:passwdLabel];
     
     //请输入密码textField
-    CGFloat passwdTextX = passwdLabel.frame.origin.x + passwdLabel.frame.size.width;
-    CGFloat passwdTextY = fengeView.frame.origin.y+ fengeView.frame.size.height;
-    CGFloat passwdTextW = TWmainScreenFrame.size.width - passwdLabel.frame.size.width - 20;
+    CGFloat passwdTextX = passwdLabel.x + passwdLabel.width;
+    CGFloat passwdTextY = fengeView.y+ fengeView.height;
+    CGFloat passwdTextW = TWScreenWidth - passwdLabel.width - 20;
     CGFloat passwdTextH = 44;
     CGRect passwdTextFrame = CGRectMake(passwdTextX, passwdTextY, passwdTextW, passwdTextH);
     UITextField *passwdTextField = [[UITextField alloc]initWithFrame:passwdTextFrame];
@@ -457,7 +423,7 @@
     [self.view addSubview:secondView];
     
     
-    [self.btnView setFrame:CGRectMake(_btnView.frame.origin.x, secondView.frame.origin.y + secondView.frame.size.height, _btnView.frame.size.width, _btnView.frame.size.height)];
+    [self.btnView setFrame:CGRectMake(_btnView.x, secondView.y + secondView.height, _btnView.width, _btnView.height)];
 
 }
 

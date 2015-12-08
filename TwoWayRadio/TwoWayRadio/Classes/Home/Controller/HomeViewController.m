@@ -42,12 +42,12 @@
         NSUserDefaults *userDefaults =  [NSUserDefaults standardUserDefaults];
         _serverIp = [userDefaults stringForKey:@"serverIp"];
         _serverPort =  [userDefaults stringForKey:@"serverPort"];
-        _account = [userDefaults stringForKey:@"account"];
-        _passwd =  [userDefaults stringForKey:@"passwd"];
-        if (_account ==  nil || _passwd == nil) {
-            [MBProgressHUD showError:@"您未登陆账号和密码"];
-            return nil;
-        }
+//        _account = [userDefaults stringForKey:@"account"];
+//        _passwd =  [userDefaults stringForKey:@"passwd"];
+//        if (_account ==  nil || _passwd == nil) {
+//            [MBProgressHUD showError:@"您未登陆账号和密码"];
+//            return nil;
+//        }
         if (_serverPort ==  nil || _serverIp == nil) {
             [MBProgressHUD showError:@"您未设置服务器地址和端口"];
             return nil;
@@ -517,7 +517,7 @@
     {
         [MBProgressHUD showError:@"您未连接网络"];
     }
-
+    DebugMethod();
 }
 
 -(void)stopTalking
@@ -529,6 +529,7 @@
     }
 
 //    [self animationStop];
+    DebugMethod();
 }
 
 

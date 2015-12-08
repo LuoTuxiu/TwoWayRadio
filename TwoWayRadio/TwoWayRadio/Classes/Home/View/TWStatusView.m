@@ -91,7 +91,7 @@
     self.iconOfPeople.contentMode = UIViewContentModeScaleAspectFit;
     
     //添加账户名UILabel
-    CGFloat acountNameX = _iconOfPeople.frame.origin.x + _iconOfPeople.frame.size.width + 10;
+    CGFloat acountNameX = _iconOfPeople.x + _iconOfPeople.frame.size.width + 10;
     CGFloat acountNameY = 0;
     CGFloat acountNameW = 150 ;
     CGFloat acountNameH = 44;
@@ -107,9 +107,9 @@
 
     
     //添加连接button
-    CGFloat connectBtnFrameX = self.accountName.frame.origin.x + self.accountName.frame.size.width +10 ;
+    CGFloat connectBtnFrameX = self.accountName.x + self.accountName.frame.size.width +10 ;
     CGFloat connectBtnFrameY = self.accountName.frame.origin.y +5;
-    CGFloat connectBtnFrameW = TWmainScreenFrame.size.width - self.accountName.frame.origin.x - self.accountName.frame.size.width - 15;
+    CGFloat connectBtnFrameW = TWmainScreenFrame.size.width - self.accountName.x - self.accountName.frame.size.width - 15;
     CGFloat connectBtnFrameH = self.accountName.frame.size.height -5;
     self.connectBtn.frame = CGRectMake(connectBtnFrameX, connectBtnFrameY, connectBtnFrameW, connectBtnFrameH);
     [self.connectBtn primaryStyle];
@@ -124,7 +124,7 @@
     
     //添加状态button
     //与上一个label对齐
-    CGFloat statusBtnX = _accountName.frame.origin.x;
+    CGFloat statusBtnX = _accountName.x;
     CGFloat statusBtnY = _accountName.frame.origin.y + _accountName.frame.size.height;
     CGFloat statusBtnW = _accountName.frame.size.width;
     CGFloat statusBtnH = self.frame.size.height - _accountName.frame.size.height - _accountName.frame.origin.y;

@@ -191,7 +191,7 @@
     //设置左导航栏条
     //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"我的" style:UIBarButtonItemStylePlain target:self action:@selector(leftDrawerButtonPress:)];
     
-    UIImage  *image =[[UIImage imageNamed:@"setting_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage  *image =[[UIImage imageNamed:@"left_setting_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(leftDrawerButtonPress:)];
     
     

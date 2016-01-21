@@ -27,7 +27,9 @@
     [super viewDidLoad];
 //    DebugMethod();
     // Do any additional setup after loading the view.
-
+    self.tableView.separatorColor = [UIColor colorWithRed:150/255.0f green:161/255.0f blue:177/255.0f alpha:1.0f];
+    self.tableView.opaque = NO;
+    self.tableView.backgroundColor = [UIColor clearColor];
     [self add0Sectionitems];
     
     [self add1Sectionitems];

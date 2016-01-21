@@ -14,7 +14,7 @@
 #import "TWSettingViewController.h"
 #import "TWNavigationController.h"
 //#import <MediaPlayer/MPNowPlayingInfoCenter.h> //2015.10.12 add
-@interface AppDelegate ()
+@interface AppDelegate ()<UIApplicationDelegate, REFrostedViewControllerDelegate>
 @property (nonatomic,assign) CGFloat oldpercentVisible;
 @end
 
@@ -97,8 +97,36 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+-(void)switchToHomeViewController{
+    // Create content and menu controllers
+    //
+    
+//    DEMONavigationController *navigationController = [[DEMONavigationController alloc] initWithRootViewController:[[DEMOHomeViewController alloc] init]];
+//    DEMOMenuViewController *menuController = [[DEMOMenuViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    UIViewController * leftSideDrawerViewController = [[TWSettingViewController alloc]  init];
+    
+    TWTabBarControllerConfig *tabBarViewControllerConfig = [[TWTabBarControllerConfig alloc]init];
+    
+    UIViewController * centerViewController = tabBarViewControllerConfig.tabBarController;
 
--(void)switchToHomeViewController
+    // Create frosted view controller
+    //
+    REFrostedViewController *frostedViewController = [[REFrostedViewController alloc] initWithContentViewController:centerViewController menuViewController:leftSideDrawerViewController];
+    frostedViewController.direction = REFrostedViewControllerDirectionLeft;
+    frostedViewController.liveBlurBackgroundStyle = REFrostedViewControllerLiveBackgroundStyleLight;
+    frostedViewController.liveBlur = YES;
+//    frostedViewController.menuViewSize = CGSizeMake(TWScreenWidth - 50, TWScreenHeight);
+    frostedViewController.delegate = self;
+    
+    // Make it a root controller
+    //
+    self.window.rootViewController = frostedViewController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+}
+
+-(void)switchToHomeViewControllerOld
 {
     UIViewController * leftSideDrawerViewController = [[TWSettingViewController alloc]  init];
     

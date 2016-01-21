@@ -270,9 +270,10 @@
 
 #pragma mark - Button Handlers
 -(void)leftDrawerButtonPress:(id)sender{
-    ((TWTabBarController *)self.tabBarController).blurView = _blurView;
-    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
-    [self.tabBarController.view insertSubview:_blurView aboveSubview:self.view];
+//    ((TWTabBarController *)self.tabBarController).blurView = _blurView;
+//    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+//    [self.tabBarController.view insertSubview:_blurView aboveSubview:self.view];
+    [self.frostedViewController presentMenuViewController];
 }
 
 /**

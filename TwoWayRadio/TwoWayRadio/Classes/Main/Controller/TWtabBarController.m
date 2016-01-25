@@ -8,7 +8,7 @@
 
 #import "TWTabBarController.h"
 #import "HomeViewController.h"
-#import "TWSettingViewController.h"
+#import "TWLeftSettingViewController.h"
 #import "TWNavigationController.h"
 @implementation TWTabBarController
 -(void)viewDidLoad

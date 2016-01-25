@@ -22,7 +22,7 @@
 {
     _allGroups =  [NSMutableArray array];
     
-    UITableView *tableView =  [[UITableView alloc]initWithFrame:[UIScreen mainScreen].applicationFrame style:UITableViewStyleGrouped];
+    UITableView *tableView =  [[UITableView alloc]initWithFrame:[UIScreen mainScreen].applicationFrame style:UITableViewStylePlain];
     tableView.dataSource =self;
     tableView.delegate = self;
 //    tableView.backgroundColor = [UIColor redColor];

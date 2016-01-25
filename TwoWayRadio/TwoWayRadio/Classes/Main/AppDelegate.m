@@ -11,8 +11,8 @@
 #import "UMFeedBack.h"
 #import "CYLTabBarController.h"
 #import "TWTabBarControllerConfig.h"
-#import "TWSettingViewController.h"
 #import "TWNavigationController.h"
+#import "TWLeftSettingViewController.h"
 //#import <MediaPlayer/MPNowPlayingInfoCenter.h> //2015.10.12 add
 @interface AppDelegate ()<UIApplicationDelegate, REFrostedViewControllerDelegate>
 @property (nonatomic,assign) CGFloat oldpercentVisible;
@@ -104,7 +104,7 @@
 //    DEMONavigationController *navigationController = [[DEMONavigationController alloc] initWithRootViewController:[[DEMOHomeViewController alloc] init]];
 //    DEMOMenuViewController *menuController = [[DEMOMenuViewController alloc] initWithStyle:UITableViewStylePlain];
     
-    UIViewController * leftSideDrawerViewController = [[TWSettingViewController alloc]  init];
+    UIViewController * leftSideDrawerViewController = [[TWLeftSettingViewController alloc]  init];
     
     TWTabBarControllerConfig *tabBarViewControllerConfig = [[TWTabBarControllerConfig alloc]init];
     
@@ -128,7 +128,7 @@
 
 -(void)switchToHomeViewControllerOld
 {
-    UIViewController * leftSideDrawerViewController = [[TWSettingViewController alloc]  init];
+    UIViewController * leftSideDrawerViewController = [[TWLeftSettingViewController alloc]  init];
     
     TWTabBarControllerConfig *tabBarViewControllerConfig = [[TWTabBarControllerConfig alloc]init];
     

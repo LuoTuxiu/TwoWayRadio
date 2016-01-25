@@ -17,4 +17,6 @@
 }
 @property (nonatomic,weak) UITableView *tableView;
 @property (nonatomic,strong) UITextField *accountField;
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 @end

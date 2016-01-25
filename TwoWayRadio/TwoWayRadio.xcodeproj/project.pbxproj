@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		050AFAFB1C0ADE42007AC9D1 /* TWTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050AFAFA1C0ADE42007AC9D1 /* TWTestViewController.m */; };
-		053007D71BFF460E00CEC630 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 053007D41BFF460E00CEC630 /* UIView+Extension.m */; };
 		053007DB1BFF462A00CEC630 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 053007DA1BFF462A00CEC630 /* UIButton+Extension.m */; };
 		3B05B72C1C172C1A0063E89A /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B05B7291C172C1A0063E89A /* TPKeyboardAvoidingScrollView.m */; };
 		3B05B72D1C172C1A0063E89A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B05B72B1C172C1A0063E89A /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
@@ -48,9 +47,7 @@
 		3BDD3BC01BABC44100E67F7A /* TwoWayRadioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3BBF1BABC44100E67F7A /* TwoWayRadioUITests.m */; };
 		3BE251681BBD21FD0050474C /* TWBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE251671BBD21FD0050474C /* TWBaseSettingViewController.m */; };
 		3BE2516B1BBD23B00050474C /* TWSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2516A1BBD23B00050474C /* TWSettingTableViewCell.m */; };
-		3BE251711BBD250C0050474C /* TWSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE251701BBD250C0050474C /* TWSettingViewController.m */; };
 		3BE251741BBD326C0050474C /* TWSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE251731BBD326C0050474C /* TWSettingGroup.m */; };
-		3BE2517C1BBD45DC0050474C /* TWAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2517B1BBD45DC0050474C /* TWAboutViewController.m */; };
 		3BE925F31BB9531800C5328D /* HYOpenALHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE925F21BB9531800C5328D /* HYOpenALHelper.m */; };
 		3BF373081BBD6B0500117A61 /* TWSettingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF373071BBD6B0500117A61 /* TWSettingHeaderView.m */; };
 		3BF3730A1BBD6B1200117A61 /* TWSettingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF373091BBD6B1200117A61 /* TWSettingHeaderView.xib */; };
@@ -62,6 +59,26 @@
 		3BF7483D1BCD248500D5292F /* TWFirstViewLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF748391BCD248500D5292F /* TWFirstViewLoginViewController.m */; };
 		3BF748441BCD2A3500D5292F /* TWChangeLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF748431BCD2A3500D5292F /* TWChangeLoginViewController.m */; };
 		74874CABC3926E0088155548 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D147AC432CB9139A4F62467 /* libPods.a */; };
+		F57EBB871C5653870007DDFA /* YSCommonController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBB861C5653870007DDFA /* YSCommonController.m */; };
+		F57EBB8A1C56539C0007DDFA /* YSCommonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBB891C56539C0007DDFA /* YSCommonGroup.m */; };
+		F57EBB8D1C5653B30007DDFA /* YSCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBB8C1C5653B30007DDFA /* YSCommonCell.m */; };
+		F57EBBAB1C5653E30007DDFA /* DZCommonChangeFrameItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBB901C5653E30007DDFA /* DZCommonChangeFrameItem.m */; };
+		F57EBBAC1C5653E30007DDFA /* DZRightTextFieldItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBB921C5653E30007DDFA /* DZRightTextFieldItem.m */; };
+		F57EBBAD1C5653E30007DDFA /* DZRightTitleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBB941C5653E30007DDFA /* DZRightTitleItem.m */; };
+		F57EBBAE1C5653E30007DDFA /* YSArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBB961C5653E30007DDFA /* YSArrowItem.m */; };
+		F57EBBAF1C5653E30007DDFA /* YSCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBB981C5653E30007DDFA /* YSCellItem.m */; };
+		F57EBBB01C5653E30007DDFA /* YSCheckItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBB9A1C5653E30007DDFA /* YSCheckItem.m */; };
+		F57EBBB11C5653E30007DDFA /* YSCommonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBB9C1C5653E30007DDFA /* YSCommonItem.m */; };
+		F57EBBB21C5653E30007DDFA /* YSCustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBB9E1C5653E30007DDFA /* YSCustomItem.m */; };
+		F57EBBB31C5653E30007DDFA /* YSDatePickerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBBA01C5653E30007DDFA /* YSDatePickerItem.m */; };
+		F57EBBB41C5653E30007DDFA /* YSDoubleEditItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBBA21C5653E30007DDFA /* YSDoubleEditItem.m */; };
+		F57EBBB51C5653E30007DDFA /* YSEditItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBBA41C5653E30007DDFA /* YSEditItem.m */; };
+		F57EBBB61C5653E30007DDFA /* YSMoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBBA61C5653E30007DDFA /* YSMoreItem.m */; };
+		F57EBBB71C5653E30007DDFA /* YSRemarkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBBA81C5653E30007DDFA /* YSRemarkItem.m */; };
+		F57EBBB81C5653E30007DDFA /* YSSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBBAA1C5653E30007DDFA /* YSSwitchItem.m */; };
+		F57EBBBB1C5656B40007DDFA /* UIView+FrameAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBBBA1C5656B40007DDFA /* UIView+FrameAdjust.m */; };
+		F57EBBC11C565A2E0007DDFA /* TWLeftSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBBC01C565A2E0007DDFA /* TWLeftSettingViewController.m */; };
+		F57EBBC71C565C230007DDFA /* TWAboutProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBBC61C565C230007DDFA /* TWAboutProductViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,8 +101,6 @@
 /* Begin PBXFileReference section */
 		050AFAF91C0ADE41007AC9D1 /* TWTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTestViewController.h; sourceTree = "<group>"; };
 		050AFAFA1C0ADE42007AC9D1 /* TWTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTestViewController.m; sourceTree = "<group>"; };
-		053007D31BFF460E00CEC630 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		053007D41BFF460E00CEC630 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		053007D91BFF462A00CEC630 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
 		053007DA1BFF462A00CEC630 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		0D147AC432CB9139A4F62467 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,12 +177,8 @@
 		3BE251671BBD21FD0050474C /* TWBaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWBaseSettingViewController.m; sourceTree = "<group>"; };
 		3BE251691BBD23B00050474C /* TWSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingTableViewCell.h; sourceTree = "<group>"; };
 		3BE2516A1BBD23B00050474C /* TWSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingTableViewCell.m; sourceTree = "<group>"; };
-		3BE2516F1BBD250C0050474C /* TWSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingViewController.h; sourceTree = "<group>"; };
-		3BE251701BBD250C0050474C /* TWSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWSettingViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3BE251721BBD326C0050474C /* TWSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingGroup.h; sourceTree = "<group>"; };
 		3BE251731BBD326C0050474C /* TWSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSettingGroup.m; sourceTree = "<group>"; };
-		3BE2517A1BBD45DC0050474C /* TWAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAboutViewController.h; sourceTree = "<group>"; };
-		3BE2517B1BBD45DC0050474C /* TWAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWAboutViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3BE925F11BB9531800C5328D /* HYOpenALHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYOpenALHelper.h; sourceTree = "<group>"; };
 		3BE925F21BB9531800C5328D /* HYOpenALHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HYOpenALHelper.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3BF373061BBD6B0500117A61 /* TWSettingHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSettingHeaderView.h; sourceTree = "<group>"; };
@@ -187,6 +198,46 @@
 		3BF748431BCD2A3500D5292F /* TWChangeLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWChangeLoginViewController.m; sourceTree = "<group>"; };
 		482E1D16887301DF6002DE63 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EF859131E9E4795AF42B4948 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F57EBB851C5653870007DDFA /* YSCommonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCommonController.h; sourceTree = "<group>"; };
+		F57EBB861C5653870007DDFA /* YSCommonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCommonController.m; sourceTree = "<group>"; };
+		F57EBB881C56539C0007DDFA /* YSCommonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCommonGroup.h; sourceTree = "<group>"; };
+		F57EBB891C56539C0007DDFA /* YSCommonGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCommonGroup.m; sourceTree = "<group>"; };
+		F57EBB8B1C5653B30007DDFA /* YSCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCommonCell.h; sourceTree = "<group>"; };
+		F57EBB8C1C5653B30007DDFA /* YSCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCommonCell.m; sourceTree = "<group>"; };
+		F57EBB8F1C5653E30007DDFA /* DZCommonChangeFrameItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCommonChangeFrameItem.h; sourceTree = "<group>"; };
+		F57EBB901C5653E30007DDFA /* DZCommonChangeFrameItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCommonChangeFrameItem.m; sourceTree = "<group>"; };
+		F57EBB911C5653E30007DDFA /* DZRightTextFieldItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRightTextFieldItem.h; sourceTree = "<group>"; };
+		F57EBB921C5653E30007DDFA /* DZRightTextFieldItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZRightTextFieldItem.m; sourceTree = "<group>"; };
+		F57EBB931C5653E30007DDFA /* DZRightTitleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRightTitleItem.h; sourceTree = "<group>"; };
+		F57EBB941C5653E30007DDFA /* DZRightTitleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZRightTitleItem.m; sourceTree = "<group>"; };
+		F57EBB951C5653E30007DDFA /* YSArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSArrowItem.h; sourceTree = "<group>"; };
+		F57EBB961C5653E30007DDFA /* YSArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSArrowItem.m; sourceTree = "<group>"; };
+		F57EBB971C5653E30007DDFA /* YSCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCellItem.h; sourceTree = "<group>"; };
+		F57EBB981C5653E30007DDFA /* YSCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCellItem.m; sourceTree = "<group>"; };
+		F57EBB991C5653E30007DDFA /* YSCheckItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCheckItem.h; sourceTree = "<group>"; };
+		F57EBB9A1C5653E30007DDFA /* YSCheckItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCheckItem.m; sourceTree = "<group>"; };
+		F57EBB9B1C5653E30007DDFA /* YSCommonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCommonItem.h; sourceTree = "<group>"; };
+		F57EBB9C1C5653E30007DDFA /* YSCommonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCommonItem.m; sourceTree = "<group>"; };
+		F57EBB9D1C5653E30007DDFA /* YSCustomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCustomItem.h; sourceTree = "<group>"; };
+		F57EBB9E1C5653E30007DDFA /* YSCustomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCustomItem.m; sourceTree = "<group>"; };
+		F57EBB9F1C5653E30007DDFA /* YSDatePickerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSDatePickerItem.h; sourceTree = "<group>"; };
+		F57EBBA01C5653E30007DDFA /* YSDatePickerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSDatePickerItem.m; sourceTree = "<group>"; };
+		F57EBBA11C5653E30007DDFA /* YSDoubleEditItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSDoubleEditItem.h; sourceTree = "<group>"; };
+		F57EBBA21C5653E30007DDFA /* YSDoubleEditItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSDoubleEditItem.m; sourceTree = "<group>"; };
+		F57EBBA31C5653E30007DDFA /* YSEditItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSEditItem.h; sourceTree = "<group>"; };
+		F57EBBA41C5653E30007DDFA /* YSEditItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSEditItem.m; sourceTree = "<group>"; };
+		F57EBBA51C5653E30007DDFA /* YSMoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMoreItem.h; sourceTree = "<group>"; };
+		F57EBBA61C5653E30007DDFA /* YSMoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMoreItem.m; sourceTree = "<group>"; };
+		F57EBBA71C5653E30007DDFA /* YSRemarkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSRemarkItem.h; sourceTree = "<group>"; };
+		F57EBBA81C5653E30007DDFA /* YSRemarkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSRemarkItem.m; sourceTree = "<group>"; };
+		F57EBBA91C5653E30007DDFA /* YSSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSSwitchItem.h; sourceTree = "<group>"; };
+		F57EBBAA1C5653E30007DDFA /* YSSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSSwitchItem.m; sourceTree = "<group>"; };
+		F57EBBB91C5656B40007DDFA /* UIView+FrameAdjust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameAdjust.h"; sourceTree = "<group>"; };
+		F57EBBBA1C5656B40007DDFA /* UIView+FrameAdjust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameAdjust.m"; sourceTree = "<group>"; };
+		F57EBBBF1C565A2E0007DDFA /* TWLeftSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLeftSettingViewController.h; sourceTree = "<group>"; };
+		F57EBBC01C565A2E0007DDFA /* TWLeftSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLeftSettingViewController.m; sourceTree = "<group>"; };
+		F57EBBC51C565C230007DDFA /* TWAboutProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAboutProductViewController.h; sourceTree = "<group>"; };
+		F57EBBC61C565C230007DDFA /* TWAboutProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAboutProductViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,14 +281,14 @@
 		053007D21BFF460E00CEC630 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F57EBBB91C5656B40007DDFA /* UIView+FrameAdjust.h */,
+				F57EBBBA1C5656B40007DDFA /* UIView+FrameAdjust.m */,
 				3B05B7281C172C1A0063E89A /* TPKeyboardAvoidingScrollView.h */,
 				3B05B7291C172C1A0063E89A /* TPKeyboardAvoidingScrollView.m */,
 				3B05B72A1C172C1A0063E89A /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
 				3B05B72B1C172C1A0063E89A /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 				053007D91BFF462A00CEC630 /* UIButton+Extension.h */,
 				053007DA1BFF462A00CEC630 /* UIButton+Extension.m */,
-				053007D31BFF460E00CEC630 /* UIView+Extension.h */,
-				053007D41BFF460E00CEC630 /* UIView+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -389,12 +440,12 @@
 		3B2262F21BAEE68000880A0A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F57EBBBF1C565A2E0007DDFA /* TWLeftSettingViewController.h */,
+				F57EBBC01C565A2E0007DDFA /* TWLeftSettingViewController.m */,
 				3BF7483E1BCD29BE00D5292F /* ChangeLogin */,
 				3BE251791BBD45B10050474C /* About */,
 				3BE251661BBD21FD0050474C /* TWBaseSettingViewController.h */,
 				3BE251671BBD21FD0050474C /* TWBaseSettingViewController.m */,
-				3BE2516F1BBD250C0050474C /* TWSettingViewController.h */,
-				3BE251701BBD250C0050474C /* TWSettingViewController.m */,
 				050AFAF91C0ADE41007AC9D1 /* TWTestViewController.h */,
 				050AFAFA1C0ADE42007AC9D1 /* TWTestViewController.m */,
 			);
@@ -531,8 +582,8 @@
 		3BE251791BBD45B10050474C /* About */ = {
 			isa = PBXGroup;
 			children = (
-				3BE2517A1BBD45DC0050474C /* TWAboutViewController.h */,
-				3BE2517B1BBD45DC0050474C /* TWAboutViewController.m */,
+				F57EBBC51C565C230007DDFA /* TWAboutProductViewController.h */,
+				F57EBBC61C565C230007DDFA /* TWAboutProductViewController.m */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -550,6 +601,8 @@
 		3BF3731B1BBE236000117A61 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F57EBB851C5653870007DDFA /* YSCommonController.h */,
+				F57EBB861C5653870007DDFA /* YSCommonController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -557,6 +610,9 @@
 		3BF3731C1BBE236000117A61 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F57EBB8E1C5653E30007DDFA /* CellItem */,
+				F57EBB881C56539C0007DDFA /* YSCommonGroup.h */,
+				F57EBB891C56539C0007DDFA /* YSCommonGroup.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -564,6 +620,8 @@
 		3BF3731D1BBE236000117A61 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F57EBB8B1C5653B30007DDFA /* YSCommonCell.h */,
+				F57EBB8C1C5653B30007DDFA /* YSCommonCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -650,6 +708,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F57EBB8E1C5653E30007DDFA /* CellItem */ = {
+			isa = PBXGroup;
+			children = (
+				F57EBB8F1C5653E30007DDFA /* DZCommonChangeFrameItem.h */,
+				F57EBB901C5653E30007DDFA /* DZCommonChangeFrameItem.m */,
+				F57EBB911C5653E30007DDFA /* DZRightTextFieldItem.h */,
+				F57EBB921C5653E30007DDFA /* DZRightTextFieldItem.m */,
+				F57EBB931C5653E30007DDFA /* DZRightTitleItem.h */,
+				F57EBB941C5653E30007DDFA /* DZRightTitleItem.m */,
+				F57EBB951C5653E30007DDFA /* YSArrowItem.h */,
+				F57EBB961C5653E30007DDFA /* YSArrowItem.m */,
+				F57EBB971C5653E30007DDFA /* YSCellItem.h */,
+				F57EBB981C5653E30007DDFA /* YSCellItem.m */,
+				F57EBB991C5653E30007DDFA /* YSCheckItem.h */,
+				F57EBB9A1C5653E30007DDFA /* YSCheckItem.m */,
+				F57EBB9B1C5653E30007DDFA /* YSCommonItem.h */,
+				F57EBB9C1C5653E30007DDFA /* YSCommonItem.m */,
+				F57EBB9D1C5653E30007DDFA /* YSCustomItem.h */,
+				F57EBB9E1C5653E30007DDFA /* YSCustomItem.m */,
+				F57EBB9F1C5653E30007DDFA /* YSDatePickerItem.h */,
+				F57EBBA01C5653E30007DDFA /* YSDatePickerItem.m */,
+				F57EBBA11C5653E30007DDFA /* YSDoubleEditItem.h */,
+				F57EBBA21C5653E30007DDFA /* YSDoubleEditItem.m */,
+				F57EBBA31C5653E30007DDFA /* YSEditItem.h */,
+				F57EBBA41C5653E30007DDFA /* YSEditItem.m */,
+				F57EBBA51C5653E30007DDFA /* YSMoreItem.h */,
+				F57EBBA61C5653E30007DDFA /* YSMoreItem.m */,
+				F57EBBA71C5653E30007DDFA /* YSRemarkItem.h */,
+				F57EBBA81C5653E30007DDFA /* YSRemarkItem.m */,
+				F57EBBA91C5653E30007DDFA /* YSSwitchItem.h */,
+				F57EBBAA1C5653E30007DDFA /* YSSwitchItem.m */,
+			);
+			path = CellItem;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -720,7 +813,7 @@
 				TargetAttributes = {
 					3BDD3B961BABC44100E67F7A = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = T6GHWG4MR5;
+						DevelopmentTeam = 8BFL9MCCE8;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -840,39 +933,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B28F3691BBD586800E0981E /* TWSettingItem.m in Sources */,
+				F57EBBB41C5653E30007DDFA /* YSDoubleEditItem.m in Sources */,
 				3BF373161BBD8B1D00117A61 /* TWSettingTextItem.m in Sources */,
 				3B32C87A1BB107F40094F81F /* TWAdpcm.m in Sources */,
+				F57EBBB21C5653E30007DDFA /* YSCustomItem.m in Sources */,
 				3B05B72D1C172C1A0063E89A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				F57EBBC11C565A2E0007DDFA /* TWLeftSettingViewController.m in Sources */,
+				F57EBBAD1C5653E30007DDFA /* DZRightTitleItem.m in Sources */,
 				3B28F36D1BBD5DA000E0981E /* TWAboutHeaderView.m in Sources */,
 				3B05B72C1C172C1A0063E89A /* TPKeyboardAvoidingScrollView.m in Sources */,
 				3BE251741BBD326C0050474C /* TWSettingGroup.m in Sources */,
 				3B21D80A1BDA115300D821C8 /* Bug.md in Sources */,
 				3BF373081BBD6B0500117A61 /* TWSettingHeaderView.m in Sources */,
+				F57EBBB31C5653E30007DDFA /* YSDatePickerItem.m in Sources */,
+				F57EBBBB1C5656B40007DDFA /* UIView+FrameAdjust.m in Sources */,
 				3B0FF0931BAF01EC005D9275 /* TWRecorder.m in Sources */,
 				3B0FF08B1BAEF9D1005D9275 /* TWNavigationController.m in Sources */,
 				3B2262F81BAEE68000880A0A /* AppDelegate.m in Sources */,
+				F57EBBB71C5653E30007DDFA /* YSRemarkItem.m in Sources */,
+				F57EBBB01C5653E30007DDFA /* YSCheckItem.m in Sources */,
+				F57EBBAB1C5653E30007DDFA /* DZCommonChangeFrameItem.m in Sources */,
 				3B6DC22F1BC2A357008B919A /* TWStatusButton.m in Sources */,
 				3B5BA2D01BCA019E00B2151A /* GCDAsyncUdpSocket.m in Sources */,
+				F57EBB8D1C5653B30007DDFA /* YSCommonCell.m in Sources */,
 				3BF7483C1BCD248500D5292F /* TWbaseLoginViewController.m in Sources */,
 				3B61B3271BFA1FAF0096A89B /* TWtabBarController.m in Sources */,
 				3B28F3631BBD582B00E0981E /* TWSettingArrowItem.m in Sources */,
-				3BE2517C1BBD45DC0050474C /* TWAboutViewController.m in Sources */,
+				F57EBBB81C5653E30007DDFA /* YSSwitchItem.m in Sources */,
 				3B61B08C1BC2222300671E12 /* TWRadioButton.m in Sources */,
 				3BD9DCE31BF816C500BD48E3 /* TWTabBarControllerConfig.m in Sources */,
+				F57EBBB61C5653E30007DDFA /* YSMoreItem.m in Sources */,
 				3BF7483D1BCD248500D5292F /* TWFirstViewLoginViewController.m in Sources */,
-				053007D71BFF460E00CEC630 /* UIView+Extension.m in Sources */,
 				3BE251681BBD21FD0050474C /* TWBaseSettingViewController.m in Sources */,
+				F57EBBAF1C5653E30007DDFA /* YSCellItem.m in Sources */,
+				F57EBBAE1C5653E30007DDFA /* YSArrowItem.m in Sources */,
 				3B6DC22C1BC2926F008B919A /* TWStatusView.m in Sources */,
+				F57EBBC71C565C230007DDFA /* TWAboutProductViewController.m in Sources */,
 				3BF748441BCD2A3500D5292F /* TWChangeLoginViewController.m in Sources */,
 				3BE2516B1BBD23B00050474C /* TWSettingTableViewCell.m in Sources */,
 				3BCAE71D1BBE33BE009172D6 /* TWSaveInfo.m in Sources */,
 				3BE925F31BB9531800C5328D /* HYOpenALHelper.m in Sources */,
 				3BB7EE931BEE2790000327C9 /* MBProgressHUD+NJ.m in Sources */,
 				3B6DC2331BC2C200008B919A /* UIButton+Bootstrap.m in Sources */,
-				3BE251711BBD250C0050474C /* TWSettingViewController.m in Sources */,
 				3B74D2B31BAF8FCF00F48A12 /* UdpNetwork.m in Sources */,
+				F57EBB871C5653870007DDFA /* YSCommonController.m in Sources */,
+				F57EBBB11C5653E30007DDFA /* YSCommonItem.m in Sources */,
 				050AFAFB1C0ADE42007AC9D1 /* TWTestViewController.m in Sources */,
 				3BB499911BC1854200D8CAD2 /* TWRadioView.m in Sources */,
+				F57EBBB51C5653E30007DDFA /* YSEditItem.m in Sources */,
+				F57EBBAC1C5653E30007DDFA /* DZRightTextFieldItem.m in Sources */,
 				3B63B6011BC3C37D00F2664E /* MSWeakTimer.m in Sources */,
 				3B4E3AEF1BCB9BB6002D75C0 /* TWNetworkEnvironment.m in Sources */,
 				3B6DC2361BC2C267008B919A /* NSString+FontAwesome.m in Sources */,
@@ -881,6 +990,7 @@
 				3B2262FA1BAEE68000880A0A /* main.m in Sources */,
 				3B4E3AF51BCB9FE9002D75C0 /* Reachability.m in Sources */,
 				3B2262F71BAEE68000880A0A /* HomeViewController.m in Sources */,
+				F57EBB8A1C56539C0007DDFA /* YSCommonGroup.m in Sources */,
 				053007DB1BFF462A00CEC630 /* UIButton+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

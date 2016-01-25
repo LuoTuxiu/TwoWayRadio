@@ -214,7 +214,7 @@
 //    UIButton *history = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
 //    [history setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 //    [history setTitle:@"历史" forState:UIControlStateNormal];
-//    //    history.rightX = DZScreenWidth;
+//    //    history.rightX = TWScreenWidth;
 //    UIBarButtonItem *historyItem = [[UIBarButtonItem alloc]initWithCustomView:history];
 //    
 //    UIButton *send = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];

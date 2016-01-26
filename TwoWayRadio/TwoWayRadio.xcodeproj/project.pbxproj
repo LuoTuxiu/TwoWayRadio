@@ -372,6 +372,7 @@
 		3B2262E41BAEE68000880A0A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3B2262EA1BAEE68000880A0A /* main.m */,
 				3B4E3AF31BCB9FE9002D75C0 /* Reachability.h */,
 				3B4E3AF41BCB9FE9002D75C0 /* Reachability.m */,
 				3BB7EE911BEE2790000327C9 /* MBProgressHUD+NJ.h */,
@@ -379,7 +380,6 @@
 				3B2262E51BAEE68000880A0A /* AppDelegate.h */,
 				3B2262E61BAEE68000880A0A /* AppDelegate.m */,
 				3B2262E71BAEE68000880A0A /* Controller */,
-				3B2262EA1BAEE68000880A0A /* main.m */,
 				3B2262EB1BAEE68000880A0A /* Model */,
 				3B2262EC1BAEE68000880A0A /* View */,
 				3B4E3AED1BCB9BB6002D75C0 /* TWNetworkEnvironment.h */,

@@ -18,11 +18,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"关于";
-    
+    [self commonSetupTableView:UITableViewStyleGrouped];
     //2.设置头部的部件
     TWAboutHeaderView *aboutView = [TWAboutHeaderView headerView];
     self.tableView.tableHeaderView = aboutView;
-
+//    self.tableView.backgroundColor = [UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning {

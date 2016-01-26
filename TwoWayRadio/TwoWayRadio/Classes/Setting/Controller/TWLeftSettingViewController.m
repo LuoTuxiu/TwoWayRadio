@@ -118,9 +118,8 @@
     //    about.showVcClass = [TWAboutViewController class];
     about.operation = ^{
         //
-        UIViewController *vc =  [[TWAboutProductViewController alloc]init];
+        TWAboutProductViewController *vc =  [[TWAboutProductViewController alloc]init];
         [self showControllerWithVc:vc];
-        
         
     };
     
@@ -158,19 +157,14 @@
 
 -(void)showControllerWithVc:(UIViewController *)vc
 {
-    MMDrawerController *originDrawVc = self.mm_drawerController;
-    TWNavigationController *home = [((CYLTabBarController *)originDrawVc.centerViewController).viewControllers firstObject];
-    
-    [home pushViewController:vc animated:NO];
-    [originDrawVc closeDrawerAnimated:YES completion:nil];
-    
-    
-    //    UIWindow *window  = [UIApplication sharedApplication].keyWindow;
-    //    MMDrawerController *drawerController = (MMDrawerController *)window.rootViewController;
-    //    DZNavigationViewController *home = [((CYLTabBarController *)drawerController.centerViewController).viewControllers firstObject];
-    //    //注意下面两行代码先后顺序
-    //    [home pushViewController:lc animated:NO];
-    //    [drawerController closeDrawerAnimated:YES completion:nil];
+    TWTabBarController *tabVc   = (TWTabBarController *)self.frostedViewController.contentViewController;
+    TWNavigationController *nav  =  (TWNavigationController *)[tabVc.viewControllers firstObject];
+    //        [nav addChildViewController:vc];
+    //
+    //        self.frostedViewController.contentViewController = vc;
+    [nav pushViewController:vc animated:YES];
+    [self.frostedViewController hideMenuViewController];
+    //        [self showControllerWithVc:vc];
 }
 
 

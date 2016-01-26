@@ -7,225 +7,193 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A491C670FE881325DE3477272C5F7E /* REFrostedViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFCD8C5520D6B9F870AD6137E23C11C /* REFrostedViewController-dummy.m */; };
-		0FA100DBF7093730172F14266749FF32 /* UIImage+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 696F10F051C205C0555700C4DEC729BE /* UIImage+REFrostedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1165CE50C17386E47EE5422BA5B299BB /* JCRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1596A5862E221BE047275BEF576EFBF /* JCRBlurView.m */; };
-		189AB68E894EF9F4386125BCF478DC37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938BE882CB1474E65D5987CAA4C9E2F /* Foundation.framework */; };
-		19BD91B5A5ED8A4C820CB6BD33633C7C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = CA63AD74BE07E8F31CB7C3D6E58BB869 /* MMDrawerVisualState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1A378C41991F5219E9959E3A250E9A03 /* MMDrawerVisualState.h in Headers */ = {isa = PBXBuildFile; fileRef = 179E2AB512C66CA5206DBC71D9B77CB1 /* MMDrawerVisualState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DFEF6A57BB1DCB310CE22C8366F4644 /* UMChatToolBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 753FFD345814CE935018E7570E1F377C /* UMChatToolBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E22F5EFC30AE74E20C73F670B97035F /* UIView+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C12E9AF816A710BE983195650DA493ED /* UIView+REFrostedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2125524BCB13EF99C948282458BD9A0A /* CYLPlusButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 48AFD4AEAED56D20D398E81B350F89D0 /* CYLPlusButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		264EB5BF4D94850F4E58224438636EAA /* UMChatTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 533EDAD0A1A6B77A4403F8280CF96EC4 /* UMChatTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02FF8A44F3BB3FBD583FFECBABFF9C37 /* UMTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 021D0939B85A7C969083DA2FDD0799FB /* UMTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04476BA850B559D10C691883A0CD0B0D /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = A744B26A64F4B9D06716EF6775673390 /* RECommonFunctions.m */; };
+		0E77542C99DE84AD358959C655CC365A /* UIView+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 44F3FBAA316B1B2572DEDFA37FB8F0A8 /* UIView+REFrostedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1165CE50C17386E47EE5422BA5B299BB /* JCRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5890A5653796E3A6DE1357A47B03DAA4 /* JCRBlurView.m */; };
+		1997EF5A0558387D26AE56FD6C0A62AD /* UMFullScreenPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AA30798D9D02412D76E30EFEC23189 /* UMFullScreenPhotoView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1BA0A0E35FC3E5B2DAF4C27B70E7302D /* UMFullScreenPhotoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EEB35F285BCBE6D8AC2F28510C77C7A /* UMFullScreenPhotoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FD8992C50956BE1F68AE4DB11AD7319 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB825F5894B902D01022E91EFED1E5B2 /* UIView+REFrostedViewController.m */; };
+		2125524BCB13EF99C948282458BD9A0A /* CYLPlusButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E7A7B529F1EE4F13E9BDEF206ABD4793 /* CYLPlusButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25E63F0FFE94D6AA30E2EB6AB13ABB4F /* UMRadialView.h in Headers */ = {isa = PBXBuildFile; fileRef = BC4FC5DF36A8E1444359EC2E7C86D419 /* UMRadialView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26EDB45477A0E9AC6CD042A55475444A /* UMRadialView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9369BC1563B422A74961267EC81D11F /* UMRadialView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938BE882CB1474E65D5987CAA4C9E2F /* Foundation.framework */; };
-		2B1D1915FDD7E6282AE7E4556C4A823A /* UMOpus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F321606043E02C9B78C45D2F2711600 /* UMOpus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BD7C5DD36FE371202E71A46B1F782C7 /* UMOpenMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A220B6769A38B9F5074BC41DD294944 /* UMOpenMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D8C79E70B7EEA9C8EB372CD5775A5C1 /* MMDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA2A4977E4992B3FF08220626DEEA48 /* MMDrawerController-dummy.m */; };
-		2FE1EA9C1D8F7A1B14C0996CBCD56F36 /* iOS-blur-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB5F1D46872B521D2E8184AD2306515 /* iOS-blur-dummy.m */; };
-		30D2380E0F9E6DC2FC7F687455F15909 /* UMFullScreenPhotoView.h in Headers */ = {isa = PBXBuildFile; fileRef = A1876065541D8F1DE183075EBCF87B13 /* UMFullScreenPhotoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33BF19204DB24CE9B25D11A284EA75B3 /* UMChatToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F44F6D614691D639E94A19E8E28211E1 /* UMChatToolBar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		356E6E39FE245F903EBD96A2CE79A8E8 /* REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 26F560444CE69F94D6A0A47012379C09 /* REFrostedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35DB834393145453830542AAC5325315 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A80AB6C6642E960BC85BCE54E5C4B0 /* RECommonFunctions.m */; };
-		3B308328F6548826384F979F785B6BDA /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B711A66AEE99A0026FCF81E9535FE5 /* CYLTabBar.m */; };
-		3E2339C59FACF612E98615B75611B762 /* UMFeedbackViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EA420637B37C1A08E3D2605C3E60A0BE /* UMFeedbackViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FE1EA9C1D8F7A1B14C0996CBCD56F36 /* iOS-blur-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2C85176A4B56C282409706040976E9 /* iOS-blur-dummy.m */; };
+		34165C9169FFF53991D9CD23D663867B /* UMRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1FE7AD844C7BE5F38F482A74E55408 /* UMRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AEEC086B94AA1517351AA14C830AEA6 /* UMPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E8B59601D39151C40C1D20982E3F2 /* UMPostTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3B308328F6548826384F979F785B6BDA /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BC804CD585D30E153EC15087A60B0A02 /* CYLTabBar.m */; };
+		3E6E5A2896C07FFC762A9D27E3744782 /* UMFeedbackViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C23DF6BD7C0564372F214045D01CDBC2 /* UMFeedbackViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46C917F4B162092DA6EC191858CDBA46 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87C9FFF61C91EABAFF9FDF23C69BFF8 /* Accelerate.framework */; };
 		48C6A88C2121C34093765A394A8D9E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938BE882CB1474E65D5987CAA4C9E2F /* Foundation.framework */; };
-		547E9F8ECF9F4700559773969D82D7D9 /* UMRadialView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF305E9FC5F1F0931C697A5A602DB5A /* UMRadialView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		579A1B0E910EF7BB4A3D44D2880570E9 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8551B9FF9D0786D51999CB42856708 /* UIViewController+MMDrawerController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5A6ED554524DC77DE3300602227E73F3 /* UIViewController+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FBA24699D94614BA5012379F03ED423B /* UIViewController+REFrostedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5CD819353C30C805E53265229D515F63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938BE882CB1474E65D5987CAA4C9E2F /* Foundation.framework */; };
-		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = F49E12E265D4DC6A8CEB6653FFAECC82 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62445D56D62979170E9966104FDFBFBE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8D6C285CE4D9B8B0CE0200869AF02A /* QuartzCore.framework */; };
-		66549CC91863363861D818B68B136EB6 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBE398B3F2C129D4D74EDB4E8B049C5 /* MMDrawerController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		683D7344383B6501AB0C77BE9CDA344A /* UMFullScreenPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 962A8A061700F223B9DE132ED22310D2 /* UMFullScreenPhotoView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		698601E2D2EDB437C831232D16CCAF11 /* UMRadialView.h in Headers */ = {isa = PBXBuildFile; fileRef = B3758814A957400FBCCB1E100A93CE41 /* UMRadialView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590889764B907121B4AB99C7FBA619F4 /* UMChatTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA349C72E823078CE709D53A6C41E0E /* UMChatTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = A0BF3B8EDB4F151BB67C8494E3C374EE /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		627D76E76480CA5794F4BF7005ADCF96 /* REFrostedViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C7EE8C085D24D3A75690EA55C0E04F /* REFrostedViewController-dummy.m */; };
+		6F317BDE4830E4ACABBB8BDB593B749C /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B661DDA3445AE21C7984B3211A9BBF69 /* UIViewController+REFrostedViewController.m */; };
 		70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2D85A8DB68D105FBCE55674F7B05D5 /* CoreGraphics.framework */; };
-		76D495DBB9B5D81BE4391E10299F938B /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A08CA65B7C3617B177E85276A4DDC0DE /* MMDrawerBarButtonItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF05E2FB52D3233087E8D4561C7A65E /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		878D53CA5AB7BEA564CC5F557F701794 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
-		8BA9BBE156E5EF2F2676D216D4C9BDE3 /* UMFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788265C56453F2791A7769B6B0768D5A /* UMFeedbackViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8BCE8E4F9DC29F42E6DB514199B2D06D /* UMengFeedback-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A93F85EB61B8EE7760BC9E6E9994141F /* UMengFeedback-dummy.m */; };
-		8E2D88A5AB3481BC11904D73B5DA521D /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 354F8F48A34E1F590E84B99597DD48BB /* RECommonFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		937C61D1DA3AEED2D1332756550E50AF /* UMTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = E0FE5C7B062B209DB936ECF8E568B81C /* UMTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93C669E778EFC7749318BFF7A1DF213B /* UMPostTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A2279702F69F244CBFAD196F1BB143 /* UMPostTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		947575549E0193C1A5A2379EA9D95D46 /* MMDrawerController+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D83BBF2BD25459F57803DB3E26BAD6 /* MMDrawerController+Subclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		961C00F4BD8ABFA0597E1992292AC4CF /* CYLTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C485D2E23E56538544CAE02718F80 /* CYLTabBarController-dummy.m */; };
-		984DD4BA68A399F50B9D7849E72385F8 /* UIViewController+MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = FE09DC5941C6BC6EF0203061E6336ECC /* UIViewController+MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98934A55B911B3F79DADBAA9E86E1145 /* UMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0109C6F3D5D03B7C20AECA6E29FF124 /* UMTextView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9A430907F3049EFB392B35687FA2555E /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D904A8A46B8023112A2A6DAB49F1344E /* CYLTabBarController.m */; };
-		9A5E9C388AF709C50AE12C06C27EB680 /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06C29FD0E8ECE5B089767D1BB14541C /* UIViewController+REFrostedViewController.m */; };
-		9A7F170BE65EFFD69B5986DB55C1920A /* MMDrawerBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = CEB6EAEAEA6AE560F433E05BFA461A29 /* MMDrawerBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C226DEEC940319EE5FDB48513546046 /* JCRBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = BD9C9D0CD16399DABD8B0F065283D60F /* JCRBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E3A0AAF83457CA488A9A863382E05D4 /* UMChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9ADB27F38F4E7912869499DE81E9B /* UMChatTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A18E9AA2CF0DA186F5D9BF901AC94ADE /* CYLTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CEE77920E276D6478F125C00814576B /* CYLTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3807C2F22EBAEEAD862434896A47261 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F80D04B1A1779822640FE9B09BC74A /* UIImage+REFrostedViewController.m */; };
-		AD53D3F1FEA34F796514FEBFEE538F59 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87C9FFF61C91EABAFF9FDF23C69BFF8 /* Accelerate.framework */; };
-		AFCAE94DF3BA6D76E7EF10B9CEDF5BCA /* UMFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = D0393074642FCD818314AC6981860501 /* UMFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B16F12BC907F5FDAD33EBCDA2150B016 /* UMPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75777E9E95F2824A528FC00C96659699 /* UMPostTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B424742B454EFB367EFE692B4A68AF1E /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F1CB6B6260467BEAAC1BF607A71F3 /* REFrostedViewController.m */; };
-		BA38F9F9100167A8F4C9AE3506F66EBB /* REFrostedContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 72E9C41107CC013EB3A5A131B182F7B9 /* REFrostedContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C29200B34DC00E8194B586C29DA3A32C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938BE882CB1474E65D5987CAA4C9E2F /* Foundation.framework */; };
-		C9DBBD2EE5B026FF9F8C150D5243D506 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938BE882CB1474E65D5987CAA4C9E2F /* Foundation.framework */; };
-		CE194D7F72E8ABC1B103F7F7469B711E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8D6C285CE4D9B8B0CE0200869AF02A /* QuartzCore.framework */; };
-		D47DEC5805C33A5F6D135DAE5AFBB5A4 /* UMRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 69360F580E572B81AC4BB0896ACBD799 /* UMRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB340E3644D3CC3DFB20099BD3B021C7 /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6393927507A00B5801E9B8968B480062 /* CYLPlusButton.m */; };
-		EFEC85D86C5174DB687AD01C3959951D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83049A447F48D03BA4180E79658C9E3 /* AVFoundation.framework */; };
+		7B51406EDFD7F21C31659CEFDB5D920D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938BE882CB1474E65D5987CAA4C9E2F /* Foundation.framework */; };
+		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 097C5ADD6A2279D43AB7C05AE68AB762 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8C91657DA0F28A44B9CCD90D423CF384 /* UIViewController+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E233B86E3DD6F949103BD7F0D1286637 /* UIViewController+REFrostedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		961C00F4BD8ABFA0597E1992292AC4CF /* CYLTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFADE92B0A7BA66B04B4182CB9A7B09 /* CYLTabBarController-dummy.m */; };
+		9A430907F3049EFB392B35687FA2555E /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BDD0DEA1BFF844766F7117CFEE45A7 /* CYLTabBarController.m */; };
+		9A5D447F39DD83F38C6D5DAD87630C46 /* UMChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A9F984A0A3F5FFB93FA8FFFE7C747 /* UMChatTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9C226DEEC940319EE5FDB48513546046 /* JCRBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 73EFFF5B0FB3494E9086D7CA8BCC3544 /* JCRBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FADF76D5C515DF828B76C58082540F1 /* REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 718D5A84B466C33EE866DC1DADB39236 /* REFrostedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A18E9AA2CF0DA186F5D9BF901AC94ADE /* CYLTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = E9CD36E284390EAD7684A916B3FFD205 /* CYLTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A58BF8C6C6F6C4361C949618F267D0E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938BE882CB1474E65D5987CAA4C9E2F /* Foundation.framework */; };
+		A8099ADFD0E9FBBC9298B16D1E03EFDE /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34228FF94306C0C8F39619C1EC9CB3F6 /* REFrostedViewController.m */; };
+		A9290C773BF0174C07CA790C3A32789A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8D6C285CE4D9B8B0CE0200869AF02A /* QuartzCore.framework */; };
+		AB048D296D5CAE17C3DFE1A287D6D370 /* UMFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0855E17D2DCB13227CA92BDA4907BEA /* UMFeedbackViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AB394C7EED4ADC88687039BA90F63DF2 /* UMChatToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6970FA229599CD028D158953E2A4B7 /* UMChatToolBar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B6AC48AB649E222AFB4ED1AB34524954 /* UIImage+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 21DE919CC4DBB32FDC03A33796860CFE /* UIImage+REFrostedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7C9B039ACB8FE74B8AD2BD02872AFE6 /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B0868C3361B8BB0CE5246571ED1362 /* RECommonFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7FEDF8E5B35954763C000EBEE9D53A7 /* UMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F77B3E5B3232DD12F9472A36D69927 /* UMTextView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BD90D15CE2B2665572E014A5F678C8AD /* UMPostTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A0BB7D95C3DD71ACDF795356D1DCD376 /* UMPostTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDFDA1B128E837D469DABF5A6DF5CAB1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83049A447F48D03BA4180E79658C9E3 /* AVFoundation.framework */; };
+		BF83BDBDC3968F87AFF3C542D2054048 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F799AC70143996994B30B3FD094C65 /* UIImage+REFrostedViewController.m */; };
+		C8026E3FBC70DD9679ABB9741A3A07ED /* UMOpus.h in Headers */ = {isa = PBXBuildFile; fileRef = D3962E49E3F24C4D3D6D9D14D7E6EF4A /* UMOpus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9AF02BF759A1FFC42CFF2CC239F216A /* UMChatToolBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4435EEA93013F434B6C81A6FC7EB83AE /* UMChatToolBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D33E50ACEB18B6E539A50B51F8AE99D7 /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA033C56C9DAD39C278B36D1E3AA920 /* REFrostedContainerViewController.m */; };
+		DB340E3644D3CC3DFB20099BD3B021C7 /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED83E45C3DE8C7DD0590BB9B79C2BD62 /* CYLPlusButton.m */; };
+		E9E50F6519DF2F38390297D71138E299 /* UMFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = 5852D20AF4B044EA7CF46DEFFAF18F0E /* UMFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDA5D3B628E6E97866DC55AF667ECBE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938BE882CB1474E65D5987CAA4C9E2F /* Foundation.framework */; };
+		F0106574D6A332CECCAEB584F9D40B2B /* UMOpenMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 2154B4B02FD3DDDE0AEF471BB090B9F5 /* UMOpenMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0807050CE5281D761F904A739237FAA /* REFrostedContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A825C82421623B25062F4586CF14359B /* REFrostedContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2E43DF9E8E79093ACB3CD244CB90C61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938BE882CB1474E65D5987CAA4C9E2F /* Foundation.framework */; };
-		F6C171B0A94A36576748D47D2AA1E60C /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC692FDC772506075697B8BF772AFE97 /* REFrostedContainerViewController.m */; };
-		F733730F57E794BCFB4B18DC00E2FF9B /* MMDrawerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3087D9BF4AC71B0B1606B8AD01A80A3C /* MMDrawerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F73A1966B6D6E220DC8C8FFF6776A687 /* CYLTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 47089ECE37CBF03C156B00F990F9E815 /* CYLTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9770E645C285C4FF3B46FE3CFD5D652 /* MBProgressHUD-dummy.m */; };
-		FEF2B62F8D5DFEDFD77638EF83DAD2E9 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9347194A94B045C883F6246D590AF5 /* UIView+REFrostedViewController.m */; };
+		F5045BD9D33C52D1608927D38200255C /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		F73A1966B6D6E220DC8C8FFF6776A687 /* CYLTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 068C0CB0C9D9EDC56DC8B8E031AD58A9 /* CYLTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F98429EA72EB53C810A02F892BCFBAED /* UMengFeedback-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41344AB4BF3E2C4F860E05DB85DCC135 /* UMengFeedback-dummy.m */; };
+		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3C8E97F4D16B1BBE5A349F499703AE /* MBProgressHUD-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		20B49A1B5F4E794639C667EB8302185F /* PBXContainerItemProxy */ = {
+		5A62F62F7CCD1752865A8A171F190914 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E18B9684D5722C1705CE194E423CE52E;
+			remoteInfo = REFrostedViewController;
+		};
+		60CA73082651AF06C359A4ECAFFE991D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 16ACF35FDB8EAF2E5A8191EA1BCBEA01;
 			remoteInfo = CYLTabBarController;
 		};
-		5E07408DD4706EB206CC3409ED4F83B3 /* PBXContainerItemProxy */ = {
+		8B8447ABC305FD4D0272D7BFDAC5E08C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
-			remoteInfo = MBProgressHUD;
+			remoteGlobalIDString = B79FA25A5F7C5A775C1E3960277251B6;
+			remoteInfo = UMengFeedback;
 		};
-		72EC194D7F1B0B66BE905F4172A2A3A6 /* PBXContainerItemProxy */ = {
+		F470158C3A53C2C8465B8D07A371DFBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0FEFCED0DFD9044B714F80F336070127;
 			remoteInfo = "iOS-blur";
 		};
-		BEDE984BC6C0B0E9A44EDF04194BD406 /* PBXContainerItemProxy */ = {
+		FE3D9D1BFBC01E8BECDF066531AF1823 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4479A7A728F03DDDE63EFB37693E24DF;
-			remoteInfo = REFrostedViewController;
-		};
-		D400A403AAECCA21970B6B90AFF4E567 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8C37BF88BD4F2B9A9E073182E90AE202;
-			remoteInfo = UMengFeedback;
-		};
-		DB0BE0493A1424513CDCAD72753A614D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 550F7EEAEEA17E3F92C873912E23B01C;
-			remoteInfo = MMDrawerController;
+			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
+			remoteInfo = MBProgressHUD;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02DB8B191FA6AC813C07C9B25F943B99 /* bubble_min@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bubble_min@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/bubble_min@2x.png"; sourceTree = "<group>"; };
-		041E67D0EA3205521D74ACBC97B8B7DE /* UMengFeedback-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UMengFeedback-prefix.pch"; sourceTree = "<group>"; };
-		0585F7D18A878929DA0BEC9EA4664CF1 /* UMFeedbackLocalizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = UMFeedbackLocalizable.strings; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/zh-Hans.lproj/UMFeedbackLocalizable.strings"; sourceTree = "<group>"; };
+		0045E3C11D18CD7872830E78373C01FC /* UMengFeedback-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UMengFeedback-prefix.pch"; sourceTree = "<group>"; };
+		021D0939B85A7C969083DA2FDD0799FB /* UMTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMTextView.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMTextView.h; sourceTree = "<group>"; };
+		0263027B820A1E2644C19F03C4226424 /* libCYLTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCYLTabBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		064DE5C16D5B3659E2139CC241F1DCCD /* umeng_fb_audio_play_01@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_01@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_01@2x.png"; sourceTree = "<group>"; };
+		068C0CB0C9D9EDC56DC8B8E031AD58A9 /* CYLTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLTabBar.h; path = CYLTabBarController/CYLTabBar.h; sourceTree = "<group>"; };
+		08E18C64F3566C866DBBA7D7A2543F4D /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		097C5ADD6A2279D43AB7C05AE68AB762 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		0B25355A7799D1B7463F79434ADD9DC6 /* iOS-blur.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "iOS-blur.xcconfig"; sourceTree = "<group>"; };
+		0B92503760704F26BD2526CEB56DB9D5 /* libiOS-blur.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiOS-blur.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		15B5F413CF6114EFD987718F69F3B6E8 /* REFrostedViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "REFrostedViewController-prefix.pch"; sourceTree = "<group>"; };
-		179E2AB512C66CA5206DBC71D9B77CB1 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = MMDrawerController/MMDrawerVisualState.h; sourceTree = "<group>"; };
-		1B943CA6C976A176A6E37B1560D3B531 /* libMMDrawerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMDrawerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E8551B9FF9D0786D51999CB42856708 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
-		1F321606043E02C9B78C45D2F2711600 /* UMOpus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMOpus.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMOpus/UMOpus.h; sourceTree = "<group>"; };
-		2217E5312B5D6A51E8015B160B57996B /* iOS-blur.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "iOS-blur.xcconfig"; sourceTree = "<group>"; };
-		24A98492804E7C6E7FE38BDDC1A55B3D /* libCYLTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCYLTabBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		26F560444CE69F94D6A0A47012379C09 /* REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REFrostedViewController.h; path = REFrostedViewController/REFrostedViewController.h; sourceTree = "<group>"; };
+		126BE784A1CE373FDD6CD8FD8F508942 /* umeng_fb_audio_dialog_cancel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_dialog_cancel@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_dialog_cancel@2x.png"; sourceTree = "<group>"; };
+		17F799AC70143996994B30B3FD094C65 /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+REFrostedViewController.m"; path = "REFrostedViewController/UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		2154B4B02FD3DDDE0AEF471BB090B9F5 /* UMOpenMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMOpenMacros.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMOpenMacros.h; sourceTree = "<group>"; };
+		21DE919CC4DBB32FDC03A33796860CFE /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+REFrostedViewController.h"; path = "REFrostedViewController/UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
+		22C507D8C54D1C65BFC5612C131D4328 /* REFrostedViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = REFrostedViewController.xcconfig; sourceTree = "<group>"; };
 		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		2E76E7D236B7BB65C88B2046E3DC52F0 /* umeng_fb_audio_play_03@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_03@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_03@2x.png"; sourceTree = "<group>"; };
-		3087D9BF4AC71B0B1606B8AD01A80A3C /* MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = MMDrawerController/MMDrawerController.h; sourceTree = "<group>"; };
-		3234DDE2362A8DAAB05EB5FE8DAE6137 /* cancel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cancel@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/cancel@2x.png"; sourceTree = "<group>"; };
-		33D7502F7E2B161D873DB574042586D5 /* MMDrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMDrawerController.xcconfig; sourceTree = "<group>"; };
-		354F8F48A34E1F590E84B99597DD48BB /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = REFrostedViewController/RECommonFunctions.h; sourceTree = "<group>"; };
-		35D9ADB27F38F4E7912869499DE81E9B /* UMChatTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMChatTableViewCell.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatTableViewCell.m; sourceTree = "<group>"; };
+		2FF6AD5ED743076B765EC95967186359 /* REFrostedViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "REFrostedViewController-prefix.pch"; sourceTree = "<group>"; };
+		34228FF94306C0C8F39619C1EC9CB3F6 /* REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REFrostedViewController.m; path = REFrostedViewController/REFrostedViewController.m; sourceTree = "<group>"; };
+		36CCC45AB59F2C6EA30B5117563A04D3 /* UMFeedbackLocalizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = UMFeedbackLocalizable.strings; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/zh-Hans.lproj/UMFeedbackLocalizable.strings"; sourceTree = "<group>"; };
 		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3CEE77920E276D6478F125C00814576B /* CYLTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLTabBarController.h; path = CYLTabBarController/CYLTabBarController.h; sourceTree = "<group>"; };
-		3D5ABB6C043F4EF7A18DEC0C2A3D2716 /* CYLTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CYLTabBarController.xcconfig; sourceTree = "<group>"; };
-		4493018B785E1E0419445EB25C3A2BB6 /* libiOS-blur.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiOS-blur.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		47089ECE37CBF03C156B00F990F9E815 /* CYLTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLTabBar.h; path = CYLTabBarController/CYLTabBar.h; sourceTree = "<group>"; };
-		48AFD4AEAED56D20D398E81B350F89D0 /* CYLPlusButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLPlusButton.h; path = CYLTabBarController/CYLPlusButton.h; sourceTree = "<group>"; };
+		380145769DB303CA4B48B3922145718B /* umeng_fb_audio_play_default@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_default@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_default@2x.png"; sourceTree = "<group>"; };
+		3AA349C72E823078CE709D53A6C41E0E /* UMChatTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMChatTableViewCell.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatTableViewCell.h; sourceTree = "<group>"; };
+		3F5B32CF4CA8FC3FC70FA06587AD3696 /* ToolViewInputTextHL@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputTextHL@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputTextHL@2x.png"; sourceTree = "<group>"; };
+		41344AB4BF3E2C4F860E05DB85DCC135 /* UMengFeedback-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UMengFeedback-dummy.m"; sourceTree = "<group>"; };
+		4435EEA93013F434B6C81A6FC7EB83AE /* UMChatToolBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMChatToolBar.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatToolBar.h; sourceTree = "<group>"; };
+		449DEEE9DFAF0ABF9588DB65D1A64579 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F3FBAA316B1B2572DEDFA37FB8F0A8 /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+REFrostedViewController.h"; path = "REFrostedViewController/UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
+		48F77B3E5B3232DD12F9472A36D69927 /* UMTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMTextView.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMTextView.m; sourceTree = "<group>"; };
+		4CFC9569321623864FE7EFB48BB83ED2 /* umeng_fb_audio_play_02@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_02@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_02@2x.png"; sourceTree = "<group>"; };
 		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		533EDAD0A1A6B77A4403F8280CF96EC4 /* UMChatTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMChatTableViewCell.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatTableViewCell.h; sourceTree = "<group>"; };
-		5A7C485D2E23E56538544CAE02718F80 /* CYLTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CYLTabBarController-dummy.m"; sourceTree = "<group>"; };
-		61D83BBF2BD25459F57803DB3E26BAD6 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
-		6393927507A00B5801E9B8968B480062 /* CYLPlusButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLPlusButton.m; path = CYLTabBarController/CYLPlusButton.m; sourceTree = "<group>"; };
+		5852D20AF4B044EA7CF46DEFFAF18F0E /* UMFeedback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMFeedback.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMFeedback.h; sourceTree = "<group>"; };
+		5890A5653796E3A6DE1357A47B03DAA4 /* JCRBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JCRBlurView.m; path = blur/blur/JCRBlurView.m; sourceTree = "<group>"; };
+		5B52D4C1210B70736562E845E4435884 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		5EEB35F285BCBE6D8AC2F28510C77C7A /* UMFullScreenPhotoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMFullScreenPhotoView.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMFullScreenPhotoView.h; sourceTree = "<group>"; };
 		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		69360F580E572B81AC4BB0896ACBD799 /* UMRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMRecorder.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMRecorder.h; sourceTree = "<group>"; };
-		696F10F051C205C0555700C4DEC729BE /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+REFrostedViewController.h"; path = "REFrostedViewController/UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
-		6A220B6769A38B9F5074BC41DD294944 /* UMOpenMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMOpenMacros.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMOpenMacros.h; sourceTree = "<group>"; };
-		6AB5F1D46872B521D2E8184AD2306515 /* iOS-blur-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOS-blur-dummy.m"; sourceTree = "<group>"; };
-		6ED2A696DECA14A7F903FB53B832949F /* MMDrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController-prefix.pch"; sourceTree = "<group>"; };
-		6FBE398B3F2C129D4D74EDB4E8B049C5 /* MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = MMDrawerController/MMDrawerController.m; sourceTree = "<group>"; };
-		7263E6FFCC8BB1837E7B8CBF4B72EF2D /* microphone@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "microphone@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/microphone@2x.png"; sourceTree = "<group>"; };
-		72E9C41107CC013EB3A5A131B182F7B9 /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REFrostedContainerViewController.h; path = REFrostedViewController/REFrostedContainerViewController.h; sourceTree = "<group>"; };
-		753FFD345814CE935018E7570E1F377C /* UMChatToolBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMChatToolBar.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatToolBar.h; sourceTree = "<group>"; };
-		75777E9E95F2824A528FC00C96659699 /* UMPostTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMPostTableViewCell.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMPostTableViewCell.m; sourceTree = "<group>"; };
-		788265C56453F2791A7769B6B0768D5A /* UMFeedbackViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMFeedbackViewController.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMFeedbackViewController.m; sourceTree = "<group>"; };
-		7A00608DC0EF46ADB292EEBFF6BC6953 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AEC1893011153222BF1730D649FFA5E /* iOS-blur-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOS-blur-prefix.pch"; sourceTree = "<group>"; };
-		8311AF3E997B94EF62C777CD4030D2FF /* ToolViewInputText@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputText@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputText@2x.png"; sourceTree = "<group>"; };
-		862874B1F987375F27D52D96F8880B3D /* CYLTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CYLTabBarController-prefix.pch"; sourceTree = "<group>"; };
-		86B711A66AEE99A0026FCF81E9535FE5 /* CYLTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLTabBar.m; path = CYLTabBarController/CYLTabBar.m; sourceTree = "<group>"; };
-		88708F8F40B219A386F7B27B4A02B243 /* ToolViewInputVoiceHL@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputVoiceHL@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputVoiceHL@2x.png"; sourceTree = "<group>"; };
-		8913E0ECE014AD34948841973BD0E732 /* save@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "save@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/save@2x.png"; sourceTree = "<group>"; };
+		718D5A84B466C33EE866DC1DADB39236 /* REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REFrostedViewController.h; path = REFrostedViewController/REFrostedViewController.h; sourceTree = "<group>"; };
+		73EFFF5B0FB3494E9086D7CA8BCC3544 /* JCRBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JCRBlurView.h; path = blur/blur/JCRBlurView.h; sourceTree = "<group>"; };
+		755C10CA2A386362B04CE2F0C6A70B35 /* UMengFeedback.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMengFeedback.xcconfig; sourceTree = "<group>"; };
+		7A31EA87261837963A52217E1375FC5A /* umeng_fb_audio_dialog_content@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_dialog_content@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_dialog_content@2x.png"; sourceTree = "<group>"; };
+		8419045226CD5C73FF8C05C66EA359CF /* cancel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cancel@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/cancel@2x.png"; sourceTree = "<group>"; };
+		890EADAD52A78C375E6D5CDD8F882B20 /* ToolViewInputVoiceHL@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputVoiceHL@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputVoiceHL@2x.png"; sourceTree = "<group>"; };
 		8938BE882CB1474E65D5987CAA4C9E2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		89C7EE8C085D24D3A75690EA55C0E04F /* REFrostedViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "REFrostedViewController-dummy.m"; sourceTree = "<group>"; };
 		8B2D85A8DB68D105FBCE55674F7B05D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		92E8D1363F08D0373BB79FC21444DB8B /* ToolViewInputTextHL@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputTextHL@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputTextHL@2x.png"; sourceTree = "<group>"; };
-		962A8A061700F223B9DE132ED22310D2 /* UMFullScreenPhotoView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMFullScreenPhotoView.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMFullScreenPhotoView.m; sourceTree = "<group>"; };
+		8C01D36F8524BA1814C71B0FC28799A5 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		95D228384D1EC95CEA461770233BC4A7 /* umeng_fb_audio_play_03@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_03@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_03@2x.png"; sourceTree = "<group>"; };
+		972943F60FB859FD62BA1C21ABA259A6 /* CYLTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CYLTabBarController-prefix.pch"; sourceTree = "<group>"; };
 		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
 		9A8D6C285CE4D9B8B0CE0200869AF02A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		A06C29FD0E8ECE5B089767D1BB14541C /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+REFrostedViewController.m"; path = "REFrostedViewController/UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
-		A08CA65B7C3617B177E85276A4DDC0DE /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = MMDrawerController/MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
-		A1876065541D8F1DE183075EBCF87B13 /* UMFullScreenPhotoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMFullScreenPhotoView.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMFullScreenPhotoView.h; sourceTree = "<group>"; };
+		9B4E8B59601D39151C40C1D20982E3F2 /* UMPostTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMPostTableViewCell.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMPostTableViewCell.m; sourceTree = "<group>"; };
+		9B6970FA229599CD028D158953E2A4B7 /* UMChatToolBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMChatToolBar.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatToolBar.m; sourceTree = "<group>"; };
+		9DA033C56C9DAD39C278B36D1E3AA920 /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REFrostedContainerViewController.m; path = REFrostedViewController/REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		A0BB7D95C3DD71ACDF795356D1DCD376 /* UMPostTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMPostTableViewCell.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMPostTableViewCell.h; sourceTree = "<group>"; };
+		A0BF3B8EDB4F151BB67C8494E3C374EE /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		A2DD5AF69897215A0FF068E2B2AE0A50 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8556F99E9C09005E56393F35F80C6A0 /* libUMengFeedback.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUMengFeedback.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A93F85EB61B8EE7760BC9E6E9994141F /* UMengFeedback-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UMengFeedback-dummy.m"; sourceTree = "<group>"; };
-		B0109C6F3D5D03B7C20AECA6E29FF124 /* UMTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMTextView.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMTextView.m; sourceTree = "<group>"; };
-		B275A65D8553D6EBC82F4FD1632C8F3C /* ToolViewInputVoice@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputVoice@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputVoice@2x.png"; sourceTree = "<group>"; };
-		B3758814A957400FBCCB1E100A93CE41 /* UMRadialView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMRadialView.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMRadialView.h; sourceTree = "<group>"; };
-		B5A210CB8AA4BC540D246627829839F1 /* libREFrostedViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libREFrostedViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5A2279702F69F244CBFAD196F1BB143 /* UMPostTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMPostTableViewCell.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMPostTableViewCell.h; sourceTree = "<group>"; };
+		A744B26A64F4B9D06716EF6775673390 /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = REFrostedViewController/RECommonFunctions.m; sourceTree = "<group>"; };
+		A825C82421623B25062F4586CF14359B /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REFrostedContainerViewController.h; path = REFrostedViewController/REFrostedContainerViewController.h; sourceTree = "<group>"; };
+		B0D6E717A9C991039C9B24B3043F7276 /* ToolViewInputText@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputText@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputText@2x.png"; sourceTree = "<group>"; };
+		B0DBE11F0000A04208FD636218DFAA60 /* bubble_min@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bubble_min@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/bubble_min@2x.png"; sourceTree = "<group>"; };
+		B661DDA3445AE21C7984B3211A9BBF69 /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+REFrostedViewController.m"; path = "REFrostedViewController/UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
 		B83049A447F48D03BA4180E79658C9E3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		B87C9FFF61C91EABAFF9FDF23C69BFF8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		B9369BC1563B422A74961267EC81D11F /* UMRadialView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMRadialView.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMRadialView.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BCCC2A8B6E9BC1B1BC5C3DD0F9B51183 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		BCF05E2FB52D3233087E8D4561C7A65E /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		BD9C9D0CD16399DABD8B0F065283D60F /* JCRBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JCRBlurView.h; path = blur/blur/JCRBlurView.h; sourceTree = "<group>"; };
-		BEA2A4977E4992B3FF08220626DEEA48 /* MMDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMDrawerController-dummy.m"; sourceTree = "<group>"; };
-		C12E9AF816A710BE983195650DA493ED /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+REFrostedViewController.h"; path = "REFrostedViewController/UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
-		CA63AD74BE07E8F31CB7C3D6E58BB869 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = MMDrawerController/MMDrawerVisualState.m; sourceTree = "<group>"; };
-		CBFCD8C5520D6B9F870AD6137E23C11C /* REFrostedViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "REFrostedViewController-dummy.m"; sourceTree = "<group>"; };
-		CE9347194A94B045C883F6246D590AF5 /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+REFrostedViewController.m"; path = "REFrostedViewController/UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
-		CEB6EAEAEA6AE560F433E05BFA461A29 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = MMDrawerController/MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
-		CEEF0149B11C365A1715E35985BADF65 /* umeng_fb_audio_dialog_cancel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_dialog_cancel@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_dialog_cancel@2x.png"; sourceTree = "<group>"; };
-		D0393074642FCD818314AC6981860501 /* UMFeedback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMFeedback.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMFeedback.h; sourceTree = "<group>"; };
-		D1596A5862E221BE047275BEF576EFBF /* JCRBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JCRBlurView.m; path = blur/blur/JCRBlurView.m; sourceTree = "<group>"; };
-		D5F80D04B1A1779822640FE9B09BC74A /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+REFrostedViewController.m"; path = "REFrostedViewController/UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
-		D7B23B3C25967D0CC36426777C204D94 /* umeng_fb_audio_play_02@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_02@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_02@2x.png"; sourceTree = "<group>"; };
-		D904A8A46B8023112A2A6DAB49F1344E /* CYLTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLTabBarController.m; path = CYLTabBarController/CYLTabBarController.m; sourceTree = "<group>"; };
-		D9770E645C285C4FF3B46FE3CFD5D652 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		DA6F1CB6B6260467BEAAC1BF607A71F3 /* REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REFrostedViewController.m; path = REFrostedViewController/REFrostedViewController.m; sourceTree = "<group>"; };
-		DC692FDC772506075697B8BF772AFE97 /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REFrostedContainerViewController.m; path = REFrostedViewController/REFrostedContainerViewController.m; sourceTree = "<group>"; };
-		E0FE5C7B062B209DB936ECF8E568B81C /* UMTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMTextView.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMTextView.h; sourceTree = "<group>"; };
-		E2A80AB6C6642E960BC85BCE54E5C4B0 /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = REFrostedViewController/RECommonFunctions.m; sourceTree = "<group>"; };
-		E370F35582C016048FAE4594C453C2C8 /* REFrostedViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = REFrostedViewController.xcconfig; sourceTree = "<group>"; };
-		EA420637B37C1A08E3D2605C3E60A0BE /* UMFeedbackViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMFeedbackViewController.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMFeedbackViewController.h; sourceTree = "<group>"; };
-		EAA69EC29F0422197518C7A8E9756B7D /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		F080214EF13EE08AA528D79B85FD2F7B /* umeng_fb_audio_dialog_content@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_dialog_content@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_dialog_content@2x.png"; sourceTree = "<group>"; };
-		F1ABCC37D22044C2EFF3A9CC65D41CCE /* umeng_add_photo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_add_photo@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_add_photo@2x.png"; sourceTree = "<group>"; };
-		F44F6D614691D639E94A19E8E28211E1 /* UMChatToolBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMChatToolBar.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatToolBar.m; sourceTree = "<group>"; };
-		F49E12E265D4DC6A8CEB6653FFAECC82 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		FBA24699D94614BA5012379F03ED423B /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+REFrostedViewController.h"; path = "REFrostedViewController/UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
-		FBF305E9FC5F1F0931C697A5A602DB5A /* UMRadialView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMRadialView.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMRadialView.m; sourceTree = "<group>"; };
-		FC6CA5ED36ACD01060F144F0D4463BEA /* umeng_fb_audio_play_default@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_default@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_default@2x.png"; sourceTree = "<group>"; };
-		FE09DC5941C6BC6EF0203061E6336ECC /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
-		FEF790694A0B6A0252AE35F0D562DC25 /* umeng_fb_audio_play_01@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_01@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_01@2x.png"; sourceTree = "<group>"; };
-		FF7140A538173A07269581DDD34523C2 /* UMengFeedback.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMengFeedback.xcconfig; sourceTree = "<group>"; };
+		BC4FC5DF36A8E1444359EC2E7C86D419 /* UMRadialView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMRadialView.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMRadialView.h; sourceTree = "<group>"; };
+		BC804CD585D30E153EC15087A60B0A02 /* CYLTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLTabBar.m; path = CYLTabBarController/CYLTabBar.m; sourceTree = "<group>"; };
+		BE1FE7AD844C7BE5F38F482A74E55408 /* UMRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMRecorder.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMRecorder.h; sourceTree = "<group>"; };
+		C23DF6BD7C0564372F214045D01CDBC2 /* UMFeedbackViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMFeedbackViewController.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMFeedbackViewController.h; sourceTree = "<group>"; };
+		C46904241695703BE817F5F1A095DDCD /* iOS-blur-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOS-blur-prefix.pch"; sourceTree = "<group>"; };
+		CB1933DE85BC08D034E8AC2A06416618 /* CYLTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CYLTabBarController.xcconfig; sourceTree = "<group>"; };
+		D0855E17D2DCB13227CA92BDA4907BEA /* UMFeedbackViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMFeedbackViewController.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMFeedbackViewController.m; sourceTree = "<group>"; };
+		D37A9F984A0A3F5FFB93FA8FFFE7C747 /* UMChatTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMChatTableViewCell.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMChatTableViewCell.m; sourceTree = "<group>"; };
+		D3962E49E3F24C4D3D6D9D14D7E6EF4A /* UMOpus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMOpus.h; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/UMOpus/UMOpus.h; sourceTree = "<group>"; };
+		DA2C85176A4B56C282409706040976E9 /* iOS-blur-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOS-blur-dummy.m"; sourceTree = "<group>"; };
+		DC623109072A34DFF842B56D346D4328 /* libREFrostedViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libREFrostedViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCFADE92B0A7BA66B04B4182CB9A7B09 /* CYLTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CYLTabBarController-dummy.m"; sourceTree = "<group>"; };
+		E233B86E3DD6F949103BD7F0D1286637 /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+REFrostedViewController.h"; path = "REFrostedViewController/UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
+		E3AA30798D9D02412D76E30EFEC23189 /* UMFullScreenPhotoView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UMFullScreenPhotoView.m; path = UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Views/UMFullScreenPhotoView.m; sourceTree = "<group>"; };
+		E7A7B529F1EE4F13E9BDEF206ABD4793 /* CYLPlusButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLPlusButton.h; path = CYLTabBarController/CYLPlusButton.h; sourceTree = "<group>"; };
+		E986D8FBA250CC7FF1D2FED721DBAE78 /* umeng_add_photo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_add_photo@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_add_photo@2x.png"; sourceTree = "<group>"; };
+		E9CD36E284390EAD7684A916B3FFD205 /* CYLTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYLTabBarController.h; path = CYLTabBarController/CYLTabBarController.h; sourceTree = "<group>"; };
+		EA54EC215FF1BAB69441F1E62C9EFA0D /* microphone@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "microphone@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/microphone@2x.png"; sourceTree = "<group>"; };
+		ED2A0B4438D808B969344A586A18049C /* save@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "save@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/save@2x.png"; sourceTree = "<group>"; };
+		ED83E45C3DE8C7DD0590BB9B79C2BD62 /* CYLPlusButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLPlusButton.m; path = CYLTabBarController/CYLPlusButton.m; sourceTree = "<group>"; };
+		F1B0868C3361B8BB0CE5246571ED1362 /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = REFrostedViewController/RECommonFunctions.h; sourceTree = "<group>"; };
+		F1BDD0DEA1BFF844766F7117CFEE45A7 /* CYLTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CYLTabBarController.m; path = CYLTabBarController/CYLTabBarController.m; sourceTree = "<group>"; };
+		FA48F4F70C6E9F13E1C2EFF272049574 /* ToolViewInputVoice@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputVoice@2x.png"; path = "UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/ToolViewInputVoice@2x.png"; sourceTree = "<group>"; };
+		FB3C8E97F4D16B1BBE5A349F499703AE /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		FB825F5894B902D01022E91EFED1E5B2 /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+REFrostedViewController.m"; path = "REFrostedViewController/UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		FE5AC7BC8032307DA2FEBCE5A5E6F9D1 /* libUMengFeedback.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUMengFeedback.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,30 +205,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F3A1F3444F1D2F190E6DBEF8DC9E95A /* Frameworks */ = {
+		25D82EF4146D0DADCB3CEC58940EC466 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFEC85D86C5174DB687AD01C3959951D /* AVFoundation.framework in Frameworks */,
-				189AB68E894EF9F4386125BCF478DC37 /* Foundation.framework in Frameworks */,
+				46C917F4B162092DA6EC191858CDBA46 /* Accelerate.framework in Frameworks */,
+				EDA5D3B628E6E97866DC55AF667ECBE2 /* Foundation.framework in Frameworks */,
+				A9290C773BF0174C07CA790C3A32789A /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9283BC336B8F14CECF408F1E70C0E7F1 /* Frameworks */ = {
+		4845E0290ECB53CE99E46ACE6BF4E3E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C29200B34DC00E8194B586C29DA3A32C /* Foundation.framework in Frameworks */,
+				BDFDA1B128E837D469DABF5A6DF5CAB1 /* AVFoundation.framework in Frameworks */,
+				A58BF8C6C6F6C4361C949618F267D0E5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8C078ACB6AE737362F4FAC787434879 /* Frameworks */ = {
+		795344A9DD4FBE29C4ED0B615FB50E31 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD53D3F1FEA34F796514FEBFEE538F59 /* Accelerate.framework in Frameworks */,
-				C9DBBD2EE5B026FF9F8C150D5243D506 /* Foundation.framework in Frameworks */,
-				CE194D7F72E8ABC1B103F7F7469B711E /* QuartzCore.framework in Frameworks */,
+				7B51406EDFD7F21C31659CEFDB5D920D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,15 +237,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2E43DF9E8E79093ACB3CD244CB90C61 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C81EA9947F4EA889C80E0571F51007C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5CD819353C30C805E53265229D515F63 /* Foundation.framework in Frameworks */,
-				62445D56D62979170E9966104FDFBFBE /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,24 +252,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02DA32345BEF5CE9BCE2F5D26994B1F5 /* MMDrawerController */ = {
-			isa = PBXGroup;
-			children = (
-				C273D284E3CFDAFCC48AC5473A2668A5 /* Core */,
-				C2D043FB12B4C0C225EA88D0552A9268 /* MMDrawerBarButtonItem */,
-				6921BCA8E122A480375F4BA0FB1B2352 /* MMDrawerVisualStates */,
-				2EBCFC49E5D783F3A4BA0BECAC4A514B /* Subclass */,
-				35AED1794638241B5C743D2B3F0667EF /* Support Files */,
-			);
-			path = MMDrawerController;
-			sourceTree = "<group>";
-		};
 		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				B3D1D13E0C6553800746CB8FD61CF946 /* Pods */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1AE5B930DA1A7553C544CC902948CA6F /* UMengFeedback */ = {
+			isa = PBXGroup;
+			children = (
+				3AA349C72E823078CE709D53A6C41E0E /* UMChatTableViewCell.h */,
+				D37A9F984A0A3F5FFB93FA8FFFE7C747 /* UMChatTableViewCell.m */,
+				4435EEA93013F434B6C81A6FC7EB83AE /* UMChatToolBar.h */,
+				9B6970FA229599CD028D158953E2A4B7 /* UMChatToolBar.m */,
+				5852D20AF4B044EA7CF46DEFFAF18F0E /* UMFeedback.h */,
+				C23DF6BD7C0564372F214045D01CDBC2 /* UMFeedbackViewController.h */,
+				D0855E17D2DCB13227CA92BDA4907BEA /* UMFeedbackViewController.m */,
+				5EEB35F285BCBE6D8AC2F28510C77C7A /* UMFullScreenPhotoView.h */,
+				E3AA30798D9D02412D76E30EFEC23189 /* UMFullScreenPhotoView.m */,
+				2154B4B02FD3DDDE0AEF471BB090B9F5 /* UMOpenMacros.h */,
+				D3962E49E3F24C4D3D6D9D14D7E6EF4A /* UMOpus.h */,
+				A0BB7D95C3DD71ACDF795356D1DCD376 /* UMPostTableViewCell.h */,
+				9B4E8B59601D39151C40C1D20982E3F2 /* UMPostTableViewCell.m */,
+				BC4FC5DF36A8E1444359EC2E7C86D419 /* UMRadialView.h */,
+				B9369BC1563B422A74961267EC81D11F /* UMRadialView.m */,
+				BE1FE7AD844C7BE5F38F482A74E55408 /* UMRecorder.h */,
+				021D0939B85A7C969083DA2FDD0799FB /* UMTextView.h */,
+				48F77B3E5B3232DD12F9472A36D69927 /* UMTextView.m */,
+				D4BA5B9AE442EAFB0CA74E45E21BA2D2 /* Resources */,
+				862D5A00B5B7A2AB7EFDC3CD52A5ED8B /* Support Files */,
+			);
+			path = UMengFeedback;
+			sourceTree = "<group>";
+		};
+		1D6B077A484C5983578BD1F6E219CDB6 /* REFrostedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1B0868C3361B8BB0CE5246571ED1362 /* RECommonFunctions.h */,
+				A744B26A64F4B9D06716EF6775673390 /* RECommonFunctions.m */,
+				A825C82421623B25062F4586CF14359B /* REFrostedContainerViewController.h */,
+				9DA033C56C9DAD39C278B36D1E3AA920 /* REFrostedContainerViewController.m */,
+				718D5A84B466C33EE866DC1DADB39236 /* REFrostedViewController.h */,
+				34228FF94306C0C8F39619C1EC9CB3F6 /* REFrostedViewController.m */,
+				21DE919CC4DBB32FDC03A33796860CFE /* UIImage+REFrostedViewController.h */,
+				17F799AC70143996994B30B3FD094C65 /* UIImage+REFrostedViewController.m */,
+				44F3FBAA316B1B2572DEDFA37FB8F0A8 /* UIView+REFrostedViewController.h */,
+				FB825F5894B902D01022E91EFED1E5B2 /* UIView+REFrostedViewController.m */,
+				E233B86E3DD6F949103BD7F0D1286637 /* UIViewController+REFrostedViewController.h */,
+				B661DDA3445AE21C7984B3211A9BBF69 /* UIViewController+REFrostedViewController.m */,
+				60F0FA58210CEB5E6DAC841D88C34DE7 /* Support Files */,
+			);
+			path = REFrostedViewController;
 			sourceTree = "<group>";
 		};
 		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
@@ -321,110 +315,83 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		28BB68E5050869ABDCC0DF45327146E4 /* Support Files */ = {
+		30A1B3750F3589E8226C357CB7A8E653 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				2217E5312B5D6A51E8015B160B57996B /* iOS-blur.xcconfig */,
-				6AB5F1D46872B521D2E8184AD2306515 /* iOS-blur-dummy.m */,
-				7AEC1893011153222BF1730D649FFA5E /* iOS-blur-prefix.pch */,
+				A0BF3B8EDB4F151BB67C8494E3C374EE /* MBProgressHUD.h */,
+				097C5ADD6A2279D43AB7C05AE68AB762 /* MBProgressHUD.m */,
+				61D6B9D4C10C91B2B2F9075FBF766C71 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/iOS-blur";
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		2EBCFC49E5D783F3A4BA0BECAC4A514B /* Subclass */ = {
+		4904FC8E55EA2DEB1DEBD7B0271BA389 /* iOS-blur */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Subclass;
-			sourceTree = "<group>";
-		};
-		35AED1794638241B5C743D2B3F0667EF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				33D7502F7E2B161D873DB574042586D5 /* MMDrawerController.xcconfig */,
-				BEA2A4977E4992B3FF08220626DEEA48 /* MMDrawerController-dummy.m */,
-				6ED2A696DECA14A7F903FB53B832949F /* MMDrawerController-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MMDrawerController";
-			sourceTree = "<group>";
-		};
-		3667088FB484411C4E22C6B08256CE52 /* iOS-blur */ = {
-			isa = PBXGroup;
-			children = (
-				BD9C9D0CD16399DABD8B0F065283D60F /* JCRBlurView.h */,
-				D1596A5862E221BE047275BEF576EFBF /* JCRBlurView.m */,
-				28BB68E5050869ABDCC0DF45327146E4 /* Support Files */,
+				73EFFF5B0FB3494E9086D7CA8BCC3544 /* JCRBlurView.h */,
+				5890A5653796E3A6DE1357A47B03DAA4 /* JCRBlurView.m */,
+				65B73824D916EA65D3BB7930750B2BAA /* Support Files */,
 			);
 			path = "iOS-blur";
 			sourceTree = "<group>";
 		};
-		496938219D561856BF7670F95756C7F2 /* REFrostedViewController */ = {
+		509E2835D621469150F37F0F5A2D3AA4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				354F8F48A34E1F590E84B99597DD48BB /* RECommonFunctions.h */,
-				E2A80AB6C6642E960BC85BCE54E5C4B0 /* RECommonFunctions.m */,
-				72E9C41107CC013EB3A5A131B182F7B9 /* REFrostedContainerViewController.h */,
-				DC692FDC772506075697B8BF772AFE97 /* REFrostedContainerViewController.m */,
-				26F560444CE69F94D6A0A47012379C09 /* REFrostedViewController.h */,
-				DA6F1CB6B6260467BEAAC1BF607A71F3 /* REFrostedViewController.m */,
-				696F10F051C205C0555700C4DEC729BE /* UIImage+REFrostedViewController.h */,
-				D5F80D04B1A1779822640FE9B09BC74A /* UIImage+REFrostedViewController.m */,
-				C12E9AF816A710BE983195650DA493ED /* UIView+REFrostedViewController.h */,
-				CE9347194A94B045C883F6246D590AF5 /* UIView+REFrostedViewController.m */,
-				FBA24699D94614BA5012379F03ED423B /* UIViewController+REFrostedViewController.h */,
-				A06C29FD0E8ECE5B089767D1BB14541C /* UIViewController+REFrostedViewController.m */,
-				9E0563E91F89E8FF02E47641E3206586 /* Support Files */,
+				71B5A477DFCC95970898094BE7B9B268 /* CYLTabBarController */,
+				4904FC8E55EA2DEB1DEBD7B0271BA389 /* iOS-blur */,
+				30A1B3750F3589E8226C357CB7A8E653 /* MBProgressHUD */,
+				1D6B077A484C5983578BD1F6E219CDB6 /* REFrostedViewController */,
+				1AE5B930DA1A7553C544CC902948CA6F /* UMengFeedback */,
 			);
-			path = REFrostedViewController;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		50FE12A8603E2A381997B3D4AE7E0B9B /* Support Files */ = {
+		60F0FA58210CEB5E6DAC841D88C34DE7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BCCC2A8B6E9BC1B1BC5C3DD0F9B51183 /* MBProgressHUD.xcconfig */,
-				D9770E645C285C4FF3B46FE3CFD5D652 /* MBProgressHUD-dummy.m */,
-				EAA69EC29F0422197518C7A8E9756B7D /* MBProgressHUD-prefix.pch */,
+				22C507D8C54D1C65BFC5612C131D4328 /* REFrostedViewController.xcconfig */,
+				89C7EE8C085D24D3A75690EA55C0E04F /* REFrostedViewController-dummy.m */,
+				2FF6AD5ED743076B765EC95967186359 /* REFrostedViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/REFrostedViewController";
+			sourceTree = "<group>";
+		};
+		61D6B9D4C10C91B2B2F9075FBF766C71 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B52D4C1210B70736562E845E4435884 /* MBProgressHUD.xcconfig */,
+				FB3C8E97F4D16B1BBE5A349F499703AE /* MBProgressHUD-dummy.m */,
+				8C01D36F8524BA1814C71B0FC28799A5 /* MBProgressHUD-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
-		60D4C13EE50816052C39A36E04D8A402 /* UMengFeedback */ = {
+		65B73824D916EA65D3BB7930750B2BAA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				533EDAD0A1A6B77A4403F8280CF96EC4 /* UMChatTableViewCell.h */,
-				35D9ADB27F38F4E7912869499DE81E9B /* UMChatTableViewCell.m */,
-				753FFD345814CE935018E7570E1F377C /* UMChatToolBar.h */,
-				F44F6D614691D639E94A19E8E28211E1 /* UMChatToolBar.m */,
-				D0393074642FCD818314AC6981860501 /* UMFeedback.h */,
-				EA420637B37C1A08E3D2605C3E60A0BE /* UMFeedbackViewController.h */,
-				788265C56453F2791A7769B6B0768D5A /* UMFeedbackViewController.m */,
-				A1876065541D8F1DE183075EBCF87B13 /* UMFullScreenPhotoView.h */,
-				962A8A061700F223B9DE132ED22310D2 /* UMFullScreenPhotoView.m */,
-				6A220B6769A38B9F5074BC41DD294944 /* UMOpenMacros.h */,
-				1F321606043E02C9B78C45D2F2711600 /* UMOpus.h */,
-				B5A2279702F69F244CBFAD196F1BB143 /* UMPostTableViewCell.h */,
-				75777E9E95F2824A528FC00C96659699 /* UMPostTableViewCell.m */,
-				B3758814A957400FBCCB1E100A93CE41 /* UMRadialView.h */,
-				FBF305E9FC5F1F0931C697A5A602DB5A /* UMRadialView.m */,
-				69360F580E572B81AC4BB0896ACBD799 /* UMRecorder.h */,
-				E0FE5C7B062B209DB936ECF8E568B81C /* UMTextView.h */,
-				B0109C6F3D5D03B7C20AECA6E29FF124 /* UMTextView.m */,
-				ABB0EBE2C13AFAFF4D3AA5142BC677E3 /* Resources */,
-				FD5EC9A3FA59CECDF1D353C22E81EA46 /* Support Files */,
+				0B25355A7799D1B7463F79434ADD9DC6 /* iOS-blur.xcconfig */,
+				DA2C85176A4B56C282409706040976E9 /* iOS-blur-dummy.m */,
+				C46904241695703BE817F5F1A095DDCD /* iOS-blur-prefix.pch */,
 			);
-			path = UMengFeedback;
+			name = "Support Files";
+			path = "../Target Support Files/iOS-blur";
 			sourceTree = "<group>";
 		};
-		6921BCA8E122A480375F4BA0FB1B2352 /* MMDrawerVisualStates */ = {
+		71B5A477DFCC95970898094BE7B9B268 /* CYLTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				179E2AB512C66CA5206DBC71D9B77CB1 /* MMDrawerVisualState.h */,
-				CA63AD74BE07E8F31CB7C3D6E58BB869 /* MMDrawerVisualState.m */,
+				E7A7B529F1EE4F13E9BDEF206ABD4793 /* CYLPlusButton.h */,
+				ED83E45C3DE8C7DD0590BB9B79C2BD62 /* CYLPlusButton.m */,
+				068C0CB0C9D9EDC56DC8B8E031AD58A9 /* CYLTabBar.h */,
+				BC804CD585D30E153EC15087A60B0A02 /* CYLTabBar.m */,
+				E9CD36E284390EAD7684A916B3FFD205 /* CYLTabBarController.h */,
+				F1BDD0DEA1BFF844766F7117CFEE45A7 /* CYLTabBarController.m */,
+				860253CBEE99DF30FDDA4871E42F9885 /* Support Files */,
 			);
-			name = MMDrawerVisualStates;
+			path = CYLTabBarController;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -432,68 +399,45 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				E45D9496C1F04BA0FCF4B5F9AA9B0D20 /* Pods */,
-				AE703340F8D2809BC28F071236499583 /* Products */,
+				509E2835D621469150F37F0F5A2D3AA4 /* Pods */,
+				96FD168B8B1BB11179B6FE1219CAEB81 /* Products */,
 				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9E0563E91F89E8FF02E47641E3206586 /* Support Files */ = {
+		860253CBEE99DF30FDDA4871E42F9885 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E370F35582C016048FAE4594C453C2C8 /* REFrostedViewController.xcconfig */,
-				CBFCD8C5520D6B9F870AD6137E23C11C /* REFrostedViewController-dummy.m */,
-				15B5F413CF6114EFD987718F69F3B6E8 /* REFrostedViewController-prefix.pch */,
+				CB1933DE85BC08D034E8AC2A06416618 /* CYLTabBarController.xcconfig */,
+				DCFADE92B0A7BA66B04B4182CB9A7B09 /* CYLTabBarController-dummy.m */,
+				972943F60FB859FD62BA1C21ABA259A6 /* CYLTabBarController-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/REFrostedViewController";
+			path = "../Target Support Files/CYLTabBarController";
 			sourceTree = "<group>";
 		};
-		ABB0EBE2C13AFAFF4D3AA5142BC677E3 /* Resources */ = {
+		862D5A00B5B7A2AB7EFDC3CD52A5ED8B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				02DB8B191FA6AC813C07C9B25F943B99 /* bubble_min@2x.png */,
-				3234DDE2362A8DAAB05EB5FE8DAE6137 /* cancel@2x.png */,
-				7263E6FFCC8BB1837E7B8CBF4B72EF2D /* microphone@2x.png */,
-				8913E0ECE014AD34948841973BD0E732 /* save@2x.png */,
-				8311AF3E997B94EF62C777CD4030D2FF /* ToolViewInputText@2x.png */,
-				92E8D1363F08D0373BB79FC21444DB8B /* ToolViewInputTextHL@2x.png */,
-				B275A65D8553D6EBC82F4FD1632C8F3C /* ToolViewInputVoice@2x.png */,
-				88708F8F40B219A386F7B27B4A02B243 /* ToolViewInputVoiceHL@2x.png */,
-				F1ABCC37D22044C2EFF3A9CC65D41CCE /* umeng_add_photo@2x.png */,
-				CEEF0149B11C365A1715E35985BADF65 /* umeng_fb_audio_dialog_cancel@2x.png */,
-				F080214EF13EE08AA528D79B85FD2F7B /* umeng_fb_audio_dialog_content@2x.png */,
-				FEF790694A0B6A0252AE35F0D562DC25 /* umeng_fb_audio_play_01@2x.png */,
-				D7B23B3C25967D0CC36426777C204D94 /* umeng_fb_audio_play_02@2x.png */,
-				2E76E7D236B7BB65C88B2046E3DC52F0 /* umeng_fb_audio_play_03@2x.png */,
-				FC6CA5ED36ACD01060F144F0D4463BEA /* umeng_fb_audio_play_default@2x.png */,
-				0585F7D18A878929DA0BEC9EA4664CF1 /* UMFeedbackLocalizable.strings */,
+				755C10CA2A386362B04CE2F0C6A70B35 /* UMengFeedback.xcconfig */,
+				41344AB4BF3E2C4F860E05DB85DCC135 /* UMengFeedback-dummy.m */,
+				0045E3C11D18CD7872830E78373C01FC /* UMengFeedback-prefix.pch */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/UMengFeedback";
 			sourceTree = "<group>";
 		};
-		AE703340F8D2809BC28F071236499583 /* Products */ = {
+		96FD168B8B1BB11179B6FE1219CAEB81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24A98492804E7C6E7FE38BDDC1A55B3D /* libCYLTabBarController.a */,
-				4493018B785E1E0419445EB25C3A2BB6 /* libiOS-blur.a */,
-				7A00608DC0EF46ADB292EEBFF6BC6953 /* libMBProgressHUD.a */,
-				1B943CA6C976A176A6E37B1560D3B531 /* libMMDrawerController.a */,
-				A2DD5AF69897215A0FF068E2B2AE0A50 /* libPods.a */,
-				B5A210CB8AA4BC540D246627829839F1 /* libREFrostedViewController.a */,
-				A8556F99E9C09005E56393F35F80C6A0 /* libUMengFeedback.a */,
+				0263027B820A1E2644C19F03C4226424 /* libCYLTabBarController.a */,
+				0B92503760704F26BD2526CEB56DB9D5 /* libiOS-blur.a */,
+				08E18C64F3566C866DBBA7D7A2543F4D /* libMBProgressHUD.a */,
+				449DEEE9DFAF0ABF9588DB65D1A64579 /* libPods.a */,
+				DC623109072A34DFF842B56D346D4328 /* libREFrostedViewController.a */,
+				FE5AC7BC8032307DA2FEBCE5A5E6F9D1 /* libUMengFeedback.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AF0CD2CE253103C2D5DD66D197234954 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				F49E12E265D4DC6A8CEB6653FFAECC82 /* MBProgressHUD.h */,
-				BCF05E2FB52D3233087E8D4561C7A65E /* MBProgressHUD.m */,
-				50FE12A8603E2A381997B3D4AE7E0B9B /* Support Files */,
-			);
-			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
@@ -511,63 +455,27 @@
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		C273D284E3CFDAFCC48AC5473A2668A5 /* Core */ = {
+		D4BA5B9AE442EAFB0CA74E45E21BA2D2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3087D9BF4AC71B0B1606B8AD01A80A3C /* MMDrawerController.h */,
-				6FBE398B3F2C129D4D74EDB4E8B049C5 /* MMDrawerController.m */,
-				61D83BBF2BD25459F57803DB3E26BAD6 /* MMDrawerController+Subclass.h */,
-				FE09DC5941C6BC6EF0203061E6336ECC /* UIViewController+MMDrawerController.h */,
-				1E8551B9FF9D0786D51999CB42856708 /* UIViewController+MMDrawerController.m */,
+				B0DBE11F0000A04208FD636218DFAA60 /* bubble_min@2x.png */,
+				8419045226CD5C73FF8C05C66EA359CF /* cancel@2x.png */,
+				EA54EC215FF1BAB69441F1E62C9EFA0D /* microphone@2x.png */,
+				ED2A0B4438D808B969344A586A18049C /* save@2x.png */,
+				B0D6E717A9C991039C9B24B3043F7276 /* ToolViewInputText@2x.png */,
+				3F5B32CF4CA8FC3FC70FA06587AD3696 /* ToolViewInputTextHL@2x.png */,
+				FA48F4F70C6E9F13E1C2EFF272049574 /* ToolViewInputVoice@2x.png */,
+				890EADAD52A78C375E6D5CDD8F882B20 /* ToolViewInputVoiceHL@2x.png */,
+				E986D8FBA250CC7FF1D2FED721DBAE78 /* umeng_add_photo@2x.png */,
+				126BE784A1CE373FDD6CD8FD8F508942 /* umeng_fb_audio_dialog_cancel@2x.png */,
+				7A31EA87261837963A52217E1375FC5A /* umeng_fb_audio_dialog_content@2x.png */,
+				064DE5C16D5B3659E2139CC241F1DCCD /* umeng_fb_audio_play_01@2x.png */,
+				4CFC9569321623864FE7EFB48BB83ED2 /* umeng_fb_audio_play_02@2x.png */,
+				95D228384D1EC95CEA461770233BC4A7 /* umeng_fb_audio_play_03@2x.png */,
+				380145769DB303CA4B48B3922145718B /* umeng_fb_audio_play_default@2x.png */,
+				36CCC45AB59F2C6EA30B5117563A04D3 /* UMFeedbackLocalizable.strings */,
 			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		C2D043FB12B4C0C225EA88D0552A9268 /* MMDrawerBarButtonItem */ = {
-			isa = PBXGroup;
-			children = (
-				CEB6EAEAEA6AE560F433E05BFA461A29 /* MMDrawerBarButtonItem.h */,
-				A08CA65B7C3617B177E85276A4DDC0DE /* MMDrawerBarButtonItem.m */,
-			);
-			name = MMDrawerBarButtonItem;
-			sourceTree = "<group>";
-		};
-		DFABF63D0F4CAD57D7A384EC72B2755D /* CYLTabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				48AFD4AEAED56D20D398E81B350F89D0 /* CYLPlusButton.h */,
-				6393927507A00B5801E9B8968B480062 /* CYLPlusButton.m */,
-				47089ECE37CBF03C156B00F990F9E815 /* CYLTabBar.h */,
-				86B711A66AEE99A0026FCF81E9535FE5 /* CYLTabBar.m */,
-				3CEE77920E276D6478F125C00814576B /* CYLTabBarController.h */,
-				D904A8A46B8023112A2A6DAB49F1344E /* CYLTabBarController.m */,
-				E98D3C3DD223B293E60B7CF6B0E21232 /* Support Files */,
-			);
-			path = CYLTabBarController;
-			sourceTree = "<group>";
-		};
-		E45D9496C1F04BA0FCF4B5F9AA9B0D20 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DFABF63D0F4CAD57D7A384EC72B2755D /* CYLTabBarController */,
-				3667088FB484411C4E22C6B08256CE52 /* iOS-blur */,
-				AF0CD2CE253103C2D5DD66D197234954 /* MBProgressHUD */,
-				02DA32345BEF5CE9BCE2F5D26994B1F5 /* MMDrawerController */,
-				496938219D561856BF7670F95756C7F2 /* REFrostedViewController */,
-				60D4C13EE50816052C39A36E04D8A402 /* UMengFeedback */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E98D3C3DD223B293E60B7CF6B0E21232 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3D5ABB6C043F4EF7A18DEC0C2A3D2716 /* CYLTabBarController.xcconfig */,
-				5A7C485D2E23E56538544CAE02718F80 /* CYLTabBarController-dummy.m */,
-				862874B1F987375F27D52D96F8880B3D /* CYLTabBarController-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CYLTabBarController";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		F1F39036B4C07D8530B5FC2526EB4B25 /* iOS */ = {
@@ -582,55 +490,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FD5EC9A3FA59CECDF1D353C22E81EA46 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FF7140A538173A07269581DDD34523C2 /* UMengFeedback.xcconfig */,
-				A93F85EB61B8EE7760BC9E6E9994141F /* UMengFeedback-dummy.m */,
-				041E67D0EA3205521D74ACBC97B8B7DE /* UMengFeedback-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UMengFeedback";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		096FADA25940A2E724A1B31F416DBC3F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590889764B907121B4AB99C7FBA619F4 /* UMChatTableViewCell.h in Headers */,
+				C9AF02BF759A1FFC42CFF2CC239F216A /* UMChatToolBar.h in Headers */,
+				E9E50F6519DF2F38390297D71138E299 /* UMFeedback.h in Headers */,
+				3E6E5A2896C07FFC762A9D27E3744782 /* UMFeedbackViewController.h in Headers */,
+				1BA0A0E35FC3E5B2DAF4C27B70E7302D /* UMFullScreenPhotoView.h in Headers */,
+				F0106574D6A332CECCAEB584F9D40B2B /* UMOpenMacros.h in Headers */,
+				C8026E3FBC70DD9679ABB9741A3A07ED /* UMOpus.h in Headers */,
+				BD90D15CE2B2665572E014A5F678C8AD /* UMPostTableViewCell.h in Headers */,
+				25E63F0FFE94D6AA30E2EB6AB13ABB4F /* UMRadialView.h in Headers */,
+				34165C9169FFF53991D9CD23D663867B /* UMRecorder.h in Headers */,
+				02FF8A44F3BB3FBD583FFECBABFF9C37 /* UMTextView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1065E8E2517E20271D16C2046D2C5097 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9C226DEEC940319EE5FDB48513546046 /* JCRBlurView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		671A5DD9882FC72ABF19CC23351229C3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				264EB5BF4D94850F4E58224438636EAA /* UMChatTableViewCell.h in Headers */,
-				1DFEF6A57BB1DCB310CE22C8366F4644 /* UMChatToolBar.h in Headers */,
-				AFCAE94DF3BA6D76E7EF10B9CEDF5BCA /* UMFeedback.h in Headers */,
-				3E2339C59FACF612E98615B75611B762 /* UMFeedbackViewController.h in Headers */,
-				30D2380E0F9E6DC2FC7F687455F15909 /* UMFullScreenPhotoView.h in Headers */,
-				2BD7C5DD36FE371202E71A46B1F782C7 /* UMOpenMacros.h in Headers */,
-				2B1D1915FDD7E6282AE7E4556C4A823A /* UMOpus.h in Headers */,
-				93C669E778EFC7749318BFF7A1DF213B /* UMPostTableViewCell.h in Headers */,
-				698601E2D2EDB437C831232D16CCAF11 /* UMRadialView.h in Headers */,
-				D47DEC5805C33A5F6D135DAE5AFBB5A4 /* UMRecorder.h in Headers */,
-				937C61D1DA3AEED2D1332756550E50AF /* UMTextView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6B25487E91D6C44A5A7199EDA11CF451 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9A7F170BE65EFFD69B5986DB55C1920A /* MMDrawerBarButtonItem.h in Headers */,
-				947575549E0193C1A5A2379EA9D95D46 /* MMDrawerController+Subclass.h in Headers */,
-				F733730F57E794BCFB4B18DC00E2FF9B /* MMDrawerController.h in Headers */,
-				1A378C41991F5219E9959E3A250E9A03 /* MMDrawerVisualState.h in Headers */,
-				984DD4BA68A399F50B9D7849E72385F8 /* UIViewController+MMDrawerController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,16 +529,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E94F2D14D43FE5553FDBDFA6A8E2DD83 /* Headers */ = {
+		EDE60A5D4A7C64A6F04AD289DAB46C31 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E2D88A5AB3481BC11904D73B5DA521D /* RECommonFunctions.h in Headers */,
-				BA38F9F9100167A8F4C9AE3506F66EBB /* REFrostedContainerViewController.h in Headers */,
-				356E6E39FE245F903EBD96A2CE79A8E8 /* REFrostedViewController.h in Headers */,
-				0FA100DBF7093730172F14266749FF32 /* UIImage+REFrostedViewController.h in Headers */,
-				1E22F5EFC30AE74E20C73F670B97035F /* UIView+REFrostedViewController.h in Headers */,
-				5A6ED554524DC77DE3300602227E73F3 /* UIViewController+REFrostedViewController.h in Headers */,
+				B7C9B039ACB8FE74B8AD2BD02872AFE6 /* RECommonFunctions.h in Headers */,
+				F0807050CE5281D761F904A739237FAA /* REFrostedContainerViewController.h in Headers */,
+				9FADF76D5C515DF828B76C58082540F1 /* REFrostedViewController.h in Headers */,
+				B6AC48AB649E222AFB4ED1AB34524954 /* UIImage+REFrostedViewController.h in Headers */,
+				0E77542C99DE84AD358959C655CC365A /* UIView+REFrostedViewController.h in Headers */,
+				8C91657DA0F28A44B9CCD90D423CF384 /* UIViewController+REFrostedViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,7 +567,7 @@
 			);
 			name = "iOS-blur";
 			productName = "iOS-blur";
-			productReference = 4493018B785E1E0419445EB25C3A2BB6 /* libiOS-blur.a */;
+			productReference = 0B92503760704F26BD2526CEB56DB9D5 /* libiOS-blur.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		16ACF35FDB8EAF2E5A8191EA1BCBEA01 /* CYLTabBarController */ = {
@@ -699,50 +584,37 @@
 			);
 			name = CYLTabBarController;
 			productName = CYLTabBarController;
-			productReference = 24A98492804E7C6E7FE38BDDC1A55B3D /* libCYLTabBarController.a */;
+			productReference = 0263027B820A1E2644C19F03C4226424 /* libCYLTabBarController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		4479A7A728F03DDDE63EFB37693E24DF /* REFrostedViewController */ = {
+		AEB671596DD8400E070D596A5FE4DF4C /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01FBFDA01FA78E7A1DBDB89ACBA68054 /* Build configuration list for PBXNativeTarget "REFrostedViewController" */;
+			buildConfigurationList = 4707A441F89DD9A3D6B32D64762E0DDD /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				CD06FB60163C835502F97594352BAE5E /* Sources */,
-				A8C078ACB6AE737362F4FAC787434879 /* Frameworks */,
-				E94F2D14D43FE5553FDBDFA6A8E2DD83 /* Headers */,
+				68965CA4EF3A96B320E911C20D3C0DB8 /* Sources */,
+				795344A9DD4FBE29C4ED0B615FB50E31 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3D5E273A87B5135DEDBC50F08370B783 /* PBXTargetDependency */,
+				403ECF7D69FB1D5C37C606174B7E459A /* PBXTargetDependency */,
+				7861584EA2E5A2164D5407CFC028F8C7 /* PBXTargetDependency */,
+				3F8E156627638E46B8A16186B671D0D7 /* PBXTargetDependency */,
+				D424A47D20B3AA8818DC0699744A163F /* PBXTargetDependency */,
 			);
-			name = REFrostedViewController;
-			productName = REFrostedViewController;
-			productReference = B5A210CB8AA4BC540D246627829839F1 /* libREFrostedViewController.a */;
+			name = Pods;
+			productName = Pods;
+			productReference = 449DEEE9DFAF0ABF9588DB65D1A64579 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		550F7EEAEEA17E3F92C873912E23B01C /* MMDrawerController */ = {
+		B79FA25A5F7C5A775C1E3960277251B6 /* UMengFeedback */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BCBDE524BD4EFDC051B5AD1A976D69B /* Build configuration list for PBXNativeTarget "MMDrawerController" */;
+			buildConfigurationList = DD44B27C22C558FF7B9475EB55B47B0E /* Build configuration list for PBXNativeTarget "UMengFeedback" */;
 			buildPhases = (
-				BE1CF9CE4811645411026F952650D228 /* Sources */,
-				C81EA9947F4EA889C80E0571F51007C3 /* Frameworks */,
-				6B25487E91D6C44A5A7199EDA11CF451 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MMDrawerController;
-			productName = MMDrawerController;
-			productReference = 1B943CA6C976A176A6E37B1560D3B531 /* libMMDrawerController.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		8C37BF88BD4F2B9A9E073182E90AE202 /* UMengFeedback */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CBD0DF2A0532A194AB10A68780B47296 /* Build configuration list for PBXNativeTarget "UMengFeedback" */;
-			buildPhases = (
-				FAD655DEB8C06F765D77E71263507553 /* Sources */,
-				1F3A1F3444F1D2F190E6DBEF8DC9E95A /* Frameworks */,
-				671A5DD9882FC72ABF19CC23351229C3 /* Headers */,
+				F5BF97C6185361295191EE6946EF555B /* Sources */,
+				4845E0290ECB53CE99E46ACE6BF4E3E8 /* Frameworks */,
+				096FADA25940A2E724A1B31F416DBC3F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -750,29 +622,24 @@
 			);
 			name = UMengFeedback;
 			productName = UMengFeedback;
-			productReference = A8556F99E9C09005E56393F35F80C6A0 /* libUMengFeedback.a */;
+			productReference = FE5AC7BC8032307DA2FEBCE5A5E6F9D1 /* libUMengFeedback.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		E7C4F710993EF1C1EF52B1852BE297C5 /* Pods */ = {
+		E18B9684D5722C1705CE194E423CE52E /* REFrostedViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9637F7F46F2E5D0A60DDC3AD2EA6F71A /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = EC54248C3630E9A8F92D7FA9AABCAF0B /* Build configuration list for PBXNativeTarget "REFrostedViewController" */;
 			buildPhases = (
-				D21B2B4F47174B91DDE30664AA0FA15B /* Sources */,
-				9283BC336B8F14CECF408F1E70C0E7F1 /* Frameworks */,
+				91A248674168DEBD8EB1B753FCE17A58 /* Sources */,
+				25D82EF4146D0DADCB3CEC58940EC466 /* Frameworks */,
+				EDE60A5D4A7C64A6F04AD289DAB46C31 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0390B0457F28446A3B132B41F82D1547 /* PBXTargetDependency */,
-				44D6840002F5C8894F55DD7C176CC091 /* PBXTargetDependency */,
-				5047C7D84401FBFA0E613BEAFEC9C7F7 /* PBXTargetDependency */,
-				4FDD3F90A4A48292C88A48A2161B08F5 /* PBXTargetDependency */,
-				722CDA66FD3F054E08BFAD6CF0929E3A /* PBXTargetDependency */,
-				54EBD950D6E006F6837694B6D8AA2D6D /* PBXTargetDependency */,
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = A2DD5AF69897215A0FF068E2B2AE0A50 /* libPods.a */;
+			name = REFrostedViewController;
+			productName = REFrostedViewController;
+			productReference = DC623109072A34DFF842B56D346D4328 /* libREFrostedViewController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */ = {
@@ -789,7 +656,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 7A00608DC0EF46ADB292EEBFF6BC6953 /* libMBProgressHUD.a */;
+			productReference = 08E18C64F3566C866DBBA7D7A2543F4D /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -809,17 +676,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = AE703340F8D2809BC28F071236499583 /* Products */;
+			productRefGroup = 96FD168B8B1BB11179B6FE1219CAEB81 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				16ACF35FDB8EAF2E5A8191EA1BCBEA01 /* CYLTabBarController */,
 				0FEFCED0DFD9044B714F80F336070127 /* iOS-blur */,
 				FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */,
-				550F7EEAEEA17E3F92C873912E23B01C /* MMDrawerController */,
-				E7C4F710993EF1C1EF52B1852BE297C5 /* Pods */,
-				4479A7A728F03DDDE63EFB37693E24DF /* REFrostedViewController */,
-				8C37BF88BD4F2B9A9E073182E90AE202 /* UMengFeedback */,
+				AEB671596DD8400E070D596A5FE4DF4C /* Pods */,
+				E18B9684D5722C1705CE194E423CE52E /* REFrostedViewController */,
+				B79FA25A5F7C5A775C1E3960277251B6 /* UMengFeedback */,
 			);
 		};
 /* End PBXProject section */
@@ -834,6 +700,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68965CA4EF3A96B320E911C20D3C0DB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5045BD9D33C52D1608927D38200255C /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8197468E8CD363BCB44C44008D591FAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -845,37 +719,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE1CF9CE4811645411026F952650D228 /* Sources */ = {
+		91A248674168DEBD8EB1B753FCE17A58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76D495DBB9B5D81BE4391E10299F938B /* MMDrawerBarButtonItem.m in Sources */,
-				2D8C79E70B7EEA9C8EB372CD5775A5C1 /* MMDrawerController-dummy.m in Sources */,
-				66549CC91863363861D818B68B136EB6 /* MMDrawerController.m in Sources */,
-				19BD91B5A5ED8A4C820CB6BD33633C7C /* MMDrawerVisualState.m in Sources */,
-				579A1B0E910EF7BB4A3D44D2880570E9 /* UIViewController+MMDrawerController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD06FB60163C835502F97594352BAE5E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35DB834393145453830542AAC5325315 /* RECommonFunctions.m in Sources */,
-				F6C171B0A94A36576748D47D2AA1E60C /* REFrostedContainerViewController.m in Sources */,
-				03A491C670FE881325DE3477272C5F7E /* REFrostedViewController-dummy.m in Sources */,
-				B424742B454EFB367EFE692B4A68AF1E /* REFrostedViewController.m in Sources */,
-				A3807C2F22EBAEEAD862434896A47261 /* UIImage+REFrostedViewController.m in Sources */,
-				FEF2B62F8D5DFEDFD77638EF83DAD2E9 /* UIView+REFrostedViewController.m in Sources */,
-				9A5E9C388AF709C50AE12C06C27EB680 /* UIViewController+REFrostedViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D21B2B4F47174B91DDE30664AA0FA15B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				878D53CA5AB7BEA564CC5F557F701794 /* Pods-dummy.m in Sources */,
+				04476BA850B559D10C691883A0CD0B0D /* RECommonFunctions.m in Sources */,
+				D33E50ACEB18B6E539A50B51F8AE99D7 /* REFrostedContainerViewController.m in Sources */,
+				627D76E76480CA5794F4BF7005ADCF96 /* REFrostedViewController-dummy.m in Sources */,
+				A8099ADFD0E9FBBC9298B16D1E03EFDE /* REFrostedViewController.m in Sources */,
+				BF83BDBDC3968F87AFF3C542D2054048 /* UIImage+REFrostedViewController.m in Sources */,
+				1FD8992C50956BE1F68AE4DB11AD7319 /* UIView+REFrostedViewController.m in Sources */,
+				6F317BDE4830E4ACABBB8BDB593B749C /* UIViewController+REFrostedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,66 +742,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAD655DEB8C06F765D77E71263507553 /* Sources */ = {
+		F5BF97C6185361295191EE6946EF555B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E3A0AAF83457CA488A9A863382E05D4 /* UMChatTableViewCell.m in Sources */,
-				33BF19204DB24CE9B25D11A284EA75B3 /* UMChatToolBar.m in Sources */,
-				8BCE8E4F9DC29F42E6DB514199B2D06D /* UMengFeedback-dummy.m in Sources */,
-				8BA9BBE156E5EF2F2676D216D4C9BDE3 /* UMFeedbackViewController.m in Sources */,
-				683D7344383B6501AB0C77BE9CDA344A /* UMFullScreenPhotoView.m in Sources */,
-				B16F12BC907F5FDAD33EBCDA2150B016 /* UMPostTableViewCell.m in Sources */,
-				547E9F8ECF9F4700559773969D82D7D9 /* UMRadialView.m in Sources */,
-				98934A55B911B3F79DADBAA9E86E1145 /* UMTextView.m in Sources */,
+				9A5D447F39DD83F38C6D5DAD87630C46 /* UMChatTableViewCell.m in Sources */,
+				AB394C7EED4ADC88687039BA90F63DF2 /* UMChatToolBar.m in Sources */,
+				F98429EA72EB53C810A02F892BCFBAED /* UMengFeedback-dummy.m in Sources */,
+				AB048D296D5CAE17C3DFE1A287D6D370 /* UMFeedbackViewController.m in Sources */,
+				1997EF5A0558387D26AE56FD6C0A62AD /* UMFullScreenPhotoView.m in Sources */,
+				3AEEC086B94AA1517351AA14C830AEA6 /* UMPostTableViewCell.m in Sources */,
+				26EDB45477A0E9AC6CD042A55475444A /* UMRadialView.m in Sources */,
+				B7FEDF8E5B35954763C000EBEE9D53A7 /* UMTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0390B0457F28446A3B132B41F82D1547 /* PBXTargetDependency */ = {
+		3D5E273A87B5135DEDBC50F08370B783 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CYLTabBarController;
 			target = 16ACF35FDB8EAF2E5A8191EA1BCBEA01 /* CYLTabBarController */;
-			targetProxy = 20B49A1B5F4E794639C667EB8302185F /* PBXContainerItemProxy */;
+			targetProxy = 60CA73082651AF06C359A4ECAFFE991D /* PBXContainerItemProxy */;
 		};
-		44D6840002F5C8894F55DD7C176CC091 /* PBXTargetDependency */ = {
+		3F8E156627638E46B8A16186B671D0D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UMengFeedback;
+			target = B79FA25A5F7C5A775C1E3960277251B6 /* UMengFeedback */;
+			targetProxy = 8B8447ABC305FD4D0272D7BFDAC5E08C /* PBXContainerItemProxy */;
+		};
+		403ECF7D69FB1D5C37C606174B7E459A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
 			target = FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */;
-			targetProxy = 5E07408DD4706EB206CC3409ED4F83B3 /* PBXContainerItemProxy */;
+			targetProxy = FE3D9D1BFBC01E8BECDF066531AF1823 /* PBXContainerItemProxy */;
 		};
-		4FDD3F90A4A48292C88A48A2161B08F5 /* PBXTargetDependency */ = {
+		7861584EA2E5A2164D5407CFC028F8C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = REFrostedViewController;
-			target = 4479A7A728F03DDDE63EFB37693E24DF /* REFrostedViewController */;
-			targetProxy = BEDE984BC6C0B0E9A44EDF04194BD406 /* PBXContainerItemProxy */;
+			target = E18B9684D5722C1705CE194E423CE52E /* REFrostedViewController */;
+			targetProxy = 5A62F62F7CCD1752865A8A171F190914 /* PBXContainerItemProxy */;
 		};
-		5047C7D84401FBFA0E613BEAFEC9C7F7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MMDrawerController;
-			target = 550F7EEAEEA17E3F92C873912E23B01C /* MMDrawerController */;
-			targetProxy = DB0BE0493A1424513CDCAD72753A614D /* PBXContainerItemProxy */;
-		};
-		54EBD950D6E006F6837694B6D8AA2D6D /* PBXTargetDependency */ = {
+		D424A47D20B3AA8818DC0699744A163F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "iOS-blur";
 			target = 0FEFCED0DFD9044B714F80F336070127 /* iOS-blur */;
-			targetProxy = 72EC194D7F1B0B66BE905F4172A2A3A6 /* PBXContainerItemProxy */;
-		};
-		722CDA66FD3F054E08BFAD6CF0929E3A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UMengFeedback;
-			target = 8C37BF88BD4F2B9A9E073182E90AE202 /* UMengFeedback */;
-			targetProxy = D400A403AAECCA21970B6B90AFF4E567 /* PBXContainerItemProxy */;
+			targetProxy = F470158C3A53C2C8465B8D07A371DFBA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		036FCBB4D999D0B722D08A77FE12C752 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D5ABB6C043F4EF7A18DEC0C2A3D2716 /* CYLTabBarController.xcconfig */;
+			baseConfigurationReference = CB1933DE85BC08D034E8AC2A06416618 /* CYLTabBarController.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/CYLTabBarController/CYLTabBarController-prefix.pch";
@@ -963,9 +811,44 @@
 			};
 			name = Debug;
 		};
+		14DB6A073D317BF639AFB75325B8210A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2834C6102476B2D7C470DF60AD1FE377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22C507D8C54D1C65BFC5612C131D4328 /* REFrostedViewController.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/REFrostedViewController/REFrostedViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		2EB7464BFC4B881299B5657C95CD0AF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCCC2A8B6E9BC1B1BC5C3DD0F9B51183 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 5B52D4C1210B70736562E845E4435884 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
@@ -983,7 +866,7 @@
 		};
 		3EC9BA4F331FB42C93D1240BD891FD99 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D5ABB6C043F4EF7A18DEC0C2A3D2716 /* CYLTabBarController.xcconfig */;
+			baseConfigurationReference = CB1933DE85BC08D034E8AC2A06416618 /* CYLTabBarController.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/CYLTabBarController/CYLTabBarController-prefix.pch";
@@ -1001,7 +884,7 @@
 		};
 		489DF26AE590C512B105A2F5D4F2FB1E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2217E5312B5D6A51E8015B160B57996B /* iOS-blur.xcconfig */;
+			baseConfigurationReference = 0B25355A7799D1B7463F79434ADD9DC6 /* iOS-blur.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/iOS-blur/iOS-blur-prefix.pch";
@@ -1019,7 +902,7 @@
 		};
 		587BCA750A2ACA49C1FA11D4A28BD53E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2217E5312B5D6A51E8015B160B57996B /* iOS-blur.xcconfig */;
+			baseConfigurationReference = 0B25355A7799D1B7463F79434ADD9DC6 /* iOS-blur.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/iOS-blur/iOS-blur-prefix.pch";
@@ -1035,44 +918,9 @@
 			};
 			name = Debug;
 		};
-		6600D3C0C03E0DE6A24917C042C80EA6 /* Debug */ = {
+		88A748B361142260979C8A51F5F13C77 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		8AA5C85CDFCF106EEAC06E5D1E1E7337 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33D7502F7E2B161D873DB574042586D5 /* MMDrawerController.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MMDrawerController/MMDrawerController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		8D2DE93AF76FD9FCB73D0C654A31F873 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E370F35582C016048FAE4594C453C2C8 /* REFrostedViewController.xcconfig */;
+			baseConfigurationReference = 22C507D8C54D1C65BFC5612C131D4328 /* REFrostedViewController.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/REFrostedViewController/REFrostedViewController-prefix.pch";
@@ -1090,7 +938,7 @@
 		};
 		919FAA2929EE9C5D42F4E864F99B6175 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCCC2A8B6E9BC1B1BC5C3DD0F9B51183 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 5B52D4C1210B70736562E845E4435884 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
@@ -1106,19 +954,18 @@
 			};
 			name = Release;
 		};
-		977F659F6D69A88371B6E1673BF85CF6 /* Release */ = {
+		A42EC583B3C8EBD039B805716ACBE430 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF7140A538173A07269581DDD34523C2 /* UMengFeedback.xcconfig */;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UMengFeedback/UMengFeedback-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -1163,14 +1010,14 @@
 			};
 			name = Debug;
 		};
-		AB84E4CCF23E46E8583BD4F1C7B4B698 /* Debug */ = {
+		DC825C49E205489F342892ABA757586E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33D7502F7E2B161D873DB574042586D5 /* MMDrawerController.xcconfig */;
+			baseConfigurationReference = 755C10CA2A386362B04CE2F0C6A70B35 /* UMengFeedback.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MMDrawerController/MMDrawerController-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/UMengFeedback/UMengFeedback-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -1179,11 +1026,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		D505ECA3599307409827CBE69897B60B /* Debug */ = {
+		E46984C8C0F278E13885E419400A9E48 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF7140A538173A07269581DDD34523C2 /* UMengFeedback.xcconfig */;
+			baseConfigurationReference = 755C10CA2A386362B04CE2F0C6A70B35 /* UMengFeedback.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/UMengFeedback/UMengFeedback-prefix.pch";
@@ -1198,41 +1045,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
-		};
-		F0C76DFEB815A40D6AA982CEFC2662EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E370F35582C016048FAE4594C453C2C8 /* REFrostedViewController.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/REFrostedViewController/REFrostedViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		F7A5F8AE5CBCB0B11297C431C82A9AB9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1271,15 +1083,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01FBFDA01FA78E7A1DBDB89ACBA68054 /* Build configuration list for PBXNativeTarget "REFrostedViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F0C76DFEB815A40D6AA982CEFC2662EF /* Debug */,
-				8D2DE93AF76FD9FCB73D0C654A31F873 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1289,29 +1092,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6BCBDE524BD4EFDC051B5AD1A976D69B /* Build configuration list for PBXNativeTarget "MMDrawerController" */ = {
+		4707A441F89DD9A3D6B32D64762E0DDD /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB84E4CCF23E46E8583BD4F1C7B4B698 /* Debug */,
-				8AA5C85CDFCF106EEAC06E5D1E1E7337 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9637F7F46F2E5D0A60DDC3AD2EA6F71A /* Build configuration list for PBXNativeTarget "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6600D3C0C03E0DE6A24917C042C80EA6 /* Debug */,
-				F7A5F8AE5CBCB0B11297C431C82A9AB9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CBD0DF2A0532A194AB10A68780B47296 /* Build configuration list for PBXNativeTarget "UMengFeedback" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D505ECA3599307409827CBE69897B60B /* Debug */,
-				977F659F6D69A88371B6E1673BF85CF6 /* Release */,
+				14DB6A073D317BF639AFB75325B8210A /* Debug */,
+				A42EC583B3C8EBD039B805716ACBE430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1325,11 +1110,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		DD44B27C22C558FF7B9475EB55B47B0E /* Build configuration list for PBXNativeTarget "UMengFeedback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46984C8C0F278E13885E419400A9E48 /* Debug */,
+				DC825C49E205489F342892ABA757586E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E0D2DD72168EB9DEE5F568748E9F6E69 /* Build configuration list for PBXNativeTarget "iOS-blur" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				587BCA750A2ACA49C1FA11D4A28BD53E /* Debug */,
 				489DF26AE590C512B105A2F5D4F2FB1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC54248C3630E9A8F92D7FA9AABCAF0B /* Build configuration list for PBXNativeTarget "REFrostedViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2834C6102476B2D7C470DF60AD1FE377 /* Debug */,
+				88A748B361142260979C8A51F5F13C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

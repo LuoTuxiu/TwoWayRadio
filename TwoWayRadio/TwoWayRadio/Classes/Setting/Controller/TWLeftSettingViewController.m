@@ -28,7 +28,7 @@
 
     
     self.view.backgroundColor =  [UIColor clearColor];
-    
+    self.view.width = TWLeftViewWidth;
     [self commonSetupTableView:UITableViewStylePlain];
     [self setupGroups];
     
@@ -48,14 +48,14 @@
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 100, 100)];
         imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
         imageView.image = [UIImage imageNamed:@"Home_people"];
-        imageView.layer.masksToBounds = YES;
-        imageView.layer.cornerRadius = 50.0;
-        imageView.layer.borderColor = [UIColor whiteColor].CGColor;
-        imageView.layer.borderWidth = 3.0f;
-        imageView.layer.rasterizationScale = [UIScreen mainScreen].scale;
-        imageView.layer.shouldRasterize = YES;
-        imageView.clipsToBounds = YES;
-        
+//        imageView.layer.masksToBounds = YES;
+//        imageView.layer.cornerRadius = 50.0;
+//        imageView.layer.borderColor = [UIColor clearColor].CGColor;
+//        imageView.layer.borderWidth = 3.0f;
+//        imageView.layer.rasterizationScale = [UIScreen mainScreen].scale;
+//        imageView.layer.shouldRasterize = YES;
+//        imageView.clipsToBounds = YES;
+//        imageView.centerX  = self.view.width / 2;
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 150, 0, 24)];
         NSString *string2 = @"admin";
         label.text = string2;
@@ -70,35 +70,6 @@
         view;
     });
     
-    //    //添加headerView
-    //    TWSettingHeaderView *headerView = [TWSettingHeaderView loadHeaderview];
-    ////    headerView.width = self.tableView.width;
-    //
-    //    headerView.width  = leftViewWidth;
-    //    headerView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"settingHeader"]];
-    //
-    //    //设置button
-    //        NSLog(@"%@",[NSThread currentThread]);
-    //    [headerView.logButton setTitle:@"点击切换用户或地址" forState:UIControlStateNormal];
-    //    [headerView.logButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //    [headerView.logButton addTarget:self action:@selector(touchLog) forControlEvents:UIControlEventTouchUpInside];
-    //    [headerView.logButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
-    //
-    //    //设置详细说明label
-    //    headerView.detailLabel.text = @"登录以进行实时对讲";
-    //    headerView.detailLabel.textAlignment = NSTextAlignmentLeft;
-    //    headerView.detailLabel.textColor = [UIColor whiteColor];
-    //    headerView.detailLabel.font =  [UIFont systemFontOfSize:12.0];
-    //
-    //    UIImage *image = [UIImage imageNamed:@"logImage"];
-    //    headerView.iconOfPeople.layer.masksToBounds = YES;
-    //    headerView.iconOfPeople.layer.cornerRadius = headerView.iconOfPeople.frame.size.width /2;
-    //    //    headerView.iconOfPeople.layer.borderColor = [UIColor purpleColor].CGColor;
-    //    //    headerView.iconOfPeople.layer.borderWidth = 10;
-    //    headerView.iconOfPeople.image = image;
-    //    _headerView = headerView;
-    //
-    //    self.tableView.tableHeaderView =  headerView;
 }
 
 #pragma mark - 初始化模型数据
@@ -114,7 +85,7 @@
 -(void)setupGroup0
 {
     YSCommonGroup *group = [self addGroup];
-    YSArrowItem *about =  [YSArrowItem itemWithTitle:@"关于我们" icon:@"MoreAbout"];
+    YSArrowItem *about =  [YSArrowItem itemWithTitle:@"关于我们" icon:nil];
     //    about.showVcClass = [TWAboutViewController class];
     about.operation = ^{
         //
@@ -124,7 +95,7 @@
     };
     
     //1.评分支持
-    YSArrowItem *support =  [YSArrowItem itemWithTitle:@"评分支持" icon:@"recommendToAppstore"];
+    YSArrowItem *support =  [YSArrowItem itemWithTitle:@"评分支持" icon:nil];
     //跳去AppStore的评分支持界面,下面的1048837125是在iTunes上面获取的。
     support.operation =^{
         NSString *appStore =  [NSString stringWithFormat:@"itms-apps://itunes.apple.com/cn/app/id%@?mt=8",@"1048837125"];
@@ -134,7 +105,7 @@
     
     //    TWSettingGroup *group =  [TWSettingGroup groupWithItems:nil];
     
-    YSArrowItem *suggestion =  [YSArrowItem itemWithTitle:@"意见反馈" icon:@"feedback"];
+    YSArrowItem *suggestion =  [YSArrowItem itemWithTitle:@"意见反馈" icon:nil];
   
     suggestion.operation = ^{
         
@@ -143,7 +114,40 @@
         [self showControllerWithVc:vc];
     };
     //    TWSettingGroup *group =  [TWSettingGroup groupWithItems:nil];
-    group.items = @[about,support,suggestion];
+    
+    YSArrowItem *logOut =  [YSArrowItem itemWithTitle:@"退出登陆" icon:nil];
+    
+    logOut.operation = ^{
+        NSLog(@"%s",__func__);
+//        UIViewController *vc =  [UMFeedback feedbackViewController];
+//        
+//
+        UIAlertController *alert  =[UIAlertController alertControllerWithTitle:nil message:@"您确定要注销重新登录吗?" preferredStyle:UIAlertControllerStyleActionSheet];
+        [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//            DebugLog(@"从相册选择");
+//            [[NSNotificationCenter defaultCenter]postNotificationName:@"DZConnectLose" object:nil];
+            //2.设置根控制器
+            TWFirstViewLoginViewController *loginVc = [[TWFirstViewLoginViewController alloc]init];
+            
+            TWKeyWindow.rootViewController = loginVc;
+        }]];
+        //如果设置为UIAlertActionStyleCancel则后面黑色半透明的背景点击会自动退出
+        [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            DebugLog(@"touch 取消");
+            //        [[NSNotificationCenter defaultCenter]postNotificationName:@"DZClearData" object:nil];
+            
+        }]];
+        
+        [self presentViewController:alert animated:YES completion:^{
+            //        DebugLog(@"%@",alert.view.subviews);
+            //        DebugLog(@"%lu",(unsigned long)[alert.view.subviews count]);
+            //        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(touchBackGroud)];
+            //        [alert.view addGestureRecognizer:tap];
+        }];
+
+    };
+    //    TWSettingGroup *group =  [TWSettingGroup groupWithItems:nil];
+    group.items = @[about,support,suggestion,logOut];
 
 
 }
@@ -186,7 +190,15 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell  = [super tableView:tableView cellForRowAtIndexPath:indexPath];
-    cell.backgroundColor =  [UIColor clearColor];
+//    cell.backgroundColor =  [UIColor clearColor];
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.backgroundColor = [UIColor clearColor];
+    cell.textLabel.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:17];
+}
+
 @end

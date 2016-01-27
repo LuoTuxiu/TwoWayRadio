@@ -63,16 +63,8 @@
 
 -(TWRadioView *)radioView
 {
-    
     if (_radioView == nil) {
-//        NSLog(@"I alloc the _radioView here");
-//        CGFloat radioViewX = self.view.frame.origin.x;
-//        CGFloat radioViewY = self.view.frame.origin.y;
-//        CGFloat radioViewW = self.view.frame.size.width;
-//        CGFloat radioViewH = self.view.frame.size.height;
-//        CGRect radioViewOfFrame = CGRectMake(radioViewX, radioViewY, radioViewW, radioViewH);
         _radioView = [[TWRadioView alloc] initWithFrame:self.view.frame];
-        
     }
     return _radioView;
 }
@@ -134,11 +126,10 @@
     
     MBProgressHUD *hud =  [[MBProgressHUD alloc]initWithView:self.view];
     _hud = hud;
-    [self.view.window addSubview:_hud];
+ 
+    [TWKeyWindow addSubview:_hud];
     hud.labelText = @"正在连接";
     _hud.dimBackground = YES;
-    //            NSLog(@"%s", __func__);
-    //            hud.labelText = @"点击了登录";
     [_hud show:YES];
     
 

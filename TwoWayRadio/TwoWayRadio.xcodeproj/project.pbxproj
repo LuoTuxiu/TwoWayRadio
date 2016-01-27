@@ -39,7 +39,6 @@
 		3B893D471C15BC9B00BCACD9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B893D461C15BC9B00BCACD9 /* SystemConfiguration.framework */; };
 		3B893D491C15BCAE00BCACD9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B893D481C15BCAE00BCACD9 /* AVFoundation.framework */; };
 		3BB499911BC1854200D8CAD2 /* TWRadioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB499901BC1854200D8CAD2 /* TWRadioView.m */; };
-		3BB7EE931BEE2790000327C9 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7EE921BEE2790000327C9 /* MBProgressHUD+NJ.m */; };
 		3BCAE71D1BBE33BE009172D6 /* TWSaveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAE71C1BBE33BE009172D6 /* TWSaveInfo.m */; };
 		3BD9DCE31BF816C500BD48E3 /* TWTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9DCE21BF816C500BD48E3 /* TWTabBarControllerConfig.m */; };
 		3BDD3BAA1BABC44100E67F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDD3BA81BABC44100E67F7A /* LaunchScreen.storyboard */; };
@@ -79,6 +78,8 @@
 		F57EBBBB1C5656B40007DDFA /* UIView+FrameAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBBBA1C5656B40007DDFA /* UIView+FrameAdjust.m */; };
 		F57EBBC11C565A2E0007DDFA /* TWLeftSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBBC01C565A2E0007DDFA /* TWLeftSettingViewController.m */; };
 		F57EBBC71C565C230007DDFA /* TWAboutProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EBBC61C565C230007DDFA /* TWAboutProductViewController.m */; };
+		F5971C4D1C57B35E00BAFDAB /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5971C4A1C57B35E00BAFDAB /* MBProgressHUD.bundle */; };
+		F5971C4E1C57B35E00BAFDAB /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F5971C4C1C57B35E00BAFDAB /* MBProgressHUD+NJ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,8 +159,6 @@
 		3B893D481C15BCAE00BCACD9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3BB4998F1BC1854200D8CAD2 /* TWRadioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRadioView.h; sourceTree = "<group>"; };
 		3BB499901BC1854200D8CAD2 /* TWRadioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWRadioView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		3BB7EE911BEE2790000327C9 /* MBProgressHUD+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NJ.h"; sourceTree = "<group>"; };
-		3BB7EE921BEE2790000327C9 /* MBProgressHUD+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NJ.m"; sourceTree = "<group>"; };
 		3BCAE71B1BBE33BE009172D6 /* TWSaveInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSaveInfo.h; sourceTree = "<group>"; };
 		3BCAE71C1BBE33BE009172D6 /* TWSaveInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSaveInfo.m; sourceTree = "<group>"; };
 		3BD9DCE11BF816C500BD48E3 /* TWTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TWTabBarControllerConfig.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -238,6 +237,9 @@
 		F57EBBC01C565A2E0007DDFA /* TWLeftSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLeftSettingViewController.m; sourceTree = "<group>"; };
 		F57EBBC51C565C230007DDFA /* TWAboutProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAboutProductViewController.h; sourceTree = "<group>"; };
 		F57EBBC61C565C230007DDFA /* TWAboutProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAboutProductViewController.m; sourceTree = "<group>"; };
+		F5971C4A1C57B35E00BAFDAB /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		F5971C4B1C57B35E00BAFDAB /* MBProgressHUD+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NJ.h"; sourceTree = "<group>"; };
+		F5971C4C1C57B35E00BAFDAB /* MBProgressHUD+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NJ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +283,9 @@
 		053007D21BFF460E00CEC630 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F5971C4A1C57B35E00BAFDAB /* MBProgressHUD.bundle */,
+				F5971C4B1C57B35E00BAFDAB /* MBProgressHUD+NJ.h */,
+				F5971C4C1C57B35E00BAFDAB /* MBProgressHUD+NJ.m */,
 				F57EBBB91C5656B40007DDFA /* UIView+FrameAdjust.h */,
 				F57EBBBA1C5656B40007DDFA /* UIView+FrameAdjust.m */,
 				3B05B7281C172C1A0063E89A /* TPKeyboardAvoidingScrollView.h */,
@@ -375,8 +380,6 @@
 				3B2262EA1BAEE68000880A0A /* main.m */,
 				3B4E3AF31BCB9FE9002D75C0 /* Reachability.h */,
 				3B4E3AF41BCB9FE9002D75C0 /* Reachability.m */,
-				3BB7EE911BEE2790000327C9 /* MBProgressHUD+NJ.h */,
-				3BB7EE921BEE2790000327C9 /* MBProgressHUD+NJ.m */,
 				3B2262E51BAEE68000880A0A /* AppDelegate.h */,
 				3B2262E61BAEE68000880A0A /* AppDelegate.m */,
 				3B2262E71BAEE68000880A0A /* Controller */,
@@ -860,6 +863,7 @@
 				3BF744F21BC0D41D0031BA7E /* TWLogView.xib in Resources */,
 				3BF3730C1BBD735400117A61 /* Assets.xcassets in Resources */,
 				3BDD3BAA1BABC44100E67F7A /* LaunchScreen.storyboard in Resources */,
+				F5971C4D1C57B35E00BAFDAB /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -933,6 +937,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B28F3691BBD586800E0981E /* TWSettingItem.m in Sources */,
+				F5971C4E1C57B35E00BAFDAB /* MBProgressHUD+NJ.m in Sources */,
 				F57EBBB41C5653E30007DDFA /* YSDoubleEditItem.m in Sources */,
 				3BF373161BBD8B1D00117A61 /* TWSettingTextItem.m in Sources */,
 				3B32C87A1BB107F40094F81F /* TWAdpcm.m in Sources */,
@@ -973,7 +978,6 @@
 				3BE2516B1BBD23B00050474C /* TWSettingTableViewCell.m in Sources */,
 				3BCAE71D1BBE33BE009172D6 /* TWSaveInfo.m in Sources */,
 				3BE925F31BB9531800C5328D /* HYOpenALHelper.m in Sources */,
-				3BB7EE931BEE2790000327C9 /* MBProgressHUD+NJ.m in Sources */,
 				3B6DC2331BC2C200008B919A /* UIButton+Bootstrap.m in Sources */,
 				3B74D2B31BAF8FCF00F48A12 /* UdpNetwork.m in Sources */,
 				F57EBB871C5653870007DDFA /* YSCommonController.m in Sources */,

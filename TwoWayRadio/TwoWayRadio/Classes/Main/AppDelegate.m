@@ -30,24 +30,7 @@
     //2.设置根控制器
     TWFirstViewLoginViewController *loginVc = [[TWFirstViewLoginViewController alloc]init];
     
-    
-    
-//    UIViewController * leftSideDrawerViewController = [[TWSettingViewController alloc]  init];
-//    
-//    TWTabBarControllerConfig *tabBarViewControllerConfig = [[TWTabBarControllerConfig alloc]init];
-//    
-//    UIViewController * centerViewController = tabBarViewControllerConfig.tabBarController;
-//
-//    self.drawerController = [[MMDrawerController alloc]
-//                                initWithCenterViewController:centerViewController leftDrawerViewController:leftSideDrawerViewController];
-//    [self.drawerController setShowsShadow:NO];
-//    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
-////    [self.drawerController setMaximumLeftDrawerWidth:((TWLeftViewController *)leftSideDrawerViewController).tableView.width];
-//    [self.drawerController setMaximumLeftDrawerWidth:leftViewWidth];
-//    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-//    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
-    
-//    self.window.rootViewController = self.drawerController;
+
     self.window.rootViewController = loginVc;
 
    //    TWFirstViewLoginViewController *loginVc = [[TWFirstViewLoginViewController alloc]init];
@@ -116,7 +99,7 @@
     frostedViewController.direction = REFrostedViewControllerDirectionLeft;
     frostedViewController.liveBlurBackgroundStyle = REFrostedViewControllerLiveBackgroundStyleLight;
     frostedViewController.liveBlur = YES;
-//    frostedViewController.menuViewSize = CGSizeMake(TWScreenWidth - 50, TWScreenHeight);
+    frostedViewController.menuViewSize = CGSizeMake(TWLeftViewWidth, TWScreenHeight);
     frostedViewController.delegate = self;
     
     // Make it a root controller
